@@ -288,11 +288,11 @@ input[type=range] { height:20px; }
   .map-focus{font-size:10px;padding:7px 9px}
 }
 
-/* Text-only century columns; dense centuries share one heading across stacks. */
+/* Text-only period columns; dense periods share one heading across stacks. */
 .timeline-canvas{--timeline-row-height:30px}
 .timeline-board{background:repeating-linear-gradient(to bottom,#fcf9f2 0,#fcf9f2 calc(var(--timeline-row-height) - 1px),#e8e0d3 calc(var(--timeline-row-height) - 1px),#e8e0d3 var(--timeline-row-height))}
 .axis-tick{width:var(--step);gap:5px;overflow:hidden;font-size:13px}
-.century-gap{font:700 16px/1 var(--sans);color:#9b876a;cursor:help;flex-shrink:0}
+.period-gap{font:700 16px/1 var(--sans);color:#9b876a;cursor:help;flex-shrink:0}
 .story-card{height:calc(var(--timeline-row-height) - 2px);width:calc(var(--step) - 4px);padding:1px 5px;gap:3px;border-left-width:3px}
 .story-text{flex-direction:row;align-items:center;gap:4px;width:100%}
 .story-card .story-title,.story-card:not(.is-series) .story-title{flex:1;min-width:0;font:500 14px/12px var(--serif);-webkit-line-clamp:2}

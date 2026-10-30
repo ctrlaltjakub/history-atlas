@@ -1,4 +1,4 @@
-import {REGIONS,ERAS,CATEGORIES,formatCentury,matchesEpisode,makeCollection,filterCollection,makeTimeline,visibleTimeline,chronological,durationLabel} from './core.mjs';
+import {REGIONS,ERAS,CATEGORIES,makeCollection,filterCollection,makeTimeline,visibleTimeline,chronological,durationLabel} from './core.mjs';
 import {EpisodeMap} from './map.js';
 
 const $=selector=>document.querySelector(selector);
@@ -22,25 +22,27 @@ function renderControls(){
   $('#reset-filters').hidden=!(state.q||state.region!=='all'||state.era!=='all');
 }
 function empty(message,detail){return `<div class="empty-state grid-empty"><h3>${esc(message)}</h3><p>${esc(detail)}</p><button class="text-link" data-clear>Clear filters ↗</button></div>`;}
-function centuryGapLabel(count){return `${count.toLocaleString('en-GB')} empty ${count===1?'century':'centuries'} omitted`;}
 function renderTimeline(filtered){
   const viewport=$('#timeline-scroll');
   const step=innerWidth<=760?Math.min(176,Math.floor(viewport.clientWidth/2)):176;
   const key=filtered.map(e=>e.id+':'+e.start).join(',')+'|'+step;
   if(key===timelineKey)return;
-  const previousCentury=timeline?.ticks.findLast(t=>t.x<=viewport.scrollLeft)?.century;
+  const opening=!timelineKey&&!state.q&&state.region==='all'&&state.era==='all';
+  const previousPeriod=timeline?.ticks.findLast(t=>t.x<=viewport.scrollLeft)?.id;
   const sameItems=key.split('|')[0]===timelineKey.split('|')[0];timelineKey=key;
   timeline=makeTimeline(filtered,step);
   const canvas=$('#timeline-canvas');canvas.style.setProperty('--step',`${step}px`);timelineCards=[];timelineTicks=[];
   if(!timeline.positions.length){canvas.style.width='100%';canvas.innerHTML=empty('No dated results match these filters.','Try another era, region or search. Episodes without dates appear below.');$('#time-position').disabled=true;$('#first-year').textContent='';$('#last-year').textContent='';updateScroll();return;}
   $('#time-position').disabled=false;canvas.style.width=`${Math.max(timeline.width,viewport.clientWidth)}px`;
-  const axis=`<div class="timeline-axis"><span class="axis-current" id="visible-year" hidden></span>${timeline.ticks.map(t=>`<span class="axis-tick" style="left:${t.x}px;width:${t.width}px">${t.skippedBefore?`<span class="century-gap" role="img" aria-label="${centuryGapLabel(t.skippedBefore)}" title="${centuryGapLabel(t.skippedBefore)}">⋯</span>`:''}${formatCentury(t.century)}</span>`).join('')}</div>`;
-  const cards=timeline.positions.map(({item,x,century})=>`<button class="story-card ${item.type==='series'?'is-series':''}" ${itemTarget(item)} data-item-id="${esc(item.id)}" style="left:${x+2}px;--series-color:${item.color}" title="${esc(item.title)} · approximately ${formatCentury(century)}" aria-label="Open ${esc(item.title)}${item.type==='series'?`, series of ${item.members.length} episodes`:''}, ${formatCentury(century)}, approximate placement"><span class="story-text"><span class="story-title">${esc(item.title)}</span>${item.type==='series'?`<span class="story-count">${item.members.length} ↗</span>`:''}</span></button>`).join('');
+  const axis=`<div class="timeline-axis"><span class="axis-current" id="visible-year" hidden></span>${timeline.ticks.map(t=>`<span class="axis-tick" style="left:${t.x}px;width:${t.width}px">${t.gapLabel?`<span class="period-gap" role="img" aria-label="${esc(t.gapLabel)}" title="${esc(t.gapLabel)}">⋯</span>`:''}${t.label}</span>`).join('')}</div>`;
+  const cards=timeline.positions.map(({item,x,periodLabel})=>`<button class="story-card ${item.type==='series'?'is-series':''}" ${itemTarget(item)} data-item-id="${esc(item.id)}" style="left:${x+2}px;--series-color:${item.color}" title="${esc(item.title)} · approximately ${periodLabel}" aria-label="Open ${esc(item.title)}${item.type==='series'?`, series of ${item.members.length} episodes`:''}, ${periodLabel}, approximate placement"><span class="story-text"><span class="story-title">${esc(item.title)}</span>${item.type==='series'?`<span class="story-count">${item.members.length} ↗</span>`:''}</span></button>`).join('');
   canvas.innerHTML=axis+`<div class="timeline-board">${timeline.ticks.map(t=>`<span aria-hidden="true" class="timeline-gridline" style="left:${t.x}px"></span>`).join('')}${cards}</div>`;
   timelineCards=[...canvas.querySelectorAll('.story-card')];timelineTicks=[...canvas.querySelectorAll('.axis-tick')];
-  $('#first-year').textContent=formatCentury(timeline.ticks[0].century);$('#last-year').textContent=formatCentury(timeline.ticks.at(-1).century);
+  $('#first-year').textContent=timeline.ticks[0].label;$('#last-year').textContent=timeline.ticks.at(-1).label;
   $('#row-count-note').textContent=`${timeline.rowCount} fixed ${timeline.rowCount===1?'row':'rows'} · stacked from the top`;
-  viewport.scrollTo({left:sameItems?timeline.ticks.find(t=>t.century===previousCentury)?.x||0:0,top:0,behavior:'instant'});updateScroll();
+  const openingCentury=opening?timeline.ticks.find(t=>t.id==='century:16'):null;
+  const left=sameItems?timeline.ticks.find(t=>t.id===previousPeriod)?.x||0:openingCentury?openingCentury.x+Math.max(0,openingCentury.width-step):0;
+  viewport.scrollTo({left,top:0,behavior:'instant'});updateScroll();
 }
 function updateVisibleRows(){
   if(!timeline?.positions.length||state.view!=='timeline')return;
@@ -52,7 +54,7 @@ function updateVisibleRows(){
 function updateScroll(){
   const el=$('#timeline-scroll'),max=el.scrollWidth-el.clientWidth;
   $('#time-position').value=max>0?Math.round(el.scrollLeft/max*1000):0;$('#earlier').disabled=el.scrollLeft<2;$('#later').disabled=max<2||el.scrollLeft>=max-2;
-  if(timeline?.ticks.length){const tick=timeline.ticks.findLast(t=>t.x<=el.scrollLeft)||timeline.ticks[0];$('#time-position').setAttribute('aria-valuetext',`Approximately ${formatCentury(tick.century)}`);const current=$('#visible-year');if(current){current.textContent=formatCentury(tick.century);current.hidden=tick.x>=el.scrollLeft-4;const edge=el.scrollLeft+(current.hidden?0:current.offsetWidth+6);timelineTicks.forEach((label,index)=>label.style.visibility=timeline.ticks[index].x<edge?'hidden':'');}}
+  if(timeline?.ticks.length){const tick=timeline.ticks.findLast(t=>t.x<=el.scrollLeft)||timeline.ticks[0];$('#time-position').setAttribute('aria-valuetext',`Approximately ${tick.label}`);const current=$('#visible-year');if(current){current.textContent=tick.label;current.hidden=tick.x>=el.scrollLeft-4;const edge=el.scrollLeft+(current.hidden?0:current.offsetWidth+6);timelineTicks.forEach((label,index)=>label.style.visibility=timeline.ticks[index].x<edge?'hidden':'');}}
   updateVisibleRows();
 }
 function libraryCard(item){return `<button class="library-card ${item.type==='series'?'is-series':''}" ${itemTarget(item)} style="--series-color:${item.color}" aria-label="Open ${esc(item.title)}${item.type==='series'?`, ${item.members.length} episodes`:''}"><div class="library-card-art"><img src="${esc(thumb(item.image,420))}" alt="" loading="lazy" decoding="async" width="350" height="350">${item.type==='series'?`<span class="series-badge">${item.members.length} EPISODES</span>`:''}</div><div class="library-card-body"><span class="card-eyebrow">${esc(item.category||item.region)}</span><h3>${esc(item.title)}</h3><div class="card-bottom"><span>${esc(item.start===null?itemSummary(item):item.dateLabel)}</span><span class="card-arrow" aria-hidden="true">↗</span></div></div></button>`;}

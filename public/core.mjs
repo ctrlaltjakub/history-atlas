@@ -34,10 +34,7 @@ export function chronological(a,b) {
 export function releaseOrder(a,b) {
   return (a.seriesOrder ?? Infinity)-(b.seriesOrder ?? Infinity) || Date.parse(a.published)-Date.parse(b.published) || (a.number ?? Infinity)-(b.number ?? Infinity);
 }
-export function seriesColor(key) {
-  const hash=[...key].reduce((value,char)=>(Math.imul(value,31)+char.charCodeAt(0))>>>0,0);
-  return `hsl(${(hash%360000)/1000} 30% 38%)`;
-}
+export const SERIES_COLOR='#6b2636';
 export function summariseItem(item,matches=item.members) {
   const dated=matches.filter(e=>Number.isFinite(e.start)).sort(chronological);
   const start=dated[0]?.start ?? null;
@@ -52,7 +49,7 @@ export function summariseItem(item,matches=item.members) {
     location:placed?.location || {coordinates:null,label:'Worldwide',note:'No single geographic setting.'},
     image:item.members[0].image,
     published:item.members.at(-1).published,
-    color:item.type==='series'?seriesColor(item.id):'#a99b84'
+    color:item.type==='series'?SERIES_COLOR:'#a99b84'
   };
 }
 export function makeCollection(episodes) {
@@ -70,8 +67,7 @@ export function filterCollection(items,filters={},placement='all') {
     return matches.length?[summariseItem(item,matches)]:[];
   });
 }
-// A century can expand into adjacent text stacks, keeping the table compact
-// in both dimensions even when one century contains many more entries.
+// A period can expand into adjacent text stacks to keep the table compact.
 export const TIMELINE_MAX_ROWS=10;
 export function centuryForYear(year) {
   return Number.isFinite(year)&&year!==0?Math.sign(year)*Math.ceil(Math.abs(year)/100):null;
@@ -82,23 +78,42 @@ export function formatCentury(century) {
   const suffix=lastTwo>=11&&lastTwo<=13?'th':({1:'st',2:'nd',3:'rd'}[number%10]||'th');
   return `${number.toLocaleString('en-GB')}${suffix} century${century<0?' BCE':century<=10?' CE':''}`;
 }
+export function timelinePeriod(year) {
+  const century=centuryForYear(year);
+  if(century===null)return null;
+  if(year>=1700){
+    const start=Math.floor(year/10)*10;
+    return {id:`decade:${start}`,kind:'decade',start,end:start+9,label:`${start}s`};
+  }
+  return {id:`century:${century}`,kind:'century',century,
+    start:century>0?(century-1)*100+1:century*100,
+    end:century>0?Math.min(century*100,1699):(century+1)*100-1,
+    label:formatCentury(century)};
+}
+function periodGapLabel(previous,current) {
+  if(!previous||current.start===(previous.end===-1?1:previous.end+1))return null;
+  if(previous.kind!==current.kind)return 'Empty periods omitted';
+  const count=current.kind==='decade'?(current.start-previous.start)/10-1:
+    current.century-previous.century-1-(previous.century<0&&current.century>0?1:0);
+  const unit=current.kind==='decade'?'decade':'century';
+  return `${count.toLocaleString('en-GB')} empty ${count===1?unit:unit==='century'?'centuries':'decades'} omitted`;
+}
 export function makeTimeline(items,step=176) {
   const dated=items.filter(e=>Number.isFinite(e.start)).sort(chronological);
-  const centuries=new Map();
+  const periods=new Map();
   for(const item of dated) {
-    const century=centuryForYear(item.start);
-    if(!centuries.has(century))centuries.set(century,[]);
-    centuries.get(century).push(item);
+    const period=timelinePeriod(item.start);
+    if(!periods.has(period.id))periods.set(period.id,{period,entries:[]});
+    periods.get(period.id).entries.push(item);
   }
-  const rowCount=Math.min(TIMELINE_MAX_ROWS,Math.max(0,...[...centuries.values()].map(entries=>entries.length)));
+  const rowCount=Math.min(TIMELINE_MAX_ROWS,Math.max(0,...[...periods.values()].map(group=>group.entries.length)));
   const ticks=[],positions=[];
   let width=0,previous=null;
-  for(const [century,entries] of centuries) {
+  for(const {period,entries} of periods.values()) {
     const stacks=Math.ceil(entries.length/rowCount);
-    const skippedBefore=previous===null?0:century-previous-1-(previous<0&&century>0?1:0);
-    ticks.push({century,x:width,width:stacks*step,stacks,skippedBefore});
-    entries.forEach((item,index)=>positions.push({item,key:item.id,century,x:width+Math.floor(index/rowCount)*step,row:index%rowCount}));
-    width+=stacks*step;previous=century;
+    ticks.push({...period,x:width,width:stacks*step,stacks,gapLabel:periodGapLabel(previous,period)});
+    entries.forEach((item,index)=>positions.push({item,key:item.id,periodId:period.id,periodLabel:period.label,x:width+Math.floor(index/rowCount)*step,row:index%rowCount}));
+    width+=stacks*step;previous=period;
   }
   return {ticks,positions,width,step,rowCount};
 }
