@@ -1,4 +1,4 @@
-# THE REST IS HISTORY — ORDERED
+# THE REST IS HISTORY — ORGANIZED
 
 An independent companion to **The Rest Is History**, arranged by the history being discussed rather than the date an episode was released.
 
@@ -9,7 +9,7 @@ The initial catalogue contains all **736 episodes in the public RSS feed**, capt
 ## Explore
 
 - **Series first everywhere:** 148 reviewed release series contain 536 episodes; the other 200 are standalone entries. The timeline, map, index and undated lists show each matching series once. Opening it reveals its parts in release order.
-- A compact chronological timeline with **five fixed rows** in All history. Each date column stacks tiles from the top; the busiest column determines the table height. The 609 dated episodes become 272 series/single tiles across 207 date columns.
+- A compact timeline with text-only entries grouped into **century columns**. Busy centuries expand into adjacent text stacks under one heading, with up to ten fixed rows. The 609 dated episodes become 272 series/single tiles across 39 populated centuries; empty centuries are explicitly marked as omitted.
 - Muted colours distinguish series consistently across the timeline, map markers and index cards.
 - An Equal Earth map with zoom, drag, touch pinch, keyboard controls and clusters that split as you zoom. Series use their first mappable part as a representative anchor. Selecting **Show on the map** in an episode's details instead highlights that part's own coordinates.
 - Episode details include **Show on the timeline** and **Show on the map** independently when applicable. The timeline shortcut reveals the containing series. Location shortcuts clear filters to reveal the item.
@@ -19,7 +19,7 @@ The initial catalogue contains all **736 episodes in the public RSS feed**, capt
 - Share individual episodes with `#episode=<RSS GUID>` and series with `#series=<series slug>`. Filters are reflected in the URL.
 - Responsive layouts, keyboard navigation, reduced-motion support, no analytics, accounts or application cookies.
 
-Dates are editorial approximations. A series' earliest dated part determines its default position; a filtered timeline uses the earliest matching dated part. Gaps are compressed and distances are **not a linear time scale**. A series occupies one tile, with no row reserved across the periods covered by its individual parts. The complete table reserves only the busiest column's row count, so horizontal scrolling never changes height. Every column is filled from row zero. Regions remain filters, not fixed rows.
+Dates are editorial approximations. The timeline displays centuries, while episode details retain the reviewed ranges and placement notes. A series' earliest dated part determines its century; a filtered timeline uses the earliest matching dated part. Conventional century boundaries apply (1901–2000 is the 20th century; 100–1 BCE is the 1st century BCE). Empty centuries are omitted and marked with an ellipsis, so distances are **not a linear time scale**. Entries are ordered chronologically down each stack, then across the century. Dense centuries get additional stacks under the same heading, keeping the table to ten compact rows; sparser selections use fewer fixed rows. Every stack is filled from row zero. Regions remain filters, not fixed rows.
 
 Series memberships and source URLs are maintained in `data/series.json`, based on the official archive and reconciled with the publisher's public feed. Separate later release arcs remain separate series; exact-title changes, missing numbered parts, and annual release sets have explicit research notes. The build assigns `seriesId`, `series` and `seriesOrder` to each episode. Episodes belong to at most one released series.
 
@@ -62,13 +62,13 @@ Historical placement sources and cautions are recorded in `data/dates-early-rese
 - Spotify's connected official-show catalogue: unique title matches and release-date checks.
 - [Apple public lookup](https://itunes.apple.com/lookup?id=1537788786&entity=podcastEpisode&limit=200): exact audio-URL matching, with search fallbacks clearly labelled.
 
-Raw public-source snapshots in `data/` are for audit and maintenance; only `public/` is deployed. Descriptions omit repeated promotional boilerplate where possible, and link to the publisher's full entry. Audio streams from the original publisher and is not rehosted. The header uses the publisher’s original transparent wordmark from `https://therestishistory.com/hubfs/TRIH%20BANNER-1.png`, paired with a CSS ORDERED stamp. Episode art loads from the publisher's image service, with a local show-art fallback.
+Raw public-source snapshots in `data/` are for audit and maintenance; only `public/` is deployed. Descriptions omit repeated promotional boilerplate where possible, and link to the publisher's full entry. Audio streams from the original publisher and is not rehosted. The header uses the publisher’s original transparent wordmark from `https://therestishistory.com/hubfs/TRIH%20BANNER-1.png`, paired with a CSS ORGANIZED stamp. Episode art loads from the publisher's image service, with a local show-art fallback.
 
 The map runs entirely in the browser. D3 7.9.0, TopoJSON Client 3.1.0 and Natural Earth geography via World Atlas 2.0.2 are vendored locally; no mapping API key or geocoding service is required. Sources and licenses are recorded in `public/vendor/`.
 
 ## Verification
 
-Automated checks cover feed completeness, unique IDs, valid placements, listening-link kinds, chronology, non-overlapping cards, series membership and release order, top-filled date columns, minimum row allocation and fixed height, independent date/map availability, era boundaries, search behavior, complete map coverage, valid coordinates, Equal Earth rendering and cluster separation at increasing zoom levels. Browser verification covers desktop and 320/390/430-pixel mobile layouts, detail dialogs, filters, pagination, deep links and the deployed site.
+Automated checks cover feed completeness, unique IDs, valid placements, listening-link kinds, chronology, non-overlapping cards, series membership and release order, century boundaries including BCE/CE, top-filled text stacks, fixed row allocation and height, independent date/map availability, era boundaries, search behavior, complete map coverage, valid coordinates, Equal Earth rendering and cluster separation at increasing zoom levels. Browser verification covers desktop and 320/390/430-pixel mobile layouts, detail dialogs, filters, pagination, deep links and the deployed site.
 
 ## Credits
 

@@ -70,24 +70,37 @@ export function filterCollection(items,filters={},placement='all') {
     return matches.length?[summariseItem(item,matches)]:[];
   });
 }
-export function makeTimeline(items,step=200) {
+// A century can expand into adjacent text stacks, keeping the table compact
+// in both dimensions even when one century contains many more entries.
+export const TIMELINE_MAX_ROWS=10;
+export function centuryForYear(year) {
+  return Number.isFinite(year)&&year!==0?Math.sign(year)*Math.ceil(Math.abs(year)/100):null;
+}
+export function formatCentury(century) {
+  if(century==null)return 'Outside the timeline';
+  const number=Math.abs(century),lastTwo=number%100;
+  const suffix=lastTwo>=11&&lastTwo<=13?'th':({1:'st',2:'nd',3:'rd'}[number%10]||'th');
+  return `${number.toLocaleString('en-GB')}${suffix} century${century<0?' BCE':century<=10?' CE':''}`;
+}
+export function makeTimeline(items,step=176) {
   const dated=items.filter(e=>Number.isFinite(e.start)).sort(chronological);
-  const dates=new Map();
+  const centuries=new Map();
   for(const item of dated) {
-    if(!dates.has(item.start))dates.set(item.start,[]);
-    dates.get(item.start).push(item);
+    const century=centuryForYear(item.start);
+    if(!centuries.has(century))centuries.set(century,[]);
+    centuries.get(century).push(item);
   }
+  const rowCount=Math.min(TIMELINE_MAX_ROWS,Math.max(0,...[...centuries.values()].map(entries=>entries.length)));
   const ticks=[],positions=[];
-  let column=0,rowCount=0;
-  for(const [year,entries] of dates) {
-    const x=column++*step;
-    ticks.push({year,x});
-    entries.forEach((item,row)=>positions.push({item,episode:item,key:item.id,x,row}));
-    rowCount=Math.max(rowCount,entries.length);
+  let width=0,previous=null;
+  for(const [century,entries] of centuries) {
+    const stacks=Math.ceil(entries.length/rowCount);
+    const skippedBefore=previous===null?0:century-previous-1-(previous<0&&century>0?1:0);
+    ticks.push({century,x:width,width:stacks*step,stacks,skippedBefore});
+    entries.forEach((item,index)=>positions.push({item,key:item.id,century,x:width+Math.floor(index/rowCount)*step,row:index%rowCount}));
+    width+=stacks*step;previous=century;
   }
-  // Each tile occupies one date column. Stack from row zero at every date;
-  // only the busiest column determines the fixed height of the whole table.
-  return {ticks,positions,width:column*step,step,rowCount};
+  return {ticks,positions,width,step,rowCount};
 }
 export function visibleTimeline(layout,left,viewportWidth) {
   const positions=layout.positions.filter(p=>p.x+layout.step>left && p.x<left+viewportWidth);

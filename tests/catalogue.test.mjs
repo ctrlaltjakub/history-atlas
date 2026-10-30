@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, seriesColor} from '../public/core.mjs';
+import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, seriesColor, centuryForYear, formatCentury, TIMELINE_MAX_ROWS} from '../public/core.mjs';
 
 const catalogue = JSON.parse(readFileSync(new URL('../public/data/catalogue.json', import.meta.url)));
 const base = JSON.parse(readFileSync(new URL('../data/base-episodes.json', import.meta.url)));
@@ -60,20 +60,26 @@ test('released series group every member once and leave true singles alone', () 
   assert.equal(found[0].matches.length,1);assert.equal(found[0].members.length,4);
 });
 
-test('timeline uses the minimum rows, stacks every date from the top, and preserves chronology', () => {
+test('century columns stack entries from the top with a fixed compact height', () => {
   const items=filterCollection(makeCollection(episodes),{},'timeline');
-  const dates=[...new Set(items.map(e=>e.start))].sort((a,b)=>a-b);
-  const maximum=Math.max(...dates.map(year=>items.filter(e=>e.start===year).length));
+  const centuries=[...new Set(items.map(e=>centuryForYear(e.start)))].sort((a,b)=>a-b);
+  const maximum=Math.min(TIMELINE_MAX_ROWS,Math.max(...centuries.map(century=>items.filter(e=>centuryForYear(e.start)===century).length)));
   for(const step of [140,176,200]){
     const layout=makeTimeline(items,step);
     assert.equal(layout.positions.length,items.length);
     assert.equal(new Set(layout.positions.map(p=>p.item.id)).size,items.length);
-    assert.deepEqual(layout.ticks.map(t=>t.year),dates);
-    assert.equal(layout.rowCount,maximum,'No rows reserved for gaps between series parts');
+    assert.deepEqual(layout.ticks.map(t=>t.century),centuries);
+    assert.equal(layout.rowCount,maximum);
     for(const tick of layout.ticks){
-      const column=layout.positions.filter(p=>p.item.start===tick.year);
-      assert.deepEqual(column.map(p=>p.row),Array.from({length:column.length},(_,i)=>i),'No empty rows above a tile');
-      assert.ok(column.every(p=>p.x===tick.x));
+      const entries=layout.positions.filter(p=>p.century===tick.century);
+      assert.ok(entries.every(p=>centuryForYear(p.item.start)===tick.century));
+      assert.equal(tick.stacks,Math.ceil(entries.length/maximum));
+      assert.equal(tick.width,tick.stacks*step);
+      for(let stack=0;stack<tick.stacks;stack++){
+        const column=entries.filter(p=>p.x===tick.x+stack*step);
+        assert.deepEqual(column.map(p=>p.row),Array.from({length:column.length},(_,i)=>i),'No empty rows above a tile');
+      }
+      assert.deepEqual(entries.map(p=>p.item.id),items.filter(item=>centuryForYear(item.start)===tick.century).sort(chronological).map(item=>item.id),'Chronology continues down, then across a century');
     }
     for(let row=0;row<layout.rowCount;row++){
       const cards=layout.positions.filter(p=>p.row===row).sort((a,b)=>a.x-b.x);
@@ -81,10 +87,22 @@ test('timeline uses the minimum rows, stacks every date from the top, and preser
     }
     for(let left=0;left<layout.width;left+=137){
       const visible=visibleTimeline(layout,left,350);
-      assert.equal(visible.rowCount,maximum,'Height is fixed at the busiest column');
+      assert.equal(visible.rowCount,maximum,'Height stays fixed when scrolling');
       assert.ok(visible.positions.every(p=>p.displayRow===p.row));
     }
+    assert.ok(layout.width<207*step/2,'Century grouping substantially reduces horizontal scrolling');
   }
+});
+
+test('century boundaries use BCE and CE correctly with no year or century zero',()=>{
+  for(const [year,century] of [[-200,-2],[-101,-2],[-100,-1],[-1,-1],[1,1],[100,1],[101,2],[1900,19],[1901,20],[2000,20],[2001,21]])assert.equal(centuryForYear(year),century);
+  assert.equal(centuryForYear(0),null);assert.equal(centuryForYear(null),null);
+  assert.equal(formatCentury(-1),'1st century BCE');assert.equal(formatCentury(1),'1st century CE');
+  assert.equal(formatCentury(11),'11th century');assert.equal(formatCentury(12),'12th century');assert.equal(formatCentury(13),'13th century');assert.equal(formatCentury(21),'21st century');
+  const item=(id,start)=>({id,title:id,start,end:start});
+  const crossing=makeTimeline([item('bce',-1),item('ce',1),item('later',301)]);
+  assert.deepEqual(crossing.ticks.map(t=>t.skippedBefore),[0,0,2]);
+  assert.deepEqual(makeTimeline([]),{ticks:[],positions:[],width:0,step:176,rowCount:0});
 });
 
 test('a series can be dated, undated and mappable independently without losing its parts', () => {
