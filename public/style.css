@@ -315,3 +315,13 @@ input[type=range] { height:20px; }
 @media(max-width:760px){.timeline-canvas{--timeline-axis-height:28px}}
 .era-tabs{min-height:40px}
 @media(max-width:760px){.era-tabs{min-height:38px}}
+
+/* Date ranges retain their real ends; short events get readable labels. */
+.timeline-scroll{--timeline-row-height:30px;--timeline-axis-height:30px;min-height:0;height:calc(var(--timeline-axis-height) + var(--timeline-visible-rows,10) * var(--timeline-row-height) + 14px);max-height:none;overflow:scroll}
+.story-card{border-left:1px solid #dcd2c0;padding:0 5px 3px;gap:0}
+.story-text{position:sticky;left:5px;width:var(--label-width);max-width:100%;flex-shrink:0}
+.story-duration{position:absolute;left:-1px;bottom:-1px;width:var(--range-width);height:5px;border:1px solid var(--series-color);border-bottom-width:3px;border-top:0;pointer-events:none}
+.range-legend{display:inline-block;width:17px;height:5px;border:1px solid var(--wine);border-bottom-width:3px;border-top:0;margin-right:5px;vertical-align:1px}
+.series-timeline-note{font-size:12px;line-height:1.6;color:var(--muted);border-left:2px solid var(--wine);padding-left:12px;margin-top:18px}
+.timeline-exclusion{margin-top:12px}
+@media(max-width:760px){.timeline-scroll{--timeline-row-height:28px;--timeline-axis-height:28px}.story-card{padding-inline:4px}.story-text{left:4px}.series-timeline-note{font-size:11px}}

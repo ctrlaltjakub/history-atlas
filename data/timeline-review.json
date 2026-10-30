@@ -1,0 +1,169 @@
+{
+  "reviewedAt": "2026-10-30",
+  "basis": "Screened the 272 previously dated series/standalone entries by title, release membership and existing reviewed ranges. Checked the saved publisher descriptions for broad and cross-era candidates. Exclusions are explicit decisions, never title-keyword heuristics. Existing individual ranges remain in episode details for reference.",
+  "criteria": [
+    "Keep a bounded historical narrative even when it spans multiple centuries or decades; show its full reviewed range.",
+    "Do not turn unrelated stories collected under a release theme into one continuous historical interval.",
+    "Keep broad country/city surveys and comparisons across eras off the timeline. Dates and map locations are independent."
+  ],
+  "sources": [
+    "base-episodes.json",
+    "official-catalogue.json",
+    "series.json",
+    "dates-early.json",
+    "dates-late.json",
+    "https://therestishistory.com/episodes/a-history-20221117",
+    "https://therestishistory.com/series/holidays"
+  ],
+  "series": {
+    "the-world-cup-32-countries": {
+      "title": "The World Cup: 32 Countries",
+      "category": "Countries & places",
+      "note": "A country-by-country collection of unrelated stories, legends and surveys. Its parts do not share a historical period; the World Cup is the release theme, not their historical setting.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Great%20World%20Cup%20Saga"
+    },
+    "national-anthems-2026-world-cup": {
+      "title": "National Anthems: 2026 World Cup",
+      "category": "Cross-era collections",
+      "note": "Separate national anthem histories, from the Dutch Revolt to post-apartheid South Africa. An earliest-to-latest bar would imply a shared narrative that this collection does not have.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/2026%20World%20Cup"
+    },
+    "world-cup-of-kings-and-queens": {
+      "title": "World Cup of Kings and Queens",
+      "category": "Cross-era collections",
+      "note": "A competition comparing monarchs across centuries, with an Athelstan profile among the parts. That profile cannot date the whole collection.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/World%20Cup%20of%20Kings%20and%20Queens"
+    },
+    "england-at-euro-2020": {
+      "title": "England at Euro 2020",
+      "category": "Countries & places",
+      "note": "Separate surveys of England’s relationships with Germany, Ukraine, Denmark and Italy. The Crimean War episode cannot date the whole release set.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/England%20Games%20at%20the%20European%20Cup%20%28November%202021%29"
+    },
+    "holidays": {
+      "title": "Holidays",
+      "category": "Cross-era collections",
+      "note": "A thematic collection that jumps between Roman travel, the Grand Tour, Victorian tourism and modern holidays; it is not one continuous historical period.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Holidays"
+    },
+    "the-olympics": {
+      "title": "The Olympics",
+      "category": "Cross-era collections",
+      "note": "Ancient and modern Olympic traditions are separated by a long historical break. One continuous bar would imply coverage through that break.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Olympics"
+    },
+    "portugal": {
+      "title": "Portugal",
+      "category": "Countries & places",
+      "note": "A survey of the country from Roman Iberia through medieval, imperial and twentieth-century history. Retained as a place history rather than assigning the whole country a period.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Portugal"
+    },
+    "amsterdam": {
+      "title": "Amsterdam",
+      "category": "Countries & places",
+      "note": "A walking tour of landmarks and city history across medieval pilgrimage, capitalism, monarchy and postwar society, rather than one bounded event or period.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Amsterdam"
+    },
+    "coronations": {
+      "title": "Coronations",
+      "category": "Cross-era collections",
+      "note": "The collection combines ancient ritual origins with examples from medieval to modern coronations. The dated parts do not bound the deep-history opening episode.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Coronations"
+    },
+    "disease": {
+      "title": "Disease",
+      "category": "Cross-era collections",
+      "note": "The opening discussion spans human civilisation, followed by episodes on colonisation and modern pandemics. 1492 only dates part of this collection.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Disease"
+    },
+    "paganism": {
+      "title": "Paganism",
+      "category": "Cross-era collections",
+      "note": "The modern-paganism episode is paired with a reverse journey from the Renaissance into deep prehistory. The modern part cannot date the whole collection.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Paganism"
+    },
+    "the-history-behind-harry-potter": {
+      "title": "The History Behind Harry Potter",
+      "category": "Cross-era collections",
+      "note": "A collection of literary, magical and educational influences across periods. Eighteenth-century school rebellions only date one part, not the series.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Public%20Schools"
+    }
+  },
+  "episodes": {
+    "4922323b-c339-41dd-a666-ebad0b5179ed": {
+      "title": "China",
+      "category": "Countries & places",
+      "note": "A broad survey of Chinese civilisation and modern memory, not a narrative bounded by the Shang dynasty and 2020.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/803"
+    },
+    "5d4ca792-8d87-4301-8bee-a4b473fbe64e": {
+      "title": "History of India in 10 Buildings",
+      "category": "Countries & places",
+      "note": "A selection of buildings spanning roughly 4,500 years of the subcontinent’s history. A country-wide architectural tour has no single historical setting.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/713"
+    },
+    "f4e1d59c-1b28-4100-9d28-3a9c329936ec": {
+      "title": "California",
+      "category": "Countries & places",
+      "note": "A survey of the state’s origins, mythology and modern politics. The earlier catalogue range is a reference sweep, not one bounded event.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/763"
+    },
+    "fd5491b8-b8d0-43e1-8f2f-cefca3de1568": {
+      "title": "Australia Before Cook",
+      "category": "Countries & places",
+      "note": "A survey of settlement, Indigenous history and European encounters before Cook, spanning tens of thousands of years. It does not belong at one prehistoric date.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/702"
+    },
+    "6215344a79e03f0013fe31b8": {
+      "title": "Ukraine and Russia",
+      "category": "Countries & places",
+      "note": "A broad survey of the relationship between two countries from the Rus’ era to the present; no single historical setting.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/642"
+    },
+    "ed17f321-feb6-439f-a085-32407cd68709": {
+      "title": "The British Empire",
+      "category": "Ideas & everyday life",
+      "note": "A discussion of the empire’s interpretation and continuing legacy, rather than a chronological narrative with a defined beginning and ending.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/757"
+    },
+    "64242c9a4fcc90001171a6e9": {
+      "title": "African Amazons",
+      "category": "Cross-era collections",
+      "note": "A comparison of Nzinga, Dahomey warriors and Ashanti queen mothers. These are separate histories, not a single continuous event from 1600 to 1900.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/420"
+    },
+    "6269c60a504dee00135bea9f": {
+      "title": "England & Englishness",
+      "category": "Ideas & everyday life",
+      "note": "A discussion of identity through literary, cultural and contemporary examples; the earlier date range should not imply a bounded historical narrative.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/607"
+    },
+    "629341f80252da00138414f1": {
+      "title": "Jubilees",
+      "category": "Cross-era collections",
+      "note": "A comparison of selected royal celebrations and their meanings, rather than a continuous narrative from 1809 to 2022.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/594"
+    },
+    "64a4684e-1492-4e02-87a8-2bbc4712bc4e": {
+      "title": "A Royal Row",
+      "category": "Conversations & reflections",
+      "note": "A contemporary interview prompts comparisons across royal history. Its release-year context does not date the whole historical discussion.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/793"
+    },
+    "d7b04e6f-4dc6-4b27-aa9e-aa69b44d2cf9": {
+      "title": "We’re all so 17th Century",
+      "category": "Conversations & reflections",
+      "note": "A comparison between seventeenth-century Britain and contemporary crises, not a history confined to 1600–1699.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/819"
+    }
+  },
+  "dateCorrections": {
+    "f7628c7e-2f11-11ef-915b-47d256ff57ad": {
+      "title": "Modern British Elections (Part 2)",
+      "end": 2024,
+      "dateLabel": "1900–2024",
+      "note": "The publisher describes campaigning from the twentieth century to the 2024 election, including Boris Johnson, Jeremy Corbyn and Ed Davey. The earlier end of 2000 truncated that stated coverage.",
+      "sourceUrl": "https://archive.therestishistory.com/catalog/episode/207"
+    }
+  }
+}

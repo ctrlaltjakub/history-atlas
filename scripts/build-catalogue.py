@@ -11,6 +11,9 @@ def read(name):
 
 base = read('base-episodes.json')
 placements = read('dates-early.json') | read('dates-late.json')
+timeline_review = read('timeline-review.json')
+for episode_id, correction in timeline_review['dateCorrections'].items():
+    placements[episode_id].update({k: v for k, v in correction.items() if k in ['start', 'end', 'dateLabel', 'note']})
 locations = read('map-locations-a.json') | read('map-locations-b.json') | read('map-locations-c.json')
 for e in base:
     if e['id'] in placements:
@@ -58,6 +61,11 @@ assert set(series_members) <= {e['id'] for e in base}
 out=[]
 for e in base:
     p=placements[e['id']]
+    series=series_members.get(e['id'],dict(seriesId=None,series='',seriesOrder=None))
+    exclusion=timeline_review['episodes'].get(e['id']) or timeline_review['series'].get(series['seriesId'])
+    timeline_fields=dict(timelineExcluded=bool(exclusion),timelineNote=exclusion['note'] if exclusion else '')
+    if exclusion:
+        p={**p,'category':exclusion['category']}
     title=re.sub(r'^\s*\d+[.:]\s*','',e['title']).strip()
     description=clean_desc(e['description'])
     official_id=official.get(e['id'])
@@ -71,13 +79,14 @@ for e in base:
     if prefix:number=int(prefix[1])
     if e.get('type')=='trailer':number=None
     location=locations.get(e['id'],dict(coordinates=None,label='Worldwide',note='New in the public feed. Map placement has not yet been reviewed.'))
-    out.append(dict(id=e['id'],number=number,title=title,description=description,published=e['published'],duration=e['duration'],image=e['image'],audio=e['audio'],**p,**series_members.get(e['id'],dict(seriesId=None,series='',seriesOrder=None)),location=location,officialUrl=f'https://archive.therestishistory.com/catalog/episode/{official_id}' if official_id else None,links={k:link.get(k) for k in ['pocketCasts','spotify','spotifyKind','applePodcasts','applePodcastsKind','youtube']}))
+    out.append(dict(id=e['id'],number=number,title=title,description=description,published=e['published'],duration=e['duration'],image=e['image'],audio=e['audio'],**p,**series,**timeline_fields,location=location,officialUrl=f'https://archive.therestishistory.com/catalog/episode/{official_id}' if official_id else None,links={k:link.get(k) for k in ['pocketCasts','spotify','spotifyKind','applePodcasts','applePodcastsKind','youtube']}))
 
 assert len(out)==len(base)==len({e['id'] for e in out})
 assert all(e['start'] is None or (isinstance(e['start'],int) and e['start']<=e['end'] and e['start']!=0 and e['end']!=0) for e in out)
-assert all(e['category'] if e['start'] is None else e['category'] is None for e in out)
+assert all(e['category'] if e['start'] is None or e['timelineExcluded'] else e['category'] is None for e in out)
 target=ROOT/'public'/'data'; target.mkdir(exist_ok=True,parents=True)
 updated=read('catalogue-source.json')['fetchedAt']
 result=dict(updatedAt=updated,source='https://feeds.megaphone.fm/GLT4787413333',series=series_data['series'],episodes=out)
 (target/'catalogue.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')))
-print(f"Catalogue: {len(out)} total, {sum(e['start'] is not None for e in out)} dated, {sum(e['start'] is None for e in out)} beyond time. {len((target/'catalogue.json').read_bytes()):,} bytes.")
+dated=sum(e['start'] is not None and not e['timelineExcluded'] for e in out)
+print(f"Catalogue: {len(out)} total, {dated} on timeline, {len(out)-dated} off timeline. {len((target/'catalogue.json').read_bytes()):,} bytes.")

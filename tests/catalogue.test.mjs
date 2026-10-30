@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, SERIES_COLOR, timelinePeriod, centuryForYear, formatCentury, TIMELINE_MAX_ROWS} from '../public/core.mjs';
+import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, SERIES_COLOR, timelinePeriod, centuryForYear, formatCentury, timelineLabelWidth, hasTimelineDate} from '../public/core.mjs';
 
 const catalogue = JSON.parse(readFileSync(new URL('../public/data/catalogue.json', import.meta.url)));
 const base = JSON.parse(readFileSync(new URL('../data/base-episodes.json', import.meta.url)));
@@ -21,7 +21,7 @@ test('the published catalogue contains each public feed episode exactly once', (
     } else {
       assert.ok(Number.isInteger(e.start) && Number.isInteger(e.end));
       assert.ok(e.start <= e.end && e.start !== 0 && e.end !== 0, e.title);
-      assert.equal(e.category, null);
+      if(e.timelineExcluded)assert.ok(CATEGORIES.includes(e.category));else assert.equal(e.category, null);
     }
   }
 });
@@ -60,38 +60,67 @@ test('released series group every member once and leave true singles alone', () 
   assert.equal(found[0].matches.length,1);assert.equal(found[0].members.length,4);
 });
 
-test('century and decade columns stack entries from the top with a fixed compact height', () => {
+test('date spans keep their true boundaries and labels never overlap in a row', () => {
   const items=filterCollection(makeCollection(episodes),{},'timeline');
-  const periods=[...new Set([...items].sort(chronological).map(e=>timelinePeriod(e.start).id))];
-  const maximum=Math.min(TIMELINE_MAX_ROWS,Math.max(...periods.map(id=>items.filter(e=>timelinePeriod(e.start).id===id).length)));
-  for(const step of [140,176,200]){
+  for(const step of [144,176,200]){
     const layout=makeTimeline(items,step);
     assert.equal(layout.positions.length,items.length);
     assert.equal(new Set(layout.positions.map(p=>p.item.id)).size,items.length);
-    assert.deepEqual(layout.ticks.map(t=>t.id),periods);
-    assert.equal(layout.rowCount,maximum);
-    for(const tick of layout.ticks){
-      const entries=layout.positions.filter(p=>p.periodId===tick.id);
-      assert.ok(entries.every(p=>timelinePeriod(p.item.start).id===tick.id));
-      assert.equal(tick.stacks,Math.ceil(entries.length/maximum));
-      assert.equal(tick.width,tick.stacks*step);
-      for(let stack=0;stack<tick.stacks;stack++){
-        const column=entries.filter(p=>p.x===tick.x+stack*step);
-        assert.deepEqual(column.map(p=>p.row),Array.from({length:column.length},(_,i)=>i),'No empty rows above a tile');
-      }
-      assert.deepEqual(entries.map(p=>p.item.id),items.filter(item=>timelinePeriod(item.start).id===tick.id).sort(chronological).map(item=>item.id),'Chronology continues down, then across a period');
+    assert.ok(layout.ticks.every(t=>t.width===step),'Period widths do not expand to fit extra stories');
+    for(const p of layout.positions){
+      const start=layout.ticks.find(t=>t.id===timelinePeriod(p.item.start).id);
+      const end=layout.ticks.find(t=>t.id===timelinePeriod(p.item.end).id);
+      assert.ok(p.x>=start.x&&p.x<start.x+start.width,p.item.title);
+      assert.ok(p.endX>end.x&&p.endX<=end.x+end.width+0.001,p.item.title);
+      assert.ok(Math.abs(p.rangeWidth-(p.endX-p.x))<0.001);
+      assert.equal(p.width,Math.max(p.rangeWidth,timelineLabelWidth(p.item)));
+      assert.ok(p.width>=84);
     }
     for(let row=0;row<layout.rowCount;row++){
       const cards=layout.positions.filter(p=>p.row===row).sort((a,b)=>a.x-b.x);
-      for(let i=1;i<cards.length;i++){assert.ok(cards[i].x-cards[i-1].x>=step);assert.ok(cards[i].item.start>=cards[i-1].item.start);}
+      for(let i=1;i<cards.length;i++)assert.ok(cards[i].x>=cards[i-1].x+cards[i-1].width+6-0.001,'Readable labels do not collide');
     }
+    const edges=layout.positions.flatMap(p=>[{x:p.x,delta:1},{x:p.x+p.width+6,delta:-1}]).sort((a,b)=>a.x-b.x||a.delta-b.delta);
+    let active=0,maximum=0;
+    for(const edge of edges){active+=edge.delta;maximum=Math.max(maximum,active);}
+    assert.equal(layout.rowCount,maximum,'Exactly the rows required at the busiest overlap');
     for(let left=0;left<layout.width;left+=137){
       const visible=visibleTimeline(layout,left,350);
-      assert.equal(visible.rowCount,maximum,'Height stays fixed when scrolling');
+      assert.equal(visible.rowCount,maximum,'Scrolling never changes the fixed row count');
       assert.ok(visible.positions.every(p=>p.displayRow===p.row));
     }
-    assert.ok(layout.width<207*step/2,'Century grouping substantially reduces horizontal scrolling');
   }
+});
+
+test('a long narrative remains visible after its starting column has scrolled away',()=>{
+  const sample=[{id:'war',title:'Long war',start:1700,end:1721},{id:'point',title:'Short event',start:1710,end:1710}];
+  const layout=makeTimeline(sample,176),war=layout.positions.find(p=>p.item.id==='war');
+  assert.equal(war.x,0);assert.equal(war.endX,176*2+176*2/10);
+  assert.equal(war.width,war.rangeWidth);assert.equal(layout.rowCount,2);
+  assert.ok(visibleTimeline(layout,176*2,176).positions.some(p=>p.item.id==='war'),'Visibility uses the whole span');
+  assert.equal(layout.positions.find(p=>p.item.id==='point').width,84,'A one-year event has a readable label');
+});
+
+test('broad collections stay off the timeline without losing their dates, members or map locations',()=>{
+  const review=JSON.parse(readFileSync(new URL('../data/timeline-review.json',import.meta.url)));
+  const collection=makeCollection(episodes),dated=filterCollection(collection,{},'timeline'),off=filterCollection(collection,{},'undated');
+  for(const id of Object.keys(review.series)){
+    const item=collection.find(x=>x.seriesId===id);
+    assert.ok(item.members.every(e=>e.timelineExcluded),item.title);
+    assert.equal(item.start,null,item.title);
+    assert.ok(!dated.some(x=>x.id===item.id));assert.ok(off.some(x=>x.id===item.id));
+    assert.equal(off.find(x=>x.id===item.id).members.length,item.members.length);
+    assert.ok(item.timelineNote.length>20);
+  }
+  const countries=collection.find(x=>x.seriesId==='the-world-cup-32-countries');
+  assert.equal(countries.members.length,32);
+  assert.ok(countries.members.some(e=>e.start===1942&&e.end===1943),'Specific parts retain useful historical dates');
+  assert.ok(countries.location.coordinates,'Map availability remains independent');
+  assert.ok(!hasTimelineDate(episodes.find(e=>e.title==='China')));
+  assert.ok(hasTimelineDate(episodes.find(e=>e.title==='The First Emperor of China')),'A bounded China narrative remains dated');
+  const northern=collection.find(x=>x.title==='The Great Northern War');
+  const found=filterCollection(collection,{q:northern.members[2].title},'timeline').find(x=>x.id===northern.id);
+  assert.equal(found.start,northern.start);assert.equal(found.end,northern.end,'Matching one part never shortens a series bar');
 });
 
 test('century boundaries use BCE and CE correctly with no year or century zero',()=>{
@@ -101,7 +130,7 @@ test('century boundaries use BCE and CE correctly with no year or century zero',
   assert.equal(formatCentury(11),'11th century');assert.equal(formatCentury(12),'12th century');assert.equal(formatCentury(13),'13th century');assert.equal(formatCentury(21),'21st century');
   const item=(id,start)=>({id,title:id,start,end:start});
   const crossing=makeTimeline([item('bce',-1),item('ce',1),item('later',301)]);
-  assert.deepEqual(crossing.ticks.map(t=>t.gapLabel),[null,null,'2 empty centuries omitted']);
+  assert.deepEqual(crossing.ticks.map(t=>t.gapLabel),[null,null,'2 intermediate centuries compressed']);
   assert.deepEqual(makeTimeline([]),{ticks:[],positions:[],width:0,step:176,rowCount:0});
 });
 
@@ -118,15 +147,18 @@ test('a series can be dated, undated and mappable independently without losing i
   assert.equal(layout.rowCount,2);assert.equal(layout.positions.find(p=>p.item.id==='later').row,0);
 });
 
-test('era selection partitions dated episodes and keeps undated curiosities available', () => {
-  const periods = ERAS.filter(e => e.id !== 'all');
-  for (const e of episodes) {
-    const found = periods.filter(p => matchesEpisode(e, {era:p.id}));
-    assert.equal(found.length, e.start === null ? periods.length : 1, e.title);
+test('era filters include every overlapping range and leave off-timeline collections available', () => {
+  const periods=ERAS.filter(e=>e.id!=='all');
+  for(const e of episodes){
+    for(const period of periods){
+      const expected=!hasTimelineDate(e)||(e.start<period.end&&e.end>=period.start);
+      assert.equal(matchesEpisode(e,{era:period.id}),expected,e.title+' / '+period.id);
+    }
   }
-  const broad = {start:-63000,end:1770,title:'Australia',region:'Oceania'};
-  assert.equal(matchesEpisode(broad, {era:'ancient'}), false);
-  assert.equal(matchesEpisode(broad, {era:'prehistory'}), true);
+  const broad={start:1680,end:1800,title:'The Enlightenment',region:'Europe'};
+  assert.equal(matchesEpisode(broad,{era:'medieval'}),false);
+  assert.equal(matchesEpisode(broad,{era:'early-modern'}),true);
+  assert.equal(matchesEpisode(broad,{era:'nineteenth'}),true);
 });
 
 test('search is case and accent insensitive, combines words, and respects region', () => {
@@ -154,7 +186,7 @@ test('the eighteenth century switches to calendar decades from 1700 onward',()=>
   const item=(id,start)=>({id,title:id,start,end:start});
   const layout=makeTimeline([item('earlier',1699),item('a',1700),item('b',1709),item('c',1720)]);
   assert.deepEqual(layout.ticks.map(t=>t.label),['17th century','1700s','1720s']);
-  assert.deepEqual(layout.ticks.map(t=>t.gapLabel),[null,null,'1 empty decade omitted']);
+  assert.deepEqual(layout.ticks.map(t=>t.gapLabel),[null,null,'1 intermediate decade compressed']);
   const all=makeTimeline(filterCollection(makeCollection(episodes),{},'timeline'));
   assert.ok(all.ticks.some(t=>t.id==='century:16'));assert.ok(all.ticks.some(t=>t.id==='century:17'));
   assert.ok(all.ticks.filter(t=>t.start>=1700).every(t=>t.kind==='decade'&&t.end-t.start===9));
