@@ -1,4 +1,3 @@
-import {TITLE_ADVANCES} from './title-metrics.mjs';
 export const REGIONS = ['Britain & Ireland', 'Europe', 'Africa', 'Middle East', 'Asia', 'Americas', 'Oceania', 'Across the world'];
 export const ERAS = [
   {id:'all',name:'All history',start:-Infinity,end:Infinity},
@@ -101,14 +100,6 @@ function periodGapLabel(previous,current) {
   const unit=current.kind==='decade'?'decade':'century';
   return `${count.toLocaleString('en-GB')} intermediate ${count===1?unit:unit==='century'?'centuries':'decades'} compressed`;
 }
-// A compact two-line title, with room for the part count and a few pixels of padding.
-export function timelineLabelWidth(item) {
-  const measure=text=>[...text].reduce((n,c)=>n+(TITLE_ADVANCES[c] ?? 7),0);
-  const words=item.title.split(/\s+/);
-  let titleWidth=measure(item.title);
-  for(let i=1;i<words.length;i++)titleWidth=Math.min(titleWidth,Math.max(measure(words.slice(0,i).join(' ')),measure(words.slice(i).join(' '))));
-  return Math.max(84,Math.min(260,Math.ceil(titleWidth+(item.type==='series'?40:14))));
-}
 const ordinalYear=year=>year>0?year-1:year;
 export function midpointYear(start,end=start) {
   const middle=Math.floor((ordinalYear(start)+ordinalYear(end))/2);
@@ -135,23 +126,19 @@ export function makeTimeline(items,step=TIMELINE_COLUMN_WIDTH) {
   const layout={ticks};
   const candidates=dated.map(item=>{
     const middle=midpointYear(item.start,item.end ?? item.start),period=timelinePeriod(middle),tick=ticks.find(t=>t.id===period.id);
-    const width=Math.min(timelineLabelWidth(item),step===TIMELINE_MOBILE_COLUMN_WIDTH?step-4:Infinity),center=tick.x+tick.width/2;
-    return {item,key:item.id,periodId:period.id,periodLabel:period.label,middle,center,x:center-width/2,width};
+    const center=tick.x+step/2;
+    // Every tile occupies one column, with the same two-pixel inset on both sides.
+    return {item,key:item.id,periodId:period.id,periodLabel:period.label,middle,center,x:tick.x+2,width:step-4};
   }).sort((a,b)=>a.x-b.x||a.middle-b.middle||chronological(a.item,b.item));
-  // A wide first-column title must still fit without shifting its centre off-grid.
-  const padding=Math.max(0,-Math.min(0,...candidates.map(p=>p.x)));
-  for(const tick of ticks)tick.x+=padding;
-  const rowEnds=[];
-  let width=ticks.length*step+padding;
+  const columnRows=new Map();
+  let rowCount=0;
   for(const candidate of candidates) {
-    const x=candidate.x+padding,center=candidate.center+padding;
-    let row=rowEnds.findIndex(end=>end+6<=x);
-    if(row<0)row=rowEnds.length;
-    rowEnds[row]=x+candidate.width;
-    positions.push({...candidate,x,center,row,startX:timelineDateX(layout,candidate.item.start),endX:timelineDateX(layout,candidate.item.end ?? candidate.item.start,true)});
-    width=Math.max(width,x+candidate.width+4);
+    // Fill each column from row zero; the busiest column fixes the table height.
+    const row=columnRows.get(candidate.periodId)||0;
+    columnRows.set(candidate.periodId,row+1);rowCount=Math.max(rowCount,row+1);
+    positions.push({...candidate,row,startX:timelineDateX(layout,candidate.item.start),endX:timelineDateX(layout,candidate.item.end ?? candidate.item.start,true)});
   }
-  return {ticks,positions,width,step,rowCount:rowEnds.length};
+  return {ticks,positions,width:ticks.length*step,step,rowCount};
 }
 export function visibleTimeline(layout,left,viewportWidth) {
   const positions=layout.positions.filter(p=>p.x+p.width>left && p.x<left+viewportWidth);

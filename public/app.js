@@ -44,7 +44,7 @@ function renderTimeline(filtered){
   $('#first-year').textContent=timeline.ticks[0].label;$('#last-year').textContent=timeline.ticks.at(-1).label;
   $('#row-count-note').textContent=`${timeline.rowCount} fixed ${timeline.rowCount===1?'row':'rows'}`;
   const openingCentury=opening?timeline.ticks.find(t=>t.id==='century:16'):null;
-  const openingLeft=openingCentury?Math.min(openingCentury.x,...timeline.positions.filter(p=>p.periodId===openingCentury.id).map(p=>p.x)):0;
+  const openingLeft=openingCentury?.x||0;
   const left=sameItems?timeline.ticks.find(t=>t.id===previousPeriod)?.x||0:Math.max(0,openingLeft);
   viewport.scrollTo({left,top:0,behavior:'instant'});updateScroll();
 }

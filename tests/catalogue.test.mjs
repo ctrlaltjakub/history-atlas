@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, SERIES_COLOR, timelinePeriod, centuryForYear, formatCentury, timelineLabelWidth, hasTimelineDate, midpointYear, timelineDateX} from '../public/core.mjs';
+import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, SERIES_COLOR, timelinePeriod, centuryForYear, formatCentury, hasTimelineDate, midpointYear, timelineDateX} from '../public/core.mjs';
 
 const catalogue = JSON.parse(readFileSync(new URL('../public/data/catalogue.json', import.meta.url)));
 const base = JSON.parse(readFileSync(new URL('../data/base-episodes.json', import.meta.url)));
@@ -60,13 +60,14 @@ test('released series group every member once and leave true singles alone', () 
   assert.equal(found[0].matches.length,1);assert.equal(found[0].members.length,4);
 });
 
-test('tile centres snap to midpoint columns and readable labels never overlap in a row', () => {
+test('tiles fill equal grid cells in midpoint columns with top-filled fixed rows', () => {
   const items=filterCollection(makeCollection(episodes),{},'timeline');
   for(const step of [144,176,200]){
     const layout=makeTimeline(items,step);
     assert.equal(layout.positions.length,items.length);
     assert.equal(new Set(layout.positions.map(p=>p.item.id)).size,items.length);
-    assert.ok(layout.ticks.every(t=>t.width===step),'Period widths do not expand to fit extra stories');
+    assert.ok(layout.ticks.every((t,i)=>t.width===step&&t.x===i*step),'Columns have equal widths and align to the grid');
+    assert.equal(layout.width,layout.ticks.length*step);
     for(const p of layout.positions){
       const start=layout.ticks.find(t=>t.id===timelinePeriod(p.item.start).id);
       const end=layout.ticks.find(t=>t.id===timelinePeriod(p.item.end).id);
@@ -74,21 +75,22 @@ test('tile centres snap to midpoint columns and readable labels never overlap in
       assert.equal(p.x+p.width/2,middle.x+middle.width/2,p.item.title+' is centred on the grid');
       assert.ok(p.startX>=start.x&&p.startX<start.x+start.width,p.item.title);
       assert.ok(p.endX>end.x&&p.endX<=end.x+end.width+0.001,p.item.title);
-      assert.ok(p.width<=timelineLabelWidth(p.item),'Duration never stretches the title');
-      if(step===144)assert.ok(p.width<=step-4,'Phone titles fit within their column');
-      else assert.equal(p.width,timelineLabelWidth(p.item));
+      assert.equal(p.x,middle.x+2,'Every tile starts at the same inset within its column');
+      assert.equal(p.width,step-4,'Every tile fills exactly one column with equal gutters');
       assert.equal(p.startX,timelineDateX(layout,p.item.start));
       assert.equal(p.endX,timelineDateX(layout,p.item.end,true));
-      assert.ok(p.width>=84);
     }
     for(let row=0;row<layout.rowCount;row++){
       const cards=layout.positions.filter(p=>p.row===row).sort((a,b)=>a.x-b.x);
-      for(let i=1;i<cards.length;i++)assert.ok(cards[i].x>=cards[i-1].x+cards[i-1].width+6-0.001,'Readable labels do not collide');
+      for(let i=1;i<cards.length;i++)assert.ok(cards[i].x>=cards[i-1].x+cards[i-1].width+4,'Grid cells never overlap');
     }
-    const edges=layout.positions.flatMap(p=>[{x:p.x,delta:1},{x:p.x+p.width+6,delta:-1}]).sort((a,b)=>a.x-b.x||a.delta-b.delta);
-    let active=0,maximum=0;
-    for(const edge of edges){active+=edge.delta;maximum=Math.max(maximum,active);}
-    assert.equal(layout.rowCount,maximum,'Exactly the rows required at the busiest overlap');
+    let maximum=0;
+    for(const tick of layout.ticks){
+      const column=layout.positions.filter(p=>p.periodId===tick.id);
+      assert.deepEqual(column.map(p=>p.row),column.map((_,i)=>i),'Each column fills from the top without gaps');
+      maximum=Math.max(maximum,column.length);
+    }
+    assert.equal(layout.rowCount,maximum,'Exactly the rows required by the busiest column');
     for(let left=0;left<layout.width;left+=137){
       const visible=visibleTimeline(layout,left,350);
       assert.equal(visible.rowCount,maximum,'Scrolling never changes the fixed row count');
@@ -101,12 +103,13 @@ test('long narratives keep compact midpoint tiles and precise endpoints for the 
   const sample=[{id:'war',title:'Long war',start:1700,end:1721},{id:'point',title:'Short event',start:1710,end:1710}];
   const layout=makeTimeline(sample,176),war=layout.positions.find(p=>p.item.id==='war');
   assert.equal(war.startX,0);assert.equal(war.endX,176*2+176*2/10);
-  assert.equal(war.center,176+88);assert.equal(war.width,84);assert.equal(layout.rowCount,2);
+  assert.equal(war.center,176+88);assert.equal(war.width,172);assert.equal(layout.rowCount,2);
   assert.ok(!visibleTimeline(layout,176*2,176).positions.some(p=>p.item.id==='war'),'Only the tile footprint controls visibility');
   const longTitle={id:'wide',title:'A title long enough to require more than one whole column in this test',start:1605,end:1605};
   const single=makeTimeline([longTitle]),position=single.positions[0];
-  assert.ok(position.x>=0);assert.equal(position.center,single.ticks[0].x+single.step/2);
-  assert.ok(position.x+position.width<=single.width);
+  assert.equal(position.x,2);assert.equal(position.center,single.step/2);
+  assert.equal(position.width,war.width,'Long and short titles occupy the same cell size');
+  assert.equal(position.x+position.width,single.width-2);
 });
 
 test('range midpoints and hover coordinates cross BCE/CE without a year zero',()=>{
