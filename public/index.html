@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#6b2636">
   <meta name="description" content="Explore every public episode of The Rest Is History through time and across the world. A chronological podcast atlas with direct Pocket Casts and Spotify links.">
-  <meta property="og:title" content="The History Atlas · The Rest Is History">
+  <meta property="og:title" content="the rest is history:ORDERED">
   <meta property="og:description" content="Browse The Rest Is History in historical order. Filter episodes by era, region or topic.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://history.jakub.computer/images/show.jpg">
-  <title>The History Atlas · The Rest Is History</title>
+  <title>the rest is history:ORDERED</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/style.css">
   <script type="module" src="/app.js"></script>
@@ -17,12 +17,12 @@
 <body>
   <a class="skip-link" href="#collection">Skip to the episodes</a>
   <header class="site-header wrap">
-    <a class="wordmark" href="/" aria-label="The History Atlas home">
+    <a class="wordmark" href="/" aria-label="the rest is history:ORDERED home">
       <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M5 14h26L18 6 5 14Zm3 4v12m7-12v12m6-12v12m7-12v12M5 31h26" stroke="currentColor" stroke-width="1.4"/><path d="M3 34h30" stroke="currentColor" stroke-width="1.4"/></svg></span>
-      <span><span class="brand-title">The History Atlas</span><span class="brand-caption">A companion to The Rest Is History</span></span>
+      <span><span class="brand-title">the rest is history:<strong>ORDERED</strong></span><span class="brand-caption">Episodes in time and place</span></span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="#collection">Timeline</a><a href="#beyond">Other episodes</a><button type="button" data-about>About the atlas <span aria-hidden="true">↗</span></button>
+      <a href="#collection">Timeline</a><a href="#episode-map">Map</a><a href="#beyond">Other episodes</a><button type="button" data-about>About the atlas <span aria-hidden="true">↗</span></button>
     </nav>
   </header>
 
@@ -49,9 +49,32 @@
             <button class="arrow-button" id="later" aria-label="Scroll to later episodes">→</button>
           </div>
         </div>
-        <div class="timeline-footnote"><span><span class="tiny-diamond" aria-hidden="true">◇</span> Historical order · gaps compressed · series share a row.</span><button data-about>How it works <span aria-hidden="true">↗</span></button></div>
+        <div class="timeline-footnote"><span><span class="tiny-diamond" aria-hidden="true">◇</span> Historical order · compressed gaps · fixed rows.</span><button data-about>How it works <span aria-hidden="true">↗</span></button></div>
       </div>
       <div id="index-section" hidden><div id="index-grid" class="episode-grid"></div><button id="index-more" class="load-more" hidden>Show more episodes <span aria-hidden="true">↓</span></button></div>
+    </section>
+
+    <section class="map-section wrap" id="episode-map" aria-labelledby="map-title">
+      <div class="section-heading">
+        <div><h2 id="map-title">Episode map</h2><p class="section-description">Zoom in to separate clusters. Select an episode to open it.</p></div>
+        <p id="map-count" class="collection-note" role="status">Loading locations…</p>
+      </div>
+      <div class="map-shell">
+        <div class="map-toolbar"><span>Equal Earth <span aria-hidden="true">·</span> Approximate locations</span><button id="map-worldwide" hidden>Worldwide <span></span></button></div>
+        <div id="map-surface" class="map-surface" tabindex="0" role="region" aria-label="Interactive episode world map. Use plus and minus to zoom, arrow keys to pan, and Home to reset.">
+          <svg class="map-drawing" aria-hidden="true"><g class="map-world"></g><g class="map-country-labels"></g></svg>
+          <div class="map-pins"></div>
+          <div class="map-controls" aria-label="Map controls"><button id="map-zoom-in" aria-label="Zoom in on map" title="Zoom in">+</button><button id="map-zoom-out" aria-label="Zoom out on map" title="Zoom out">−</button><button id="map-reset" aria-label="Reset world map" title="Show the whole world">⌂</button><span id="map-zoom-level" aria-hidden="true">1×</span></div>
+          <div id="map-message" class="map-message">Loading map…</div>
+          <div id="map-tooltip" class="map-tooltip" hidden></div>
+        </div>
+        <div class="map-footer"><span>Drag to pan · pinch or +/− to zoom <span class="map-desktop-hint">· Ctrl + scroll to zoom</span></span><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth ↗</a></div>
+        <div id="map-selection" class="map-selection" hidden>
+          <div class="map-selection-heading"><div><h3 id="map-selection-title" tabindex="-1"></h3><p id="map-selection-note"></p></div><button id="map-selection-close" aria-label="Close map episode list">×</button></div>
+          <div id="map-episode-list" class="map-episode-list"></div>
+          <div id="map-list-pagination" class="map-list-pagination"><button id="map-list-previous">← Previous</button><span id="map-list-page" role="status"></span><button id="map-list-next">Next →</button></div>
+        </div>
+      </div>
     </section>
 
     <section class="beyond-section" id="beyond" aria-labelledby="beyond-title"><div class="wrap">
@@ -62,10 +85,10 @@
     </div></section>
 
   </main>
-  <footer class="site-footer wrap"><div><span class="footer-title">The History Atlas</span><p>An independent podcast index.</p></div><div><a href="https://therestishistory.com/" target="_blank" rel="noopener noreferrer">The official podcast ↗</a><button data-about>Sources & methodology</button><span id="updated-at">Catalogue from the public RSS feed</span></div></footer>
+  <footer class="site-footer wrap"><div><span class="footer-title">the rest is history:<strong>ORDERED</strong></span><p>An independent podcast index.</p></div><div><a href="https://therestishistory.com/" target="_blank" rel="noopener noreferrer">The official podcast ↗</a><button data-about>Sources & methodology</button><span id="updated-at">Catalogue from the public RSS feed</span></div></footer>
 
   <dialog id="episode-dialog" aria-labelledby="episode-title"><button class="dialog-close" aria-label="Close episode">×</button><div id="episode-content"></div></dialog>
-  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title"><button class="dialog-close" aria-label="Close about the atlas">×</button><div class="about-content"><p class="eyebrow">SOURCES & METHODOLOGY</p><h2 id="about-title">About this atlas</h2><p>This is an independent, unofficial companion to <strong>The Rest Is History</strong>, hosted by Tom Holland and Dominic Sandbrook and produced by Goalhanger.</p><h3>How the timeline works</h3><p>Episodes run from earlier to later by the <strong>beginning of the historical period they cover</strong>. Related episodes share a row. Series that overlap on the timeline occupy separate rows; rows are reused when space is available. Empty rows outside the visible dates are collapsed, keeping episodes aligned to the top. Dates and ranges are editorial approximations, not timestamps or claims that a whole episode concerns a single year. Open an episode for its period and placement note.</p><p>Gaps between dates are compressed; distance does not represent a fixed number of years. The era buttons select episodes by the beginning of their period. Open broad surveys to see their full date range.</p><p>The region filter uses the place most central to each episode. International subjects are tagged “Across the world”. Myths, questions and discussions without a meaningful historical date appear under “Other episodes”.</p><h3>The collection & listening links</h3><p id="about-coverage"></p><p>Pocket Casts buttons open the matching episode. Spotify opens the matching episode when verified, or an explicitly labelled search. Apple Podcasts opens the episode when an exact match is available; otherwise its button says “Find episode”. YouTube links are explicitly labelled searches. The original public audio is also playable here.</p><h3>Sources & credits</h3><ul><li><a href="https://feeds.megaphone.fm/GLT4787413333" target="_blank" rel="noopener noreferrer">Goalhanger’s public RSS feed ↗</a> — titles, descriptions, artwork, audio and release details.</li><li><a href="https://archive.therestishistory.com/" target="_blank" rel="noopener noreferrer">The official Rest Is History archive ↗</a> — additional catalogue references.</li><li><a href="https://trihexplorer.com/" target="_blank" rel="noopener noreferrer">TRIH Episode Explorer ↗</a> — community topic and region tags used as research clues, checked against episode subjects.</li><li>Pocket Casts’ public catalogue, Spotify’s catalogue and Apple’s public lookup — episode links.</li></ul><p class="fine-print">Podcast content and artwork belong to their respective owners. This site is not affiliated with or endorsed by Goalhanger. Historical placements are a listening guide and may simplify episodes that span places and periods. No accounts, tracking or cookies are used by the atlas. Playing audio and opening listening services connects to those providers.</p></div></dialog>
+  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title"><button class="dialog-close" aria-label="Close about the atlas">×</button><div class="about-content"><p class="eyebrow">SOURCES & METHODOLOGY</p><h2 id="about-title">About this atlas</h2><p>This is an independent, unofficial companion to <strong>The Rest Is History</strong>, hosted by Tom Holland and Dominic Sandbrook and produced by Goalhanger.</p><h3>How the timeline works</h3><p>Episodes run from earlier to later by the <strong>beginning of the historical period they cover</strong>. Related episodes share a row. Series that overlap on the timeline occupy separate rows; rows are reused when space is available. The full set of rows stays in place while you scroll. The table height is set by the maximum row count for the selected episodes. Dates and ranges are editorial approximations, not timestamps or claims that a whole episode concerns a single year. Open an episode for its period and placement note.</p><p>Gaps between dates are compressed; distance does not represent a fixed number of years. The era buttons select episodes by the beginning of their period. Open broad surveys to see their full date range.</p><p>The region filter uses the place most central to each episode. International subjects are tagged “Across the world”. Myths, questions and discussions without a meaningful historical date appear under “Other episodes”.</p><h3>How the map works</h3><p>The map uses the Equal Earth projection. Each episode has one approximate subject location, with a place and an explanation in its details. Broad surveys use a representative location; myths use their traditional setting. Discussions without a meaningful geographic anchor are in the Worldwide group. Nearby episodes cluster together. Zoom in to separate places, then select a cluster to browse episodes at the same location. Modern coastlines and borders are for orientation, not historical boundaries. The map follows the search, era and region filters above.</p><h3>The collection & listening links</h3><p id="about-coverage"></p><p>Pocket Casts buttons open the matching episode. Spotify opens the matching episode when verified, or an explicitly labelled search. Apple Podcasts opens the episode when an exact match is available; otherwise its button says “Find episode”. YouTube links are explicitly labelled searches. The original public audio is also playable here.</p><h3>Sources & credits</h3><ul><li><a href="https://feeds.megaphone.fm/GLT4787413333" target="_blank" rel="noopener noreferrer">Goalhanger’s public RSS feed ↗</a> — titles, descriptions, artwork, audio and release details.</li><li><a href="https://archive.therestishistory.com/" target="_blank" rel="noopener noreferrer">The official Rest Is History archive ↗</a> — additional catalogue references.</li><li><a href="https://trihexplorer.com/" target="_blank" rel="noopener noreferrer">TRIH Episode Explorer ↗</a> — community topic and region tags used as research clues, checked against episode subjects.</li><li>Pocket Casts’ public catalogue, Spotify’s catalogue and Apple’s public lookup — episode links.</li><li><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth ↗</a> — public-domain map geography, via World Atlas. Equal Earth projection and zoom controls use D3.</li></ul><p class="fine-print">Podcast content and artwork belong to their respective owners. This site is not affiliated with or endorsed by Goalhanger. Historical placements are a listening guide and may simplify episodes that span places and periods. No accounts, tracking or cookies are used by the atlas. Playing audio and opening listening services connects to those providers.</p></div></dialog>
   <div id="toast" role="status" class="toast" hidden></div>
   <noscript><div class="noscript">This interactive atlas needs JavaScript. You can still visit <a href="https://archive.therestishistory.com/">the official episode archive</a>.</div></noscript>
 </body>

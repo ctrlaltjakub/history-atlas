@@ -1,0 +1,1960 @@
+{
+  "244b75c0-3e9e-11ef-b109-53ec1714dde8": {
+    "coordinates": [
+      30.32,
+      59.94
+    ],
+    "label": "St Petersburg, Russia",
+    "note": "The Tsar's decisions during the July Crisis; the episode also follows events in Belgrade and other European capitals."
+  },
+  "08dd41ec-3ea3-11ef-a926-4b502a7939f2": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "Britain's cabinet and foreign policy during the July Crisis."
+  },
+  "d56902e2-4523-11ef-93b2-07163fd21443": {
+    "coordinates": [
+      16.37,
+      48.21
+    ],
+    "label": "Vienna, Austria",
+    "note": "The Austrian ultimatum to Serbia; the Franco-Russian summit in St Petersburg is also central to the episode."
+  },
+  "abafede4-3e0c-11ef-a664-ab1e2f10336f": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "Berlin, Germany",
+    "note": "Germany's backing for Austria-Hungary in July 1914."
+  },
+  "db1a39f6-3ddd-11ef-9153-b37127418dd2": {
+    "coordinates": [
+      16.37,
+      48.21
+    ],
+    "label": "Vienna, Austria",
+    "note": "A representative capital for the July Crisis; the discussion spans the Balkans and the European powers."
+  },
+  "ffedb928-3d0c-11ef-9633-ff2274a0c121": {
+    "coordinates": [
+      18.41,
+      43.86
+    ],
+    "label": "Sarajevo, Bosnia and Herzegovina",
+    "note": "The assassination of Franz Ferdinand and Sophie in Sarajevo."
+  },
+  "f482d41c-3c97-11ef-a35c-d77e7843e792": {
+    "coordinates": [
+      16.37,
+      48.21
+    ],
+    "label": "Vienna, Austria",
+    "note": "Franz Ferdinand's Habsburg court background and the events leading to his Sarajevo visit."
+  },
+  "d34f9a24-394e-11ef-b913-df1c28e9125e": {
+    "coordinates": [
+      20.46,
+      44.82
+    ],
+    "label": "Belgrade, Serbia",
+    "note": "Princip's involvement in the conspiracy and the Black Hand's Serbian network."
+  },
+  "abb9a078-3736-11ef-a103-5b0720497ff5": {
+    "coordinates": [
+      18.41,
+      43.86
+    ],
+    "label": "Sarajevo, Bosnia and Herzegovina",
+    "note": "Princip's early life and nationalist milieu, represented by his formative years in Sarajevo."
+  },
+  "f7628c7e-2f11-11ef-915b-47d256ff57ad": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative point for election campaigns across modern Britain."
+  },
+  "88469588-2e2b-11ef-8e7c-afeeeca1e50e": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative point for British parliamentary elections; incidents discussed took place around the country."
+  },
+  "c7a0360c-2963-11ef-8a52-8bbcf81e4dcd": {
+    "coordinates": [
+      34.84,
+      38.65
+    ],
+    "label": "Cappadocia, Anatolia",
+    "note": "The traditional origin associated with Saint George's early legend; later dragon stories and cults span several countries."
+  },
+  "20e10ec8-2c32-11ef-a9d8-7fcf499edddd": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Dragon traditions from several cultures and invented worlds have no single geographic setting."
+  },
+  "be329cfa-240d-11ef-bc7e-7f4551732c03": {
+    "coordinates": [
+      6.96,
+      50.94
+    ],
+    "label": "Cologne, Germany",
+    "note": "A representative location for Theophanu's itinerant Ottonian court: she endowed St Pantaleon and was buried there."
+  },
+  "6fa109e6-240d-11ef-8be8-0b269b20bff8": {
+    "coordinates": [
+      -0.14,
+      51.51
+    ],
+    "label": "Savile Row, London",
+    "note": "A representative centre of the British tailoring tradition discussed in the episode."
+  },
+  "4fbea500-1dcf-11ef-9077-abf60148f47d": {
+    "coordinates": [
+      22.75,
+      37.73
+    ],
+    "label": "Mycenae, Greece",
+    "note": "The legendary setting of Agamemnon and Clytemnestra, alongside Schliemann's archaeological investigations."
+  },
+  "1dda1fe2-1dcf-11ef-8af5-f3d78fbf51dd": {
+    "coordinates": [
+      26.24,
+      39.96
+    ],
+    "label": "Troy, Anatolia",
+    "note": "The traditional setting of Helen's Trojan story; the episode discusses mythology rather than an established biography."
+  },
+  "de93f13e-1908-11ef-b331-87a4d07faed4": {
+    "coordinates": [
+      -102.36,
+      43.14
+    ],
+    "label": "Wounded Knee, South Dakota",
+    "note": "The site of the 1890 massacre."
+  },
+  "997e8230-1908-11ef-8e54-2fa2b57c8909": {
+    "coordinates": [
+      -100.58,
+      46.09
+    ],
+    "label": "Standing Rock, Northern Plains",
+    "note": "Sitting Bull's return to the reservation and the spread of the Ghost Dance."
+  },
+  "24358e2e-1908-11ef-afec-5f3ed0488f1b": {
+    "coordinates": [
+      -103.47,
+      42.67
+    ],
+    "label": "Fort Robinson, Nebraska",
+    "note": "The aftermath of the Little Bighorn and Crazy Horse's death at Fort Robinson."
+  },
+  "d044d542-0e06-11ef-84be-db5182840b12": {
+    "coordinates": [
+      -107.43,
+      45.57
+    ],
+    "label": "Little Bighorn, Montana",
+    "note": "The battlefield and the final stages of Custer's defeat."
+  },
+  "3e1bf360-163c-11ef-b0e7-970acae362a9": {
+    "coordinates": [
+      -107.43,
+      45.57
+    ],
+    "label": "Little Bighorn, Montana",
+    "note": "The battle of 25 June 1876."
+  },
+  "3f55980a-0d2a-11ef-b71d-2b611308c700": {
+    "coordinates": [
+      -107.43,
+      45.57
+    ],
+    "label": "Little Bighorn region, Montana",
+    "note": "A representative point for the 1876 campaign and the army's approach to the Lakota and Cheyenne encampment."
+  },
+  "89f1cbf2-0c55-11ef-a8ea-0350eba44397": {
+    "coordinates": [
+      -103.75,
+      43.9
+    ],
+    "label": "Black Hills, Northern Plains",
+    "note": "The Black Hills and railway expansion into Lakota territory; the episode also covers the Yellowstone expedition."
+  },
+  "85db75ea-07d7-11ef-9454-bb8cb79cf1bf": {
+    "coordinates": [
+      -100.6,
+      46.1
+    ],
+    "label": "Northern Plains, Lakota country",
+    "note": "A broad regional anchor for Sitting Bull's upbringing and resistance to American expansion."
+  },
+  "6dcd8006-07d7-11ef-8ff5-b33ac7aac8cb": {
+    "coordinates": [
+      -106.5,
+      44.5
+    ],
+    "label": "Powder River country, Northern Plains",
+    "note": "A broad anchor for Crazy Horse, Red Cloud and the Lakota's resistance on the Great Plains."
+  },
+  "331ec726-07d7-11ef-b346-5f270c926112": {
+    "coordinates": [
+      -99.69,
+      35.62
+    ],
+    "label": "Washita River, Oklahoma",
+    "note": "The Washita campaign represents Custer's post-Civil War actions against the Cheyenne; Kansas and Texas also feature."
+  },
+  "cadccf14-07d6-11ef-9885-bfb7cb522bf8": {
+    "coordinates": [
+      -77.23,
+      39.83
+    ],
+    "label": "Gettysburg, Pennsylvania",
+    "note": "A representative battlefield for Custer's Civil War career, which ranged across the eastern United States."
+  },
+  "aee20522-0254-11ef-bb7a-2bc4cbf3ca74": {
+    "coordinates": [
+      16.37,
+      48.21
+    ],
+    "label": "Vienna, Austria",
+    "note": "A representative dynastic centre; the Habsburg story also spans Spain, Burgundy and the Netherlands."
+  },
+  "dbf5a7d0-fe35-11ee-b83c-cb50f4260b13": {
+    "coordinates": [
+      108.95,
+      34.27
+    ],
+    "label": "Xi'an region, China",
+    "note": "The Qin imperial heartland, near Xianyang and the First Emperor's mausoleum."
+  },
+  "d917d01e-f684-11ee-a073-eba5d4099191": {
+    "coordinates": [
+      21.43,
+      38.37
+    ],
+    "label": "Missolonghi, Greece",
+    "note": "Byron's final involvement in Greek independence and his death; Geneva and Italy also feature."
+  },
+  "338dd4cc-f684-11ee-a7b7-774f9f7c551e": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "Byron's celebrity, affairs and marriage in London society."
+  },
+  "db73a21c-f683-11ee-97c2-bf8dd04ac4ba": {
+    "coordinates": [
+      23.73,
+      37.98
+    ],
+    "label": "Athens, Greece",
+    "note": "A representative stop on Byron's eastern travels; the episode also follows him through Portugal, Albania and Constantinople."
+  },
+  "689b7044-f683-11ee-95b1-c30ae4edcc4d": {
+    "coordinates": [
+      -1.19,
+      53.08
+    ],
+    "label": "Newstead Abbey, England",
+    "note": "The Byron family estate represents the poet's upbringing and family history."
+  },
+  "d62b9942-f681-11ee-a334-5f73bf52a242": {
+    "coordinates": [
+      -74.01,
+      40.71
+    ],
+    "label": "New York City, United States",
+    "note": "The emergence of disco and its social setting in 1970s New York."
+  },
+  "092a65c6-f4de-11ee-a293-d79f158d3142": {
+    "coordinates": [
+      -95.37,
+      29.76
+    ],
+    "label": "Houston, Texas",
+    "note": "An Earth-based anchor for the Apollo programme and mission control; the episode's journeys extend to the Moon."
+  },
+  "8306db78-e78b-11ee-8c69-8b75cad0bc23": {
+    "coordinates": [
+      10.31,
+      50.97
+    ],
+    "label": "Wartburg, Germany",
+    "note": "Luther's refuge after Worms and the upheaval of the wider Reformation."
+  },
+  "4a7f0a64-e78b-11ee-8ea2-63b960d67e06": {
+    "coordinates": [
+      8.36,
+      49.63
+    ],
+    "label": "Worms, Germany",
+    "note": "Luther's confrontation with Charles V at the Diet of Worms."
+  },
+  "f890fe1a-e78a-11ee-8492-075b13b25481": {
+    "coordinates": [
+      12.65,
+      51.87
+    ],
+    "label": "Wittenberg, Germany",
+    "note": "Luther's increasingly radical writings and break with the Catholic Church."
+  },
+  "d627c3d6-e6ae-11ee-acff-17c707ca19ad": {
+    "coordinates": [
+      12.65,
+      51.87
+    ],
+    "label": "Wittenberg, Germany",
+    "note": "The development of Luther's teaching and the Ninety-Five Theses."
+  },
+  "1515e050-e60f-11ee-8203-572d209680ac": {
+    "coordinates": [
+      11.55,
+      51.53
+    ],
+    "label": "Eisleben, Germany",
+    "note": "Luther's Saxon upbringing, represented by his birthplace."
+  },
+  "5f9f6570-dc95-11ee-b571-6fafb799026c": {
+    "coordinates": [
+      -74.01,
+      40.71
+    ],
+    "label": "New York City, United States",
+    "note": "The survivors' arrival and American response; the aftermath and inquiries also extended to Britain."
+  },
+  "ef57dff4-dc94-11ee-b5af-9b6e25b68ace": {
+    "coordinates": [
+      -49.95,
+      41.73
+    ],
+    "label": "North Atlantic, Titanic sinking area",
+    "note": "An approximate position of the Titanic's sinking."
+  },
+  "ca49b1ba-dc94-11ee-8206-53a500ab6d78": {
+    "coordinates": [
+      -49.95,
+      41.73
+    ],
+    "label": "North Atlantic, Titanic sinking area",
+    "note": "An approximate position of the iceberg collision and sinking."
+  },
+  "89c3c842-dc94-11ee-9b20-27d574f26c2f": {
+    "coordinates": [
+      -1.4,
+      50.9
+    ],
+    "label": "Southampton, England",
+    "note": "The departure port anchors the stories of Titanic's passengers and their transatlantic voyage."
+  },
+  "1afb6820-dc94-11ee-865f-0381664506e2": {
+    "coordinates": [
+      -5.93,
+      54.6
+    ],
+    "label": "Belfast, Northern Ireland",
+    "note": "Titanic's construction and design at Harland and Wolff."
+  },
+  "c2f98f62-dc93-11ee-84ce-0be94f6402e7": {
+    "coordinates": [
+      -5.93,
+      54.6
+    ],
+    "label": "Belfast, Northern Ireland",
+    "note": "The building of Titanic; the transatlantic business story also includes New York and Liverpool."
+  },
+  "7340bd92-d7e3-11ee-8ac9-1b4a20576ab2": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A survey of monkeys and apes across many societies has no single geographic setting."
+  },
+  "ebdba3ba-d7bc-11ee-a76f-33acb36bb32a": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Mesoamerica, Mexico",
+    "note": "A representative anchor for cacao's Mesoamerican history and the Aztec encounter; the story later spreads worldwide."
+  },
+  "6347d3de-cc1d-11ee-b146-6fc74d0f25b8": {
+    "coordinates": [
+      15.55,
+      38.19
+    ],
+    "label": "Messina, Sicily",
+    "note": "The outbreak of the First Punic War, with fighting extending across Sicily and the western Mediterranean."
+  },
+  "1091daf4-cc1d-11ee-b84f-0f850e9d20ac": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome, Italy",
+    "note": "Rome's rise and its rivalry with Carthage."
+  },
+  "d52dcf36-cc1c-11ee-9576-2b961b812eb2": {
+    "coordinates": [
+      10.32,
+      36.85
+    ],
+    "label": "Carthage, Tunisia",
+    "note": "The city and its expansion as a Mediterranean power."
+  },
+  "44fd67b0-cc1b-11ee-a76b-1f473ed7eb9a": {
+    "coordinates": [
+      35.23,
+      33.27
+    ],
+    "label": "Tyre, Phoenicia",
+    "note": "A representative Phoenician homeland for the seafaring society that founded Carthage."
+  },
+  "e5f39eca-c1ab-11ee-b07f-b3673c7063d2": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "The 1974 election and Thatcher's rise within the Conservative Party."
+  },
+  "bbbcbc7c-c1ab-11ee-be4a-1ffb47b3b17f": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "Harold Wilson's government and rumours of a coup during Britain's 1974 crisis."
+  },
+  "7d6c230e-c1ab-11ee-a4a2-d36d6d9ebb45": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative centre for the February 1974 British election."
+  },
+  "45ca8846-c1ab-11ee-a826-6b2abd358b04": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "National politics during Britain's 1974 emergency; strikes and other events spanned the country."
+  },
+  "f26ae1f8-bc43-11ee-8e46-17076e75f220": {
+    "coordinates": [
+      1.08,
+      51.28
+    ],
+    "label": "Canterbury, England",
+    "note": "The pilgrimage destination of Chaucer's tales; his life and the narrative also involve London and other places."
+  },
+  "8c04792e-bc43-11ee-a68c-6feda6df087e": {
+    "coordinates": [
+      -1.31,
+      53.69
+    ],
+    "label": "Pontefract, England",
+    "note": "Richard II's final imprisonment and death; the episode covers his wider reign and deposition."
+  },
+  "b8076d84-bc42-11ee-b756-b337b9686287": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "The rebels' entry into London and their confrontation with Richard II."
+  },
+  "58ba519c-bc43-11ee-9835-db03853888d6": {
+    "coordinates": [
+      0.3,
+      51.62
+    ],
+    "label": "Essex, England",
+    "note": "A representative anchor for the revolt's outbreak in Essex and Kent before its advance on London."
+  },
+  "37e8e1d0-bab9-11ee-8e9b-8368a68c24ca": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A comparison of imagined science-fiction worlds and ancient history has no single real-world setting."
+  },
+  "c50615ee-b5f8-11ee-9a54-47e05876843a": {
+    "coordinates": [
+      2.37,
+      48.85
+    ],
+    "label": "Paris, France",
+    "note": "The Bastille anchors the prisoner's final confinement; the mystery spans several French prisons."
+  },
+  "017adc58-b559-11ee-99f8-5b28ee5ab07c": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "Berlin, Germany",
+    "note": "A representative point for the November 1938 pogrom across Nazi Germany and annexed territories."
+  },
+  "8c06a55c-b403-11ee-9317-e72a74ba0bd5": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "Berlin, Germany",
+    "note": "Nazi persecution of Jewish people throughout Germany, represented by the regime's capital."
+  },
+  "245ab7e2-b320-11ee-abf3-c7ea58eb1802": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "Berlin, Germany",
+    "note": "Nazi racial policies and ideology, represented by the regime's capital."
+  },
+  "a2348142-a97b-11ee-85ee-c787ddf68c8a": {
+    "coordinates": [
+      16.37,
+      48.21
+    ],
+    "label": "Vienna, Austria",
+    "note": "The Anschluss and Hitler's arrival in Vienna in 1938."
+  },
+  "eb06bce6-a97b-11ee-8b9e-3377243e2b0c": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "Berlin, Germany",
+    "note": "The Nazi government's rearmament and foreign policy before the war."
+  },
+  "d0214900-a66a-11ee-b4a0-9b10a9c74f50": {
+    "coordinates": [
+      11.08,
+      49.45
+    ],
+    "label": "Nuremberg, Germany",
+    "note": "The Nazi party rallies and propaganda staged at Nuremberg."
+  },
+  "5175d774-a66a-11ee-bf7f-b315e6eb6a64": {
+    "coordinates": [
+      11.73,
+      47.71
+    ],
+    "label": "Bad Wiessee, Germany",
+    "note": "Röhm's arrest during the purge; killings also took place in Berlin and elsewhere."
+  },
+  "0b2e9e88-9b6e-11ee-8faa-0bdd0306ae30": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome, Italy",
+    "note": "The setting of the medieval Pope Joan legend; her papacy is not treated as an established historical event."
+  },
+  "f204ec30-a29f-11ee-85c1-07c6dda834cb": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome, Italy",
+    "note": "The Roman religious setting anchors the discussion of Christmas, Saturnalia and Sol Invictus."
+  },
+  "b675a898-8397-11ee-a063-a75f738b108e": {
+    "coordinates": [
+      0.37,
+      51.46
+    ],
+    "label": "Tilbury, England",
+    "note": "The Windrush's arrival in 1948; the episode also covers its Caribbean departure and Black British communities."
+  },
+  "47c9109c-98ff-11ee-ac36-a3f3cfd8d47b": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "The Tichborne claimant's trials; the wider story also involves Australia and the Atlantic."
+  },
+  "2fa27fce-9384-11ee-bacc-afa2fdf9b1cc": {
+    "coordinates": [
+      14.76,
+      40.68
+    ],
+    "label": "Salerno, Italy",
+    "note": "A representative starting point for the Allied campaign in mainland Italy in 1943."
+  },
+  "66565d3a-8770-11ee-a697-33414c53b472": {
+    "coordinates": [
+      -96.8,
+      32.78
+    ],
+    "label": "Dallas, Texas",
+    "note": "The investigation and interpretation of President Kennedy's assassination."
+  },
+  "f2a6efe8-87c0-11ee-bc87-834fef123192": {
+    "coordinates": [
+      -96.8,
+      32.78
+    ],
+    "label": "Dallas, Texas",
+    "note": "The assassination and the conspiracy theories that followed."
+  },
+  "6a8566ac-89e7-11ee-9ff3-db68b1c63b61": {
+    "coordinates": [
+      -96.8,
+      32.78
+    ],
+    "label": "Dallas, Texas",
+    "note": "Jack Ruby's killing of Lee Harvey Oswald at Dallas police headquarters."
+  },
+  "b7678588-87bf-11ee-bfb2-73426338d90f": {
+    "coordinates": [
+      -96.8,
+      32.78
+    ],
+    "label": "Dallas, Texas",
+    "note": "The search for Kennedy's assassin on 22 November 1963."
+  },
+  "260db52c-8395-11ee-87fb-cf4a48be2ff7": {
+    "coordinates": [
+      -96.81,
+      32.78
+    ],
+    "label": "Dealey Plaza, Dallas",
+    "note": "The assassination of President John F. Kennedy."
+  },
+  "ae22f75a-830f-11ee-815f-4be001c149a7": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "Washington, DC",
+    "note": "Kennedy's presidency and Cold War policies; Cuba and other international crises feature extensively."
+  },
+  "761018a8-830e-11ee-a13e-5bb031c065b5": {
+    "coordinates": [
+      -71.06,
+      42.36
+    ],
+    "label": "Boston, Massachusetts",
+    "note": "A representative anchor for the Kennedy family's background and Jack Kennedy's early political career."
+  },
+  "bbfaae94-7a41-11ee-897e-476549f76756": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Tenochtitlan, Mexico",
+    "note": "The aftermath of the city's fall; Cortés and Cuauhtemoc's later story extends into southern Mexico and Honduras."
+  },
+  "7e553172-7a41-11ee-b598-8fb3cbb1e7af": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Tenochtitlan, Mexico",
+    "note": "The siege and fall of the Mexica capital in 1521, on the site of today's Mexico City."
+  },
+  "35ed7638-7a41-11ee-95ba-2f8d51cfffb2": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Tenochtitlan, Mexico",
+    "note": "The Spanish flight from the city on the Night of Tears in 1520."
+  },
+  "be73aec4-7a40-11ee-ab43-bfdfda7cd27e": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Tenochtitlan, Mexico",
+    "note": "The Toxcatl massacre and the crisis in the Aztec capital; Cortés's coastal expedition is also covered."
+  },
+  "6bdbe4ba-7a40-11ee-8a36-ef60f58adccb": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Tenochtitlan, Mexico",
+    "note": "The Spaniards' stay in the city and Montezuma's captivity."
+  },
+  "2a7b012c-7a40-11ee-8fe3-5b6e819fdf9c": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Tenochtitlan, Mexico",
+    "note": "The destination of Cortés and Malinche's journey into the Valley of Mexico."
+  },
+  "913cbb0e-7a3f-11ee-8dca-bb15b1176a96": {
+    "coordinates": [
+      -92.64,
+      18.35
+    ],
+    "label": "Tabasco, Mexico",
+    "note": "The coastal encounters in which Malinche became Cortés's interpreter; the expedition then travelled along the coast."
+  },
+  "cb5341e2-7a3e-11ee-a6eb-2799f1df2dde": {
+    "coordinates": [
+      -75.82,
+      20.02
+    ],
+    "label": "Santiago de Cuba, Cuba",
+    "note": "A representative base for Cortés's Caribbean career and preparations for the Mexican expedition."
+  },
+  "70aed4fe-78c2-11ee-8fa8-377b73760214": {
+    "coordinates": [
+      5.93,
+      43.12
+    ],
+    "label": "Toulon, France",
+    "note": "Napoleon's early military breakthrough at Toulon; the episode also follows his rise in revolutionary Paris."
+  },
+  "87e88892-74c9-11ee-b6c1-af573a86e664": {
+    "coordinates": [
+      8.74,
+      41.92
+    ],
+    "label": "Ajaccio, Corsica",
+    "note": "Napoleon's Corsican upbringing and revolutionary beginnings; his schooling also took him to mainland France."
+  },
+  "94852b16-734b-11ee-a78c-2fb3b3d84f38": {
+    "coordinates": [
+      -149.56,
+      -17.54
+    ],
+    "label": "Tahiti, Pacific Ocean",
+    "note": "A representative stop on Cook's Pacific voyage, which also reached New Zealand and Australia."
+  },
+  "f19bfe14-6ea1-11ee-bcb1-bbe33d61ece6": {
+    "coordinates": [
+      -0.62,
+      54.49
+    ],
+    "label": "Whitby, England",
+    "note": "A representative location for Cook's early maritime career; his mapping work also took him to Newfoundland."
+  },
+  "c4da9278-6dca-11ee-803e-07765794e974": {
+    "coordinates": [
+      44.37,
+      33.32
+    ],
+    "label": "Baghdad, Iraq",
+    "note": "Abbasid Baghdad and its association with the Arabian Nights; the tales are not treated as factual events."
+  },
+  "bcfb2ce4-6ba8-11ee-b863-d71136a001dd": {
+    "coordinates": [
+      44.37,
+      33.32
+    ],
+    "label": "Baghdad, Iraq",
+    "note": "Harun al-Rashid's court and the city's golden age."
+  },
+  "295b19a6-6854-11ee-9504-4b082f11f400": {
+    "coordinates": [
+      44.37,
+      33.32
+    ],
+    "label": "Baghdad, Iraq",
+    "note": "Al-Mansur's foundation of the new Abbasid capital."
+  },
+  "dfd2eb98-6627-11ee-b47b-1b7e876b7b3c": {
+    "coordinates": [
+      36.29,
+      33.51
+    ],
+    "label": "Damascus, Syria",
+    "note": "The Umayyad capital represents the empire overthrown by the Abbasids; the revolution spanned a much wider area."
+  },
+  "368f98fe-5d3c-11ee-a4e1-abe6add6a6eb": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "Berlin, Germany",
+    "note": "A representative location for the Mitfords' relationships with the Nazi leadership; London and Munich also feature."
+  },
+  "c32c424a-5d3b-11ee-a2dd-731be6c1abb7": {
+    "coordinates": [
+      -0.06,
+      51.51
+    ],
+    "label": "Cable Street, London",
+    "note": "The confrontation between fascists and anti-fascist demonstrators in London's East End."
+  },
+  "f5ecc76e-5d3a-11ee-85ee-1f725c352abf": {
+    "coordinates": [
+      -0.21,
+      51.5
+    ],
+    "label": "Olympia, London",
+    "note": "The 1934 rally represents Mosley's rise and the British Union of Fascists."
+  },
+  "1b9e2f5a-5b2b-11ee-bc73-03c0947a2f05": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative centre for the origins of British fascist organisations."
+  },
+  "0f9b3c20-580b-11ee-8b5a-6350a2e39d81": {
+    "coordinates": [
+      -70.67,
+      -33.45
+    ],
+    "label": "Santiago, Chile",
+    "note": "Pinochet's coup, the attack on La Moneda and its aftermath."
+  },
+  "bf7a8234-57d6-11ee-910d-eb2dad8d45b5": {
+    "coordinates": [
+      -70.67,
+      -33.45
+    ],
+    "label": "Santiago, Chile",
+    "note": "Allende's government and attempts to undermine it before the coup."
+  },
+  "1fccf254-55a0-11ee-9c90-53311039c015": {
+    "coordinates": [
+      12.49,
+      41.89
+    ],
+    "label": "Colosseum, Rome",
+    "note": "Rome's amphitheatre, its construction and the spectacles staged within it."
+  },
+  "c1c7a744-5018-11ee-b3d6-87ab40d626e1": {
+    "coordinates": [
+      -1.5,
+      51.5
+    ],
+    "label": "Southern England",
+    "note": "A broad anchor for the English public-school tradition; the discussion spans several schools."
+  },
+  "3879a3c0-5018-11ee-bac7-8f9e4841ee00": {
+    "coordinates": [
+      -1.5,
+      51.5
+    ],
+    "label": "Southern England",
+    "note": "The real British school traditions behind Harry Potter; this does not assign a real location to Hogwarts."
+  },
+  "300c5cdc-4cd5-11ee-9c2f-2fd7ba8cbbe1": {
+    "coordinates": [
+      116.41,
+      39.9
+    ],
+    "label": "Beijing, China",
+    "note": "Deng Xiaoping's national leadership and reforms, represented by China's political capital."
+  },
+  "7a18d39e-48e0-11ee-a6b3-3fae2f11f140": {
+    "coordinates": [
+      2.35,
+      48.85
+    ],
+    "label": "Paris, France",
+    "note": "A representative centre for de Sade's imprisonment and revolutionary-era life; the biography also ranges beyond Paris."
+  },
+  "21b45546-4752-11ee-a897-2fa9790f950b": {
+    "coordinates": [
+      -0.14,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "The fashion and youth culture of Swinging London."
+  },
+  "f7b61202-44f9-11ee-8586-dfc5fd9824e6": {
+    "coordinates": [
+      -0.14,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "A representative centre of Britain's postwar fashion and youth culture."
+  },
+  "4980a77c-41d6-11ee-8fb0-377b7b3a169c": {
+    "coordinates": [
+      78.04,
+      27.17
+    ],
+    "label": "Taj Mahal, Agra",
+    "note": "The Mughal mausoleum and the imperial story behind it."
+  },
+  "2442a58a-3fa8-11ee-a70d-6febee05c4ec": {
+    "coordinates": [
+      29.91,
+      31.2
+    ],
+    "label": "Alexandria, Egypt",
+    "note": "The ancient library and the city in which it flourished; the precise ancient building site is uncertain."
+  },
+  "153dbff0-3c58-11ee-89ae-230c87feb0f3": {
+    "coordinates": [
+      -74.01,
+      40.71
+    ],
+    "label": "New York City, United States",
+    "note": "The city's fiscal crisis, crime, blackout and unrest in the 1970s."
+  },
+  "0570cf92-385f-11ee-bf13-bb3fd9a67b8b": {
+    "coordinates": [
+      -77.05,
+      38.89
+    ],
+    "label": "Lincoln Memorial, Washington, DC",
+    "note": "Martin Luther King's speech at the 1963 March on Washington."
+  },
+  "4c02a1b0-36d4-11ee-99be-2f0cdea5e221": {
+    "coordinates": [
+      15.0,
+      61.0
+    ],
+    "label": "Scandinavia",
+    "note": "A broad regional anchor for Viking ritual and belief; examples come from across the Norse world."
+  },
+  "2af8f0bc-32df-11ee-a6f8-0fdc527f4731": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A playful comparison of historical personalities from different places has no single geographic setting."
+  },
+  "d549e82a-3166-11ee-8e79-f7d07365746a": {
+    "coordinates": [
+      11.33,
+      43.32
+    ],
+    "label": "Siena, Italy",
+    "note": "Catherine of Siena's life and religious influence; her political activity also extended to Avignon and Rome."
+  },
+  "f24f7ca8-2ed4-11ee-a426-936fef7cf591": {
+    "coordinates": [
+      14.49,
+      40.75
+    ],
+    "label": "Pompeii, Italy",
+    "note": "The destruction of Pompeii and neighbouring communities in the eruption of Vesuvius."
+  },
+  "2f465baa-2be6-11ee-8255-7f60fd330075": {
+    "coordinates": [
+      2.35,
+      48.85
+    ],
+    "label": "Paris, France",
+    "note": "De Gaulle and the political crisis during the May 1968 protests."
+  },
+  "8d9e7490-2929-11ee-a578-c377727a80e1": {
+    "coordinates": [
+      2.34,
+      48.85
+    ],
+    "label": "Paris, France",
+    "note": "The student revolt and occupation of Parisian universities in May 1968."
+  },
+  "25d47922-2659-11ee-bc86-23235f3baaff": {
+    "coordinates": [
+      4.9,
+      52.37
+    ],
+    "label": "Amsterdam, Netherlands",
+    "note": "The city's canals, monarchy, synagogue and later social history."
+  },
+  "ba533632-24cf-11ee-bc71-7ba075e7572b": {
+    "coordinates": [
+      4.9,
+      52.37
+    ],
+    "label": "Amsterdam, Netherlands",
+    "note": "Amsterdam's religious, commercial and urban history."
+  },
+  "64a80b29d5d98f0011442874": {
+    "coordinates": [
+      -76.51,
+      37.24
+    ],
+    "label": "Yorktown, Virginia",
+    "note": "Cornwallis's surrender anchors the conclusion of the American Revolutionary War and its aftermath."
+  },
+  "64a80849a1be3e00114c5dc4": {
+    "coordinates": [
+      -75.16,
+      39.95
+    ],
+    "label": "Philadelphia, Pennsylvania",
+    "note": "The Declaration of Independence and formation of the United States; New York and the war also feature."
+  },
+  "64a53520ca46640010d45fa6": {
+    "coordinates": [
+      -71.05,
+      42.35
+    ],
+    "label": "Boston, Massachusetts",
+    "note": "The Boston Tea Party and the escalating colonial dispute with Britain."
+  },
+  "64a1d563f23f0b001160b0f1": {
+    "coordinates": [
+      -71.06,
+      42.36
+    ],
+    "label": "Boston, Massachusetts",
+    "note": "A representative centre of the unrest leading to the American Revolution; the story spans the Atlantic colonies and Britain."
+  },
+  "6498a93de13a7f0012e471e1": {
+    "coordinates": [
+      35.23,
+      31.78
+    ],
+    "label": "Jerusalem",
+    "note": "The traditional Last Supper association anchors the Grail story; later medieval European legends are not established events."
+  },
+  "6498a72afcd83100112090ce": {
+    "coordinates": [
+      35.23,
+      31.78
+    ],
+    "label": "Jerusalem",
+    "note": "The traditional Temple setting of the Ark of the Covenant; its origins and fate are subjects of religious tradition and debate."
+  },
+  "64944458a82eee00116dc219": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "Washington, DC",
+    "note": "The 1954 security hearing and American political reaction to Oppenheimer."
+  },
+  "6492e387895f9d00117a5252": {
+    "coordinates": [
+      -106.31,
+      35.88
+    ],
+    "label": "Los Alamos, New Mexico",
+    "note": "Oppenheimer's laboratory and the Manhattan Project; the first bomb test took place farther south at Trinity."
+  },
+  "6489e6e49bdbb9001158919c": {
+    "coordinates": [
+      -0.97,
+      51.46
+    ],
+    "label": "Reading, England",
+    "note": "Wilde's imprisonment at Reading Gaol anchors the episode; his trials took place in London and his later exile abroad."
+  },
+  "6489e62a9bdbb900115879c9": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "Wilde's literary success, relationship with Douglas and libel proceedings."
+  },
+  "6481ed02a9ca950011c4c2c8": {
+    "coordinates": [
+      30.87,
+      27.8
+    ],
+    "label": "Antinoopolis region, Egypt",
+    "note": "An approximate Nile setting for Antinous's death and the city Hadrian founded in his memory."
+  },
+  "647cfd4d36fc35001122dd13": {
+    "coordinates": [
+      -6.26,
+      53.35
+    ],
+    "label": "Dublin, Ireland",
+    "note": "The General Post Office and the 1916 Easter Rising."
+  },
+  "647cf4d23863bd0011257cab": {
+    "coordinates": [
+      -5.93,
+      54.6
+    ],
+    "label": "Belfast, Ireland",
+    "note": "Ulster's resistance to Home Rule, represented by Belfast; the crisis also involved London and the rest of Ireland."
+  },
+  "64782f155fac2500113499f2": {
+    "coordinates": [
+      -7.8,
+      53.4
+    ],
+    "label": "Ireland",
+    "note": "A broad island-level anchor for the Union, famine and Home Rule movement."
+  },
+  "6473701e087bf40011b9ef0f": {
+    "coordinates": [
+      -7.8,
+      53.4
+    ],
+    "label": "Ireland",
+    "note": "A broad island-level anchor for the history of conquest, settlement and Anglo-Irish conflict."
+  },
+  "646e3e691740730011dbf21b": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative early centre of organised Freemasonry; the episode traces a society that spread internationally."
+  },
+  "646a7152edf4b50011266773": {
+    "coordinates": [
+      23.73,
+      37.98
+    ],
+    "label": "Athens, Greece",
+    "note": "Athenian democratic institutions and society."
+  },
+  "6465052bf4455c0011136674": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "The Commonwealth government under Cromwell; the episode also discusses life across Britain and Ireland."
+  },
+  "64614ccd4f68050011a1664e": {
+    "coordinates": [
+      24.0,
+      -25.0
+    ],
+    "label": "Southern Africa, literary setting",
+    "note": "A broad regional anchor for Haggard's adventure novel; the mines and Kukuanaland are fictional places."
+  },
+  "645c0575a28eb00011217e47": {
+    "coordinates": [
+      -72.59,
+      42.1
+    ],
+    "label": "Springfield, Massachusetts",
+    "note": "The New England witchcraft cases, with particular emphasis on Springfield."
+  },
+  "64582e8f1096880011786281": {
+    "coordinates": [
+      27.43,
+      37.03
+    ],
+    "label": "Halicarnassus, Anatolia",
+    "note": "Herodotus's home city, now Bodrum, anchors a life and historical work that ranged across the ancient world."
+  },
+  "64554befd401890011b7c915": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster Abbey, London",
+    "note": "A representative venue for the modern British coronations discussed."
+  },
+  "6453e7d37f1afb0011fb311e": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "A representative centre of English and British coronation ceremonies and their political conflicts."
+  },
+  "6452b6e19dcdc1001174cf6d": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster Abbey, London",
+    "note": "The British coronation ceremony anchors a discussion whose religious and imperial roots span several ancient societies."
+  },
+  "644ed786f7ec390011ae5b44": {
+    "coordinates": [
+      2.35,
+      48.85
+    ],
+    "label": "Paris, France",
+    "note": "One major centre of the 1848 revolutions; the episode also covers Vienna, Palermo and other European cities."
+  },
+  "6442c36b7301040011d79e71": {
+    "coordinates": [
+      106.7,
+      10.78
+    ],
+    "label": "Saigon, Vietnam",
+    "note": "The fall of Saigon and the final evacuation from the US embassy."
+  },
+  "6442c14d425b310011725061": {
+    "coordinates": [
+      106.7,
+      10.78
+    ],
+    "label": "Saigon, Vietnam",
+    "note": "The communist advance and the final collapse of South Vietnam in 1975."
+  },
+  "644022bba189ca0011eb3f53": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A collection of dogs' stories across several countries and periods has no single setting."
+  },
+  "643c5ceb334ade00118900c6": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "East Berlin, Germany",
+    "note": "A representative anchor for everyday life and politics across the German Democratic Republic."
+  },
+  "642708cbde6a3f00119e65c1": {
+    "coordinates": [
+      -0.58,
+      44.84
+    ],
+    "label": "Bordeaux, France",
+    "note": "The Black Prince's Aquitanian power base and the later struggle over his territories."
+  },
+  "64270783de6a3f00119e1812": {
+    "coordinates": [
+      0.34,
+      46.58
+    ],
+    "label": "Poitiers, France",
+    "note": "The 1356 battle and the Black Prince's campaigns."
+  },
+  "6426f8a31ea7060011bb863f": {
+    "coordinates": [
+      1.88,
+      50.25
+    ],
+    "label": "Crécy, France",
+    "note": "The battle of Crécy; the earlier naval battle of Sluys is also discussed."
+  },
+  "6426f746a5f38c0011eea27a": {
+    "coordinates": [
+      2.35,
+      48.85
+    ],
+    "label": "Paris, France",
+    "note": "A representative political centre for the Anglo-French dynastic dispute at the beginning of the Hundred Years' War."
+  },
+  "64242c9a4fcc90001171a6e9": {
+    "coordinates": [
+      1.99,
+      7.18
+    ],
+    "label": "Abomey, Dahomey",
+    "note": "The Dahomey warriors provide one anchor for this wider survey, which also includes queens and commanders in Angola and Ghana."
+  },
+  "641dc82bcd1d610011fcd297": {
+    "coordinates": [
+      -59.61,
+      13.1
+    ],
+    "label": "Barbados",
+    "note": "Benjamin Lay's confrontation with plantation slavery in Barbados; his later activism also took place in Pennsylvania."
+  },
+  "6414a5c4d7071d00114acbdf": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Later claims about Atlantis range across the world; the fictional island has no established real location."
+  },
+  "641444e37982d00011be0b8f": {
+    "coordinates": [
+      23.73,
+      37.98
+    ],
+    "label": "Athens, Greece",
+    "note": "Plato's intellectual setting anchors the origins of the Atlantis legend; this is not a proposed location for Atlantis."
+  },
+  "641079e279a7fc0011fdd955": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A history of climate and fears of catastrophe across different societies has no single geographic setting."
+  },
+  "640b53e4f0fc0e0011cf3047": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "Washington, DC",
+    "note": "Reagan's presidency and foreign policy; Iran, Nicaragua and the wider Cold War also feature."
+  },
+  "64089bde72ee7900114203af": {
+    "coordinates": [
+      -121.49,
+      38.58
+    ],
+    "label": "Sacramento, California",
+    "note": "Reagan's governorship anchors his transition from Hollywood to national politics."
+  },
+  "6404e51ac5ea8c001181a5ef": {
+    "coordinates": [
+      -89.48,
+      41.84
+    ],
+    "label": "Dixon, Illinois",
+    "note": "Reagan's childhood home represents his early life; his broadcasting and acting career later took him elsewhere."
+  },
+  "63f3abab1a630700112d3c77": {
+    "coordinates": [
+      -70.7,
+      19.0
+    ],
+    "label": "Hispaniola, Caribbean",
+    "note": "A representative island for the colonial consequences and contested legacy of Columbus's voyages."
+  },
+  "63f3aa7e89ef5c0011b493bf": {
+    "coordinates": [
+      -70.7,
+      19.0
+    ],
+    "label": "Hispaniola, Caribbean",
+    "note": "Columbus's colony and violence against Indigenous communities on his later voyages."
+  },
+  "63f3a9771a630700112ccb59": {
+    "coordinates": [
+      -70.7,
+      19.0
+    ],
+    "label": "Hispaniola, Caribbean",
+    "note": "A representative stop on Columbus's first Atlantic voyage, which also reached the Bahamas and Cuba."
+  },
+  "63efc712743d6200118863e4": {
+    "coordinates": [
+      8.94,
+      44.41
+    ],
+    "label": "Genoa, Italy",
+    "note": "Columbus's birthplace anchors his early life; his preparations for the Atlantic crossing later involved Portugal and Spain."
+  },
+  "63e9232f994354001107010f": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome, Italy",
+    "note": "The political aftermath of Caesar's assassination and the civil wars that ended the Republic."
+  },
+  "63e9210ba8620900105b8e1c": {
+    "coordinates": [
+      12.47,
+      41.9
+    ],
+    "label": "Rome, Italy",
+    "note": "Caesar's assassination at the Theatre of Pompey and the events leading to it."
+  },
+  "63dd4b1fd9b3af001084d0b5": {
+    "coordinates": [
+      3.22,
+      43.34
+    ],
+    "label": "Béziers, France",
+    "note": "A representative site of the Albigensian Crusade, which devastated much of Languedoc."
+  },
+  "63dd62b950f7d30010733488": {
+    "coordinates": [
+      2.35,
+      43.21
+    ],
+    "label": "Languedoc, France",
+    "note": "A regional anchor near Carcassonne for the Cathars and the campaign against them."
+  },
+  "63dd5e2b90ca6d0011d895b7": {
+    "coordinates": [
+      2.35,
+      48.85
+    ],
+    "label": "Paris, France",
+    "note": "The French documentary claims and conspiracy stories behind the Da Vinci Code; the episode ranges beyond Paris."
+  },
+  "63dac1fd31e79a0011d6b3b8": {
+    "coordinates": [
+      -1.5,
+      52.0
+    ],
+    "label": "England",
+    "note": "A broad regional anchor for domestic service in Edwardian Britain."
+  },
+  "63d54ac3c552d90011809292": {
+    "coordinates": [
+      32.64,
+      25.7
+    ],
+    "label": "Thebes, Egypt",
+    "note": "Hatshepsut's royal and religious centre, including her temple at Deir el-Bahri near modern Luxor."
+  },
+  "63c3f6b12c4234001171c24b": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "Berlin, Germany",
+    "note": "Hitler's consolidation of power after becoming chancellor."
+  },
+  "63c1a635b7b4a200112aa36d": {
+    "coordinates": [
+      13.41,
+      52.52
+    ],
+    "label": "Berlin, Germany",
+    "note": "The political manoeuvring that brought Hitler to the chancellorship."
+  },
+  "63c1a02d2c423400110aeb08": {
+    "coordinates": [
+      11.58,
+      48.14
+    ],
+    "label": "Munich, Germany",
+    "note": "The Beer Hall Putsch, Hitler's trial and the early Nazi movement in Bavaria."
+  },
+  "63c19dbd65ae3d0011250e87": {
+    "coordinates": [
+      11.58,
+      48.14
+    ],
+    "label": "Munich, Germany",
+    "note": "The Nazi movement's early centre; the episode also traces earlier influences in Vienna and wartime Germany."
+  },
+  "63b81ee6cddc410011e2e003": {
+    "coordinates": [
+      -0.08,
+      51.51
+    ],
+    "label": "Tower of London, England",
+    "note": "Jane Grey's imprisonment, trial and execution after her brief reign."
+  },
+  "63b81dfea8a1ca0010cd0a26": {
+    "coordinates": [
+      -0.08,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "The Tudor succession crisis and Jane Grey's accession."
+  },
+  "63a5e19579bb360011cf0c04": {
+    "coordinates": [
+      19.2,
+      50.03
+    ],
+    "label": "Auschwitz-Birkenau, occupied Poland",
+    "note": "The camp anchors the story of the Vrba-Wetzler report; reactions to it extended across Europe and the Allied powers."
+  },
+  "63a5dfee26cfdb0011e62c3d": {
+    "coordinates": [
+      19.2,
+      50.03
+    ],
+    "label": "Auschwitz-Birkenau, occupied Poland",
+    "note": "Rudolf Vrba and Alfréd Wetzler's escape from the Nazi camp in April 1944."
+  },
+  "63a59058addd5a0010876a33": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A retrospective on international events in 2022 has no single geographic setting."
+  },
+  "63a47351ea5809001185dfb7": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The history of drinks and their trade spans several European countries and overseas connections, with no single setting."
+  },
+  "639f616fb0a82100109516e4": {
+    "coordinates": [
+      35.23,
+      31.78
+    ],
+    "label": "Jerusalem",
+    "note": "The traditional and historical setting of Jesus's final days, crucifixion and earliest followers."
+  },
+  "639f5f5efff9190011ac5f15": {
+    "coordinates": [
+      35.3,
+      32.7
+    ],
+    "label": "Galilee",
+    "note": "A regional anchor for Jesus's life and teachings; the episode also discusses Jerusalem and broader questions of historicity."
+  },
+  "639c5dfc124e4c0010241eee": {
+    "coordinates": [
+      -1.5,
+      52.0
+    ],
+    "label": "England",
+    "note": "A broad anchor for roast beef's place in English food, politics and national identity."
+  },
+  "639c5added65dd0011894cf9": {
+    "coordinates": [
+      -71.21,
+      46.81
+    ],
+    "label": "Quebec, Canada",
+    "note": "A representative centre of the fur trade; the beaver's story extends across Canada and the Great Lakes."
+  },
+  "639b08f531b12d00102c24fe": {
+    "coordinates": [
+      12.57,
+      55.68
+    ],
+    "label": "Copenhagen, Denmark",
+    "note": "Denmark's Jewish community and the escape to Sweden; rescue routes crossed the Øresund from several ports."
+  },
+  "639a0e4ded122a0011b01366": {
+    "coordinates": [
+      -90.5,
+      -0.7
+    ],
+    "label": "Galápagos Islands, Ecuador",
+    "note": "A broad archipelago-level location for Darwin's observations during the Beagle voyage."
+  },
+  "639768f577b60500107a7f41": {
+    "coordinates": [
+      -4.1,
+      35.0
+    ],
+    "label": "Rif Mountains, Morocco",
+    "note": "A regional anchor for the Rif War in northern Morocco."
+  },
+  "6391f6eb21b3e90010ba8eb2": {
+    "coordinates": [
+      -4.78,
+      37.88
+    ],
+    "label": "Córdoba, Spain",
+    "note": "The city and its Umayyad caliphate."
+  },
+  "63936d6b2cce0a00119441ff": {
+    "coordinates": [
+      20.62,
+      44.76
+    ],
+    "label": "Vinča, Serbia",
+    "note": "The prehistoric settlement near Belgrade anchors the discussion of early civilisation in Serbia."
+  },
+  "6391f50385f3180010ac41e4": {
+    "coordinates": [
+      30.32,
+      59.94
+    ],
+    "label": "St Petersburg, Russia",
+    "note": "Gannibal's career in Peter the Great's Russia; this avoids assigning a precise point to his disputed African birthplace."
+  },
+  "637f68fa71631f0010af81bd": {
+    "coordinates": [
+      -1.55,
+      53.8
+    ],
+    "label": "Leeds, England",
+    "note": "Le Prince's early motion-picture work in Leeds; his life and disappearance also involve France and the United States."
+  },
+  "6392149cd296110011c8bf01": {
+    "coordinates": [
+      135.77,
+      35.01
+    ],
+    "label": "Kyoto, Japan",
+    "note": "A representative historic centre for a survey of Japanese history spanning several regions and periods."
+  },
+  "6390b8ee014fbe0011069442": {
+    "coordinates": [
+      4.3,
+      52.08
+    ],
+    "label": "The Hague, Netherlands",
+    "note": "A representative political centre of the Dutch Republic and its symbolic Maid of Holland."
+  },
+  "638e3172014fbe0011968aec": {
+    "coordinates": [
+      -65.31,
+      -43.25
+    ],
+    "label": "Chubut, Patagonia, Argentina",
+    "note": "The Trelew area anchors the Welsh settlements in the Chubut valley and wider Patagonia."
+  },
+  "638e1a85a594500011e09e8e": {
+    "coordinates": [
+      6.14,
+      46.2
+    ],
+    "label": "Geneva, Switzerland",
+    "note": "Calvin's city and the prosecution of Michael Servetus."
+  },
+  "638a3163ade6090010819f70": {
+    "coordinates": [
+      -9.14,
+      38.72
+    ],
+    "label": "Lisbon, Portugal",
+    "note": "The 1974 Carnation Revolution and the end of the dictatorship."
+  },
+  "6389deea05fc1200100eca52": {
+    "coordinates": [
+      -17.4,
+      14.67
+    ],
+    "label": "Gorée Island, Senegal",
+    "note": "The island and the history and memory of its House of Slaves."
+  },
+  "638a2f00ade6090010813471": {
+    "coordinates": [
+      3.22,
+      51.21
+    ],
+    "label": "Bruges, Belgium",
+    "note": "Jan van Eyck's working city anchors his artistic career in the Burgundian Netherlands."
+  },
+  "63888465cb906200114ac296": {
+    "coordinates": [
+      19.94,
+      50.06
+    ],
+    "label": "Kraków, Poland",
+    "note": "A representative anchor for the Polish sites discussed, including the nearby Wieliczka Salt Mine; other places also feature."
+  },
+  "638799cb10b60d0011b45c2f": {
+    "coordinates": [
+      -1.62,
+      6.69
+    ],
+    "label": "Kumasi, Ghana",
+    "note": "The Ashanti capital, its monarchy and its conflicts with Britain."
+  },
+  "63860d7be731d10010f82548": {
+    "coordinates": [
+      -43.17,
+      -22.91
+    ],
+    "label": "Rio de Janeiro, Brazil",
+    "note": "The Brazilian imperial capital during Pedro II's reign."
+  },
+  "6384f08537b6d400114ecbec": {
+    "coordinates": [
+      -3.7,
+      52.4
+    ],
+    "label": "Wales",
+    "note": "A broad regional anchor for Welsh history and identity."
+  },
+  "6380ba50915c6a0011be684d": {
+    "coordinates": [
+      126.55,
+      37.97
+    ],
+    "label": "Kaesong, Korea",
+    "note": "Hwang Jini's home city in the historical Korean peninsula; it is now in North Korea despite the episode's South Korea title."
+  },
+  "6380e87fd51dc40010c7c767": {
+    "coordinates": [
+      39.83,
+      21.42
+    ],
+    "label": "Kaaba, Mecca",
+    "note": "The sacred structure and the origins of its role in Islam."
+  },
+  "6380ce95da65bf00116fb635": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Mexico",
+    "note": "A representative anchor for the Day of the Dead, observed in different forms across the country."
+  },
+  "637f9edcba190f0010713fcf": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A comparison of Britain and the United States across two centuries has no single geographic setting."
+  },
+  "637e796e74e2da0012bc5ad3": {
+    "coordinates": [
+      10.32,
+      36.85
+    ],
+    "label": "Carthage, Tunisia",
+    "note": "The setting of Dido's story in Virgil and the traditional foundation of Carthage; the legend is distinguished from established events."
+  },
+  "637cb5577e88c40010bc9c93": {
+    "coordinates": [
+      -56.16,
+      -34.9
+    ],
+    "label": "Montevideo, Uruguay",
+    "note": "The Tupamaros' urban guerrilla movement and its political context."
+  },
+  "637bb09b247d0e0012f21a97": {
+    "coordinates": [
+      16.44,
+      43.51
+    ],
+    "label": "Split, Croatia",
+    "note": "Diocletian's Dalmatian home region and retirement palace anchor an imperial career that ranged widely."
+  },
+  "63777218a9c70c0011b2a1bb": {
+    "coordinates": [
+      51.39,
+      35.69
+    ],
+    "label": "Tehran, Iran",
+    "note": "A representative centre for Anglo-Iranian political relations; the episode spans several places and periods."
+  },
+  "63766f9af0bdeb0011c8ad32": {
+    "coordinates": [
+      -84.08,
+      9.93
+    ],
+    "label": "San José, Costa Rica",
+    "note": "A representative political centre for Costa Rica's civil war and its aftermath."
+  },
+  "63777326a9c70c0011b2cc5b": {
+    "coordinates": [
+      138.51,
+      -35.0
+    ],
+    "label": "Somerton Beach, Adelaide",
+    "note": "The beach where the unidentified man's body was found in 1948."
+  },
+  "637648b7d8f20a0011595e93": {
+    "coordinates": [
+      11.58,
+      48.14
+    ],
+    "label": "Munich, Germany",
+    "note": "The White Rose student resistance group and its university setting."
+  },
+  "637528288b962f00113f7a83": {
+    "coordinates": [
+      51.53,
+      25.29
+    ],
+    "label": "Doha, Qatar",
+    "note": "A representative centre for Qatar's history and modern international role."
+  },
+  "6372557635647200110318d9": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A survey of World Cup tournaments and politics across several host countries has no single geographic setting."
+  },
+  "63724988e08ffd0011baef4a": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A survey of postwar World Cup history across several countries has no single geographic setting."
+  },
+  "636e915792fc360012799bdc": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The origins and early tournaments of an international competition span Europe and South America."
+  },
+  "63654c293247200011405078": {
+    "coordinates": [
+      -1.31,
+      51.06
+    ],
+    "label": "Winchester, Wessex",
+    "note": "A representative centre of Alfred's kingdom and its recovery after the Viking invasions."
+  },
+  "63654855e71f4a00118a8984": {
+    "coordinates": [
+      -2.12,
+      51.46
+    ],
+    "label": "Chippenham, Wessex",
+    "note": "The Viking attack on Alfred's court anchors the crisis in his early reign."
+  },
+  "635bf4fee3fc63001259fcc5": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative centre of British treason law and state trials; examples also include Ireland and America."
+  },
+  "635bf48be3fc63001259fbd9": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative centre for medieval and early modern English treason law and prosecutions."
+  },
+  "6359121f1fc1700013ada71a": {
+    "coordinates": [
+      -0.5,
+      49.2
+    ],
+    "label": "Normandy, France",
+    "note": "A representative Allied campaign for this comparison of wartime commanders; North Africa and other fronts also feature."
+  },
+  "6351b6a9c768740011a06c8c": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Downing Street, London",
+    "note": "Liz Truss's brief premiership and resignation."
+  },
+  "634e7423ce0a930011df4d56": {
+    "coordinates": [
+      -6.34,
+      36.18
+    ],
+    "label": "Off Cape Trafalgar, Spain",
+    "note": "An approximate location of the naval battle and Nelson's death."
+  },
+  "634986cad51c900011f33e8f": {
+    "coordinates": [
+      -6.3,
+      36.53
+    ],
+    "label": "Cádiz, Spain",
+    "note": "The fleet's base before Trafalgar anchors the countdown to battle; the strategic background spans the Atlantic and Channel."
+  },
+  "63483d0cec7631001133a432": {
+    "coordinates": [
+      -6.34,
+      36.18
+    ],
+    "label": "Off Cape Trafalgar, Spain",
+    "note": "The battle's location anchors an overview of its naval and international context."
+  },
+  "6346d74af597f1001130af00": {
+    "coordinates": [
+      2.35,
+      48.85
+    ],
+    "label": "France",
+    "note": "Paris provides a representative anchor for a survey of French history through films set across the country."
+  },
+  "633ab11451a8d6001152721a": {
+    "coordinates": [
+      28.19,
+      -25.75
+    ],
+    "label": "Pretoria, South Africa",
+    "note": "Churchill's imprisonment and escape during the Boer War; his escape route extended east toward Portuguese territory."
+  },
+  "633aae34b7ce3c00129b6c5f": {
+    "coordinates": [
+      32.48,
+      15.65
+    ],
+    "label": "Omdurman, Sudan",
+    "note": "A representative campaign in Churchill's early military career, which also included Cuba and India."
+  },
+  "6336acc33823e2001248c854": {
+    "coordinates": [
+      -1.36,
+      51.84
+    ],
+    "label": "Blenheim Palace, England",
+    "note": "Churchill's birthplace and aristocratic family background."
+  },
+  "633480404b37860012f3ac19": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative centre for Regency fashion and the changes in British society behind it."
+  },
+  "632dc04c6f53290013a5cad4": {
+    "coordinates": [
+      -118.24,
+      34.05
+    ],
+    "label": "Los Angeles, California",
+    "note": "Hollywood and Marilyn Monroe's life and film career."
+  },
+  "632b22e2d596860013fe1c37": {
+    "coordinates": [
+      118.8,
+      32.06
+    ],
+    "label": "Nanjing, China",
+    "note": "The Japanese occupation and massacre at Nanjing anchor a wider account of China's wartime experience."
+  },
+  "63295eb5d6d46b0012034f4e": {
+    "coordinates": [
+      116.41,
+      39.9
+    ],
+    "label": "Beijing, China",
+    "note": "A representative anchor for the fall of the Qing and the lead-up to war with Japan; the episode ranges across China."
+  },
+  "632242d085cb8e0011ee760c": {
+    "coordinates": [
+      11.59,
+      50.93
+    ],
+    "label": "Jena, Germany",
+    "note": "The early Romantic circle discussed in Andrea Wulf's account of intellectual life in Jena."
+  },
+  "631b82336bf4ff001483fb48": {
+    "coordinates": [
+      -4.51,
+      57.32
+    ],
+    "label": "Loch Ness, Scotland",
+    "note": "The loch associated with sightings and stories of the legendary creature; this does not assert that it exists."
+  },
+  "631b444797ab410012895db2": {
+    "coordinates": [
+      -0.14,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "A representative centre of Elizabeth II's reign; her role and travels spanned the Commonwealth."
+  },
+  "631b2fd20e34f50011afc538": {
+    "coordinates": [
+      -0.14,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "Elizabeth's early life and accession, represented by the British royal capital."
+  },
+  "631904ca37b74f0012b0270e": {
+    "coordinates": [
+      -9.14,
+      38.72
+    ],
+    "label": "Lisbon, Portugal",
+    "note": "A representative political centre for twentieth-century Portugal and Salazar's regime."
+  },
+  "63177ae206a8a1001379307d": {
+    "coordinates": [
+      -9.14,
+      38.72
+    ],
+    "label": "Lisbon, Portugal",
+    "note": "The earthquake and Portuguese imperial history; Brazil's gold and connections are also central."
+  },
+  "6316209fb5acb700145287c0": {
+    "coordinates": [
+      -9.14,
+      38.72
+    ],
+    "label": "Lisbon, Portugal",
+    "note": "The maritime capital anchors Portuguese voyages and imperial expansion across several oceans."
+  },
+  "6315134e8c108e00131a465c": {
+    "coordinates": [
+      -8.29,
+      41.44
+    ],
+    "label": "Guimarães, Portugal",
+    "note": "A representative centre of Portugal's formation as a kingdom; the earlier survey covers the wider territory."
+  },
+  "6308f97e11fe6400138af1da": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Middle-earth is an imagined world; the episode compares its themes with real history rather than locating it on Earth."
+  },
+  "6308f824fc242d0012461003": {
+    "coordinates": [
+      -1.86,
+      52.44
+    ],
+    "label": "Sarehole, Birmingham, England",
+    "note": "Tolkien's childhood landscape anchors the discussion of the English countryside's influence on his work."
+  },
+  "62fe839e4c5e0700122382ac": {
+    "coordinates": [
+      14.27,
+      40.72
+    ],
+    "label": "Bay of Naples, Italy",
+    "note": "One major Roman holiday destination; the episode also covers sightseeing in Egypt and the Levant."
+  }
+}

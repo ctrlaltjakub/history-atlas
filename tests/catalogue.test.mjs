@@ -68,15 +68,16 @@ test('timeline preserves chronology and separates concurrent series without card
   }
 });
 
-test('visible episodes fill consecutive rows starting at the top', () => {
+test('horizontal scrolling preserves every row and the maximum table height', () => {
   const layout=makeTimeline(episodes,176);
   for(let left=0;left<layout.width;left+=137) {
     const view=visibleTimeline(layout,left,350);
-    assert.deepEqual([...new Set(view.positions.map(p=>p.displayRow))].sort((a,b)=>a-b), Array.from({length:view.rowCount},(_,i)=>i));
+    assert.equal(view.rowCount,layout.rowCount,'The number of rows never changes with scroll position');
+    assert.ok(view.positions.every(p=>p.displayRow===p.row),'Episodes keep their original rows');
     const expected=layout.positions.filter(p=>p.x+layout.step>left&&p.x<left+350);
     assert.deepEqual(view.positions.map(p=>p.episode.id),expected.map(p=>p.episode.id));
   }
-  assert.equal(visibleTimeline(layout,0,350).rowCount,1,'The start of the catalogue has no empty regional rows');
+  assert.equal(visibleTimeline(layout,0,350).rowCount,layout.rowCount,'The earliest dates reserve the full table height');
 });
 
 test('parallel series keep separate rows and later episodes reuse the top row', () => {
@@ -91,7 +92,7 @@ test('parallel series keep separate rows and later episodes reuse the top row', 
   assert.notEqual(lookup.a1.row,lookup.b1.row);
   assert.equal(lookup.c.row,0);
   const later=visibleTimeline(layout,lookup.b2.x,176);
-  assert.equal(later.positions[0].displayRow,0,'A remaining series moves to the top of the visible view');
+  assert.equal(later.positions[0].displayRow,lookup.b2.row,'A remaining series keeps its row when earlier episodes move off screen');
   const changedRegions=makeTimeline(layout.positions.map(p=>({...p.episode,region:'Oceania'})),176);
   assert.deepEqual(changedRegions.positions.map(p=>[p.episode.id,p.x,p.row]),layout.positions.map(p=>[p.episode.id,p.x,p.row]));
 });

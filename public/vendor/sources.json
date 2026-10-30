@@ -1,0 +1,5 @@
+{
+  "d3": {"version":"7.9.0","source":"https://github.com/d3/d3","download":"https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js","license":"ISC; see LICENSE-d3.txt"},
+  "topojson-client": {"version":"3.1.0","source":"https://github.com/topojson/topojson-client","download":"https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js","license":"ISC; see LICENSE-topojson-client.txt"},
+  "world-atlas": {"version":"2.0.2","source":"https://github.com/topojson/world-atlas","download":"https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json","license":"Natural Earth geography is public domain; https://www.naturalearthdata.com/about/terms-of-use/"}
+}

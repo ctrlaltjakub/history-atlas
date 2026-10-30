@@ -11,6 +11,7 @@ def read(name):
 
 base = read('base-episodes.json')
 placements = read('dates-early.json') | read('dates-late.json')
+locations = read('map-locations-a.json') | read('map-locations-b.json') | read('map-locations-c.json')
 for e in base:
     if e['id'] in placements:
         continue
@@ -67,7 +68,8 @@ for e in base:
     prefix=re.match(r'^\s*(\d+)[.:]',e['title'])
     if prefix:number=int(prefix[1])
     if e.get('type')=='trailer':number=None
-    out.append(dict(id=e['id'],number=number,title=title,description=description,published=e['published'],duration=e['duration'],image=e['image'],audio=e['audio'],**p,series=series_name(e,title),officialUrl=f'https://archive.therestishistory.com/catalog/episode/{official_id}' if official_id else None,links={k:link.get(k) for k in ['pocketCasts','spotify','spotifyKind','applePodcasts','applePodcastsKind','youtube']}))
+    location=locations.get(e['id'],dict(coordinates=None,label='Worldwide',note='New in the public feed. Map placement has not yet been reviewed.'))
+    out.append(dict(id=e['id'],number=number,title=title,description=description,published=e['published'],duration=e['duration'],image=e['image'],audio=e['audio'],**p,series=series_name(e,title),location=location,officialUrl=f'https://archive.therestishistory.com/catalog/episode/{official_id}' if official_id else None,links={k:link.get(k) for k in ['pocketCasts','spotify','spotifyKind','applePodcasts','applePodcastsKind','youtube']}))
 
 assert len(out)==len(base)==len({e['id'] for e in out})
 assert all(e['start'] is None or (isinstance(e['start'],int) and e['start']<=e['end'] and e['start']!=0 and e['end']!=0) for e in out)

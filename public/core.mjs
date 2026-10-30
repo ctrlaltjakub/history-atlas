@@ -73,10 +73,9 @@ export function makeTimeline(episodes, step=200) {
 
 export function visibleTimeline(layout,left,viewportWidth) {
   const positions=layout.positions.filter(p=>p.x+layout.step>left && p.x<left+viewportWidth);
-  // Do not retain empty rows belonging to series outside the current view.
-  const rows=[...new Set(positions.map(p=>p.row))].sort((a,b)=>a-b);
-  const rowMap=new Map(rows.map((row,index)=>[row,index]));
-  return {positions:positions.map(p=>({...p,displayRow:rowMap.get(p.row)})),rowMap,rowCount:rows.length};
+  // Reserve the complete layout: horizontal movement never changes a row or height.
+  const rowMap=new Map(Array.from({length:layout.rowCount},(_,row)=>[row,row]));
+  return {positions:positions.map(p=>({...p,displayRow:p.row})),rowMap,rowCount:layout.rowCount};
 }
 export function durationLabel(value) {
   const seconds = Number(value);

@@ -1,0 +1,1716 @@
+{
+  "62fe8283ff1f0c00134fc4e0": {
+    "coordinates": [
+      -0.13,
+      38.54
+    ],
+    "label": "Benidorm, Spain",
+    "note": "Representative resort for the episode's British and Mediterranean mass-tourism story."
+  },
+  "62f65c6c1a9b9f0012df1be0": {
+    "coordinates": [
+      -1.13,
+      52.64
+    ],
+    "label": "Leicester, England",
+    "note": "Representative anchor for Thomas Cook and the development of British package tourism; continental journeys are also discussed."
+  },
+  "62f6592fd54b3b00123bfcec": {
+    "coordinates": [
+      23.73,
+      37.98
+    ],
+    "label": "Athens, Greece",
+    "note": "One of Byron's Grand Tour destinations; a representative anchor for journeys through several European countries."
+  },
+  "62f28b64c8c50f00132f0da1": {
+    "coordinates": [
+      28.98,
+      41.01
+    ],
+    "label": "Constantinople, Byzantine Empire",
+    "note": "Imperial capital anchoring Justinian and Theodora's later reign; reconquest and plague extended across the Mediterranean."
+  },
+  "62f14538efc11c00135927f6": {
+    "coordinates": [
+      28.98,
+      41.01
+    ],
+    "label": "Constantinople, Byzantine Empire",
+    "note": "The Nika riots and Justinian's imperial government were centred here; the Persian frontier is also discussed."
+  },
+  "62ed3d6221b3c50012565b9a": {
+    "coordinates": [
+      28.98,
+      41.01
+    ],
+    "label": "Constantinople, Byzantine Empire",
+    "note": "Theodora's rise and life at the Byzantine imperial court."
+  },
+  "62eaa707207e170012609ad3": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Roman Mediterranean",
+    "note": "Rome is a representative anchor for pandemics affecting the wider Roman Empire, not a claimed point of origin."
+  },
+  "62e6701ec72057001368d856": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A thematic history of pigeons across places and periods, with no single geographic setting."
+  },
+  "62e1b0d942893c0012aa3bac": {
+    "coordinates": [
+      44.51,
+      48.71
+    ],
+    "label": "Stalingrad, now Volgograd",
+    "note": "Approximate location of the battle and Soviet counteroffensive."
+  },
+  "62ddadd6519edb001486d1a7": {
+    "coordinates": [
+      44.51,
+      48.71
+    ],
+    "label": "Stalingrad, now Volgograd",
+    "note": "Approximate location of the Battle of Stalingrad."
+  },
+  "62d18180c13efe0012aa7e82": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "The episode covers several places and moments within London."
+  },
+  "62d17f064a18060014379d6a": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "Representative central point for the London ghost-story walking episode."
+  },
+  "62d179983d9a85001430cee0": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "London is the shared setting for the historical lives discussed."
+  },
+  "62d176dcdbfc6f0013bdf659": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "Representative central point for places in different parts of London."
+  },
+  "62d170ec2159da0013480026": {
+    "coordinates": [
+      -0.09,
+      51.51
+    ],
+    "label": "Londinium, now London",
+    "note": "Approximate centre of Roman London."
+  },
+  "62ceecbd4c28a4001489813c": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "Representative anchor for Orwell's British literary and political life; his experiences overseas are also discussed."
+  },
+  "62cda62d0a6d14001392aa51": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A hypothetical competition pairing people from different societies; it has no historical location."
+  },
+  "62c8564ed8149000145635ce": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A hypothetical competition pairing people from different societies; it has no historical location."
+  },
+  "62c71669051b120014effdd5": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "Boris Johnson's resignation and the British political crisis of July 2022."
+  },
+  "62c5acb8257f9c0012f58b71": {
+    "coordinates": [
+      -84.39,
+      33.75
+    ],
+    "label": "Atlanta, Georgia",
+    "note": "Representative setting for Gone with the Wind and its portrayal of the wider American South."
+  },
+  "62b1b3443369580012832fa0": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "Washington, D.C.",
+    "note": "Lincoln's assassination and national political aftermath provide an anchor for the wider Civil War legacy."
+  },
+  "62b1b21ccdd8c80011eefc7f": {
+    "coordinates": [
+      -77.23,
+      39.83
+    ],
+    "label": "Gettysburg, Pennsylvania",
+    "note": "The battle and Lincoln's Gettysburg Address."
+  },
+  "62b1b082ab73180012ade1fc": {
+    "coordinates": [
+      -79.87,
+      32.75
+    ],
+    "label": "Fort Sumter, South Carolina",
+    "note": "The opening of the Civil War provides an anchor for an episode covering several early campaigns."
+  },
+  "62b1aed0c7aea90012713821": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "Washington, D.C.",
+    "note": "Representative political anchor for the sectional and slavery disputes preceding the American Civil War."
+  },
+  "62b1c40df3ac6800127c845d": {
+    "coordinates": [
+      -1.83,
+      51.18
+    ],
+    "label": "Stonehenge, England",
+    "note": "Approximate location of the prehistoric monument."
+  },
+  "62a339bc43f27e00128e185c": {
+    "coordinates": [
+      29.92,
+      31.2
+    ],
+    "label": "Alexandria, Egypt",
+    "note": "Cleopatra's final seat of power and death; the war also ranged across the eastern Mediterranean."
+  },
+  "62a3375c25c70a001567ac7c": {
+    "coordinates": [
+      29.92,
+      31.2
+    ],
+    "label": "Alexandria, Egypt",
+    "note": "Representative centre of Antony and Cleopatra's alliance and Ptolemaic court."
+  },
+  "62a3366843f27e00128e0b0e": {
+    "coordinates": [
+      29.92,
+      31.2
+    ],
+    "label": "Alexandria, Egypt",
+    "note": "Cleopatra's capital and her encounter with Caesar; Roman politics are also discussed."
+  },
+  "62a333e6ca364e00134d572f": {
+    "coordinates": [
+      29.92,
+      31.2
+    ],
+    "label": "Alexandria, Egypt",
+    "note": "Cleopatra's early life and accession in Ptolemaic Egypt."
+  },
+  "62a0d033eadb83001324a5a9": {
+    "coordinates": [
+      14.44,
+      45.33
+    ],
+    "label": "Fiume, now Rijeka",
+    "note": "D'Annunzio's occupation of Fiume is a representative anchor for his political influence in Italy."
+  },
+  "629e90432b929d0012c4143e": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "British prime-ministerial downfalls across several periods."
+  },
+  "6297880738f0a60012928e23": {
+    "coordinates": [
+      -1.07,
+      53.2
+    ],
+    "label": "Sherwood Forest, England",
+    "note": "Traditional legendary setting of Robin Hood; this is not a claim that the character's biography is established."
+  },
+  "629785bc6fbd440012661c81": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Childbirth and midwifery are discussed as a broad historical theme rather than a single place."
+  },
+  "629341f80252da00138414f1": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "London, England",
+    "note": "Representative centre for British royal jubilees; celebrations extended throughout the country and empire."
+  },
+  "628d36e0fb49a700137b24d0": {
+    "coordinates": [
+      149.13,
+      -35.28
+    ],
+    "label": "Canberra, Australia",
+    "note": "Australia's national government is the representative anchor for these prime ministers."
+  },
+  "628bc0a14b3d6f0012a99f26": {
+    "coordinates": [
+      149.13,
+      -35.28
+    ],
+    "label": "Canberra, Australia",
+    "note": "Australia's national government is the representative anchor for these prime ministers."
+  },
+  "628aa09414ebb70012452102": {
+    "coordinates": [
+      144.96,
+      -37.81
+    ],
+    "label": "Melbourne, Australia",
+    "note": "The initial seat of the federal parliament anchors the early Australian premierships; later governments were based in Canberra."
+  },
+  "6285255582c6d8001334f3b7": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "Representative anchor for British art and culture during Elizabeth II's reign."
+  },
+  "627bec72078979001586d0fd": {
+    "coordinates": [
+      -3.53,
+      50.46
+    ],
+    "label": "Torquay, England",
+    "note": "Christie's birthplace provides a representative anchor for a life and writing career spanning several locations."
+  },
+  "62753d21ae754500155bc3ff": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Comparisons and counterfactual questions span unrelated societies and have no single geographic setting."
+  },
+  "62753b5a5798790017e27c51": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Comparisons and counterfactual questions span unrelated societies and have no single geographic setting."
+  },
+  "6272b79f3275630013d37438": {
+    "coordinates": [
+      27.56,
+      53.9
+    ],
+    "label": "Eastern Front, near Minsk",
+    "note": "Representative point on the broad invasion front; Operation Barbarossa extended from the Baltic to the Black Sea."
+  },
+  "626e48719a4d1700124f30ad": {
+    "coordinates": [
+      44.42,
+      32.54
+    ],
+    "label": "Babylon, Mesopotamia",
+    "note": "Approximate location of ancient Babylon in present-day Iraq."
+  },
+  "6269c60a504dee00135bea9f": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "England",
+    "note": "A regional anchor for English national identity, not the location of a particular event."
+  },
+  "6262cc548c8aea00129ee5d2": {
+    "coordinates": [
+      2.35,
+      48.86
+    ],
+    "label": "Paris, France",
+    "note": "Seat of the French presidency; the episode covers national politics."
+  },
+  "6262cb13114c2a00131c4c13": {
+    "coordinates": [
+      2.35,
+      48.86
+    ],
+    "label": "Paris, France",
+    "note": "Seat of the French presidency; the episode covers national politics."
+  },
+  "626045214371e200121f227d": {
+    "coordinates": [
+      35.23,
+      31.78
+    ],
+    "label": "Jerusalem",
+    "note": "The Temple's destruction anchors the revolt's conclusion; Masada and the Roman triumph are also discussed."
+  },
+  "625c93bac030a00012e354af": {
+    "coordinates": [
+      35.23,
+      31.78
+    ],
+    "label": "Jerusalem and Roman Judaea",
+    "note": "Representative centre of the Jewish Revolt against Rome."
+  },
+  "6255ac88ccddaf001242e939": {
+    "coordinates": [
+      35.23,
+      31.78
+    ],
+    "label": "Jerusalem and Roman Judaea",
+    "note": "Jesus's crucifixion and Roman Judaea anchor a wider discussion of ancient crucifixion."
+  },
+  "62505cddadae5f001496c134": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "Britain",
+    "note": "Representative regional point for magical traditions and occult politics across Britain."
+  },
+  "624dc825cc8fb60013263ac0": {
+    "coordinates": [
+      116.4,
+      39.9
+    ],
+    "label": "Beijing, China",
+    "note": "Political centre of Mao's Cultural Revolution, which affected China as a whole."
+  },
+  "623dd927dc5cd9001589a698": {
+    "coordinates": [
+      -57.85,
+      -51.69
+    ],
+    "label": "Falkland Islands / Islas Malvinas",
+    "note": "The islands anchor an episode about the war's aftermath in Britain and Argentina."
+  },
+  "623dd898fa0aa00013b1a849": {
+    "coordinates": [
+      -57.85,
+      -51.69
+    ],
+    "label": "Falkland Islands / Islas Malvinas",
+    "note": "Representative point near Stanley for a campaign fought across the islands and surrounding seas."
+  },
+  "623dd7ac93448e0012f685eb": {
+    "coordinates": [
+      -1.1,
+      50.8
+    ],
+    "label": "Portsmouth, England",
+    "note": "A principal departure port of the British task force; the episode also covers decisions in London."
+  },
+  "623dd6910bbc6600121e2c29": {
+    "coordinates": [
+      -57.85,
+      -51.69
+    ],
+    "label": "Falkland Islands / Islas Malvinas",
+    "note": "Representative point for the islands at the centre of the invasion dispute."
+  },
+  "623b5c332cf67f0012e18775": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Oil politics, energy transition and geopolitical conflict span several continents without one setting."
+  },
+  "623b5f968be1590014c78e0b": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The modern oil industry's development spans multiple producing regions and international institutions."
+  },
+  "62388edbbb650e0012e42065": {
+    "coordinates": [
+      108.0,
+      48.0
+    ],
+    "label": "Mongolian steppe",
+    "note": "Regional anchor for Genghis Khan's Mongol power base; his conquests extended much farther."
+  },
+  "62376eef7442620013b1f466": {
+    "coordinates": [
+      110.0,
+      49.0
+    ],
+    "label": "Onon River region, Mongolia",
+    "note": "Approximate regional anchor for Temujin's early life; his exact birthplace is disputed."
+  },
+  "62321466a9fb150013a69b1b": {
+    "coordinates": [
+      -6.65,
+      54.35
+    ],
+    "label": "Armagh and Ireland",
+    "note": "Traditional ecclesiastical centre associated with Patrick; the episode covers his wider Irish mission and uncertain biography."
+  },
+  "622b8c6ac28a800013089c66": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Mexico City, Mexico",
+    "note": "Capital of Maximilian's empire; his downfall also involved other Mexican locations."
+  },
+  "6228eabbe58e26001381465d": {
+    "coordinates": [
+      37.62,
+      55.75
+    ],
+    "label": "Moscow, Russia",
+    "note": "Political centre of Putin's presidency and consolidation of power."
+  },
+  "622776f667ac55001271e6d1": {
+    "coordinates": [
+      37.62,
+      55.75
+    ],
+    "label": "Moscow, Russia",
+    "note": "Representative centre of Russian national politics during Yeltsin's presidency and Putin's rise."
+  },
+  "6226428a1b0ed0001425a3cb": {
+    "coordinates": [
+      37.62,
+      55.75
+    ],
+    "label": "Moscow, Soviet Union",
+    "note": "Political centre of the Soviet collapse and the 1991 coup; events across the union are also discussed."
+  },
+  "62248d35a61d950013afd261": {
+    "coordinates": [
+      30.34,
+      59.94
+    ],
+    "label": "Leningrad, now Saint Petersburg",
+    "note": "Putin's formative years provide an anchor; his KGB service in East Germany is also covered."
+  },
+  "621fbb83c576710013c9757d": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A thematic survey of dangerous fashions and garment production across societies and centuries."
+  },
+  "621ced84c1e780001259466e": {
+    "coordinates": [
+      28.98,
+      41.01
+    ],
+    "label": "Constantinople, Byzantine Empire",
+    "note": "Representative centre of the eastern Roman continuation and its later legacy."
+  },
+  "621ba2c82836410012a04094": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome and the western Roman Empire",
+    "note": "Rome anchors a wider discussion of the decline of western imperial power."
+  },
+  "6215344a79e03f0013fe31b8": {
+    "coordinates": [
+      30.52,
+      50.45
+    ],
+    "label": "Kyiv, Ukraine",
+    "note": "Representative centre for a survey of Ukrainian history and its relationship with Russia."
+  },
+  "62126b99959a2d0013081621": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A ranking of unrelated historical parties has no single geographic setting."
+  },
+  "620e89ac7a2f8f00116a7dda": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "Washington, D.C.",
+    "note": "Representative political anchor for religion in United States government and foreign policy."
+  },
+  "620d4c3087baa90013aa7963": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "United States",
+    "note": "Washington is a representative point for religion in American national identity and diplomacy, not the setting of every example."
+  },
+  "6206a18b0f41fb0012e4e814": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Valentine traditions and historical events are discussed across several countries."
+  },
+  "6203fd2245f2980014101817": {
+    "coordinates": [
+      0.71,
+      50.92
+    ],
+    "label": "Winchelsea and the English south coast",
+    "note": "Representative coastal setting for British smuggling, including the Hawkhurst Gang."
+  },
+  "62015be2f36f9f0012516be4": {
+    "coordinates": [
+      30.52,
+      50.45
+    ],
+    "label": "Kyiv and the lands of Rus'",
+    "note": "Kyiv anchors the consolidation of Rus'; the episode covers a wider eastern European region."
+  },
+  "62001a3dacd47d00133afe59": {
+    "coordinates": [
+      31.28,
+      58.52
+    ],
+    "label": "Novgorod and eastern river routes",
+    "note": "Representative point on Viking routes through eastern Europe; the journeys covered many locations."
+  },
+  "61fa7a63a14cbd001340dafc": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Disease in the Americas and later global pandemics have no single geographic setting."
+  },
+  "61fa791f45375600137afc07": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The relationship between disease and human civilisation is a global historical theme."
+  },
+  "61f70595a8fffe00137c8b5e": {
+    "coordinates": [
+      44.42,
+      32.54
+    ],
+    "label": "Babylon, Mesopotamia",
+    "note": "Approximate location of ancient Babylon in present-day Iraq."
+  },
+  "61f17722f07dcd001272a3ad": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "Whitehall, London",
+    "note": "Charles I's execution and its immediate political aftermath."
+  },
+  "61f16dbccb2c6b00128636df": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "Charles I's trial took place in Westminster Hall."
+  },
+  "61ee84130b5e910012b79e93": {
+    "coordinates": [
+      32.56,
+      15.5
+    ],
+    "label": "Khartoum, Sudan",
+    "note": "The siege of Khartoum and Gordon's death."
+  },
+  "61ed92b0ff2e1400135a0ef8": {
+    "coordinates": [
+      120.58,
+      31.3
+    ],
+    "label": "Suzhou and eastern China",
+    "note": "Representative anchor for Gordon's Chinese military campaigns within a career spanning several countries."
+  },
+  "61e83ba601f8e3001244e355": {
+    "coordinates": [
+      -1.55,
+      54.52
+    ],
+    "label": "Darlington, England",
+    "note": "The Stockton and Darlington Railway provides a representative anchor for the wider development of British railways."
+  },
+  "61e55ed08ed56f0012142796": {
+    "coordinates": [
+      -0.08,
+      51.51
+    ],
+    "label": "Tower of London",
+    "note": "The princes' disappearance is associated with the Tower; the episode also explores Richard III's rule."
+  },
+  "61e45de190c70c0012660174": {
+    "coordinates": [
+      -0.08,
+      51.51
+    ],
+    "label": "Tower of London",
+    "note": "The succession crisis led to the princes being lodged in the Tower; the earlier story spans England."
+  },
+  "61dffa0a051a2f0012752f6a": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A compilation linking events in Ireland, Britain and Egypt in 1922, with no single setting."
+  },
+  "61df11d5051a2f00127141d6": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A compilation linking political and cultural developments in several countries during 1922."
+  },
+  "61d9c0de4881dd0012429914": {
+    "coordinates": [
+      12.4,
+      44.15
+    ],
+    "label": "Rubicon River, Italy",
+    "note": "Approximate area of Caesar's crossing; the precise ancient crossing point is uncertain."
+  },
+  "61d9bde269b475001240e9f4": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome, Roman Republic",
+    "note": "Caesar's Roman political career anchors an episode also covering campaigns elsewhere."
+  },
+  "61c5ab822989b30012be9684": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "England",
+    "note": "Both the Alfred the Great and Pepys stories concern England; this regional point does not claim they occurred in the same place."
+  },
+  "61c5a94e8fdfaf0014dfa1dc": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Two separate stories set in England and France share a calendar date, not a geographic setting."
+  },
+  "61c5a7fe35c4e30012ea4e49": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The Solomon Northup and Albert Camus stories concern different countries and have no shared setting."
+  },
+  "61c4580855c7a60013fc7410": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Luther's excommunication and Tolkien's birth concern separate places, with no single setting."
+  },
+  "61c45740a5110f0014ac3069": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The two stories concern Spain and Hawaii and have no shared geographic setting."
+  },
+  "61c4568688e78000124bfe5c": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The episode pairs Roman succession with a separate Byzantine battle; one point would misrepresent its scope."
+  },
+  "61c455a5f3deb70014e7de70": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The Central African Republic story is paired with a global discussion of pandemic memory."
+  },
+  "61c454c883ae940013b406e5": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The episode pairs Wakefield with the Habsburg monarchy; there is no single setting."
+  },
+  "61c45382b33a5f0014775dda": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The episode pairs Canterbury with Wounded Knee, two distinct geographic settings."
+  },
+  "61c4509b33b4eb0014c65c3a": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The episode pairs a biblical narrative with the Scottish Tay Bridge disaster, without a shared setting."
+  },
+  "61c44ff888e78000124be259": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Portuguese wine trade and Darwin's ocean voyage span several locations."
+  },
+  "61c44efb83ae940013b3eeea": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The episode pairs the Bohemian Wenceslas tradition with Victorian London theatre."
+  },
+  "61c44db9d30f8c00129ed6b8": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Charlemagne's coronation and the Soviet collapse have separate geographic settings."
+  },
+  "61c42ccd9bcf610012819d44": {
+    "coordinates": [
+      -2.5,
+      53.0
+    ],
+    "label": "Britain",
+    "note": "Representative regional anchor for a tour of churches with Christmas associations."
+  },
+  "61bf08db45cc6900146d3515": {
+    "coordinates": [
+      -0.09,
+      51.51
+    ],
+    "label": "City of London",
+    "note": "Dickens's A Christmas Carol and a walk through its London setting."
+  },
+  "61ba65c0f75b720012467225": {
+    "coordinates": [
+      5.04,
+      47.32
+    ],
+    "label": "Dijon and the Burgundian lands",
+    "note": "Dijon anchors the Valois dukes' power; their territories extended into the Low Countries."
+  },
+  "93320b56-9478-46c7-a8e7-1461ec573045": {
+    "coordinates": [
+      -74.01,
+      40.71
+    ],
+    "label": "New York, United States",
+    "note": "Representative centre of American comic-book publishing; the cultural story extends beyond the city."
+  },
+  "e8f69f75-b1d5-48b8-8b06-eff7c4ac0f6e": {
+    "coordinates": [
+      -0.17,
+      51.53
+    ],
+    "label": "England and the cricket world",
+    "note": "A point near Lord's anchors cricket's English development; its global spread is also discussed."
+  },
+  "c640242c-5fd0-4fad-96d6-8f82cc599f99": {
+    "coordinates": [
+      30.34,
+      59.94
+    ],
+    "label": "Saint Petersburg, Russia",
+    "note": "Rasputin's influence at the late imperial Russian court."
+  },
+  "2d1ddad9-d146-4107-a9f1-7461d4778698": {
+    "coordinates": [
+      6.95,
+      51.23
+    ],
+    "label": "Neander Valley and western Eurasia",
+    "note": "The valley that gave Neanderthals their name is a representative archaeological anchor, not a claimed point of origin."
+  },
+  "9d0e17df-7438-48c6-9bb2-12738e072485": {
+    "coordinates": [
+      31.24,
+      30.04
+    ],
+    "label": "Cairo, Egypt",
+    "note": "Representative centre of Napoleon's Egyptian campaign; fighting and exploration extended across Egypt and beyond."
+  },
+  "0a68dc9c-05c1-4df5-90b2-f0e1b75bb007": {
+    "coordinates": [
+      -77.15,
+      38.95
+    ],
+    "label": "Langley, Virginia",
+    "note": "CIA headquarters anchors an episode about the agency's activities across the world."
+  },
+  "f7edc2b0-2055-4996-b07e-dc30fb1c48e5": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "England",
+    "note": "A regional anchor for a cross-era comparison of English monarchs."
+  },
+  "f1d7f9c9-a246-4903-b310-d73754d45bc6": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "England",
+    "note": "A regional anchor for a cross-era comparison of English monarchs."
+  },
+  "48e2940e-4f5d-4a64-86d7-94304e8d9c22": {
+    "coordinates": [
+      -2.1,
+      51.59
+    ],
+    "label": "Malmesbury and Anglo-Saxon England",
+    "note": "Athelstan's burial place provides an anchor for a reign spanning the English kingdoms."
+  },
+  "fd5491b8-b8d0-43e1-8f2f-cefca3de1568": {
+    "coordinates": [
+      134.0,
+      -25.0
+    ],
+    "label": "Australia",
+    "note": "A continental anchor for Australia's long history before Cook, not an asserted settlement origin."
+  },
+  "53767100-b130-42a8-92c2-a1f58e41cecb": {
+    "coordinates": [
+      46.68,
+      24.71
+    ],
+    "label": "Saudi Arabia and the oil-producing states",
+    "note": "Riyadh is a representative anchor for the Saudi-led embargo and its international effects."
+  },
+  "f810cb14-7d21-4e53-acbb-9e48ff367a5b": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "England",
+    "note": "A regional anchor for the podcast's comparison of English monarchs."
+  },
+  "04198c43-c8de-45ed-b0a2-b61bb918e2f2": {
+    "coordinates": [
+      2.91,
+      49.42
+    ],
+    "label": "Compiègne, France",
+    "note": "The Armistice location anchors the war's end; the episode also discusses British and international remembrance."
+  },
+  "351a6b8d-8ee4-495f-a780-a0a6d90eac80": {
+    "coordinates": [
+      44.42,
+      32.54
+    ],
+    "label": "Babylon and Alexander's eastern empire",
+    "note": "Babylon, where Alexander died, anchors the later campaigns across Persia and toward India."
+  },
+  "269b1ed6-0191-4725-9d4f-de6328d2c323": {
+    "coordinates": [
+      22.52,
+      40.76
+    ],
+    "label": "Pella, ancient Macedonia",
+    "note": "Alexander's Macedonian origins anchor a career extending through the eastern Mediterranean and Egypt."
+  },
+  "c308fe47-01dc-4f71-ad03-583b2b1c4b6a": {
+    "coordinates": [
+      -0.12,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "Parliament was the target of the Gunpowder Plot."
+  },
+  "7f7a05bd-8980-4dce-8a55-795ce513f3f1": {
+    "coordinates": [
+      -1.83,
+      51.18
+    ],
+    "label": "Stonehenge and prehistoric Britain",
+    "note": "Stonehenge provides one representative anchor for a survey also covering other pagan sites and eras."
+  },
+  "6f7080a8-9023-4c91-ba12-e189cf44200e": {
+    "coordinates": [
+      -2.71,
+      51.15
+    ],
+    "label": "Glastonbury and Britain",
+    "note": "Glastonbury is a representative place named in the discussion of modern British pagan traditions."
+  },
+  "5662c1c8-a2b8-4d51-8333-6b08cfd2f55a": {
+    "coordinates": [
+      2.35,
+      48.86
+    ],
+    "label": "Medieval Europe",
+    "note": "Paris is a representative centre of medieval learning; the episode is a European survey, not a single-city story."
+  },
+  "39b6b258-46cc-4d1a-a4e5-c69a2bf1ef02": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The episode compares supposed golden ages in different societies and periods."
+  },
+  "5d4ca792-8d87-4301-8bee-a4b473fbe64e": {
+    "coordinates": [
+      78.0,
+      23.0
+    ],
+    "label": "Indian subcontinent",
+    "note": "A regional anchor for buildings spread across the subcontinent, including places now in Pakistan."
+  },
+  "14e81769-ff93-42c7-a76c-92d60301532f": {
+    "coordinates": [
+      -1.26,
+      51.75
+    ],
+    "label": "Oxford and the history of dinosaur science",
+    "note": "Oxford is a representative anchor for early dinosaur identification; the episode also covers discoveries and dinosaur culture worldwide."
+  },
+  "4bf020ee-f9ec-4da8-9887-60769afbbc8e": {
+    "coordinates": [
+      -2.24,
+      53.48
+    ],
+    "label": "Manchester and industrial Britain",
+    "note": "Manchester is a representative centre of Britain's Industrial Revolution, which involved many regions."
+  },
+  "2708c81e-a91b-4dc2-9214-72f1b4c4df33": {
+    "coordinates": [
+      -77.05,
+      38.9
+    ],
+    "label": "Watergate, Washington, D.C.",
+    "note": "The Watergate scandal and Nixon's resignation."
+  },
+  "6383b166-5fdf-48d2-a449-a454d593a5c0": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "Washington, D.C.",
+    "note": "Nixon's national political career provides an anchor; his early life was in California."
+  },
+  "d6627ec2-e15a-467f-bdde-4050d824ba09": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome and the classical tradition",
+    "note": "Rome is a representative anchor for the reception of ancient Greek and Roman culture across many countries."
+  },
+  "f2a79c98-8fc7-43ef-ae0b-094bd6bf9715": {
+    "coordinates": [
+      -3.43,
+      56.42
+    ],
+    "label": "Scone and medieval Scotland",
+    "note": "A representative royal centre for Macbeth's historical Scottish reign; Shakespeare's fictional adaptation is also discussed."
+  },
+  "5a0fa846-d826-43fb-b212-7a3cb44c00cd": {
+    "coordinates": [
+      -21.94,
+      64.15
+    ],
+    "label": "Iceland and the North Atlantic",
+    "note": "Iceland anchors the sagas and their society; voyages reached Greenland and North America."
+  },
+  "96c4441e-e730-485d-8e34-b164eaa499a1": {
+    "coordinates": [
+      13.4,
+      52.52
+    ],
+    "label": "Berlin and Germany",
+    "note": "Berlin is a representative political anchor; earlier West German chancellors governed from Bonn."
+  },
+  "062078e4-8a13-4b1f-a5ed-19302ee84450": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "London and the world of James Bond",
+    "note": "London anchors the British character and his cultural history; his fictional adventures are worldwide."
+  },
+  "f857e62f-37bc-4199-b744-68cd33f80397": {
+    "coordinates": [
+      20.0,
+      0.0
+    ],
+    "label": "Africa",
+    "note": "A continental anchor for varied African independence movements, not a claim that events occurred at this point."
+  },
+  "252bdb4f-1758-41cc-bd96-b19f3bfb26e4": {
+    "coordinates": [
+      23.49,
+      37.95
+    ],
+    "label": "Salamis, Greece",
+    "note": "The naval battle at Salamis provides an anchor; Thermopylae is also covered."
+  },
+  "0e5cd120-bc6c-4adc-892a-880e8bb12e43": {
+    "coordinates": [
+      22.54,
+      38.8
+    ],
+    "label": "Thermopylae, Greece",
+    "note": "The pass of Thermopylae provides an anchor; the episode also covers Salamis."
+  },
+  "51b9fccd-77fe-4e93-8443-63246035e085": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A ranking of influential mistresses from different societies has no single setting."
+  },
+  "656e224b-65e2-458a-9985-6fe0dc099678": {
+    "coordinates": [
+      -2.5,
+      53.0
+    ],
+    "label": "Britain",
+    "note": "Regional anchor for a selection of churches across the United Kingdom."
+  },
+  "3746793b-dbb9-4a9d-a2fa-c10d2c3217c2": {
+    "coordinates": [
+      -74.01,
+      40.71
+    ],
+    "label": "New York, United States",
+    "note": "The World Trade Center site anchors the September 11 attacks; Washington and Pennsylvania were also targeted."
+  },
+  "468128a6-9841-46eb-82b5-fc0e069b85af": {
+    "coordinates": [
+      -122.14,
+      37.44
+    ],
+    "label": "Silicon Valley, California",
+    "note": "Representative centre of the technology and social-media industries; their effects are worldwide."
+  },
+  "bac07ad2-7448-4ee0-9481-01da499e14e1": {
+    "coordinates": [
+      -122.14,
+      37.44
+    ],
+    "label": "Silicon Valley, California",
+    "note": "Representative centre of the computing industry; the internet and World Wide Web had multiple development sites."
+  },
+  "47f41526-a1d2-425c-8fb1-fa9605e6166f": {
+    "coordinates": [
+      3.98,
+      50.5
+    ],
+    "label": "SHAPE, Belgium, and Cold War Europe",
+    "note": "The European military command participating in Able Archer provides an anchor for an exercise and nuclear scare involving NATO and the Soviet bloc."
+  },
+  "7df16ca8-7510-4340-b39b-3e3fd17693df": {
+    "coordinates": [
+      -2.98,
+      53.41
+    ],
+    "label": "Liverpool, England",
+    "note": "The Beatles' home city anchors their career and wider cultural influence."
+  },
+  "e669ceff-1446-4868-80c5-add20c7e0227": {
+    "coordinates": [
+      2.65,
+      50.0
+    ],
+    "label": "Somme and the Western Front",
+    "note": "Representative point on a front extending across northern France and Belgium."
+  },
+  "b0f75939-b2d9-4da9-a9e8-85ebaf11f8ba": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A comparison of weather and climate events across different regions and periods."
+  },
+  "badbe559-f3c9-4e02-9471-04be3bf2ac47": {
+    "coordinates": [
+      69.21,
+      34.56
+    ],
+    "label": "Kabul, Afghanistan",
+    "note": "Kabul anchors the First Anglo-Afghan War, including the retreat through surrounding mountain passes."
+  },
+  "8e63ed26-878e-40a1-be47-dabd37769463": {
+    "coordinates": [
+      69.21,
+      34.56
+    ],
+    "label": "Afghanistan",
+    "note": "Kabul is a representative point for the country's imperial relationships and the Great Game."
+  },
+  "39cf5698-cca7-4295-b821-a57ba1ea3e5b": {
+    "coordinates": [
+      2.35,
+      48.86
+    ],
+    "label": "Paris and Enlightenment Europe",
+    "note": "Paris is one representative centre of a movement spanning many European cities."
+  },
+  "98c3ab8e-6fe2-41d2-84fa-bc05154b5682": {
+    "coordinates": [
+      -0.16,
+      51.52
+    ],
+    "label": "Baker Street, London",
+    "note": "The fictional Holmes's address anchors the stories' Victorian and Edwardian London setting."
+  },
+  "f33a4351-223d-40cf-86c6-529ff21a881e": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A broad history of examinations and education does not have a single geographic setting."
+  },
+  "bfeba0d0-0283-47ad-8623-80d97b8f5957": {
+    "coordinates": [
+      13.38,
+      52.51
+    ],
+    "label": "Berlin, Germany",
+    "note": "Representative point along the former Berlin Wall."
+  },
+  "86a37dda-5087-43fa-ac35-f9f411334cc3": {
+    "coordinates": [
+      22.43,
+      37.08
+    ],
+    "label": "Sparta, Greece",
+    "note": "Approximate location of ancient Sparta."
+  },
+  "264d4017-decf-4d2a-897c-c8a11b5fc49b": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The postwar Olympic Games took place in many host cities with no single geographic setting."
+  },
+  "394d9185-83e0-4a16-92ca-186baa146325": {
+    "coordinates": [
+      23.73,
+      37.98
+    ],
+    "label": "Athens and the modern Olympics",
+    "note": "The 1896 revival in Athens anchors an episode covering subsequent Games in several countries."
+  },
+  "56bf0aee-2580-48b4-ab76-616a22682d0c": {
+    "coordinates": [
+      21.63,
+      37.64
+    ],
+    "label": "Olympia, Greece",
+    "note": "Site of the ancient Olympic Games."
+  },
+  "1a4e11ca-1b80-4e40-a83c-8c8207f26059": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Parliament Square, London",
+    "note": "The statues visited in this episode stand in Parliament Square."
+  },
+  "e7d2b31d-534c-4e84-8f16-bcbed39e1d1b": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "Whitehall, London",
+    "note": "Representative point for the Whitehall statue walk."
+  },
+  "d229e714-8029-4ff6-b2f1-c736314a854f": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "Trafalgar Square, London",
+    "note": "The monuments visited in this episode stand in Trafalgar Square."
+  },
+  "ce60fa8d-a531-46b9-9f2b-499f4315db48": {
+    "coordinates": [
+      88.36,
+      22.57
+    ],
+    "label": "Bengal and Company-ruled India",
+    "note": "Kolkata is a representative centre of East India Company expansion in the eighteenth century."
+  },
+  "481adbbd-0def-49a1-9945-040d94ddc86d": {
+    "coordinates": [
+      -0.34,
+      51.4
+    ],
+    "label": "Hampton Court and Tudor England",
+    "note": "Hampton Court is a representative royal setting for Henry VIII's marriages and court."
+  },
+  "762f9f98-4ce2-44f8-8b8f-d51bd7f360f4": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome and Anglo-Italian relations",
+    "note": "Rome anchors the Italian side of an episode spanning connections with England."
+  },
+  "7167be21-0733-48fd-98c8-09d2a5d16066": {
+    "coordinates": [
+      106.7,
+      10.78
+    ],
+    "label": "Saigon, now Ho Chi Minh City",
+    "note": "Representative anchor for the Vietnam War, which affected all of Vietnam and neighbouring countries."
+  },
+  "fb760d2b-8039-4380-8403-66c241c9a797": {
+    "coordinates": [
+      12.57,
+      55.68
+    ],
+    "label": "Copenhagen and Anglo-Danish relations",
+    "note": "Copenhagen anchors the Danish side of connections spanning both countries."
+  },
+  "f806aa0a-e2bf-4b1c-a5ca-d85d87d05636": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A discussion of teaching and writing history for children has no single historical location."
+  },
+  "02408d95-4de6-4dca-a393-9c3d3e71ad9f": {
+    "coordinates": [
+      33.6,
+      44.5
+    ],
+    "label": "Balaklava and Crimea",
+    "note": "The Crimean War provides the principal geographic anchor for this Anglo-Ukrainian history episode."
+  },
+  "ed17f321-feb6-439f-a085-32407cd68709": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "London and the British Empire",
+    "note": "The imperial capital is a representative anchor; the subject spans territories across the world."
+  },
+  "3d5ac069-51f6-4ca1-a135-e9338608cc07": {
+    "coordinates": [
+      13.4,
+      52.52
+    ],
+    "label": "Germany and Anglo-German relations",
+    "note": "Berlin anchors the German side of an episode spanning relationships with Britain."
+  },
+  "9f36e36e-f9a0-403e-99a4-929bd7315359": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A thematic comparison of ghost stories and their changing meanings has no single geographic setting."
+  },
+  "2f727673-0de5-43d1-8244-cbf3f6ad0976": {
+    "coordinates": [
+      -0.1,
+      51.52
+    ],
+    "label": "Old Bailey, London",
+    "note": "Thorpe's trial provides an anchor for a political scandal involving several British locations."
+  },
+  "40fe5c86-dd10-4d7f-bb93-8d8c65e96098": {
+    "coordinates": [
+      13.4,
+      52.52
+    ],
+    "label": "Berlin and Nazi Germany",
+    "note": "The Nazi government's capital anchors Hitler's dictatorship and the war it waged across Europe."
+  },
+  "10211afc-1466-48ec-bd00-76704502dcad": {
+    "coordinates": [
+      11.58,
+      48.14
+    ],
+    "label": "Munich, Germany",
+    "note": "Munich anchors Hitler's early political rise; the episode also covers his Austrian origins and later career."
+  },
+  "395171bc-67dd-49e4-bd18-cb840942c169": {
+    "coordinates": [
+      -0.57,
+      51.44
+    ],
+    "label": "Runnymede, England",
+    "note": "Approximate location where Magna Carta was sealed in 1215."
+  },
+  "f4e1d59c-1b28-4100-9d28-3a9c329936ec": {
+    "coordinates": [
+      -120.0,
+      37.0
+    ],
+    "label": "California, United States",
+    "note": "Regional anchor for a statewide historical survey."
+  },
+  "d464710d-c131-4cc2-9238-4e2d454c135f": {
+    "coordinates": [
+      39.83,
+      21.42
+    ],
+    "label": "Mecca and western Arabia",
+    "note": "Mecca anchors Muhammad's early life and the origins of Islam; Medina is also central to the story."
+  },
+  "9f0ff553-a296-4a7f-bcb8-29ccc3766fb0": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A cross-cultural competition between deities has no single geographic setting."
+  },
+  "539af2e2-1615-4abc-a81f-03cfb8a9b0bc": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A cross-cultural competition between deities has no single geographic setting."
+  },
+  "12dda801-86ca-44f4-9499-8ce17ee3edde": {
+    "coordinates": [
+      2.35,
+      48.86
+    ],
+    "label": "Paris, France",
+    "note": "The city's history, culture and architecture are the subject."
+  },
+  "24444bde-5780-4589-b94f-03d5cfc69c17": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Rome, Roman Empire",
+    "note": "Nero's imperial court and rule were centred in Rome."
+  },
+  "c6ac542f-709f-46f2-8e3c-3965e77ac7e7": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A preview of a cross-cultural competition between deities has no single geographic setting."
+  },
+  "77677bed-56e1-49e0-a9e7-cc0c7c56855f": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "Political centre of the Protectorate; the subject extends across Britain and Ireland."
+  },
+  "75d73372-5a16-4691-9ef5-64d056d9f1ec": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Game of Thrones uses an invented geography; comparisons with medieval history do not establish a single real-world setting."
+  },
+  "fae4c18e-dd54-4143-8831-c43197795688": {
+    "coordinates": [
+      -99.13,
+      19.43
+    ],
+    "label": "Tenochtitlan, now Mexico City",
+    "note": "Capital of the Mexica and Aztec Empire."
+  },
+  "4c786335-8efb-4f91-b2a4-71ab65433fc6": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The emergence of teenage culture is discussed across modern societies without one setting."
+  },
+  "76760589-bffb-4853-a829-e8df6e51eecb": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "Britain",
+    "note": "A regional anchor for British food traditions and class across several periods."
+  },
+  "8302fd3f-ac6c-49b7-84d2-9c9b301fe0f3": {
+    "coordinates": [
+      2.35,
+      48.86
+    ],
+    "label": "Paris, France",
+    "note": "Political centre of the French Revolution, which affected the whole country and beyond."
+  },
+  "9b06c6f4-ffc3-4e3e-8bc5-fa5b373fa116": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The Seven Years' War had major theatres in Europe, the Americas and South Asia; there is no single setting."
+  },
+  "3495390b-a720-45f3-9968-e18e3f15c9a9": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "The episode compares culture wars from ancient Rome to modern societies."
+  },
+  "445fa225-ad0a-48b8-b081-7ee12288c8e9": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A cross-cultural ranking of eunuchs has no single geographic setting."
+  },
+  "51230fba-9dd0-4ad3-a00c-53ae81f40fbb": {
+    "coordinates": [
+      0.49,
+      50.91
+    ],
+    "label": "Battle, near Hastings, England",
+    "note": "Approximate site of the Battle of Hastings."
+  },
+  "31e45225-8cab-4479-bf12-1609dbdc3e64": {
+    "coordinates": [
+      2.38,
+      51.03
+    ],
+    "label": "Dunkirk and western Europe",
+    "note": "Dunkirk anchors the episode's discussion of France's defeat and Britain's crisis in 1940."
+  },
+  "166679b4-ec45-499c-b5f5-fa39c5a45a60": {
+    "coordinates": [
+      -106.0,
+      39.0
+    ],
+    "label": "American West",
+    "note": "A broad regional anchor for frontier history and Western mythology, not the site of every story."
+  },
+  "940b4a38-d7e2-4412-b8f3-cb3f5724df7c": {
+    "coordinates": [
+      53.0,
+      32.0
+    ],
+    "label": "Persia / Iran",
+    "note": "A regional anchor for Persian civilisation across several historical periods."
+  },
+  "d5b55802-f8be-456e-bb4f-49a65a166fc3": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "History in games, re-enactment and entertainment is a thematic discussion without one setting."
+  },
+  "8d2e64a4-b34e-43f0-8dbc-9e8ea34dd249": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "London and Tudor England",
+    "note": "The royal court is a representative anchor for Elizabeth I's reign and relationships."
+  },
+  "ddc645b9-4217-4ec0-9ebb-d231ab04ef62": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Communist theory and governments are compared across different countries."
+  },
+  "a88c290d-13ec-4aee-82b8-2ea79e69ac72": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Espionage is discussed through examples across several countries and periods."
+  },
+  "f95a40c8-8186-4861-8864-9796e5c1652a": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "A comparison of British prime ministers anchored at the centre of British government."
+  },
+  "d138fe38-704b-4806-9577-d898d5d2efaf": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "A comparison of British prime ministers anchored at the centre of British government."
+  },
+  "10fe3003-4f6a-425e-94a2-bb957b28ab47": {
+    "coordinates": [
+      -1.8,
+      55.67
+    ],
+    "label": "Lindisfarne and Northumbria",
+    "note": "The island associated with Cuthbert anchors his life and later cult in northern Britain."
+  },
+  "5b039623-75a4-4a58-8dd3-8e6a248b242b": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "England and world football",
+    "note": "England anchors the origins of modern association football; its global spread is also covered."
+  },
+  "f2338a37-e91c-4b16-b937-217d8ba8fb50": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Counterfactual comparisons of different historical events have no single geographic setting."
+  },
+  "089fa561-6b20-476f-975a-344e3618f47d": {
+    "coordinates": [
+      13.4,
+      52.52
+    ],
+    "label": "Berlin, German Empire",
+    "note": "The imperial capital anchors the history of the Second Reich."
+  },
+  "64a4684e-1492-4e02-87a8-2bbc4712bc4e": {
+    "coordinates": [
+      -0.14,
+      51.5
+    ],
+    "label": "London and the British monarchy",
+    "note": "The monarchy is the subject; the interview itself took place in California."
+  },
+  "f88db45e-dcdb-4e19-ad2d-9586fdff4ca3": {
+    "coordinates": [
+      -98.0,
+      39.0
+    ],
+    "label": "United States and its global influence",
+    "note": "A national anchor for Americanisation, whose effects are discussed worldwide."
+  },
+  "2342a41f-33fa-493a-8d21-7da9a9dc0cef": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Comedy and historical humour are discussed across different societies and eras."
+  },
+  "d4913283-8d30-436e-aeae-a0ce01cce49d": {
+    "coordinates": [
+      32.6,
+      25.74
+    ],
+    "label": "Valley of the Kings, Egypt",
+    "note": "Tutankhamun's tomb anchors his ancient life and the story of its modern discovery."
+  },
+  "2c270509-347d-458e-8f98-f1c70232876b": {
+    "coordinates": [
+      10.0,
+      50.0
+    ],
+    "label": "Europe",
+    "note": "A regional anchor for European witch hunts; no single town represents the episode's scope."
+  },
+  "28df9627-236f-4391-baf8-96fa282d3013": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Empires and nation-states are compared across the world and throughout history."
+  },
+  "d433c765-33ca-42aa-9e93-131377438491": {
+    "coordinates": [
+      -0.12,
+      51.51
+    ],
+    "label": "London, England",
+    "note": "Representative urban setting for the episode's eighteenth- and nineteenth-century British social history."
+  },
+  "daf1885b-b936-46e1-9909-9fa745f46f67": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "Britain in the 1990s",
+    "note": "London is a representative anchor for the episode's predominantly British cultural examples; American politics also appears."
+  },
+  "63673d87-8fb9-43f9-8371-a0d57cbc48cb": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A ranking of unusual wars spans unrelated places and periods."
+  },
+  "e9923700-1c29-48eb-a2d8-77a0d953ea1d": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Prophecy and predictions of the future are compared across societies."
+  },
+  "4922323b-c339-41dd-a666-ebad0b5179ed": {
+    "coordinates": [
+      104.0,
+      35.0
+    ],
+    "label": "China",
+    "note": "A national anchor for a broad survey of Chinese civilisation, not the location of every event."
+  },
+  "33d3108e-c3ba-4256-9f1b-1760422edcb6": {
+    "coordinates": [
+      -4.76,
+      50.67
+    ],
+    "label": "Tintagel and Arthurian Britain",
+    "note": "Traditional legendary association with Arthur; this does not establish a historical biography or birthplace."
+  },
+  "a1957320-8c6d-459f-a135-662c21c29b2b": {
+    "coordinates": [
+      -1.5,
+      53.0
+    ],
+    "label": "England",
+    "note": "Regional anchor for England's north-south identities; no precise dividing line is asserted."
+  },
+  "3032a55e-8d16-40a9-b5da-d15add95ab9f": {
+    "coordinates": [
+      12.5,
+      41.9
+    ],
+    "label": "Italy and European fascism",
+    "note": "Rome anchors fascism's Italian political origins; the episode also considers its wider development."
+  },
+  "d3a2f394-441d-4924-9717-c8c0f94c4eee": {
+    "coordinates": [
+      14.49,
+      40.75
+    ],
+    "label": "Pompeii, Italy",
+    "note": "Approximate location of the Roman city buried by Vesuvius."
+  },
+  "9c8ffd81-a713-4ca2-a6a6-8a183bd74f94": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Walls and borders are compared across China, Europe and other regions."
+  },
+  "d34eec88-c4b0-4fa9-b717-8557d548e8ab": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A discussion of historical fiction as a genre has no single geographic setting."
+  },
+  "e184b185-bbad-4a9a-be77-e5402184fb9e": {
+    "coordinates": [
+      26.24,
+      39.96
+    ],
+    "label": "Troy, Anatolia",
+    "note": "The archaeological site of Troy anchors the Greek legendary setting; the myths are not treated as established events."
+  },
+  "b7f5d597-24b2-44a4-a673-e27ceeb1e626": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Conspiracy theories are compared across different countries and periods."
+  },
+  "b42d85a5-8b97-4c13-8529-4c43c6619b51": {
+    "coordinates": [
+      -0.13,
+      51.5
+    ],
+    "label": "Westminster, London",
+    "note": "Representative political anchor for Britain's departure from the European Union and historical comparisons."
+  },
+  "b3da5f03-3b6c-4e27-804c-48abf5dd70af": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Christmas customs and their transformation span multiple societies and periods."
+  },
+  "9d6008a5-5750-40a9-a132-d72e920d83f2": {
+    "coordinates": [
+      18.42,
+      43.86
+    ],
+    "label": "Sarajevo and Europe",
+    "note": "Sarajevo anchors the immediate July Crisis trigger; the episode's causes involve several European powers."
+  },
+  "1686e28a-939e-4913-a179-ed0747bbfbd9": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "London and the history of communication",
+    "note": "London coffee houses provide an anchor for a wider comparison with printing and global social media."
+  },
+  "9c12bcb9-a366-4c17-8511-64833851e0da": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A general discussion about learning from history ranges across societies and events."
+  },
+  "19f9fd6c-418e-4d54-935d-ae0fe7e797b6": {
+    "coordinates": [
+      26.24,
+      39.96
+    ],
+    "label": "Troy, Anatolia",
+    "note": "Approximate location of the archaeological site associated with the Trojan legend; the war's historicity is disputed."
+  },
+  "8583b546-9a5d-4d2c-82bb-5251b5cd1808": {
+    "coordinates": [
+      -0.13,
+      51.51
+    ],
+    "label": "Britain in 1981",
+    "note": "London anchors a national survey of politics, unrest and culture that also covers other British cities."
+  },
+  "d7b04e6f-4dc6-4b27-aa9e-aa69b44d2cf9": {
+    "coordinates": [
+      -1.5,
+      52.5
+    ],
+    "label": "Britain",
+    "note": "Regional anchor for comparisons between seventeenth-century Britain and the crises of 2020."
+  },
+  "f8d76a6b-51f5-4e4c-9e02-9fd29222bb64": {
+    "coordinates": [
+      -77.04,
+      38.9
+    ],
+    "label": "Washington, D.C.",
+    "note": "The modern US presidency anchors comparisons with Nixon and ancient Rome."
+  },
+  "24104338-377e-42eb-afb7-e3184d74af40": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Civil wars in different societies are compared, with no single geographic setting."
+  },
+  "d64331b9-0d45-4f03-b2da-f6d5ac189422": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "Historical greatness is discussed through figures from unrelated societies."
+  },
+  "a428c3fa-10c8-4b77-a85a-04c812bf7477": {
+    "coordinates": null,
+    "label": "Worldwide",
+    "note": "A general introduction to the podcast has no episode-specific geographic setting."
+  }
+}
