@@ -1,6 +1,6 @@
 # The History Atlas
 
-A cozy, independent companion to **The Rest Is History**, arranged by the history being discussed rather than the date an episode was released.
+An independent companion to **The Rest Is History**, arranged by the history being discussed rather than the date an episode was released.
 
 **Live:** https://history.jakub.computer
 
@@ -8,14 +8,14 @@ The initial catalogue contains all **736 episodes in the public RSS feed**, capt
 
 ## Explore
 
-- A horizontal chronological timeline with eight regional lanes, sticky date and region labels, era filters, arrow controls, and a full-range slider.
+- A compact chronological timeline with rows for concurrent episode series, a sticky date axis, era filters, arrow controls, and a full-range slider. Region filtering remains available.
 - Search by subject, place, episode number or description; filter by region; switch to a paginated index.
 - Episode details with historical range and placement rationale, publisher description, release date, duration, artwork, series navigation and original public audio.
 - All 736 initial episodes have verified direct Pocket Casts and Spotify links. Apple Podcasts has 209 exact links and otherwise a labelled search. YouTube links are labelled searches.
 - Share individual episodes with `#episode=<RSS GUID>`; filters are reflected in the URL.
 - Responsive layouts, keyboard navigation, reduced-motion support, no analytics, accounts or application cookies.
 
-Dates are editorial approximations. The start of the covered period determines ordering and era membership. Cards expand the available space, so distances are **not a linear time scale**. The atlas opens around 3000 BCE; prehistory remains accessible to the left. Cross-regional episodes use the region central to their subject or the shared world lane. Undatable discussions are categorized separately.
+Dates are editorial approximations. The start of the covered period determines ordering and era membership. Cards expand the available space, so distances are **not a linear time scale**. The timeline starts with the earliest episode. Related episodes share a row, concurrent series occupy separate rows, and available rows are reused. Empty rows outside the visible date range collapse so the visible episodes align to the top. Regions are metadata for filtering, not fixed rows. Undatable discussions are categorized separately.
 
 ## Run locally
 
@@ -58,7 +58,7 @@ Raw public-source snapshots in `data/` are for audit and maintenance; only `publ
 
 ## Verification
 
-Automated checks cover feed completeness, unique IDs, valid placements, listening-link kinds, chronology, non-overlapping cards, shared dates across regions, era boundaries and search behavior. Browser verification covers desktop and 320/390/430-pixel mobile layouts, detail dialogs, filters, pagination, deep links and the deployed site.
+Automated checks cover feed completeness, unique IDs, valid placements, listening-link kinds, chronology, non-overlapping cards, shared dates across concurrent series and top-aligned visible rows, era boundaries and search behavior. Browser verification covers desktop and 320/390/430-pixel mobile layouts, detail dialogs, filters, pagination, deep links and the deployed site.
 
 ## Credits
 

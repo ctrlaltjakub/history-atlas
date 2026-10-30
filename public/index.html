@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#6b2636">
   <meta name="description" content="Explore every public episode of The Rest Is History through time and across the world. A chronological podcast atlas with direct Pocket Casts and Spotify links.">
   <meta property="og:title" content="The History Atlas · The Rest Is History">
-  <meta property="og:description" content="A different way into the past. Explore The Rest Is History by historical date and region.">
+  <meta property="og:description" content="Browse The Rest Is History in historical order. Filter episodes by era, region or topic.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://history.jakub.computer/images/show.jpg">
   <title>The History Atlas · The Rest Is History</title>
@@ -22,31 +22,15 @@
       <span><span class="brand-title">The History Atlas</span><span class="brand-caption">A companion to The Rest Is History</span></span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="#collection">The timeline</a><a href="#beyond">Beyond time</a><button type="button" data-about>About the atlas <span aria-hidden="true">↗</span></button>
+      <a href="#collection">Timeline</a><a href="#beyond">Other episodes</a><button type="button" data-about>About the atlas <span aria-hidden="true">↗</span></button>
     </nav>
   </header>
 
   <main>
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="small-line"></span> THE REST IS HISTORY, REARRANGED</p>
-        <h1 id="hero-title">The past is a place.<br><em>Find your way in.</em></h1>
-        <p class="hero-description">From ancient worlds to yesterday’s revolutions.<br class="desktop-only"> Follow Tom and Dominic through history, one episode at a time.</p>
-        <div class="hero-bottom"><a class="text-link" href="#collection">Explore the collection <span aria-hidden="true">↓</span></a><span class="hero-divider"></span><button class="text-link muted-link" id="surprise">Take me somewhere <span aria-hidden="true">↗</span></button></div>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-        <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
-        <figure class="cover-frame cover-back"><img src="/images/rome.jpg" alt="" width="230" height="230"></figure>
-        <figure class="cover-frame cover-front"><img src="/images/show.jpg" alt="" width="246" height="246"></figure>
-        <span class="art-label">GOOD STORIES. LONG PERSPECTIVES.</span>
-      </div>
-    </section>
-
     <section class="collection wrap" id="collection" aria-labelledby="collection-title">
       <div class="section-heading">
-        <div><p class="eyebrow">01 / THE CHRONOLOGICAL COLLECTION</p><h2 id="collection-title">A world of stories</h2></div>
-        <p class="collection-note"><span id="total-count">…</span> public episodes<span class="dot-separator">·</span><span>Across eight regions</span></p>
+        <div><p class="eyebrow">THE REST IS HISTORY</p><h1 id="collection-title">Episode timeline</h1></div>
+        <div class="collection-summary"><p class="collection-note"><span id="total-count">…</span> public episodes</p><button class="text-link" id="surprise">Random episode ↗</button></div>
       </div>
       <div class="catalogue-controls">
         <label class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="A person, a place, an episode…" autocomplete="off" aria-label="Search episodes by title, number, place or description"><span class="search-shortcut" aria-hidden="true">/</span></label>
@@ -54,34 +38,34 @@
         <div class="view-switch" role="group" aria-label="Collection view"><button id="timeline-view" class="active" aria-pressed="true" title="Timeline view"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 6h16M2 14h16M5 3v6m9 2v6"/></svg><span>Timeline</span></button><button id="list-view" aria-pressed="false" title="List view"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 5h11M7 10h11M7 15h11M2 5h2m-2 5h2m-2 5h2"/></svg><span>Index</span></button></div>
       </div>
       <div class="era-tabs" id="era-tabs" role="group" aria-label="Filter by historical era"></div>
-      <div class="results-bar"><p id="results-count" role="status" aria-live="polite">Opening the archive…</p><button id="reset-filters" hidden>Clear filters <span aria-hidden="true">×</span></button><span id="timeline-tip">Earlier <span class="direction-line" aria-hidden="true"></span> Later <span class="swipe-hint">· Swipe to explore</span></span></div>
-      <div id="load-error" class="empty-state" hidden><h3>The archive couldn’t be opened.</h3><p>Please check your connection and try again.</p><button class="primary-button" id="retry">Try again</button></div>
+      <div class="results-bar"><p id="results-count" role="status" aria-live="polite">Loading episodes…</p><button id="reset-filters" hidden>Clear filters <span aria-hidden="true">×</span></button><span id="timeline-tip">Earlier <span class="direction-line" aria-hidden="true"></span> Later <span class="swipe-hint">· Swipe to explore</span></span></div>
+      <div id="load-error" class="empty-state" hidden><h3>The episodes couldn’t be loaded.</h3><p>Please check your connection and try again.</p><button class="primary-button" id="retry">Try again</button></div>
       <div id="timeline-section">
         <div class="timeline-shell" id="timeline-shell">
-          <div class="timeline-scroll" id="timeline-scroll" tabindex="0" role="region" aria-label="Historical timeline. Scroll horizontally through time and vertically through regions. Use arrow keys to explore."><div class="timeline-canvas" id="timeline-canvas"><div class="loading-state">Unfolding the timeline<span>One moment, a few centuries to arrange.</span></div></div></div>
+          <div class="timeline-scroll" id="timeline-scroll" tabindex="0" role="region" aria-label="Historical timeline. Episodes are arranged chronologically. Concurrent series use separate rows. Scroll horizontally or use the arrow keys."><div class="timeline-canvas" id="timeline-canvas"><div class="loading-state">Loading episodes…</div></div></div>
           <div class="timeline-navigation">
             <button class="arrow-button" id="earlier" aria-label="Scroll to earlier episodes">←</button>
             <div class="time-scrubber"><div class="scrubber-labels"><span id="first-year"></span><span class="scrubber-help">MOVE THROUGH TIME</span><span id="last-year"></span></div><input type="range" min="0" max="1000" value="0" id="time-position" aria-label="Timeline position"></div>
             <button class="arrow-button" id="later" aria-label="Scroll to later episodes">→</button>
           </div>
         </div>
-        <div class="timeline-footnote"><span><span class="tiny-diamond" aria-hidden="true">◇</span> Historical dates, not release dates. Spacing adapts to the stories.</span><button data-about>How to read the atlas <span aria-hidden="true">↗</span></button></div>
+        <div class="timeline-footnote"><span><span class="tiny-diamond" aria-hidden="true">◇</span> Historical order · gaps compressed · series share a row.</span><button data-about>How it works <span aria-hidden="true">↗</span></button></div>
       </div>
       <div id="index-section" hidden><div id="index-grid" class="episode-grid"></div><button id="index-more" class="load-more" hidden>Show more episodes <span aria-hidden="true">↓</span></button></div>
     </section>
 
     <section class="beyond-section" id="beyond" aria-labelledby="beyond-title"><div class="wrap">
-      <div class="section-heading"><div><p class="eyebrow">02 / BEYOND THE TIMELINE</p><h2 id="beyond-title">Some stories refuse a date.</h2><p class="section-description">Big ideas, curious questions, myths and conversations that wander through the ages.</p></div><span class="collection-symbol" aria-hidden="true">✳</span></div>
-      <div id="category-tabs" class="category-tabs" role="group" aria-label="Browse episodes beyond the timeline"></div>
+      <div class="section-heading"><div><p class="eyebrow">BROWSE BY TOPIC</p><h2 id="beyond-title">Other episodes</h2><p class="section-description">Topics and discussions without a single historical period.</p></div></div>
+      <div id="category-tabs" class="category-tabs" role="group" aria-label="Browse undated episodes by topic"></div>
       <div id="beyond-grid" class="episode-grid"></div>
-      <button id="beyond-more" class="load-more" hidden>Keep exploring <span aria-hidden="true">↓</span></button>
+      <button id="beyond-more" class="load-more" hidden>Show more episodes <span aria-hidden="true">↓</span></button>
     </div></section>
-    <section class="closing-note wrap"><span class="closing-rule"></span><p>“The past is a foreign country;<br>they do things differently there.”<cite>— L. P. Hartley, The Go-Between</cite></p><span class="closing-rule"></span></section>
+
   </main>
-  <footer class="site-footer wrap"><div><span class="footer-title">The History Atlas</span><p>An independent companion. Made for curious minds.</p></div><div><a href="https://therestishistory.com/" target="_blank" rel="noopener noreferrer">The official podcast ↗</a><button data-about>Sources & methodology</button><span id="updated-at">Catalogue from the public RSS feed</span></div></footer>
+  <footer class="site-footer wrap"><div><span class="footer-title">The History Atlas</span><p>An independent podcast index.</p></div><div><a href="https://therestishistory.com/" target="_blank" rel="noopener noreferrer">The official podcast ↗</a><button data-about>Sources & methodology</button><span id="updated-at">Catalogue from the public RSS feed</span></div></footer>
 
   <dialog id="episode-dialog" aria-labelledby="episode-title"><button class="dialog-close" aria-label="Close episode">×</button><div id="episode-content"></div></dialog>
-  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title"><button class="dialog-close" aria-label="Close about the atlas">×</button><div class="about-content"><p class="eyebrow">A NOTE FROM THE MAP ROOM</p><h2 id="about-title">A guide, with room for nuance.</h2><p>This is an independent, unofficial companion to <strong>The Rest Is History</strong>, hosted by Tom Holland and Dominic Sandbrook and produced by Goalhanger.</p><h3>How the timeline works</h3><p>Episodes run from earlier to later by the <strong>beginning of the historical period they cover</strong>. Each region has its own lane. Dates and ranges are editorial approximations, not timestamps or claims that a whole episode concerns a single year. Open an episode for its period and placement note.</p><p>Space expands where there are more stories, so the distance between cards does not represent a fixed number of years. The era buttons select stories by the beginning of their period. Open broad surveys to see their full date range. The atlas opens around the first civilisations; scroll left to reach prehistory.</p><p>An episode appears in the region most central to its story. International subjects have a shared world lane. Myths, questions and discussions without a meaningful historical date live in “Beyond the timeline”.</p><h3>The collection & listening links</h3><p id="about-coverage"></p><p>Pocket Casts buttons open the matching episode. Spotify opens the matching episode when verified, or an explicitly labelled search. Apple Podcasts opens the episode when an exact match is available; otherwise its button says “Find episode”. YouTube links are explicitly labelled searches. The original public audio is also playable here.</p><h3>Sources & credits</h3><ul><li><a href="https://feeds.megaphone.fm/GLT4787413333" target="_blank" rel="noopener noreferrer">Goalhanger’s public RSS feed ↗</a> — titles, descriptions, artwork, audio and release details.</li><li><a href="https://archive.therestishistory.com/" target="_blank" rel="noopener noreferrer">The official Rest Is History archive ↗</a> — additional catalogue references.</li><li><a href="https://trihexplorer.com/" target="_blank" rel="noopener noreferrer">TRIH Episode Explorer ↗</a> — community topic and region tags used as research clues, checked against episode subjects.</li><li>Pocket Casts’ public catalogue, Spotify’s catalogue and Apple’s public lookup — episode links.</li></ul><p class="fine-print">Podcast content and artwork belong to their respective owners. This site is not affiliated with or endorsed by Goalhanger. Historical placements are a listening guide and may simplify episodes that span places and periods. No accounts, tracking or cookies are used by the atlas. Playing audio and opening listening services connects to those providers.</p></div></dialog>
+  <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title"><button class="dialog-close" aria-label="Close about the atlas">×</button><div class="about-content"><p class="eyebrow">SOURCES & METHODOLOGY</p><h2 id="about-title">About this atlas</h2><p>This is an independent, unofficial companion to <strong>The Rest Is History</strong>, hosted by Tom Holland and Dominic Sandbrook and produced by Goalhanger.</p><h3>How the timeline works</h3><p>Episodes run from earlier to later by the <strong>beginning of the historical period they cover</strong>. Related episodes share a row. Series that overlap on the timeline occupy separate rows; rows are reused when space is available. Empty rows outside the visible dates are collapsed, keeping episodes aligned to the top. Dates and ranges are editorial approximations, not timestamps or claims that a whole episode concerns a single year. Open an episode for its period and placement note.</p><p>Gaps between dates are compressed; distance does not represent a fixed number of years. The era buttons select episodes by the beginning of their period. Open broad surveys to see their full date range.</p><p>The region filter uses the place most central to each episode. International subjects are tagged “Across the world”. Myths, questions and discussions without a meaningful historical date appear under “Other episodes”.</p><h3>The collection & listening links</h3><p id="about-coverage"></p><p>Pocket Casts buttons open the matching episode. Spotify opens the matching episode when verified, or an explicitly labelled search. Apple Podcasts opens the episode when an exact match is available; otherwise its button says “Find episode”. YouTube links are explicitly labelled searches. The original public audio is also playable here.</p><h3>Sources & credits</h3><ul><li><a href="https://feeds.megaphone.fm/GLT4787413333" target="_blank" rel="noopener noreferrer">Goalhanger’s public RSS feed ↗</a> — titles, descriptions, artwork, audio and release details.</li><li><a href="https://archive.therestishistory.com/" target="_blank" rel="noopener noreferrer">The official Rest Is History archive ↗</a> — additional catalogue references.</li><li><a href="https://trihexplorer.com/" target="_blank" rel="noopener noreferrer">TRIH Episode Explorer ↗</a> — community topic and region tags used as research clues, checked against episode subjects.</li><li>Pocket Casts’ public catalogue, Spotify’s catalogue and Apple’s public lookup — episode links.</li></ul><p class="fine-print">Podcast content and artwork belong to their respective owners. This site is not affiliated with or endorsed by Goalhanger. Historical placements are a listening guide and may simplify episodes that span places and periods. No accounts, tracking or cookies are used by the atlas. Playing audio and opening listening services connects to those providers.</p></div></dialog>
   <div id="toast" role="status" class="toast" hidden></div>
   <noscript><div class="noscript">This interactive atlas needs JavaScript. You can still visit <a href="https://archive.therestishistory.com/">the official episode archive</a>.</div></noscript>
 </body>

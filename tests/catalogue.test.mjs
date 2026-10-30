@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, chronological, formatYear} from '../public/core.mjs';
+import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear} from '../public/core.mjs';
 
 const catalogue = JSON.parse(readFileSync(new URL('../public/data/catalogue.json', import.meta.url)));
 const base = JSON.parse(readFileSync(new URL('../data/base-episodes.json', import.meta.url)));
@@ -39,26 +39,61 @@ test('listening links distinguish verified episodes from searches', () => {
   }
 });
 
-test('timeline preserves every dated story without collisions in a region', () => {
-  for (const step of [182, 247, 252]) {
+test('timeline preserves chronology and separates concurrent series without card collisions', () => {
+  for (const step of [140, 176, 200]) {
     const layout = makeTimeline(episodes, step);
     assert.equal(layout.positions.length, episodes.filter(e => e.start !== null).length);
     assert.equal(new Set(layout.positions.map(p => p.episode.id)).size, layout.positions.length);
     assert.deepEqual(layout.ticks.map(t => t.year), [...new Set(episodes.filter(e => e.start !== null).map(e => e.start))].sort((a,b) => a-b));
-    for (const region of REGIONS) {
-      const row = layout.positions.filter(p => p.episode.region === region);
-      for (let i=1; i<row.length; i++) {
-        assert.ok(row[i].x-row[i-1].x >= step, `${region}: overlapping cards`);
-        assert.ok(row[i].episode.start >= row[i-1].episode.start);
+    for (let row=0; row<layout.rowCount; row++) {
+      const cards = layout.positions.filter(p => p.row === row).sort((a,b)=>a.x-b.x);
+      for (let i=1; i<cards.length; i++) {
+        assert.ok(cards[i].x-cards[i-1].x >= step, `Row ${row}: overlapping cards`);
+        assert.ok(cards[i].episode.start >= cards[i-1].episode.start);
+      }
+    }
+    for (const group of layout.groups) {
+      assert.equal(new Set(group.positions.map(p=>p.row)).size, 1, 'A series stays in one row');
+      const earlier=layout.groups.filter(g=>g.row<group.row);
+      for (let row=0;row<group.row;row++) {
+        assert.ok(earlier.some(g=>g.row===row&&g.start<=group.start&&g.end>group.start), 'Use the first available row');
       }
     }
     for (const tick of layout.ticks) {
-      for (const region of layout.regions) {
-        const first = layout.positions.find(p => p.episode.start === tick.year && p.episode.region === region);
-        if (first) assert.equal(first.x, tick.x, 'Equal dates align across regions');
+      const starts = layout.positions.filter(p => p.episode.start === tick.year);
+      for(const key of new Set(starts.map(p=>p.key))) {
+        assert.equal(starts.find(p=>p.key===key).x, tick.x, 'Parallel series start at the same date');
       }
     }
   }
+});
+
+test('visible episodes fill consecutive rows starting at the top', () => {
+  const layout=makeTimeline(episodes,176);
+  for(let left=0;left<layout.width;left+=137) {
+    const view=visibleTimeline(layout,left,350);
+    assert.deepEqual([...new Set(view.positions.map(p=>p.displayRow))].sort((a,b)=>a-b), Array.from({length:view.rowCount},(_,i)=>i));
+    const expected=layout.positions.filter(p=>p.x+layout.step>left&&p.x<left+350);
+    assert.deepEqual(view.positions.map(p=>p.episode.id),expected.map(p=>p.episode.id));
+  }
+  assert.equal(visibleTimeline(layout,0,350).rowCount,1,'The start of the catalogue has no empty regional rows');
+});
+
+test('parallel series keep separate rows and later episodes reuse the top row', () => {
+  const item=(id,start,series='',region='Europe')=>({id,title:id,start,end:start,series,region});
+  const layout=makeTimeline([
+    item('a1',1900,'A'),item('b1',1900,'B','Asia'),
+    item('a2',1901,'A'),item('b2',1902,'B','Africa'),item('c',1903)
+  ],176);
+  const lookup=Object.fromEntries(layout.positions.map(p=>[p.episode.id,p]));
+  assert.equal(lookup.a1.row,lookup.a2.row);
+  assert.equal(lookup.b1.row,lookup.b2.row);
+  assert.notEqual(lookup.a1.row,lookup.b1.row);
+  assert.equal(lookup.c.row,0);
+  const later=visibleTimeline(layout,lookup.b2.x,176);
+  assert.equal(later.positions[0].displayRow,0,'A remaining series moves to the top of the visible view');
+  const changedRegions=makeTimeline(layout.positions.map(p=>({...p.episode,region:'Oceania'})),176);
+  assert.deepEqual(changedRegions.positions.map(p=>[p.episode.id,p.x,p.row]),layout.positions.map(p=>[p.episode.id,p.x,p.row]));
 });
 
 test('era selection partitions dated episodes and keeps undated curiosities available', () => {

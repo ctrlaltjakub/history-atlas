@@ -31,26 +31,52 @@ export function matchesEpisode(e, {q='',region='all',era='all'}={}) {
 export function chronological(a,b) {
   return (a.start ?? Infinity) - (b.start ?? Infinity) || (a.end ?? Infinity) - (b.end ?? Infinity) || (a.number ?? Infinity) - (b.number ?? Infinity) || a.title.localeCompare(b.title);
 }
-export function makeTimeline(episodes, step=252) {
+export function makeTimeline(episodes, step=200) {
   const dated=episodes.filter(e=>Number.isFinite(e.start)).sort(chronological);
-  const groups = new Map();
+  const dates = new Map();
+  const seriesKey = e => e.series ? `series:${normalise(e.series)}` : `episode:${e.id}`;
   for (const episode of dated) {
-    if (!groups.has(episode.start)) groups.set(episode.start,[]);
-    groups.get(episode.start).push(episode);
+    if (!dates.has(episode.start)) dates.set(episode.start,[]);
+    dates.get(episode.start).push(episode);
   }
   let width=0;
   const ticks=[],positions=[];
-  for (const [year, entries] of groups) {
-    const counts={};
+  const groups=new Map();
+  for (const [year, entries] of dates) {
+    const counts=new Map();
     ticks.push({year,x:width});
     for (const e of entries) {
-      const index=counts[e.region] || 0;
-      positions.push({episode:e,x:width+index*step});
-      counts[e.region]=index+1;
+      const key=seriesKey(e);
+      const index=counts.get(key) || 0;
+      const position={episode:e,x:width+index*step,key,row:0};
+      positions.push(position);
+      counts.set(key,index+1);
+      if(!groups.has(key))groups.set(key,{key,positions:[],start:position.x,end:position.x+step});
+      const group=groups.get(key);
+      group.positions.push(position);
+      group.end=Math.max(group.end,position.x+step);
     }
-    width+=Math.max(...Object.values(counts))*step;
+    width+=Math.max(...counts.values())*step;
   }
-  return {ticks,positions,width,regions:REGIONS.filter(region=>dated.some(e=>e.region===region))};
+  // A series keeps its row while concurrent series use the next free row.
+  // Earlier rows are reused as soon as the previous series ends.
+  const rowEnds=[];
+  for(const group of [...groups.values()].sort((a,b)=>a.start-b.start||a.end-b.end||a.key.localeCompare(b.key))){
+    let row=rowEnds.findIndex(end=>end<=group.start);
+    if(row===-1)row=rowEnds.length;
+    rowEnds[row]=group.end;
+    for(const position of group.positions)position.row=row;
+    group.row=row;
+  }
+  return {ticks,positions,width,step,rowCount:rowEnds.length,groups:[...groups.values()]};
+}
+
+export function visibleTimeline(layout,left,viewportWidth) {
+  const positions=layout.positions.filter(p=>p.x+layout.step>left && p.x<left+viewportWidth);
+  // Do not retain empty rows belonging to series outside the current view.
+  const rows=[...new Set(positions.map(p=>p.row))].sort((a,b)=>a-b);
+  const rowMap=new Map(rows.map((row,index)=>[row,index]));
+  return {positions:positions.map(p=>({...p,displayRow:rowMap.get(p.row)})),rowMap,rowCount:rows.length};
 }
 export function durationLabel(value) {
   const seconds = Number(value);
