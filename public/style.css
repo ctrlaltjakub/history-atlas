@@ -306,3 +306,12 @@ input[type=range] { height:20px; }
   .scrubber-labels{font-size:8px}
   .scrubber-help{display:none}
 }
+
+/* Reserve the final timeline geometry before the catalogue arrives. */
+.timeline-canvas{--timeline-axis-height:30px}
+.timeline-scroll{overflow-x:scroll}
+.timeline-canvas>.loading-state{min-height:calc(var(--timeline-axis-height) + 10 * var(--timeline-row-height))}
+.scrubber-labels{min-height:12px}
+@media(max-width:760px){.timeline-canvas{--timeline-axis-height:28px}}
+.era-tabs{min-height:40px}
+@media(max-width:760px){.era-tabs{min-height:38px}}

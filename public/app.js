@@ -22,6 +22,7 @@ function renderControls(){
   $('#reset-filters').hidden=!(state.q||state.region!=='all'||state.era!=='all');
 }
 function empty(message,detail){return `<div class="empty-state grid-empty"><h3>${esc(message)}</h3><p>${esc(detail)}</p><button class="text-link" data-clear>Clear filters ↗</button></div>`;}
+function timelineRowHeight(){return parseFloat(getComputedStyle($('#timeline-canvas')).getPropertyValue('--timeline-row-height'));}
 function renderTimeline(filtered){
   const viewport=$('#timeline-scroll');
   const step=innerWidth<=760?Math.min(176,Math.floor(viewport.clientWidth/2)):176;
@@ -36,7 +37,7 @@ function renderTimeline(filtered){
   $('#time-position').disabled=false;canvas.style.width=`${Math.max(timeline.width,viewport.clientWidth)}px`;
   const axis=`<div class="timeline-axis"><span class="axis-current" id="visible-year" hidden></span>${timeline.ticks.map(t=>`<span class="axis-tick" style="left:${t.x}px;width:${t.width}px">${t.gapLabel?`<span class="period-gap" role="img" aria-label="${esc(t.gapLabel)}" title="${esc(t.gapLabel)}">⋯</span>`:''}${t.label}</span>`).join('')}</div>`;
   const cards=timeline.positions.map(({item,x,periodLabel})=>`<button class="story-card ${item.type==='series'?'is-series':''}" ${itemTarget(item)} data-item-id="${esc(item.id)}" style="left:${x+2}px;--series-color:${item.color}" title="${esc(item.title)} · approximately ${periodLabel}" aria-label="Open ${esc(item.title)}${item.type==='series'?`, series of ${item.members.length} episodes`:''}, ${periodLabel}, approximate placement"><span class="story-text"><span class="story-title">${esc(item.title)}</span>${item.type==='series'?`<span class="story-count">${item.members.length} ↗</span>`:''}</span></button>`).join('');
-  canvas.innerHTML=axis+`<div class="timeline-board">${timeline.ticks.map(t=>`<span aria-hidden="true" class="timeline-gridline" style="left:${t.x}px"></span>`).join('')}${cards}</div>`;
+  canvas.innerHTML=axis+`<div class="timeline-board" style="height:${timeline.rowCount*timelineRowHeight()}px">${timeline.ticks.map(t=>`<span aria-hidden="true" class="timeline-gridline" style="left:${t.x}px"></span>`).join('')}${cards}</div>`;
   timelineCards=[...canvas.querySelectorAll('.story-card')];timelineTicks=[...canvas.querySelectorAll('.axis-tick')];
   $('#first-year').textContent=timeline.ticks[0].label;$('#last-year').textContent=timeline.ticks.at(-1).label;
   $('#row-count-note').textContent=`${timeline.rowCount} fixed ${timeline.rowCount===1?'row':'rows'} · stacked from the top`;
@@ -47,7 +48,7 @@ function renderTimeline(filtered){
 function updateVisibleRows(){
   if(!timeline?.positions.length||state.view!=='timeline')return;
   const viewport=$('#timeline-scroll'),visible=visibleTimeline(timeline,viewport.scrollLeft,viewport.clientWidth),active=new Map(visible.positions.map(p=>[p.item.id,p]));
-  const rowHeight=parseFloat(getComputedStyle($('#timeline-canvas')).getPropertyValue('--timeline-row-height'));
+  const rowHeight=timelineRowHeight();
   for(const card of timelineCards){const position=active.get(card.dataset.itemId);card.hidden=!position;if(position)card.style.top=`${position.row*rowHeight+1}px`;}
   $('.timeline-board').style.height=`${timeline.rowCount*rowHeight}px`;
 }
@@ -109,7 +110,6 @@ async function load(){
     $('#total-count').textContent=episodes.length.toLocaleString('en-GB');$('#updated-at').textContent=$('#catalogue-date').textContent=`Catalogue updated ${date(data.updatedAt)}`;
     $('#about-coverage').textContent=`This snapshot contains all ${episodes.length} episodes available in the public RSS feed on ${date(data.updatedAt)}, grouped into ${countLabel(items)}. Club-only episodes absent from the public feed are not included. This is a dated catalogue, refreshed deliberately, rather than a live feed. Episode artwork, descriptions and audio come from the publisher.`;
     episodeMap ||= new EpisodeMap({onItem:showItem,onEpisode:showEpisode,thumb});render();readHash();
-    if(['#episode-map','#collection','#beyond'].includes(location.hash))$(location.hash)?.scrollIntoView({block:'start',behavior:'instant'});
   }catch(error){console.error('Catalogue could not be loaded:',error);$('#load-error').hidden=false;$('#timeline-section').hidden=true;$('#results-count').textContent='Catalogue unavailable';}
 }
 $('#region').innerHTML+=REGIONS.map(r=>`<option value="${esc(r)}">${esc(r)}</option>`).join('');$('#region').value=state.region;$('#search').value=state.q;
@@ -136,4 +136,7 @@ $('#episode-dialog').addEventListener('cancel',e=>{e.preventDefault();closeEpiso
 for(const selector of ['#episode-dialog','#about-dialog'])$(selector).addEventListener('click',e=>{if(e.target!==$(selector))return;const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)(selector==='#episode-dialog'?closeEpisode:closeAbout)();});
 window.addEventListener('hashchange',readHash);window.addEventListener('popstate',()=>{const p=new URLSearchParams(location.search);state.q=p.get('q')||'';state.region=REGIONS.includes(p.get('region'))?p.get('region'):'all';state.era=ERAS.some(e=>e.id===p.get('era'))?p.get('era'):'all';state.view=p.get('view')==='index'?'index':'timeline';$('#search').value=state.q;$('#region').value=state.region;render();readHash();});
 document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!$('dialog[open]')){e.preventDefault();$('#search').focus();$('#search').scrollIntoView({block:'center',behavior:motion()});}});
+renderControls();
+// Align section links against the reserved loading layout, before fetching data.
+if(['#episode-map','#collection','#beyond'].includes(location.hash))$(location.hash)?.scrollIntoView({block:'start',behavior:'instant'});
 load();
