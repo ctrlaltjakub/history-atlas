@@ -1,0 +1,89 @@
+{
+  "method": "Every supplied title and description was read. Dates are editorial ranges for the historical subject, inferred from the official synopsis and known event chronology, not podcast publication dates. Approximate ranges and uncertain ancient dates are marked c.; per-episode notes describe the anchor. Later legacy discussions do not automatically extend a historical subject to the present.",
+  "sourceCatalogue": "https://archive.therestishistory.com/",
+  "specialChecks": [
+    {
+      "indices": [
+        23,
+        24
+      ],
+      "source": "https://therestishistory.com/episodes/sex-holy-oil-and-civil-war-ep-2",
+      "support": "Official description confirms historical coronation survey. Series boundaries checked against the transcribed recording: Eadwig in 956 through Anne in part two; George I in 1714 onward in part three.",
+      "secondaryTranscripts": [
+        "https://podscripts.co/podcasts/the-rest-is-history/328-coronations-sex-holy-oil-and-civil-war",
+        "https://podscripts.co/podcasts/the-rest-is-history/329-coronations-chaos-ceremony-and-empire"
+      ]
+    },
+    {
+      "indices": [
+        36
+      ],
+      "source": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570466246",
+      "support": "Benjamin Lay moved to Barbados in 1718 and died in 1759. Birth-date disagreement is avoided because the episode focuses on his campaigning."
+    },
+    {
+      "indices": [
+        53
+      ],
+      "source": "https://archived.metmuseum.org/art/online-features/metkids/explore/544450",
+      "support": "The Metropolitan Museum dates Hatshepsut's period of rule to c. 1479–1458 BCE."
+    },
+    {
+      "indices": [
+        72
+      ],
+      "source": "https://www.narodnimuzej.rs/za-strucnjake/projekti-narodnog-muzeja/arheoloski-projekti/aktuelna-arheoloska-istrazivanja/plocnik/",
+      "support": "The National Museum in Belgrade describes Vinča-related Pločnik occupation around 5300/5200–4600 BCE. A rounded culture-level range is used; the description's claim to writing is not endorsed."
+    },
+    {
+      "indices": [
+        73
+      ],
+      "source": "https://www.gramota.net/en/article/hss20120906/fulltext",
+      "support": "Research article places Abram Gannibal around 1697–1781 and discusses uncertainty; a c. 1696–1781 range accommodates differing birth-year traditions."
+    },
+    {
+      "indices": [
+        97
+      ],
+      "source": "https://mofa.gov.qa/en/state-of-qatar/Key-Facts-and-Information/historical-overview",
+      "support": "Qatar's official historical overview starts its rulers with Mohammed bin Thani in 1851, supporting a rounded modern-state survey beginning c. 1850."
+    },
+    {
+      "indices": [
+        153
+      ],
+      "source": "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/history/",
+      "support": "Stonehenge construction and alteration span roughly 3000–1500 BCE."
+    },
+    {
+      "indices": [
+        171
+      ],
+      "source": "https://whc.unesco.org/document/166322",
+      "support": "UNESCO nomination material dates the rise of Old Babylonian rule from Sumu-abum in 1894 BCE. This is a period anchor, not the founding date of the city."
+    },
+    {
+      "indices": [
+        224
+      ],
+      "source": "https://www.mpg.de/neandertals",
+      "support": "Max Planck describes Neanderthals as living approximately 400,000–40,000 years ago in Europe and western Asia. The BCE range is deliberately rounded at this scale."
+    },
+    {
+      "indices": [
+        229
+      ],
+      "source": "https://www.nature.com/articles/nature22968",
+      "support": "Primary archaeological research reports human occupation at Madjedbebe around 65,000 years ago. c. 63,000 BCE is a rounded conversion; 1770 is Cook's arrival, not the beginning of Australian history."
+    }
+  ],
+  "uncertaintyNotes": [
+    "Single-region placement follows the main historical setting rather than the episode's World Cup country label or the subject's birthplace. For example, Gannibal is placed in Europe and Churchill's Boer War escape in Africa.",
+    "The Neanderthals and Australia Before Cook episodes need a deep-prehistory position or compressed early-time scale.",
+    "The Dinosaurs episode explicitly concerns discovery and popular culture over the last two centuries, so it is placed from c. 1800 rather than in geological time.",
+    "Wide historical surveys use broad ranges only when the synopsis supplies a meaningful chronological subject. Cross-era comparisons, rankings, mythical events and thematic conversations remain off the timeline.",
+    "The historical existence of Troy does not provide a secure date for the Trojan War story; the two Troy episodes and Stephen Fry discussion are placed under Myths & mysteries.",
+    "Ancient life dates, Neolithic ranges and broad biographical or survey episode boundaries should be understood as orientation aids rather than exact assertions about every event discussed."
+  ]
+}

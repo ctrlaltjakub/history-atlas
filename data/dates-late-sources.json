@@ -1,0 +1,26 @@
+{
+  "scope": "Numbered episodes 351–718, 368 records",
+  "method": "Read each episode title and its available RSS description. Use the historical subject's event date, life dates or a bounded narrative period, never the release date. Official archive summaries supplement missing descriptions for the newer episodes. The c. prefix marks deliberately approximate coverage. A single region denotes the central historical setting, while transregional journeys use Across the world. Mythic events and all-era conversations remain off the timeline.",
+  "sourceFiles": ["research-late.json", "official-episodes.json"],
+  "externalChecks": [
+    {"episodes": [705,706], "url": "https://www.nam.ac.uk/explore/abyssinia", "purpose": "Tewodros's reign, 1867 preparations and the 1868 Magdala expedition."},
+    {"episodes": [658,659,660,661], "url": "https://www.metmuseum.org/pt/toah/ht/07/eaj", "purpose": "Late-Heian war context, the 1185 Minamoto victory and the Kamakura regime."},
+    {"episodes": [661], "url": "https://www.ukiyoe-ota-muse.jp/genpei-war-eng/", "purpose": "Genpei War 1180–1185 and Yoritomo's shogunal title in 1192."},
+    {"episodes": [650,651,652,653], "url": "https://samueljohnsonbirthplace.org.uk/timeline/", "purpose": "Johnson's life chronology and the 1763 meeting with Boswell."},
+    {"episodes": [652], "url": "https://samueljohnsonbirthplace.org.uk/samuel-johnson-in-scotland/", "purpose": "Johnson and Boswell's 1773 journey."},
+    {"episodes": [653], "url": "https://www.historicenvironment.scot/about-us/our-work/commemorative-plaques/explore/james-boswell/", "purpose": "Johnson's 1784 death and Boswell's 1791 biography."},
+    {"episodes": [519], "url": "https://www.metmuseum.org/it/essays/uruk-the-first-city", "purpose": "The fourth-millennium BCE development of urban Uruk."},
+    {"episodes": [587,588], "url": "https://www.nationalarchives.gov.uk/education/resources/kirk-o-field/", "purpose": "Darnley's 1565 marriage, Rizzio's 1566 murder and Darnley's 1567 death."},
+    {"episodes": [483], "url": "https://www.nhm.ac.uk/our-science/services/library/collections/piltdown-man.html", "purpose": "Piltdown announced in 1912 and exposed in 1953; use the hoax's modern chronology."},
+    {"episodes": [374], "url": "https://www.londonmuseum.org.uk/collections/london-stories/battle-of-cable-street/", "purpose": "Cable Street on 4 October 1936; the RSS description has an apparent day-of-month typo."},
+    {"episodes": [582], "url": "https://www.cambridge.org/core/books/abs/art-faith-and-place-in-east-anglia/medieval-jews-of-norwich-and-their-legacy/0555514C94B49482420716E18F25B5B1", "purpose": "William of Norwich's death in 1144; the blood-libel accusation is identified as false in the metadata."}
+  ],
+  "cautions": [
+    "These are editorial subject ranges based on catalogue material, not a transcript-level audit of every date mentioned.",
+    "Several original catalogue descriptions contain apparent historical typos, including Poltava in 1707 and Saint George in the third century BCE. Those are not used as historical dates.",
+    "The King Arthur, Odyssey, Greek myths, Helen of Troy, dragons, Pope Joan and Saint George episodes remain in Myths & mysteries, avoiding false historical dates for the legendary narratives.",
+    "Uruk, Alexandria, Viking ritual and long city/dynasty surveys use broad approximate periods. A single precise year would imply unsupported certainty.",
+    "Gallipoli is assigned to Europe because its battlefield is on the European peninsula of Turkey; Egypt and the ancient Library of Alexandria are assigned to Africa.",
+    "The older official-archive pages could not be fetched through the shell because the public endpoint returned HTTP 403; their RSS descriptions were available and were read."
+  ]
+}

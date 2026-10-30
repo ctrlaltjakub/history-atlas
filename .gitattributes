@@ -1,0 +1,3 @@
+# Preserve public upstream snapshots and font licenses as downloaded.
+data/** -whitespace
+public/fonts/** -whitespace

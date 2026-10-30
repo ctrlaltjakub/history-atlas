@@ -1,0 +1,2946 @@
+{
+  "205d3ba6-d1f4-11f1-b0c5-bba84b32fd07": {
+    "start": 1956,
+    "end": 1957,
+    "region": "Africa",
+    "dateLabel": "1956–1957",
+    "category": null,
+    "note": "The invasion of Egypt during the Suez Crisis and its immediate political aftermath."
+  },
+  "7a85be66-ce2d-11f1-8e99-53a7d18af771": {
+    "start": 1952,
+    "end": 1956,
+    "region": "Africa",
+    "dateLabel": "1952–1956",
+    "category": null,
+    "note": "Nasser's rise and the confrontation over the Suez Canal culminating in 1956."
+  },
+  "85e0e0e0-cd53-11f1-bc45-0788283d19ce": {
+    "start": null,
+    "end": null,
+    "region": "Britain & Ireland",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Arthurian legends and their changing literary traditions; no securely established historical Arthur supplies a single event date."
+  },
+  "fe62cf6e-c96c-11f1-a55f-87ce580e654e": {
+    "start": null,
+    "end": null,
+    "region": "Britain & Ireland",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Arthurian legends and their changing literary traditions; no securely established historical Arthur supplies a single event date."
+  },
+  "db4aff8e-c7d1-11f1-be51-23df9a3eeb1f": {
+    "start": null,
+    "end": null,
+    "region": "Britain & Ireland",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Arthurian legends and their changing literary traditions; no securely established historical Arthur supplies a single event date."
+  },
+  "097bbd64-c31b-11f1-8fc4-d7a4e415d941": {
+    "start": null,
+    "end": null,
+    "region": "Britain & Ireland",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Arthurian legends and their changing literary traditions; no securely established historical Arthur supplies a single event date."
+  },
+  "fc5f8712-c24a-11f1-a95a-9bafcc33d507": {
+    "start": 1794,
+    "end": 1794,
+    "region": "Europe",
+    "dateLabel": "1794",
+    "category": null,
+    "note": "The Great Terror and the fall of Robespierre in July 1794."
+  },
+  "2d6799fa-bcef-11f1-91db-03fd4c845d31": {
+    "start": 1794,
+    "end": 1794,
+    "region": "Europe",
+    "dateLabel": "1794",
+    "category": null,
+    "note": "The Festival of the Supreme Being in June 1794."
+  },
+  "7d4f6bf6-bcb2-11f1-9e30-afa90f070c5b": {
+    "start": 1794,
+    "end": 1794,
+    "region": "Europe",
+    "dateLabel": "1794",
+    "category": null,
+    "note": "Danton's trial and execution in April 1794."
+  },
+  "5b3a78c0-b826-11f1-8f96-8ba30ba9f7aa": {
+    "start": 1792,
+    "end": 1793,
+    "region": "Europe",
+    "dateLabel": "1792–1793",
+    "category": null,
+    "note": "Marie Antoinette's imprisonment and execution in October 1793."
+  },
+  "f3fe2076-b67c-11f1-ba50-83337ba68545": {
+    "start": 1793,
+    "end": 1793,
+    "region": "Europe",
+    "dateLabel": "1793",
+    "category": null,
+    "note": "Robespierre's role in the emergency government and the early Terror; includes biographical background."
+  },
+  "0322655e-b118-11f1-b8eb-f79d9c6ca5d1": {
+    "start": 1793,
+    "end": 1793,
+    "region": "Europe",
+    "dateLabel": "1793",
+    "category": null,
+    "note": "The murder of Marat and the political crisis preceding the Terror."
+  },
+  "78de6472-b047-11f1-8db3-b311e9cdbee0": {
+    "start": 1867,
+    "end": 1868,
+    "region": "Africa",
+    "dateLabel": "1867–1868",
+    "category": null,
+    "note": "Napier's Abyssinian expedition and the capture of Magdala in April 1868."
+  },
+  "5c0bf304-adf5-11f1-a227-3f46219e3faa": {
+    "start": 1855,
+    "end": 1867,
+    "region": "Africa",
+    "dateLabel": "1855–1867",
+    "category": null,
+    "note": "Tewodros II's reign and the hostage crisis preceding the British expedition."
+  },
+  "e7f48b14-a789-11f1-ae45-0b669e864200": {
+    "start": -83,
+    "end": -78,
+    "region": "Europe",
+    "dateLabel": "83–78 BCE",
+    "category": null,
+    "note": "Sulla's return to Italy, dictatorship and final years; earlier eastern campaigns provide background."
+  },
+  "d0138942-a77e-11f1-9f5e-537d1277241d": {
+    "start": -88,
+    "end": -85,
+    "region": "Europe",
+    "dateLabel": "88–85 BCE",
+    "category": null,
+    "note": "Sulla's first march on Rome, Marius's return and the war with Mithridates."
+  },
+  "3fc03eb0-a6d1-11f1-b97a-9bfd05675a3b": {
+    "start": -105,
+    "end": -88,
+    "region": "Europe",
+    "dateLabel": "105–88 BCE",
+    "category": null,
+    "note": "The Cimbrian threat, Marius's campaigns, the Social War and the rise of Sulla."
+  },
+  "7a53925c-a1f9-11f1-a932-7b1f586fd0d6": {
+    "start": -134,
+    "end": -104,
+    "region": "Europe",
+    "dateLabel": "c. 134–104 BCE",
+    "category": null,
+    "note": "Approximate period covered. Marius's military and political ascent through the Jugurthine War and his triumph."
+  },
+  "d6642384-a156-11f1-b999-17f7f35e04a2": {
+    "start": 1971,
+    "end": 1972,
+    "region": "Britain & Ireland",
+    "dateLabel": "1971–1972",
+    "category": null,
+    "note": "The escalation toward Bloody Sunday on 30 January 1972."
+  },
+  "499c1f54-9d66-11f1-9822-57ff45731c22": {
+    "start": 1970,
+    "end": 1971,
+    "region": "Britain & Ireland",
+    "dateLabel": "1970–1971",
+    "category": null,
+    "note": "The Provisional IRA, the Battle of St Matthew's and escalating violence."
+  },
+  "617835d6-9b13-11f1-87fc-ab9caf58601a": {
+    "start": 1969,
+    "end": 1969,
+    "region": "Britain & Ireland",
+    "dateLabel": "1969",
+    "category": null,
+    "note": "The civil rights marches, riots and deployment of British troops in 1969."
+  },
+  "f0d4749a-9728-11f1-a724-e7821230328e": {
+    "start": 1966,
+    "end": 1968,
+    "region": "Britain & Ireland",
+    "dateLabel": "c. 1966–1968",
+    "category": null,
+    "note": "Approximate period covered. The origins and early escalation of the Troubles; includes earlier Northern Irish background."
+  },
+  "66edb3ac-94b9-11f1-ada5-b7fb80176bc4": {
+    "start": 1586,
+    "end": 1587,
+    "region": "Britain & Ireland",
+    "dateLabel": "1586–1587",
+    "category": null,
+    "note": "The Babington Plot and the execution of Mary, Queen of Scots."
+  },
+  "7d61db08-8f2e-11f1-ada3-f3d3fca150a4": {
+    "start": 1585,
+    "end": 1586,
+    "region": "Britain & Ireland",
+    "dateLabel": "1585–1586",
+    "category": null,
+    "note": "Philip Sidney and England's involvement in the war in the Netherlands."
+  },
+  "59f69546-8f2e-11f1-b7e8-734c9a083d4b": {
+    "start": 1580,
+    "end": 1584,
+    "region": "Britain & Ireland",
+    "dateLabel": "1580–1584",
+    "category": null,
+    "note": "Drake's return and the Throckmorton conspiracy against Elizabeth I."
+  },
+  "1bfa64e0-8b3a-11f1-9acb-57dcc09301d8": {
+    "start": 1567,
+    "end": 1588,
+    "region": "Across the world",
+    "dateLabel": "c. 1567–1588",
+    "category": null,
+    "note": "Approximate period covered. Francis Drake's Atlantic raids, circumnavigation and conflict with Spain."
+  },
+  "e2329568-8a7e-11f1-a691-a370716eb272": {
+    "start": 1572,
+    "end": 1572,
+    "region": "Europe",
+    "dateLabel": "1572",
+    "category": null,
+    "note": "The St Bartholomew's Day Massacre in France and its consequences for Walsingham."
+  },
+  "a50f17be-8741-11f1-9366-7f78e93edf4e": {
+    "start": 1568,
+    "end": 1571,
+    "region": "Britain & Ireland",
+    "dateLabel": "1568–1571",
+    "category": null,
+    "note": "Elizabeth's security crisis, Cecil's intelligence network and Catholic conspiracies."
+  },
+  "52822e96-8520-11f1-b415-a3e8f4de5e58": {
+    "start": 1889,
+    "end": 1889,
+    "region": "Europe",
+    "dateLabel": "1889",
+    "category": null,
+    "note": "The deaths of Crown Prince Rudolf and Mary Vetsera at Mayerling."
+  },
+  "3eb6b97c-81ce-11f1-b5ab-8f235a89845f": {
+    "start": 1858,
+    "end": 1888,
+    "region": "Europe",
+    "dateLabel": "1858–1888",
+    "category": null,
+    "note": "Rudolf's upbringing and the relationship that preceded the Mayerling incident."
+  },
+  "500a4998-803c-11f1-a364-1316fa04883a": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "A retelling and discussion of the Odyssey; the hero's adventures are not assigned historical dates."
+  },
+  "19263b9a-7ad2-11f1-aaed-3fa07ea54e9e": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "A retelling and discussion of the Odyssey; the hero's adventures are not assigned historical dates."
+  },
+  "05f6964e-7aac-11f1-960f-277b579ae8c9": {
+    "start": 1743,
+    "end": 1826,
+    "region": "Americas",
+    "dateLabel": "1743–1826",
+    "category": null,
+    "note": "Thomas Jefferson's life, the Declaration of Independence and his political legacy."
+  },
+  "00dcb988-7636-11f1-adce-233882693e2c": {
+    "start": 1755,
+    "end": 1804,
+    "region": "Americas",
+    "dateLabel": "c. 1755–1804",
+    "category": null,
+    "note": "Approximate period covered. Alexander Hamilton's life ending in his duel with Aaron Burr; his birth year is disputed."
+  },
+  "bf829bc4-755e-11f1-ac03-7f241e6dbc38": {
+    "start": 1706,
+    "end": 1790,
+    "region": "Americas",
+    "dateLabel": "1706–1790",
+    "category": null,
+    "note": "Benjamin Franklin's life and his conversion to the American revolutionary cause."
+  },
+  "38708456-7154-11f1-8261-ab8f6abc4893": {
+    "start": 1732,
+    "end": 1799,
+    "region": "Americas",
+    "dateLabel": "1732–1799",
+    "category": null,
+    "note": "George Washington's life and leadership of the American Revolution."
+  },
+  "25c4bcb8-68c7-11f1-9fe0-c7cd9e192007": {
+    "start": 1990,
+    "end": 1995,
+    "region": "Africa",
+    "dateLabel": "1990–1995",
+    "category": null,
+    "note": "The end of apartheid, Mandela's presidency and the 1995 Rugby World Cup."
+  },
+  "091927a2-68c7-11f1-88b4-437c9e7e52a7": {
+    "start": 1808,
+    "end": 1831,
+    "region": "Americas",
+    "dateLabel": "1808–1831",
+    "category": null,
+    "note": "The Portuguese court in Brazil, independence and the imperial anthem's origins; later legacy also discussed."
+  },
+  "e8279914-6a6c-11f1-b0d8-7390412b5d90": {
+    "start": 1568,
+    "end": 1584,
+    "region": "Europe",
+    "dateLabel": "1568–1584",
+    "category": null,
+    "note": "The Wilhelmus and William of Orange during the Dutch Revolt; later reception also discussed."
+  },
+  "3a6d462a-663e-11f1-8124-07e30a7c3199": {
+    "start": 1797,
+    "end": 1990,
+    "region": "Europe",
+    "dateLabel": "1797–1990",
+    "category": null,
+    "note": "The German anthem from Haydn's melody through reunification."
+  },
+  "87fb0042-6415-11f1-8c38-efa4839e5cad": {
+    "start": 1745,
+    "end": 1815,
+    "region": "Britain & Ireland",
+    "dateLabel": "1745–1815",
+    "category": null,
+    "note": "God Save the King's emergence during the Jacobite rising and its establishment as a national anthem; later reception also discussed."
+  },
+  "15c21496-5e7c-11f1-99e8-2be2f4812e1a": {
+    "start": 1812,
+    "end": 1814,
+    "region": "Americas",
+    "dateLabel": "1812–1814",
+    "category": null,
+    "note": "The War of 1812 and the writing of The Star-Spangled Banner."
+  },
+  "143ab446-5ea1-11f1-b411-c73d11770c57": {
+    "start": 1915,
+    "end": 1916,
+    "region": "Europe",
+    "dateLabel": "1915–1916",
+    "category": null,
+    "note": "The later Gallipoli campaign and Allied evacuation from the European side of Turkey."
+  },
+  "c72c2240-59b7-11f1-a089-d7e59e32bf6d": {
+    "start": 1915,
+    "end": 1915,
+    "region": "Europe",
+    "dateLabel": "1915",
+    "category": null,
+    "note": "The Allied landings and fighting at Gallipoli, on the European side of Turkey."
+  },
+  "9b9c3b24-59b7-11f1-ae58-17e305fb826f": {
+    "start": 1914,
+    "end": 1915,
+    "region": "Europe",
+    "dateLabel": "1914–1915",
+    "category": null,
+    "note": "Edith Cavell's work in occupied Belgium and her execution."
+  },
+  "70824358-55e2-11f1-a9c2-abe6b164b5e5": {
+    "start": 1915,
+    "end": 1915,
+    "region": "Britain & Ireland",
+    "dateLabel": "1915",
+    "category": null,
+    "note": "The sinking of the Lusitania off Ireland in May 1915."
+  },
+  "94709434-542c-11f1-b8a0-136b7219bfa7": {
+    "start": 1915,
+    "end": 1915,
+    "region": "Europe",
+    "dateLabel": "1915",
+    "category": null,
+    "note": "The First World War's 1915 fighting, as identified in the episode description."
+  },
+  "1a33b978-4df4-11f1-8551-03ebb7cd5a09": {
+    "start": 1915,
+    "end": 1915,
+    "region": "Europe",
+    "dateLabel": "1915",
+    "category": null,
+    "note": "The First World War's 1915 fighting, as identified in the episode description."
+  },
+  "0b42322c-4fc1-11f1-889f-b77581958797": {
+    "start": null,
+    "end": null,
+    "region": "Britain & Ireland",
+    "dateLabel": "Across the ages",
+    "category": "Conversations & reflections",
+    "note": "An interview with Paul McCartney mixing memory, music and contemporary work."
+  },
+  "f575756a-4e1e-11f1-8d69-1b8a204015dc": {
+    "start": -490,
+    "end": -490,
+    "region": "Europe",
+    "dateLabel": "490 BCE",
+    "category": null,
+    "note": "The Battle of Marathon in Greece."
+  },
+  "54bf7828-4ad6-11f1-bc13-234a21510a7e": {
+    "start": -550,
+    "end": -490,
+    "region": "Middle East",
+    "dateLabel": "c. 550–490 BCE",
+    "category": null,
+    "note": "Approximate period covered. The rise of the Achaemenid Empire and Darius's invasion of Greece."
+  },
+  "daaeaa76-4874-11f1-88ce-331a65b81038": {
+    "start": 1503,
+    "end": 1519,
+    "region": "Europe",
+    "dateLabel": "1503–1519",
+    "category": null,
+    "note": "The Renaissance context and creation of Leonardo's Mona Lisa; dates indicate its approximate working period."
+  },
+  "bd678cc4-456a-11f1-a054-a3c32e27c734": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "Wine across ancient and modern societies rather than one bounded period."
+  },
+  "9bf253f6-43cd-11f1-8dd5-7794b75c8042": {
+    "start": 1976,
+    "end": 1976,
+    "region": "Britain & Ireland",
+    "dateLabel": "1976",
+    "category": null,
+    "note": "Callaghan's government and Britain's IMF crisis."
+  },
+  "99a45d18-3e3e-11f1-9a0d-0fb849364802": {
+    "start": 1975,
+    "end": 1976,
+    "region": "Britain & Ireland",
+    "dateLabel": "1975–1976",
+    "category": null,
+    "note": "Economic crisis and the final phase of Harold Wilson's premiership."
+  },
+  "aff5cbd4-3d66-11f1-96b8-cf9390c276f5": {
+    "start": 1975,
+    "end": 1975,
+    "region": "Britain & Ireland",
+    "dateLabel": "1975",
+    "category": null,
+    "note": "Harold Wilson's government and the European Communities referendum."
+  },
+  "8f21583c-3740-11f1-adb4-2f517cc7f1f8": {
+    "start": 1974,
+    "end": 1975,
+    "region": "Britain & Ireland",
+    "dateLabel": "1974–1975",
+    "category": null,
+    "note": "Margaret Thatcher's rise to the leadership of the Conservative Party."
+  },
+  "6003a828-372e-11f1-b625-076e404bff70": {
+    "start": 1184,
+    "end": 1192,
+    "region": "Asia",
+    "dateLabel": "1184–1192",
+    "category": null,
+    "note": "The final Genpei War battles and Yoritomo's establishment as shogun."
+  },
+  "2f8abe74-2c4e-11f1-9e44-ab5c65e9fd0b": {
+    "start": 1180,
+    "end": 1184,
+    "region": "Asia",
+    "dateLabel": "1180–1184",
+    "category": null,
+    "note": "Yoshitsune, Yoshinaka and the middle phase of the Genpei War; legendary stories accompany the history."
+  },
+  "f9b9e13a-2c4d-11f1-af10-eb0ed9da4272": {
+    "start": 1156,
+    "end": 1180,
+    "region": "Asia",
+    "dateLabel": "1156–1180",
+    "category": null,
+    "note": "The Hogen and Heiji conflicts, Taira ascendancy and the first Battle of Uji."
+  },
+  "7f8d2c62-2c45-11f1-b638-07fae8c3232f": {
+    "start": 900,
+    "end": 1150,
+    "region": "Asia",
+    "dateLabel": "c. 900–1150",
+    "category": null,
+    "note": "Approximate period covered. The early samurai and Taira no Masakado in Heian Japan; the episode also surveys much later samurai mythology."
+  },
+  "b4088270-2c1d-11f1-9e4e-87f090b9fb07": {
+    "start": 1920,
+    "end": 1930,
+    "region": "Americas",
+    "dateLabel": "c. 1920–1930",
+    "category": null,
+    "note": "Approximate period covered. The second Ku Klux Klan's political ascendancy and collapse in the 1920s."
+  },
+  "291bbbb8-29c6-11f1-a1fb-cb0079ec5370": {
+    "start": 1915,
+    "end": 1924,
+    "region": "Americas",
+    "dateLabel": "1915–1924",
+    "category": null,
+    "note": "The second Ku Klux Klan's foundation and national expansion."
+  },
+  "fa3fae16-26d3-11f1-8ef3-c79a67e9ccc3": {
+    "start": 1867,
+    "end": 1872,
+    "region": "Americas",
+    "dateLabel": "1867–1872",
+    "category": null,
+    "note": "Reconstruction violence and the suppression of the first Ku Klux Klan."
+  },
+  "94f22888-2389-11f1-8eba-b7ffaf4bbeb4": {
+    "start": 1865,
+    "end": 1867,
+    "region": "Americas",
+    "dateLabel": "1865–1867",
+    "category": null,
+    "note": "The origins of the first Ku Klux Klan after the American Civil War."
+  },
+  "5c35e60a-2123-11f1-a500-138cb9a91583": {
+    "start": 1773,
+    "end": 1791,
+    "region": "Britain & Ireland",
+    "dateLabel": "1773–1791",
+    "category": null,
+    "note": "Samuel Johnson's later years, relationship with Hester Thrale and Boswell's posthumous biography."
+  },
+  "93446c5e-1c9e-11f1-aa00-3b620d96bfaa": {
+    "start": 1773,
+    "end": 1773,
+    "region": "Britain & Ireland",
+    "dateLabel": "1773",
+    "category": null,
+    "note": "Johnson and Boswell's journey through Scotland and the Hebrides; earlier Scottish history provides context."
+  },
+  "56378f84-1bc3-11f1-be9c-1bd0bd90477d": {
+    "start": 1762,
+    "end": 1764,
+    "region": "Britain & Ireland",
+    "dateLabel": "1762–1764",
+    "category": null,
+    "note": "Boswell in Georgian London and his first meeting with Johnson in 1763."
+  },
+  "b5296d0e-16f1-11f1-a063-6bd9e938dc75": {
+    "start": 1709,
+    "end": 1763,
+    "region": "Britain & Ireland",
+    "dateLabel": "1709–1763",
+    "category": null,
+    "note": "Samuel Johnson's early life and literary career before his friendship with Boswell."
+  },
+  "8e03007a-16ef-11f1-ba32-9765672ba611": {
+    "start": 1537,
+    "end": 1572,
+    "region": "Americas",
+    "dateLabel": "1537–1572",
+    "category": null,
+    "note": "Spanish civil conflict in Peru and the end of the independent Inca state at Vilcabamba."
+  },
+  "d6b455f2-1321-11f1-918c-a7090db70c45": {
+    "start": 1536,
+    "end": 1537,
+    "region": "Americas",
+    "dateLabel": "1536–1537",
+    "category": null,
+    "note": "Manco Inca's uprising and the siege of Cusco."
+  },
+  "239a48e6-10e7-11f1-9366-572767f19126": {
+    "start": 1533,
+    "end": 1536,
+    "region": "Americas",
+    "dateLabel": "1533–1536",
+    "category": null,
+    "note": "The Spanish advance to Cusco and the installation of Manco Inca."
+  },
+  "57f69100-0db1-11f1-98f3-b31c5eae92f0": {
+    "start": 1532,
+    "end": 1533,
+    "region": "Americas",
+    "dateLabel": "1532–1533",
+    "category": null,
+    "note": "Atahualpa's captivity, ransom and execution."
+  },
+  "c0b93050-0ce2-11f1-a509-f36866955408": {
+    "start": 1532,
+    "end": 1532,
+    "region": "Americas",
+    "dateLabel": "1532",
+    "category": null,
+    "note": "The encounter and massacre at Cajamarca."
+  },
+  "6ae8637e-02b7-11f1-b56c-db6ad6aeaf77": {
+    "start": 1524,
+    "end": 1532,
+    "region": "Americas",
+    "dateLabel": "1524–1532",
+    "category": null,
+    "note": "Pizarro's expeditions and the approach to the Inca Empire; includes earlier Inca history."
+  },
+  "e7be1b82-02b2-11f1-9f00-777d8cd64b2d": {
+    "start": -201,
+    "end": -146,
+    "region": "Africa",
+    "dateLabel": "201–146 BCE",
+    "category": null,
+    "note": "Carthage after the Second Punic War and its destruction in 146 BCE."
+  },
+  "971f2d56-02b2-11f1-9bf7-bfa59557947f": {
+    "start": -204,
+    "end": -202,
+    "region": "Africa",
+    "dateLabel": "204–202 BCE",
+    "category": null,
+    "note": "Scipio's African campaign and the Battle of Zama."
+  },
+  "71eb2894-01c4-11f1-8087-03c414bedfb3": {
+    "start": -215,
+    "end": -206,
+    "region": "Europe",
+    "dateLabel": "215–206 BCE",
+    "category": null,
+    "note": "The war in Iberia and Scipio's conquest of Carthaginian Spain."
+  },
+  "1373802e-fc36-11f0-ae8f-2f0afa788c8d": {
+    "start": -216,
+    "end": -211,
+    "region": "Europe",
+    "dateLabel": "216–211 BCE",
+    "category": null,
+    "note": "Hannibal's campaign in Italy after Cannae and the threat to Rome."
+  },
+  "ae8389a4-fab7-11f0-9ae2-2bfb6623b471": {
+    "start": 1980,
+    "end": 1981,
+    "region": "Middle East",
+    "dateLabel": "1980–1981",
+    "category": null,
+    "note": "The failed US hostage rescue operation and the end of the Iran hostage crisis."
+  },
+  "6df9f81e-f774-11f0-8071-fb06f90af3e6": {
+    "start": 1979,
+    "end": 1980,
+    "region": "Middle East",
+    "dateLabel": "1979–1980",
+    "category": null,
+    "note": "The seizure of the US embassy in Tehran and the hostage crisis."
+  },
+  "c8a88240-f610-11f0-8414-7b114b4a7005": {
+    "start": 1978,
+    "end": 1979,
+    "region": "Middle East",
+    "dateLabel": "1978–1979",
+    "category": null,
+    "note": "The final overthrow of the Shah and Khomeini's return."
+  },
+  "9b9e4f5c-f18b-11f0-a21e-f3eea83640a9": {
+    "start": 1953,
+    "end": 1978,
+    "region": "Middle East",
+    "dateLabel": "1953–1978",
+    "category": null,
+    "note": "The Shah's rule and the background to Iran's revolution."
+  },
+  "31ea63b8-f12f-11f0-984a-db3475069096": {
+    "start": 1430,
+    "end": 1431,
+    "region": "Europe",
+    "dateLabel": "1430–1431",
+    "category": null,
+    "note": "Joan of Arc's imprisonment, trial and execution."
+  },
+  "7f9a8216-ec69-11f0-9f0b-270fc57adccf": {
+    "start": 1429,
+    "end": 1430,
+    "region": "Europe",
+    "dateLabel": "1429–1430",
+    "category": null,
+    "note": "Charles VII's coronation, Joan's later campaigns and her capture."
+  },
+  "2af6e02e-ebd3-11f0-a393-7fce378acf29": {
+    "start": 1429,
+    "end": 1429,
+    "region": "Europe",
+    "dateLabel": "1429",
+    "category": null,
+    "note": "Joan's meeting with the Dauphin and the relief of Orleans."
+  },
+  "3b7841fe-dff3-11f0-96c2-17a068fc5348": {
+    "start": 1412,
+    "end": 1429,
+    "region": "Europe",
+    "dateLabel": "1412–1429",
+    "category": null,
+    "note": "Joan of Arc's early life and the beginning of her mission."
+  },
+  "8fb29d42-df48-11f0-adc3-d3292755e9ef": {
+    "start": 1813,
+    "end": 1883,
+    "region": "Europe",
+    "dateLabel": "1813–1883",
+    "category": null,
+    "note": "Richard Wagner's life and works; later political appropriation is also discussed."
+  },
+  "d3ea5352-df47-11f0-8847-87d621467df7": {
+    "start": 1840,
+    "end": 1893,
+    "region": "Europe",
+    "dateLabel": "1840–1893",
+    "category": null,
+    "note": "Pyotr Ilyich Tchaikovsky's life and music."
+  },
+  "a3095250-dc14-11f0-bd82-cf076b9901e5": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The Christmas Truce on the Western Front."
+  },
+  "d9dc3a26-dc10-11f0-a678-d38e8cab2864": {
+    "start": 1888,
+    "end": 1888,
+    "region": "Britain & Ireland",
+    "dateLabel": "1888",
+    "category": null,
+    "note": "The Whitechapel murders and investigation in 1888; later theories about the killer are also discussed."
+  },
+  "085ea67e-db60-11f0-bbd8-efe9f9e2c27c": {
+    "start": 1888,
+    "end": 1888,
+    "region": "Britain & Ireland",
+    "dateLabel": "1888",
+    "category": null,
+    "note": "The Whitechapel murders and investigation in 1888; later theories about the killer are also discussed."
+  },
+  "18b45630-d4ea-11f0-85bc-f7afe1e4ca0c": {
+    "start": 1888,
+    "end": 1888,
+    "region": "Britain & Ireland",
+    "dateLabel": "1888",
+    "category": null,
+    "note": "The Whitechapel murders and investigation in 1888; later theories about the killer are also discussed."
+  },
+  "b2a38640-d4e9-11f0-a94c-1f84691b3f84": {
+    "start": 1888,
+    "end": 1888,
+    "region": "Britain & Ireland",
+    "dateLabel": "1888",
+    "category": null,
+    "note": "The Whitechapel murders and investigation in 1888; later theories about the killer are also discussed."
+  },
+  "137424c0-d111-11f0-bdac-c75a04e39c39": {
+    "start": 1888,
+    "end": 1888,
+    "region": "Britain & Ireland",
+    "dateLabel": "1888",
+    "category": null,
+    "note": "The Whitechapel murders and investigation in 1888; later theories about the killer are also discussed."
+  },
+  "0acd6562-d05c-11f0-9cf5-036872edf668": {
+    "start": 1940,
+    "end": 1941,
+    "region": "Britain & Ireland",
+    "dateLabel": "1940–1941",
+    "category": null,
+    "note": "The Battle of Britain and the confrontation with Nazi Germany."
+  },
+  "dd9a1616-cbac-11f0-8a79-9fd3cabef61d": {
+    "start": 1940,
+    "end": 1940,
+    "region": "Europe",
+    "dateLabel": "1940",
+    "category": null,
+    "note": "Dunkirk and the fall of France."
+  },
+  "cec46d0a-caba-11f0-ac43-877553017234": {
+    "start": 1940,
+    "end": 1940,
+    "region": "Europe",
+    "dateLabel": "1940",
+    "category": null,
+    "note": "The invasions of Denmark, Norway and France."
+  },
+  "7a700686-c6e8-11f0-8077-cf4dd07cd912": {
+    "start": 1939,
+    "end": 1940,
+    "region": "Europe",
+    "dateLabel": "1939–1940",
+    "category": null,
+    "note": "Hitler's next moves after the invasion of Poland and preparations for the western campaign."
+  },
+  "86c9c938-c532-11f0-be4b-67b3f5063f4c": {
+    "start": 1558,
+    "end": 1563,
+    "region": "Britain & Ireland",
+    "dateLabel": "1558–1563",
+    "category": null,
+    "note": "Elizabeth's accession, coronation and early reign."
+  },
+  "a453357c-c0a3-11f0-8c16-9fd62df67771": {
+    "start": 1553,
+    "end": 1558,
+    "region": "Britain & Ireland",
+    "dateLabel": "1553–1558",
+    "category": null,
+    "note": "Elizabeth during the succession crisis and Mary I's reign."
+  },
+  "7863d550-bfe7-11f0-959d-db66c046ecc3": {
+    "start": 1536,
+    "end": 1553,
+    "region": "Britain & Ireland",
+    "dateLabel": "1536–1553",
+    "category": null,
+    "note": "Elizabeth's childhood after Anne Boleyn's death and the reign of Edward VI."
+  },
+  "070dd200-bbf2-11f0-8d32-33ad57d72fcf": {
+    "start": 1533,
+    "end": 1536,
+    "region": "Britain & Ireland",
+    "dateLabel": "1533–1536",
+    "category": null,
+    "note": "Elizabeth's birth and Anne Boleyn's fall; Henry VIII's earlier marriages provide background."
+  },
+  "476fad66-ba6f-11f0-b7b0-9baccd85e8c4": {
+    "start": 1940,
+    "end": 1955,
+    "region": "Americas",
+    "dateLabel": "c. 1940–1955",
+    "category": null,
+    "note": "Approximate period covered. The postwar development of Disneyland, opened in 1955; earlier parks and later influence also discussed."
+  },
+  "34ac245a-b670-11f0-8453-6bb3a611d3c3": {
+    "start": 1901,
+    "end": 1939,
+    "region": "Americas",
+    "dateLabel": "1901–1939",
+    "category": null,
+    "note": "Walt Disney's early life and the creation of his animation studio."
+  },
+  "4e4f7c62-b4f0-11f0-b84b-6b7fe498d33b": {
+    "start": 1805,
+    "end": 1805,
+    "region": "Europe",
+    "dateLabel": "1805",
+    "category": null,
+    "note": "The Battle of Trafalgar and Nelson's death."
+  },
+  "80ecb8be-b285-11f0-b6e2-af2a478fec08": {
+    "start": 1803,
+    "end": 1805,
+    "region": "Europe",
+    "dateLabel": "1803–1805",
+    "category": null,
+    "note": "Nelson's pursuit of the French fleet and the approach to Trafalgar."
+  },
+  "eeae3190-af63-11f0-a23b-1b096475a4ea": {
+    "start": 1801,
+    "end": 1803,
+    "region": "Europe",
+    "dateLabel": "1801–1803",
+    "category": null,
+    "note": "The Boulogne attacks, the Peace of Amiens and renewed war with France."
+  },
+  "076142fa-ab71-11f0-8378-17d3687bd35e": {
+    "start": 1801,
+    "end": 1801,
+    "region": "Europe",
+    "dateLabel": "1801",
+    "category": null,
+    "note": "The Battle of Copenhagen."
+  },
+  "473130d4-a9e1-11f0-b09d-2350aa219b54": {
+    "start": 1799,
+    "end": 1801,
+    "region": "Britain & Ireland",
+    "dateLabel": "1799–1801",
+    "category": null,
+    "note": "Nelson's return to Britain and the lead-up to the Baltic campaign."
+  },
+  "4c29f10a-a439-11f0-8146-a7570b733687": {
+    "start": 1798,
+    "end": 1799,
+    "region": "Europe",
+    "dateLabel": "1798–1799",
+    "category": null,
+    "note": "Nelson in Naples and the destruction of the Neapolitan republic."
+  },
+  "5dccc242-a39f-11f0-b5ab-d355e8d63394": {
+    "start": 1765,
+    "end": 1815,
+    "region": "Britain & Ireland",
+    "dateLabel": "1765–1815",
+    "category": null,
+    "note": "Emma Hamilton's life and her relationship with Nelson."
+  },
+  "c6f5558e-a063-11f0-964a-c78e71a735dc": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Britain & Ireland",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "Enoch Powell's Rivers of Blood speech and its political context."
+  },
+  "0a127432-9eb1-11f0-84b4-eff338ad799f": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Greek myths and their literary, religious and cultural interpretations; no dates are assigned to the mythical events."
+  },
+  "8940fee2-9ae5-11f0-b94d-5f85be665521": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Greek myths and their literary, religious and cultural interpretations; no dates are assigned to the mythical events."
+  },
+  "e761611a-995f-11f0-8039-7bf33cc9f49d": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Greek myths and their literary, religious and cultural interpretations; no dates are assigned to the mythical events."
+  },
+  "9bf1c766-9544-11f0-9a9b-2fcec944c46f": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Greek myths and their literary, religious and cultural interpretations; no dates are assigned to the mythical events."
+  },
+  "04252de4-93e4-11f0-bd6e-d388f3afe963": {
+    "start": 1874,
+    "end": 1884,
+    "region": "Americas",
+    "dateLabel": "1874–1884",
+    "category": null,
+    "note": "Grover Cleveland's private scandal and the 1884 presidential election."
+  },
+  "3f871d4e-9005-11f0-a467-3b6de25634b5": {
+    "start": null,
+    "end": null,
+    "region": "Britain & Ireland",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "A walk through Chatham's many historical eras rather than a single period."
+  },
+  "39b664ca-8e60-11f0-9da7-cfc43e2d611a": {
+    "start": 1914,
+    "end": 1915,
+    "region": "Europe",
+    "dateLabel": "1914–1915",
+    "category": null,
+    "note": "Austria-Hungary's early wartime defeats and the siege of Przemysl."
+  },
+  "27230e6c-8a50-11f0-85b1-17e856872aab": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The opening campaigns of the First World War in 1914."
+  },
+  "5391eeb4-88cf-11f0-bcd2-6ff110fe670f": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The opening campaigns of the First World War in 1914."
+  },
+  "ca1692ae-865b-11f0-bdbf-2bbd0a2fa2ff": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The opening campaigns of the First World War in 1914."
+  },
+  "74561d18-835d-11f0-a69c-73ccdd92cb5a": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The opening campaigns of the First World War in 1914."
+  },
+  "30b63a14-7f5e-11f0-86a6-571fadefd84f": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The opening campaigns of the First World War in 1914."
+  },
+  "9a8c87cc-7dbf-11f0-abf4-a34b63e044f3": {
+    "start": 1860,
+    "end": 1860,
+    "region": "Britain & Ireland",
+    "dateLabel": "1860",
+    "category": null,
+    "note": "The Sayers-Heenan prizefight in Hampshire."
+  },
+  "58faaca2-7915-11f0-b505-0394435ea024": {
+    "start": 1837,
+    "end": 1901,
+    "region": "Britain & Ireland",
+    "dateLabel": "c. 1837–1901",
+    "category": null,
+    "note": "Approximate period covered. The development of organised sport during the Victorian era."
+  },
+  "adde893a-784f-11f0-9b7a-e762460e32e7": {
+    "start": 1865,
+    "end": 1865,
+    "region": "Americas",
+    "dateLabel": "1865",
+    "category": null,
+    "note": "Lincoln's assassination and the hunt for John Wilkes Booth."
+  },
+  "861022f0-7391-11f0-a2e3-bfa463089f74": {
+    "start": 1865,
+    "end": 1865,
+    "region": "Americas",
+    "dateLabel": "1865",
+    "category": null,
+    "note": "Lincoln's assassination and the hunt for John Wilkes Booth."
+  },
+  "06f73ad8-72b2-11f0-af85-336e84e38dad": {
+    "start": 1567,
+    "end": 1568,
+    "region": "Britain & Ireland",
+    "dateLabel": "1567–1568",
+    "category": null,
+    "note": "Mary's marriage to Bothwell, abdication and flight to England."
+  },
+  "69db2a6c-6ee6-11f0-bf23-8b1f4a3f4e92": {
+    "start": 1567,
+    "end": 1567,
+    "region": "Britain & Ireland",
+    "dateLabel": "1567",
+    "category": null,
+    "note": "The murder of Lord Darnley at Kirk o' Field."
+  },
+  "aed57c98-6d61-11f0-83b7-c75d76a7e5d1": {
+    "start": 1565,
+    "end": 1566,
+    "region": "Britain & Ireland",
+    "dateLabel": "1565–1566",
+    "category": null,
+    "note": "Mary's marriage to Darnley, rebellion and the murder of David Rizzio."
+  },
+  "180f1576-693d-11f0-9ba4-4fb317cacfca": {
+    "start": 1561,
+    "end": 1565,
+    "region": "Britain & Ireland",
+    "dateLabel": "1561–1565",
+    "category": null,
+    "note": "Mary's return to Scotland and her choice of Darnley as husband."
+  },
+  "d9a5e5c2-67ab-11f0-9c98-e7a5f31a14f1": {
+    "start": 1558,
+    "end": 1561,
+    "region": "Europe",
+    "dateLabel": "1558–1561",
+    "category": null,
+    "note": "Mary at the French court, her queenship of France and widowhood."
+  },
+  "c691a8ce-63e4-11f0-a3df-a3091a6d41d9": {
+    "start": 1542,
+    "end": 1548,
+    "region": "Britain & Ireland",
+    "dateLabel": "1542–1548",
+    "category": null,
+    "note": "Mary's birth, accession in infancy and departure for France."
+  },
+  "1abf3894-6255-11f0-8ec4-034fb3e2137f": {
+    "start": 1932,
+    "end": 1937,
+    "region": "Britain & Ireland",
+    "dateLabel": "1932–1937",
+    "category": null,
+    "note": "Harold Davidson's defrocking and his later death after a lion attack."
+  },
+  "2623ac04-5e60-11f0-9008-3f34c90baa27": {
+    "start": 1144,
+    "end": 1144,
+    "region": "Britain & Ireland",
+    "dateLabel": "1144",
+    "category": null,
+    "note": "William of Norwich's death and the origins of a false antisemitic blood-libel accusation."
+  },
+  "8c6fa70e-5cdc-11f0-8fb8-931b31c7dcdf": {
+    "start": 1922,
+    "end": 1922,
+    "region": "Britain & Ireland",
+    "dateLabel": "1922",
+    "category": null,
+    "note": "The outbreak of the Irish Civil War and the killings of Henry Wilson and Michael Collins."
+  },
+  "f3a0bcc2-5595-11f0-809c-47f70432e2dd": {
+    "start": 1922,
+    "end": 1922,
+    "region": "Britain & Ireland",
+    "dateLabel": "1922",
+    "category": null,
+    "note": "The outbreak of the Irish Civil War and the killings of Henry Wilson and Michael Collins."
+  },
+  "b7ac4d7e-5592-11f0-ab4b-e742605904ae": {
+    "start": 1921,
+    "end": 1921,
+    "region": "Britain & Ireland",
+    "dateLabel": "1921",
+    "category": null,
+    "note": "Negotiation and signing of the Anglo-Irish Treaty."
+  },
+  "226b0334-5341-11f0-8b22-5f9941bcdd93": {
+    "start": 1920,
+    "end": 1920,
+    "region": "Britain & Ireland",
+    "dateLabel": "1920",
+    "category": null,
+    "note": "Bloody Sunday in Dublin on 21 November 1920."
+  },
+  "5d7d0b70-51de-11f0-bbcc-3fc88ff280a8": {
+    "start": 1918,
+    "end": 1920,
+    "region": "Britain & Ireland",
+    "dateLabel": "1918–1920",
+    "category": null,
+    "note": "The early Irish War of Independence and the rise of Michael Collins."
+  },
+  "25e4d690-4dd1-11f0-81ad-a7e10ee422a8": {
+    "start": 1916,
+    "end": 1918,
+    "region": "Britain & Ireland",
+    "dateLabel": "1916–1918",
+    "category": null,
+    "note": "The political aftermath of the Easter Rising and the rise of Sinn Fein."
+  },
+  "2fa34374-4caf-11f0-98e7-7fd584575b46": {
+    "start": 1492,
+    "end": 1498,
+    "region": "Europe",
+    "dateLabel": "1492–1498",
+    "category": null,
+    "note": "The fall of the Medici and Savonarola's rule and execution."
+  },
+  "1deb6f9c-4545-11f0-8b3d-7bfdbee6664f": {
+    "start": 1478,
+    "end": 1492,
+    "region": "Europe",
+    "dateLabel": "1478–1492",
+    "category": null,
+    "note": "Lorenzo de' Medici's later rule and the rise of Savonarola."
+  },
+  "02550136-453f-11f0-9054-5b2dc31ef1b0": {
+    "start": 1469,
+    "end": 1478,
+    "region": "Europe",
+    "dateLabel": "1469–1478",
+    "category": null,
+    "note": "Lorenzo's accession and the Pazzi conspiracy."
+  },
+  "481263d6-405c-11f0-839d-d7beff4fbd4e": {
+    "start": 1397,
+    "end": 1464,
+    "region": "Europe",
+    "dateLabel": "1397–1464",
+    "category": null,
+    "note": "The Medici bank and Cosimo de' Medici's rise in Florence."
+  },
+  "33dbaad2-4154-11f0-b9ea-dbc2b3cb28b0": {
+    "start": -216,
+    "end": -216,
+    "region": "Europe",
+    "dateLabel": "216 BCE",
+    "category": null,
+    "note": "The Battle of Cannae."
+  },
+  "1494cd46-3c6a-11f0-b486-5318baea25d5": {
+    "start": -218,
+    "end": -217,
+    "region": "Europe",
+    "dateLabel": "218–217 BCE",
+    "category": null,
+    "note": "Hannibal's arrival in Italy and his early victories."
+  },
+  "4f9912aa-3beb-11f0-8be0-cbaedbf7f973": {
+    "start": -218,
+    "end": -218,
+    "region": "Europe",
+    "dateLabel": "218 BCE",
+    "category": null,
+    "note": "Hannibal's march across the Alps."
+  },
+  "6b5221b6-37c3-11f0-bb8b-3f58035d9433": {
+    "start": -247,
+    "end": -219,
+    "region": "Africa",
+    "dateLabel": "247–219 BCE",
+    "category": null,
+    "note": "Hannibal's origins and Carthage's recovery, including expansion in Iberia."
+  },
+  "e554bd86-3587-11f0-ab18-97b41f2ba738": {
+    "start": 1709,
+    "end": 1725,
+    "region": "Europe",
+    "dateLabel": "1709–1725",
+    "category": null,
+    "note": "Peter's later reign after Poltava, the death of Alexei and the end of Peter's life."
+  },
+  "5c842908-315c-11f0-9353-b733bc6d64c9": {
+    "start": 1707,
+    "end": 1709,
+    "region": "Europe",
+    "dateLabel": "1707–1709",
+    "category": null,
+    "note": "Charles XII's invasion and the Battle of Poltava, fought in 1709."
+  },
+  "d2406992-30f1-11f0-a78e-3bbeead6f8ba": {
+    "start": 1703,
+    "end": 1709,
+    "region": "Europe",
+    "dateLabel": "1703–1709",
+    "category": null,
+    "note": "The campaigns after St Petersburg's foundation and Mazepa's alliance with Sweden."
+  },
+  "5065999e-2d0c-11f0-9292-a3928406e6be": {
+    "start": 1700,
+    "end": 1703,
+    "region": "Europe",
+    "dateLabel": "1700–1703",
+    "category": null,
+    "note": "The opening phase of the Great Northern War."
+  },
+  "14cd595e-2b49-11f0-b091-ef0c4bc156d2": {
+    "start": 1689,
+    "end": 1698,
+    "region": "Europe",
+    "dateLabel": "1689–1698",
+    "category": null,
+    "note": "Peter's early rule, European travels and suppression of the streltsy revolt."
+  },
+  "269925c8-276b-11f0-934d-e7714d2f5b2e": {
+    "start": 1672,
+    "end": 1689,
+    "region": "Europe",
+    "dateLabel": "1672–1689",
+    "category": null,
+    "note": "Peter's childhood and the succession struggles of seventeenth-century Russia."
+  },
+  "81dab170-25e2-11f0-a250-4fe872e051f4": {
+    "start": 990,
+    "end": 1010,
+    "region": "Asia",
+    "dateLabel": "c. 990–1010",
+    "category": null,
+    "note": "Approximate period covered. The Heian court around the time of Sei Shonagon and Murasaki Shikibu."
+  },
+  "11de629a-1f89-11f0-929f-bf6f23f9574b": {
+    "start": 990,
+    "end": 1010,
+    "region": "Asia",
+    "dateLabel": "c. 990–1010",
+    "category": null,
+    "note": "Approximate period covered. The Heian court around the time of Sei Shonagon and Murasaki Shikibu."
+  },
+  "d5e57918-191b-11f0-b02f-67cbbcdd34ca": {
+    "start": 1967,
+    "end": 1969,
+    "region": "Britain & Ireland",
+    "dateLabel": "1967–1969",
+    "category": null,
+    "note": "The Rolling Stones' scandals, Brian Jones's death and the Altamont concert."
+  },
+  "b898d65a-1918-11f0-90ba-ebf3e16abf0e": {
+    "start": 1962,
+    "end": 1966,
+    "region": "Britain & Ireland",
+    "dateLabel": "1962–1966",
+    "category": null,
+    "note": "The formation and early rise of the Rolling Stones."
+  },
+  "4065fbbe-1aa7-11f0-8171-33f01d18e1ad": {
+    "start": 1066,
+    "end": 1087,
+    "region": "Britain & Ireland",
+    "dateLabel": "1066–1087",
+    "category": null,
+    "note": "William's consolidation of the Norman conquest and reign in England."
+  },
+  "edeed2fe-16b2-11f0-a336-9771f11b04bc": {
+    "start": 1066,
+    "end": 1066,
+    "region": "Britain & Ireland",
+    "dateLabel": "1066",
+    "category": null,
+    "note": "The Battle of Hastings on 14 October 1066."
+  },
+  "617ca3c8-1563-11f0-a218-537a95ab3896": {
+    "start": 1066,
+    "end": 1066,
+    "region": "Britain & Ireland",
+    "dateLabel": "1066",
+    "category": null,
+    "note": "The Battle of Stamford Bridge on 25 September 1066."
+  },
+  "555043f2-116c-11f0-b17e-e7f3edb30863": {
+    "start": 1066,
+    "end": 1066,
+    "region": "Britain & Ireland",
+    "dateLabel": "1066",
+    "category": null,
+    "note": "The English succession crisis and preparations for invasion."
+  },
+  "a8f80966-0fa7-11f0-adf2-fb8fb7e9e3d5": {
+    "start": 1034,
+    "end": 1066,
+    "region": "Europe",
+    "dateLabel": "1034–1066",
+    "category": null,
+    "note": "Harald Hardrada's Byzantine service, return to Norway and kingship; saga elements are discussed."
+  },
+  "e1dd559c-0bc9-11f0-aaba-ab7592c99d4d": {
+    "start": 1015,
+    "end": 1034,
+    "region": "Europe",
+    "dateLabel": "1015–1034",
+    "category": null,
+    "note": "Harald Hardrada's youth, exile and service in Kyiv."
+  },
+  "b5b6d7ee-0968-11f0-852f-df3692cf4129": {
+    "start": 1051,
+    "end": 1066,
+    "region": "Britain & Ireland",
+    "dateLabel": "1051–1066",
+    "category": null,
+    "note": "The Godwin family's struggle for power and Harold's road to the throne."
+  },
+  "1c6f384a-0573-11f0-a6ac-6b0e89369a0a": {
+    "start": 1028,
+    "end": 1060,
+    "region": "Europe",
+    "dateLabel": "1028–1060",
+    "category": null,
+    "note": "William of Normandy's youth and consolidation of his duchy."
+  },
+  "f90a1c22-04a9-11f0-a9be-6f3ab9362ebb": {
+    "start": 1002,
+    "end": 1016,
+    "region": "Britain & Ireland",
+    "dateLabel": "1002–1016",
+    "category": null,
+    "note": "Danish attacks on England and the struggles of Sweyn, Cnut and Edmund Ironside."
+  },
+  "bf885d2e-00bc-11f0-9a64-4b2fec426366": {
+    "start": 975,
+    "end": 1002,
+    "region": "Britain & Ireland",
+    "dateLabel": "975–1002",
+    "category": null,
+    "note": "The succession after Edgar and Aethelred's reign up to the St Brice's Day massacre."
+  },
+  "362e0e88-ff69-11ef-b1e6-ef1bd2a7048d": {
+    "start": 1792,
+    "end": 1793,
+    "region": "Europe",
+    "dateLabel": "1792–1793",
+    "category": null,
+    "note": "Louis XVI's trial and execution."
+  },
+  "b478e222-fb6d-11ef-bc60-4f1e32aa5f4d": {
+    "start": 1792,
+    "end": 1792,
+    "region": "Europe",
+    "dateLabel": "1792",
+    "category": null,
+    "note": "The Battle of Valmy and the abolition of the French monarchy."
+  },
+  "8fd79f88-f9df-11ef-9515-73368c9aaed4": {
+    "start": 1791,
+    "end": 1793,
+    "region": "Europe",
+    "dateLabel": "1791–1793",
+    "category": null,
+    "note": "Women's political claims during the Revolution, including Olympe de Gouges."
+  },
+  "0f6db080-e940-11ef-b5c3-1fd07afe8286": {
+    "start": 1792,
+    "end": 1792,
+    "region": "Europe",
+    "dateLabel": "1792",
+    "category": null,
+    "note": "The September Massacres in revolutionary Paris."
+  },
+  "5ca82906-ef8b-11ef-adab-372aafe7fe3f": {
+    "start": 1560,
+    "end": 1561,
+    "region": "Americas",
+    "dateLabel": "1560–1561",
+    "category": null,
+    "note": "The Ursua expedition and Lope de Aguirre's rebellion in the Amazon."
+  },
+  "f7ef957e-ee06-11ef-82f6-536b545ac8de": {
+    "start": 1527,
+    "end": 1609,
+    "region": "Britain & Ireland",
+    "dateLabel": "1527–1609",
+    "category": null,
+    "note": "John Dee's life as a scholar, court adviser and occultist."
+  },
+  "c419e616-e95e-11ef-ada2-172a3a2e2e9e": {
+    "start": 1890,
+    "end": 1899,
+    "region": "Africa",
+    "dateLabel": "1890–1899",
+    "category": null,
+    "note": "Conrad's Congo journey and the writing of Heart of Darkness."
+  },
+  "fa33aa02-e57b-11ef-b433-53e2b38ac882": {
+    "start": 1897,
+    "end": 1908,
+    "region": "Africa",
+    "dateLabel": "1897–1908",
+    "category": null,
+    "note": "The exposure of abuses in the Congo Free State and the campaign against Leopold's rule."
+  },
+  "b77d35ca-e53a-11ef-91bb-2b7c28eb4a6c": {
+    "start": 1885,
+    "end": 1904,
+    "region": "Africa",
+    "dateLabel": "1885–1904",
+    "category": null,
+    "note": "Forced labour and atrocities under Leopold's Congo Free State."
+  },
+  "9c028bcc-e2ee-11ef-8bb5-bf8b8a8cccb0": {
+    "start": 1870,
+    "end": 1885,
+    "region": "Africa",
+    "dateLabel": "c. 1870–1885",
+    "category": null,
+    "note": "Approximate period covered. Stanley's expeditions and Leopold's acquisition of the Congo."
+  },
+  "01f3685c-e321-11ef-a2ed-e30cfd4f8c79": {
+    "start": 41,
+    "end": 54,
+    "region": "Europe",
+    "dateLabel": "41–54 CE",
+    "category": null,
+    "note": "The reign of the Roman emperor Claudius."
+  },
+  "2a24347c-dfe9-11ef-b01f-0bb604d26f69": {
+    "start": 12,
+    "end": 41,
+    "region": "Europe",
+    "dateLabel": "12–41 CE",
+    "category": null,
+    "note": "Caligula's life and reign."
+  },
+  "4418968a-de5d-11ef-a6fe-93b5b91a6829": {
+    "start": 14,
+    "end": 37,
+    "region": "Europe",
+    "dateLabel": "14–37 CE",
+    "category": null,
+    "note": "The reign of Tiberius; includes his earlier life."
+  },
+  "c7e1a9ec-da71-11ef-9b6b-8f9d7119ba4b": {
+    "start": -27,
+    "end": 96,
+    "region": "Europe",
+    "dateLabel": "27 BCE–96 CE",
+    "category": null,
+    "note": "The early imperial Caesars described by Suetonius; discussion includes the later author."
+  },
+  "606c03f4-d8f8-11ef-82e3-a3fe34df31ae": {
+    "start": 1942,
+    "end": 1945,
+    "region": "Across the world",
+    "dateLabel": "1942–1945",
+    "category": null,
+    "note": "Wojtek's journey with the Polish army from the Middle East to wartime Italy."
+  },
+  "0bea65f0-d4e3-11ef-ac46-b79e446d323e": {
+    "start": 1939,
+    "end": 1939,
+    "region": "Europe",
+    "dateLabel": "1939",
+    "category": null,
+    "note": "The invasion of Poland, the Nazi-Soviet pact and the fall of Warsaw."
+  },
+  "2581bfe0-d367-11ef-9ad2-eb0fd2f9e5f7": {
+    "start": 1939,
+    "end": 1939,
+    "region": "Europe",
+    "dateLabel": "1939",
+    "category": null,
+    "note": "The invasion of Poland, the Nazi-Soviet pact and the fall of Warsaw."
+  },
+  "837b0212-cf72-11ef-83f8-dbe4aee16746": {
+    "start": 1938,
+    "end": 1939,
+    "region": "Europe",
+    "dateLabel": "1938–1939",
+    "category": null,
+    "note": "German expansion after Munich and preparations to attack Poland."
+  },
+  "de2ec452-bdff-11ef-b724-5ffe1308be90": {
+    "start": 1938,
+    "end": 1938,
+    "region": "Europe",
+    "dateLabel": "1938",
+    "category": null,
+    "note": "The Sudeten crisis and Munich Agreement."
+  },
+  "24978760-cbb3-11ef-b6d2-5f23b24d20a4": {
+    "start": 1938,
+    "end": 1938,
+    "region": "Europe",
+    "dateLabel": "1938",
+    "category": null,
+    "note": "The Sudeten crisis and Munich Agreement."
+  },
+  "33568026-c6d1-11ef-8bde-33e5b6ea4233": {
+    "start": 1770,
+    "end": 1827,
+    "region": "Europe",
+    "dateLabel": "1770–1827",
+    "category": null,
+    "note": "Beethoven's life, music and relationship to the Napoleonic era."
+  },
+  "fa48f708-c605-11ef-bb33-f339af60f4c6": {
+    "start": 1756,
+    "end": 1791,
+    "region": "Europe",
+    "dateLabel": "1756–1791",
+    "category": null,
+    "note": "Mozart's life, career and death."
+  },
+  "e2c2dc6e-b87e-11ef-9321-4f32bc7a6d8f": {
+    "start": 797,
+    "end": 814,
+    "region": "Europe",
+    "dateLabel": "797–814 CE",
+    "category": null,
+    "note": "Charlemagne's imperial coronation and later reign."
+  },
+  "24ac00ae-b6ec-11ef-9f30-17ce0dca19ba": {
+    "start": 771,
+    "end": 797,
+    "region": "Europe",
+    "dateLabel": "771–797 CE",
+    "category": null,
+    "note": "Charlemagne's sole kingship, Saxon wars and reforms."
+  },
+  "03b4f1d0-b6ec-11ef-ab17-f71dfc262b33": {
+    "start": 741,
+    "end": 771,
+    "region": "Europe",
+    "dateLabel": "741–771 CE",
+    "category": null,
+    "note": "The rise of Pepin and the succession of Charlemagne and Carloman."
+  },
+  "1fbd9a34-b328-11ef-93db-73259f38162e": {
+    "start": 711,
+    "end": 741,
+    "region": "Europe",
+    "dateLabel": "711–741 CE",
+    "category": null,
+    "note": "Charles Martel, the Umayyad advance and the Battle of Tours in 732."
+  },
+  "b717845a-b326-11ef-bf48-4bd39e000bd6": {
+    "start": 561,
+    "end": 613,
+    "region": "Europe",
+    "dateLabel": "561–613 CE",
+    "category": null,
+    "note": "The Merovingian civil wars of Fredegund and Brunhilda."
+  },
+  "081dea20-b326-11ef-b6e2-9b31f8cbc3a7": {
+    "start": 400,
+    "end": 511,
+    "region": "Europe",
+    "dateLabel": "c. 400–511 CE",
+    "category": null,
+    "note": "Approximate period covered. The emergence of the Franks and the reign of Clovis."
+  },
+  "def484dc-b097-11ef-bb19-134ff0ea1942": {
+    "start": -4000,
+    "end": -3000,
+    "region": "Middle East",
+    "dateLabel": "c. 4000–3000 BCE",
+    "category": null,
+    "note": "Approximate period covered. The early urban development of Uruk; later settlement and modern archaeology are also discussed."
+  },
+  "026df634-a434-11ef-a4c9-4fbbf4a9b670": {
+    "start": 1798,
+    "end": 1798,
+    "region": "Africa",
+    "dateLabel": "1798",
+    "category": null,
+    "note": "The Battle of the Nile off Egypt."
+  },
+  "dde54a12-a373-11ef-a8b4-ff6b99a6d369": {
+    "start": 1797,
+    "end": 1798,
+    "region": "Europe",
+    "dateLabel": "1797–1798",
+    "category": null,
+    "note": "Nelson after Tenerife and his pursuit of Napoleon's Mediterranean expedition."
+  },
+  "e85e10a2-a46b-11ef-a3ca-db0e0cfc0b04": {
+    "start": 1797,
+    "end": 1797,
+    "region": "Europe",
+    "dateLabel": "1797",
+    "category": null,
+    "note": "The Battle of Cape St Vincent."
+  },
+  "b4121d66-a46b-11ef-96d9-3bb9345c7759": {
+    "start": 1793,
+    "end": 1794,
+    "region": "Europe",
+    "dateLabel": "1793–1794",
+    "category": null,
+    "note": "Nelson at Toulon and Corsica in the war with revolutionary France."
+  },
+  "a134c534-a373-11ef-9780-071b22f89fa8": {
+    "start": 1758,
+    "end": 1793,
+    "region": "Across the world",
+    "dateLabel": "1758–1793",
+    "category": null,
+    "note": "Nelson's early life and naval service across the Atlantic and Indian oceans."
+  },
+  "5efc6fe0-9fa0-11ef-a7d1-f33ff35b5521": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Americas",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "US politics, assassinations, protest and the presidential election in 1968."
+  },
+  "941235c6-9f9f-11ef-9e62-3363ba85fcb2": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Americas",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "US politics, assassinations, protest and the presidential election in 1968."
+  },
+  "f9b83be0-9c9e-11ef-b06b-c7950e9b6f7d": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Americas",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "US politics, assassinations, protest and the presidential election in 1968."
+  },
+  "b79d4556-99ed-11ef-a256-b3fbb21524d9": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Americas",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "US politics, assassinations, protest and the presidential election in 1968."
+  },
+  "fa4eb980-92f8-11ef-b410-9b76eb9a0fe1": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Americas",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "US politics, assassinations, protest and the presidential election in 1968."
+  },
+  "53376730-92e1-11ef-b14e-6323e6e0f45e": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Americas",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "US politics, assassinations, protest and the presidential election in 1968."
+  },
+  "5d9e8f2e-9259-11ef-9679-7fcfc5b2fd32": {
+    "start": 1792,
+    "end": 1792,
+    "region": "Europe",
+    "dateLabel": "1792",
+    "category": null,
+    "note": "Revolutionary France's war, political crisis and mobilisation in 1792."
+  },
+  "a128c574-9183-11ef-aad0-7f2a1cc63829": {
+    "start": 1792,
+    "end": 1792,
+    "region": "Europe",
+    "dateLabel": "1792",
+    "category": null,
+    "note": "Revolutionary France's war, political crisis and mobilisation in 1792."
+  },
+  "cc32cad8-8f05-11ef-a38b-c7f6c9e51049": {
+    "start": 1789,
+    "end": 1792,
+    "region": "Europe",
+    "dateLabel": "1789–1792",
+    "category": null,
+    "note": "Penal reform and the introduction of the guillotine during the French Revolution."
+  },
+  "b841f49e-8c04-11ef-a2a1-eb5a1414618b": {
+    "start": 1792,
+    "end": 1792,
+    "region": "Europe",
+    "dateLabel": "1792",
+    "category": null,
+    "note": "Revolutionary France's war, political crisis and mobilisation in 1792."
+  },
+  "615cd29a-89b4-11ef-8a38-6f39bf50b1fa": {
+    "start": 1791,
+    "end": 1791,
+    "region": "Europe",
+    "dateLabel": "1791",
+    "category": null,
+    "note": "The Champ de Mars massacre after the king's flight to Varennes."
+  },
+  "f638657a-865b-11ef-85ba-878d9ac61632": {
+    "start": 61,
+    "end": 84,
+    "region": "Britain & Ireland",
+    "dateLabel": "61–84 CE",
+    "category": null,
+    "note": "Roman consolidation after Boudicca and Agricola's northern campaigns."
+  },
+  "71289a90-8434-11ef-8829-0b9cbd7b2c26": {
+    "start": 60,
+    "end": 61,
+    "region": "Britain & Ireland",
+    "dateLabel": "60–61 CE",
+    "category": null,
+    "note": "Boudicca's revolt; the exact dating within 60–61 CE is debated."
+  },
+  "334fe640-80da-11ef-a960-bff8274ec2b2": {
+    "start": 43,
+    "end": 43,
+    "region": "Britain & Ireland",
+    "dateLabel": "43 CE",
+    "category": null,
+    "note": "The Claudian invasion of Britain."
+  },
+  "3381f002-7c22-11ef-a768-cb1e5cf32162": {
+    "start": -55,
+    "end": -54,
+    "region": "Britain & Ireland",
+    "dateLabel": "55–54 BCE",
+    "category": null,
+    "note": "Julius Caesar's two expeditions to Britain."
+  },
+  "44c63062-71c8-11ef-9f18-43da347341dc": {
+    "start": 1952,
+    "end": 1976,
+    "region": "Americas",
+    "dateLabel": "1952–1976",
+    "category": null,
+    "note": "The fate of Eva Peron's body after her death."
+  },
+  "877704c6-71d8-11ef-bf17-87fd496664a3": {
+    "start": 1950,
+    "end": 1952,
+    "region": "Americas",
+    "dateLabel": "1950–1952",
+    "category": null,
+    "note": "Eva Peron's illness, political prominence and death."
+  },
+  "a1e6ff2e-71d7-11ef-b33a-0b436a1f7c03": {
+    "start": 1946,
+    "end": 1950,
+    "region": "Americas",
+    "dateLabel": "1946–1950",
+    "category": null,
+    "note": "Eva Peron's years as Argentina's first lady and rise as a political figure."
+  },
+  "8e418e62-75d8-11ef-ae1a-7344106d767b": {
+    "start": 1943,
+    "end": 1946,
+    "region": "Americas",
+    "dateLabel": "1943–1946",
+    "category": null,
+    "note": "Juan Peron's rise and his relationship with Eva."
+  },
+  "7a7091e6-7126-11ef-8bc3-27e69d5061be": {
+    "start": 1919,
+    "end": 1943,
+    "region": "Americas",
+    "dateLabel": "1919–1943",
+    "category": null,
+    "note": "Eva Peron's early life and acting career."
+  },
+  "a9f828f8-7062-11ef-ab8b-4bbc15fce9ad": {
+    "start": 1944,
+    "end": 1945,
+    "region": "Europe",
+    "dateLabel": "1944–1945",
+    "category": null,
+    "note": "Lee Miller's reporting from liberated and occupied Europe during the final phase of the war."
+  },
+  "d390da76-6e8b-11ef-9436-d7e1a56f1e24": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "The changing meaning of beards across many societies and eras."
+  },
+  "d69368de-6c69-11ef-b577-f35add320ac8": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "The changing meaning of beards across many societies and eras."
+  },
+  "045ff940-6075-11ef-9609-5300ab971fbd": {
+    "start": 1415,
+    "end": 1422,
+    "region": "Europe",
+    "dateLabel": "1415–1422",
+    "category": null,
+    "note": "Henry V's campaigns after Agincourt, the Treaty of Troyes and his final years."
+  },
+  "3ba495b0-6074-11ef-9395-9fe2f5b22d47": {
+    "start": 1415,
+    "end": 1415,
+    "region": "Europe",
+    "dateLabel": "1415",
+    "category": null,
+    "note": "Henry V's French campaign and the Battle of Agincourt."
+  },
+  "e3514630-5f9a-11ef-810a-efe6f1032b8e": {
+    "start": 1415,
+    "end": 1415,
+    "region": "Europe",
+    "dateLabel": "1415",
+    "category": null,
+    "note": "Henry V's French campaign and the Battle of Agincourt."
+  },
+  "70bc8c58-62db-11ef-aa1e-8b9b009b5053": {
+    "start": 1413,
+    "end": 1415,
+    "region": "Europe",
+    "dateLabel": "1413–1415",
+    "category": null,
+    "note": "Henry V's preparations for and invasion of France."
+  },
+  "497cea66-6010-11ef-846e-3771a1df6fa4": {
+    "start": 1403,
+    "end": 1413,
+    "region": "Britain & Ireland",
+    "dateLabel": "1403–1413",
+    "category": null,
+    "note": "Shrewsbury, rebellions against Henry IV and the rise of Prince Hal."
+  },
+  "4fa31b62-5da5-11ef-988f-2bd70e01e02d": {
+    "start": 1399,
+    "end": 1403,
+    "region": "Britain & Ireland",
+    "dateLabel": "1399–1403",
+    "category": null,
+    "note": "Henry IV's usurpation and the first challenges to his rule."
+  },
+  "dd5a39e6-4db4-11ef-b5f2-c75db49302d9": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "Italian food across many historical periods."
+  },
+  "d265a080-4db3-11ef-bd7e-9720ba5b6aaa": {
+    "start": 1912,
+    "end": 1953,
+    "region": "Britain & Ireland",
+    "dateLabel": "1912–1953",
+    "category": null,
+    "note": "The Piltdown Man discovery and its eventual exposure as a hoax; not the supposed prehistoric age of the remains."
+  },
+  "d1d3cfb2-49c5-11ef-a6d2-07ed233b5c12": {
+    "start": 1790,
+    "end": 1791,
+    "region": "Europe",
+    "dateLabel": "1790–1791",
+    "category": null,
+    "note": "The royal family's planning and failed flight to Varennes."
+  },
+  "1b67892e-49b3-11ef-872f-276f56988a96": {
+    "start": 1789,
+    "end": 1789,
+    "region": "Europe",
+    "dateLabel": "1789",
+    "category": null,
+    "note": "The first year of the French Revolution, including the Bastille, political reforms and Versailles march."
+  },
+  "12642d4a-4914-11ef-8e3e-03d114873326": {
+    "start": 1789,
+    "end": 1789,
+    "region": "Europe",
+    "dateLabel": "1789",
+    "category": null,
+    "note": "The first year of the French Revolution, including the Bastille, political reforms and Versailles march."
+  },
+  "159508aa-4846-11ef-ba68-9fd478d8583f": {
+    "start": 1789,
+    "end": 1789,
+    "region": "Europe",
+    "dateLabel": "1789",
+    "category": null,
+    "note": "The first year of the French Revolution, including the Bastille, political reforms and Versailles march."
+  },
+  "f6a14ddc-49ad-11ef-9a47-83287a515126": {
+    "start": 1788,
+    "end": 1789,
+    "region": "Europe",
+    "dateLabel": "1788–1789",
+    "category": null,
+    "note": "France's economic crisis, the Estates General and the Tennis Court Oath."
+  },
+  "53e559c6-49c6-11ef-964d-a737f1066da2": {
+    "start": 1786,
+    "end": 1788,
+    "region": "Europe",
+    "dateLabel": "1786–1788",
+    "category": null,
+    "note": "The fiscal and political breakdown preceding the French Revolution."
+  },
+  "a834b3ae-45bc-11ef-a3d4-bf2db107dedb": {
+    "start": 1785,
+    "end": 1785,
+    "region": "Europe",
+    "dateLabel": "1785",
+    "category": null,
+    "note": "The Affair of the Diamond Necklace."
+  },
+  "e7b36f9e-45b6-11ef-b95c-bf3d690adb33": {
+    "start": 1755,
+    "end": 1785,
+    "region": "Europe",
+    "dateLabel": "1755–1785",
+    "category": null,
+    "note": "Marie Antoinette's upbringing, marriage and early years as queen."
+  },
+  "7b2808b2-3ea9-11ef-920c-4fdbef8c2e11": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The July Crisis and declarations of war in summer 1914."
+  },
+  "244b75c0-3e9e-11ef-b109-53ec1714dde8": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The July Crisis and declarations of war in summer 1914."
+  },
+  "08dd41ec-3ea3-11ef-a926-4b502a7939f2": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The July Crisis and declarations of war in summer 1914."
+  },
+  "d56902e2-4523-11ef-93b2-07163fd21443": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The July Crisis and declarations of war in summer 1914."
+  },
+  "abafede4-3e0c-11ef-a664-ab1e2f10336f": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The July Crisis and declarations of war in summer 1914."
+  },
+  "db1a39f6-3ddd-11ef-9153-b37127418dd2": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The July Crisis and declarations of war in summer 1914."
+  },
+  "ffedb928-3d0c-11ef-9633-ff2274a0c121": {
+    "start": 1914,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1914",
+    "category": null,
+    "note": "The assassination of Franz Ferdinand and Sophie in Sarajevo."
+  },
+  "f482d41c-3c97-11ef-a35c-d77e7843e792": {
+    "start": 1863,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1863–1914",
+    "category": null,
+    "note": "Franz Ferdinand's life and the background to his Sarajevo visit."
+  },
+  "d34f9a24-394e-11ef-b913-df1c28e9125e": {
+    "start": 1911,
+    "end": 1914,
+    "region": "Europe",
+    "dateLabel": "1911–1914",
+    "category": null,
+    "note": "Princip's radicalisation and the assassination conspiracy."
+  },
+  "abb9a078-3736-11ef-a103-5b0720497ff5": {
+    "start": 1894,
+    "end": 1911,
+    "region": "Europe",
+    "dateLabel": "1894–1911",
+    "category": null,
+    "note": "Gavrilo Princip's childhood and early nationalist milieu."
+  },
+  "f7628c7e-2f11-11ef-915b-47d256ff57ad": {
+    "start": 1900,
+    "end": 2000,
+    "region": "Britain & Ireland",
+    "dateLabel": "c. 1900–2000",
+    "category": null,
+    "note": "Approximate period covered. A survey of twentieth-century British election campaigns; contemporary comparisons extend beyond the range."
+  },
+  "88469588-2e2b-11ef-8e7c-afeeeca1e50e": {
+    "start": 1690,
+    "end": 1900,
+    "region": "Britain & Ireland",
+    "dateLabel": "c. 1690–1900",
+    "category": null,
+    "note": "Approximate period covered. The main survey of election violence and campaigning from the rise of party politics to the Victorian era; earlier precedents also appear."
+  },
+  "c7a0360c-2963-11ef-8a52-8bbcf81e4dcd": {
+    "start": null,
+    "end": null,
+    "region": "Middle East",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Saint George's uncertain biography and later dragon legend span distinct traditions; his martyrdom is traditionally placed around 303 CE."
+  },
+  "20e10ec8-2c32-11ef-a9d8-7fcf499edddd": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Dragon traditions across cultures and imagined worlds."
+  },
+  "be329cfa-240d-11ef-bc7e-7f4551732c03": {
+    "start": 972,
+    "end": 991,
+    "region": "Europe",
+    "dateLabel": "972–991 CE",
+    "category": null,
+    "note": "Theophanu's marriage, imperial rule and regency."
+  },
+  "6fa109e6-240d-11ef-8be8-0b269b20bff8": {
+    "start": null,
+    "end": null,
+    "region": "Britain & Ireland",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "The suit and men's clothing across centuries, from medieval origins to modern fashion."
+  },
+  "4fbea500-1dcf-11ef-9077-abf60148f47d": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Helen, Clytemnestra and the Trojan myths; the stories are not securely datable historical biographies."
+  },
+  "1dda1fe2-1dcf-11ef-8af5-f3d78fbf51dd": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "Helen, Clytemnestra and the Trojan myths; the stories are not securely datable historical biographies."
+  },
+  "de93f13e-1908-11ef-b331-87a4d07faed4": {
+    "start": 1890,
+    "end": 1890,
+    "region": "Americas",
+    "dateLabel": "1890",
+    "category": null,
+    "note": "The killing of Sitting Bull and the Wounded Knee massacre."
+  },
+  "997e8230-1908-11ef-8e54-2fa2b57c8909": {
+    "start": 1881,
+    "end": 1890,
+    "region": "Americas",
+    "dateLabel": "1881–1890",
+    "category": null,
+    "note": "Sitting Bull's return, reservation life and the Ghost Dance movement."
+  },
+  "24358e2e-1908-11ef-afec-5f3ed0488f1b": {
+    "start": 1876,
+    "end": 1877,
+    "region": "Americas",
+    "dateLabel": "1876–1877",
+    "category": null,
+    "note": "The military aftermath of Little Bighorn and the death of Crazy Horse."
+  },
+  "d044d542-0e06-11ef-84be-db5182840b12": {
+    "start": 1876,
+    "end": 1876,
+    "region": "Americas",
+    "dateLabel": "1876",
+    "category": null,
+    "note": "The Battle of the Little Bighorn and its immediate aftermath."
+  },
+  "3e1bf360-163c-11ef-b0e7-970acae362a9": {
+    "start": 1876,
+    "end": 1876,
+    "region": "Americas",
+    "dateLabel": "1876",
+    "category": null,
+    "note": "The Battle of the Little Bighorn and its immediate aftermath."
+  },
+  "3f55980a-0d2a-11ef-b71d-2b611308c700": {
+    "start": 1873,
+    "end": 1876,
+    "region": "Americas",
+    "dateLabel": "1873–1876",
+    "category": null,
+    "note": "US policy and military preparations culminating in the 1876 campaign."
+  },
+  "89f1cbf2-0c55-11ef-a8ea-0350eba44397": {
+    "start": 1869,
+    "end": 1874,
+    "region": "Americas",
+    "dateLabel": "1869–1874",
+    "category": null,
+    "note": "Custer's later frontier service, railroad expeditions and the Black Hills."
+  },
+  "85db75ea-07d7-11ef-9454-bb8cb79cf1bf": {
+    "start": 1866,
+    "end": 1873,
+    "region": "Americas",
+    "dateLabel": "1866–1873",
+    "category": null,
+    "note": "Sitting Bull, the Fort Laramie treaty and rising pressure on the Lakota; earlier biography provides context."
+  },
+  "6dcd8006-07d7-11ef-8ff5-b33ac7aac8cb": {
+    "start": 1830,
+    "end": 1868,
+    "region": "Americas",
+    "dateLabel": "c. 1830–1868",
+    "category": null,
+    "note": "Approximate period covered. Lakota society, the rise of Crazy Horse and Red Cloud's War."
+  },
+  "331ec726-07d7-11ef-b346-5f270c926112": {
+    "start": 1865,
+    "end": 1868,
+    "region": "Americas",
+    "dateLabel": "1865–1868",
+    "category": null,
+    "note": "Custer's post-Civil-War service and early campaigns against Plains peoples."
+  },
+  "cadccf14-07d6-11ef-9885-bfb7cb522bf8": {
+    "start": 1839,
+    "end": 1865,
+    "region": "Americas",
+    "dateLabel": "1839–1865",
+    "category": null,
+    "note": "Custer's early life and service in the American Civil War."
+  },
+  "aee20522-0254-11ef-bb7a-2bc4cbf3ca74": {
+    "start": 1273,
+    "end": 1918,
+    "region": "Europe",
+    "dateLabel": "1273–1918",
+    "category": null,
+    "note": "A broad historical survey of the Habsburg dynasty, from Rudolf's election to the end of the monarchy."
+  },
+  "dbf5a7d0-fe35-11ee-b83c-cb50f4260b13": {
+    "start": -259,
+    "end": -210,
+    "region": "Asia",
+    "dateLabel": "259–210 BCE",
+    "category": null,
+    "note": "Qin Shi Huang's life, unification of China and imperial rule."
+  },
+  "d917d01e-f684-11ee-a073-eba5d4099191": {
+    "start": 1816,
+    "end": 1824,
+    "region": "Europe",
+    "dateLabel": "1816–1824",
+    "category": null,
+    "note": "Byron's continental exile and death during the Greek struggle for independence."
+  },
+  "338dd4cc-f684-11ee-a7b7-774f9f7c551e": {
+    "start": 1812,
+    "end": 1816,
+    "region": "Britain & Ireland",
+    "dateLabel": "1812–1816",
+    "category": null,
+    "note": "Byron's celebrity, relationships and failed marriage in Britain."
+  },
+  "db73a21c-f683-11ee-97c2-bf8dd04ac4ba": {
+    "start": 1809,
+    "end": 1812,
+    "region": "Europe",
+    "dateLabel": "1809–1812",
+    "category": null,
+    "note": "Byron's Mediterranean travels and literary breakthrough."
+  },
+  "689b7044-f683-11ee-95b1-c30ae4edcc4d": {
+    "start": 1788,
+    "end": 1809,
+    "region": "Britain & Ireland",
+    "dateLabel": "1788–1809",
+    "category": null,
+    "note": "Byron's childhood, education and early writing."
+  },
+  "d62b9942-f681-11ee-a334-5f73bf52a242": {
+    "start": 1970,
+    "end": 1979,
+    "region": "Americas",
+    "dateLabel": "1970–1979",
+    "category": null,
+    "note": "Disco's rise and backlash in 1970s America."
+  },
+  "092a65c6-f4de-11ee-a293-d79f158d3142": {
+    "start": 1961,
+    "end": 1972,
+    "region": "Americas",
+    "dateLabel": "1961–1972",
+    "category": null,
+    "note": "The US Apollo programme and the crewed Moon landings."
+  },
+  "8306db78-e78b-11ee-8c69-8b75cad0bc23": {
+    "start": 1521,
+    "end": 1546,
+    "region": "Europe",
+    "dateLabel": "1521–1546",
+    "category": null,
+    "note": "Luther after Worms, the Peasants' War and the spread of the Reformation; later consequences also discussed."
+  },
+  "4a7f0a64-e78b-11ee-8ea2-63b960d67e06": {
+    "start": 1521,
+    "end": 1521,
+    "region": "Europe",
+    "dateLabel": "1521",
+    "category": null,
+    "note": "The Diet of Worms and Luther's concealment at Wartburg."
+  },
+  "f890fe1a-e78a-11ee-8492-075b13b25481": {
+    "start": 1518,
+    "end": 1521,
+    "region": "Europe",
+    "dateLabel": "1518–1521",
+    "category": null,
+    "note": "Luther's theological disputes and confrontation with papal authority."
+  },
+  "d627c3d6-e6ae-11ee-acff-17c707ca19ad": {
+    "start": 1505,
+    "end": 1517,
+    "region": "Europe",
+    "dateLabel": "1505–1517",
+    "category": null,
+    "note": "Luther's life as a monk and the Ninety-Five Theses."
+  },
+  "1515e050-e60f-11ee-8203-572d209680ac": {
+    "start": 1483,
+    "end": 1505,
+    "region": "Europe",
+    "dateLabel": "1483–1505",
+    "category": null,
+    "note": "Luther's childhood, education and early religious formation."
+  },
+  "5f9f6570-dc95-11ee-b571-6fafb799026c": {
+    "start": 1912,
+    "end": 1912,
+    "region": "Across the world",
+    "dateLabel": "1912",
+    "category": null,
+    "note": "Titanic's transatlantic voyage, sinking and immediate aftermath."
+  },
+  "ef57dff4-dc94-11ee-b5af-9b6e25b68ace": {
+    "start": 1912,
+    "end": 1912,
+    "region": "Across the world",
+    "dateLabel": "1912",
+    "category": null,
+    "note": "Titanic's transatlantic voyage, sinking and immediate aftermath."
+  },
+  "ca49b1ba-dc94-11ee-8206-53a500ab6d78": {
+    "start": 1912,
+    "end": 1912,
+    "region": "Across the world",
+    "dateLabel": "1912",
+    "category": null,
+    "note": "Titanic's transatlantic voyage, sinking and immediate aftermath."
+  },
+  "89c3c842-dc94-11ee-9b20-27d574f26c2f": {
+    "start": 1912,
+    "end": 1912,
+    "region": "Across the world",
+    "dateLabel": "1912",
+    "category": null,
+    "note": "Titanic's transatlantic voyage, sinking and immediate aftermath."
+  },
+  "1afb6820-dc94-11ee-865f-0381664506e2": {
+    "start": 1909,
+    "end": 1912,
+    "region": "Across the world",
+    "dateLabel": "1909–1912",
+    "category": null,
+    "note": "Titanic's construction, fitting out and the lives of its passengers and crew."
+  },
+  "c2f98f62-dc93-11ee-84ce-0be94f6402e7": {
+    "start": 1900,
+    "end": 1909,
+    "region": "Across the world",
+    "dateLabel": "c. 1900–1909",
+    "category": null,
+    "note": "Approximate period covered. The transatlantic shipping rivalry and commercial background to Titanic's construction."
+  },
+  "7340bd92-d7e3-11ee-8ac9-1b4a20576ab2": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "Monkeys in human history across many periods."
+  },
+  "ebdba3ba-d7bc-11ee-a76f-33acb36bb32a": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "Chocolate's history across ancient America, early modern Europe and industrial production."
+  },
+  "6347d3de-cc1d-11ee-b146-6fc74d0f25b8": {
+    "start": -264,
+    "end": -241,
+    "region": "Europe",
+    "dateLabel": "264–241 BCE",
+    "category": null,
+    "note": "The First Punic War, fought principally around Sicily and the western Mediterranean."
+  },
+  "1091daf4-cc1d-11ee-b84f-0f850e9d20ac": {
+    "start": -390,
+    "end": -272,
+    "region": "Europe",
+    "dateLabel": "390–272 BCE",
+    "category": null,
+    "note": "Rome's expansion in Italy and wars with Pyrrhus."
+  },
+  "d52dcf36-cc1c-11ee-9576-2b961b812eb2": {
+    "start": -814,
+    "end": -264,
+    "region": "Africa",
+    "dateLabel": "c. 814–264 BCE",
+    "category": null,
+    "note": "Approximate period covered. Carthage's rise and Mediterranean expansion before its wars with Rome."
+  },
+  "44fd67b0-cc1b-11ee-a76b-1f473ed7eb9a": {
+    "start": -1200,
+    "end": -814,
+    "region": "Middle East",
+    "dateLabel": "c. 1200–814 BCE",
+    "category": null,
+    "note": "Approximate period covered. The Phoenician background to the founding of Carthage; later Mediterranean developments are also discussed."
+  },
+  "e5f39eca-c1ab-11ee-b07f-b3673c7063d2": {
+    "start": 1974,
+    "end": 1974,
+    "region": "Britain & Ireland",
+    "dateLabel": "1974",
+    "category": null,
+    "note": "Britain's two elections and political crises of 1974."
+  },
+  "bbbcbc7c-c1ab-11ee-be4a-1ffb47b3b17f": {
+    "start": 1974,
+    "end": 1974,
+    "region": "Britain & Ireland",
+    "dateLabel": "1974",
+    "category": null,
+    "note": "Britain's two elections and political crises of 1974."
+  },
+  "7d6c230e-c1ab-11ee-a4a2-d36d6d9ebb45": {
+    "start": 1974,
+    "end": 1974,
+    "region": "Britain & Ireland",
+    "dateLabel": "1974",
+    "category": null,
+    "note": "Britain's two elections and political crises of 1974."
+  },
+  "45ca8846-c1ab-11ee-a826-6b2abd358b04": {
+    "start": 1973,
+    "end": 1974,
+    "region": "Britain & Ireland",
+    "dateLabel": "1973–1974",
+    "category": null,
+    "note": "The oil crisis, miners' dispute and three-day week."
+  },
+  "f26ae1f8-bc43-11ee-8e46-17076e75f220": {
+    "start": 1340,
+    "end": 1400,
+    "region": "Britain & Ireland",
+    "dateLabel": "c. 1340–1400",
+    "category": null,
+    "note": "Approximate period covered. Geoffrey Chaucer's life and the world of The Canterbury Tales."
+  },
+  "8c04792e-bc43-11ee-a68c-6feda6df087e": {
+    "start": 1381,
+    "end": 1400,
+    "region": "Britain & Ireland",
+    "dateLabel": "1381–1400",
+    "category": null,
+    "note": "Richard II's later reign, deposition and death."
+  },
+  "b8076d84-bc42-11ee-b756-b337b9686287": {
+    "start": 1381,
+    "end": 1381,
+    "region": "Britain & Ireland",
+    "dateLabel": "1381",
+    "category": null,
+    "note": "The Peasants' Revolt in England."
+  },
+  "58ba519c-bc43-11ee-9835-db03853888d6": {
+    "start": 1381,
+    "end": 1381,
+    "region": "Britain & Ireland",
+    "dateLabel": "1381",
+    "category": null,
+    "note": "The Peasants' Revolt in England."
+  },
+  "37e8e1d0-bab9-11ee-8e9b-8368a68c24ca": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "The reception of ancient history in modern science fiction across several fictional worlds."
+  },
+  "c50615ee-b5f8-11ee-9a54-47e05876843a": {
+    "start": 1669,
+    "end": 1703,
+    "region": "Europe",
+    "dateLabel": "1669–1703",
+    "category": null,
+    "note": "The documented imprisonment of the man later known as the Man in the Iron Mask; his identity remains disputed."
+  },
+  "017adc58-b559-11ee-99f8-5b28ee5ab07c": {
+    "start": 1938,
+    "end": 1938,
+    "region": "Europe",
+    "dateLabel": "1938",
+    "category": null,
+    "note": "The November pogroms known as Kristallnacht."
+  },
+  "8c06a55c-b403-11ee-9317-e72a74ba0bd5": {
+    "start": 1933,
+    "end": 1938,
+    "region": "Europe",
+    "dateLabel": "1933–1938",
+    "category": null,
+    "note": "Escalating Nazi persecution of Jewish people before the Second World War."
+  },
+  "245ab7e2-b320-11ee-abf3-c7ea58eb1802": {
+    "start": 1933,
+    "end": 1939,
+    "region": "Europe",
+    "dateLabel": "1933–1939",
+    "category": null,
+    "note": "Nazi racial ideology, sterilisation and prewar persecution."
+  },
+  "a2348142-a97b-11ee-85ee-c787ddf68c8a": {
+    "start": 1937,
+    "end": 1938,
+    "region": "Europe",
+    "dateLabel": "1937–1938",
+    "category": null,
+    "note": "The build-up to and annexation of Austria."
+  },
+  "eb06bce6-a97b-11ee-8b9e-3377243e2b0c": {
+    "start": 1933,
+    "end": 1937,
+    "region": "Europe",
+    "dateLabel": "1933–1937",
+    "category": null,
+    "note": "German rearmament and Hitler's early foreign-policy expansion."
+  },
+  "d0214900-a66a-11ee-b4a0-9b10a9c74f50": {
+    "start": 1934,
+    "end": 1936,
+    "region": "Europe",
+    "dateLabel": "1934–1936",
+    "category": null,
+    "note": "The Nuremberg rallies, Nazi propaganda and the Berlin Olympics."
+  },
+  "5175d774-a66a-11ee-bf7f-b315e6eb6a64": {
+    "start": 1934,
+    "end": 1934,
+    "region": "Europe",
+    "dateLabel": "1934",
+    "category": null,
+    "note": "The Night of the Long Knives and Hitler's consolidation of power."
+  },
+  "0b2e9e88-9b6e-11ee-8faa-0bdd0306ae30": {
+    "start": null,
+    "end": null,
+    "region": "Europe",
+    "dateLabel": "Outside historical time",
+    "category": "Myths & mysteries",
+    "note": "The medieval legend of Pope Joan is not treated as an established historical papacy."
+  },
+  "f204ec30-a29f-11ee-85c1-07c6dda834cb": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "Christmas traditions and claims about their pagan and Christian origins across periods."
+  },
+  "b675a898-8397-11ee-a063-a75f738b108e": {
+    "start": 1948,
+    "end": 1971,
+    "region": "Britain & Ireland",
+    "dateLabel": "1948–1971",
+    "category": null,
+    "note": "Windrush and the main period of postwar Caribbean migration to Britain; longer legacy also discussed."
+  },
+  "47c9109c-98ff-11ee-ac36-a3f3cfd8d47b": {
+    "start": 1854,
+    "end": 1874,
+    "region": "Britain & Ireland",
+    "dateLabel": "1854–1874",
+    "category": null,
+    "note": "Roger Tichborne's disappearance and the subsequent claimant trials."
+  },
+  "2fa27fce-9384-11ee-bacc-afa2fdf9b1cc": {
+    "start": 1943,
+    "end": 1944,
+    "region": "Europe",
+    "dateLabel": "1943–1944",
+    "category": null,
+    "note": "The Allied invasion and fighting in mainland Italy."
+  },
+  "66565d3a-8770-11ee-a697-33414c53b472": {
+    "start": 1963,
+    "end": 1963,
+    "region": "Americas",
+    "dateLabel": "1963",
+    "category": null,
+    "note": "The Kennedy assassination, Oswald's killing and the investigation; subsequent conspiracy theories are also examined."
+  },
+  "f2a6efe8-87c0-11ee-bc87-834fef123192": {
+    "start": 1963,
+    "end": 1963,
+    "region": "Americas",
+    "dateLabel": "1963",
+    "category": null,
+    "note": "The Kennedy assassination, Oswald's killing and the investigation; subsequent conspiracy theories are also examined."
+  },
+  "6a8566ac-89e7-11ee-9ff3-db68b1c63b61": {
+    "start": 1963,
+    "end": 1963,
+    "region": "Americas",
+    "dateLabel": "1963",
+    "category": null,
+    "note": "The Kennedy assassination, Oswald's killing and the investigation; subsequent conspiracy theories are also examined."
+  },
+  "b7678588-87bf-11ee-bfb2-73426338d90f": {
+    "start": 1963,
+    "end": 1963,
+    "region": "Americas",
+    "dateLabel": "1963",
+    "category": null,
+    "note": "The Kennedy assassination, Oswald's killing and the investigation; subsequent conspiracy theories are also examined."
+  },
+  "260db52c-8395-11ee-87fb-cf4a48be2ff7": {
+    "start": 1963,
+    "end": 1963,
+    "region": "Americas",
+    "dateLabel": "1963",
+    "category": null,
+    "note": "The Kennedy assassination, Oswald's killing and the investigation; subsequent conspiracy theories are also examined."
+  },
+  "ae22f75a-830f-11ee-815f-4be001c149a7": {
+    "start": 1961,
+    "end": 1963,
+    "region": "Americas",
+    "dateLabel": "1961–1963",
+    "category": null,
+    "note": "John F. Kennedy's presidency and the Cold War crises before his death."
+  },
+  "761018a8-830e-11ee-a13e-5bb031c065b5": {
+    "start": 1917,
+    "end": 1960,
+    "region": "Americas",
+    "dateLabel": "1917–1960",
+    "category": null,
+    "note": "Kennedy's upbringing, war service and rise toward the presidency."
+  },
+  "bbfaae94-7a41-11ee-897e-476549f76756": {
+    "start": 1521,
+    "end": 1547,
+    "region": "Americas",
+    "dateLabel": "1521–1547",
+    "category": null,
+    "note": "The aftermath of Tenochtitlan's fall and the fates of Cuauhtemoc and Cortes."
+  },
+  "7e553172-7a41-11ee-b598-8fb3cbb1e7af": {
+    "start": 1521,
+    "end": 1521,
+    "region": "Americas",
+    "dateLabel": "1521",
+    "category": null,
+    "note": "The siege and fall of Tenochtitlan."
+  },
+  "35ed7638-7a41-11ee-95ba-2f8d51cfffb2": {
+    "start": 1520,
+    "end": 1520,
+    "region": "Americas",
+    "dateLabel": "1520",
+    "category": null,
+    "note": "The Toxcatl massacre, the death of Montezuma and the Spanish flight from Tenochtitlan."
+  },
+  "be73aec4-7a40-11ee-ab43-bfdfda7cd27e": {
+    "start": 1520,
+    "end": 1520,
+    "region": "Americas",
+    "dateLabel": "1520",
+    "category": null,
+    "note": "The Toxcatl massacre, the death of Montezuma and the Spanish flight from Tenochtitlan."
+  },
+  "6bdbe4ba-7a40-11ee-8a36-ef60f58adccb": {
+    "start": 1519,
+    "end": 1520,
+    "region": "Americas",
+    "dateLabel": "1519–1520",
+    "category": null,
+    "note": "The Spaniards in Tenochtitlan and Montezuma's captivity."
+  },
+  "2a7b012c-7a40-11ee-8fe3-5b6e819fdf9c": {
+    "start": 1519,
+    "end": 1519,
+    "region": "Americas",
+    "dateLabel": "1519",
+    "category": null,
+    "note": "Cortes and Malinche's journey toward Tenochtitlan."
+  },
+  "913cbb0e-7a3f-11ee-8dca-bb15b1176a96": {
+    "start": 1519,
+    "end": 1519,
+    "region": "Americas",
+    "dateLabel": "1519",
+    "category": null,
+    "note": "Cortes and Malinche's journey toward Tenochtitlan."
+  },
+  "cb5341e2-7a3e-11ee-a6eb-2799f1df2dde": {
+    "start": 1504,
+    "end": 1519,
+    "region": "Americas",
+    "dateLabel": "1504–1519",
+    "category": null,
+    "note": "Cortes in the Caribbean and preparations for the Mexican expedition."
+  },
+  "70aed4fe-78c2-11ee-8fa8-377b73760214": {
+    "start": 1793,
+    "end": 1796,
+    "region": "Europe",
+    "dateLabel": "1793–1796",
+    "category": null,
+    "note": "Napoleon at Toulon, the suppression of the Paris uprising and his rise to Italian command."
+  },
+  "87e88892-74c9-11ee-b6c1-af573a86e664": {
+    "start": 1769,
+    "end": 1793,
+    "region": "Europe",
+    "dateLabel": "1769–1793",
+    "category": null,
+    "note": "Napoleon's Corsican upbringing, schooling and revolutionary beginnings."
+  },
+  "94852b16-734b-11ee-a78c-2fb3b3d84f38": {
+    "start": 1768,
+    "end": 1779,
+    "region": "Oceania",
+    "dateLabel": "1768–1779",
+    "category": null,
+    "note": "Cook's Pacific voyages and encounters with Indigenous peoples."
+  },
+  "f19bfe14-6ea1-11ee-bcb1-bbe33d61ece6": {
+    "start": 1728,
+    "end": 1768,
+    "region": "Across the world",
+    "dateLabel": "1728–1768",
+    "category": null,
+    "note": "Cook's early life, naval mapping and preparations for his first Pacific voyage."
+  },
+  "c4da9278-6dca-11ee-803e-07765794e974": {
+    "start": 786,
+    "end": 900,
+    "region": "Middle East",
+    "dateLabel": "c. 786–900 CE",
+    "category": null,
+    "note": "Approximate period covered. Abbasid Baghdad's social world and the historical setting associated with the Arabian Nights; the stories are not treated as factual events."
+  },
+  "bcfb2ce4-6ba8-11ee-b863-d71136a001dd": {
+    "start": 786,
+    "end": 809,
+    "region": "Middle East",
+    "dateLabel": "786–809 CE",
+    "category": null,
+    "note": "Harun al-Rashid's reign and Baghdad's early golden age."
+  },
+  "295b19a6-6854-11ee-9504-4b082f11f400": {
+    "start": 750,
+    "end": 775,
+    "region": "Middle East",
+    "dateLabel": "750–775 CE",
+    "category": null,
+    "note": "The Abbasid consolidation and al-Mansur's founding of Baghdad."
+  },
+  "dfd2eb98-6627-11ee-b47b-1b7e876b7b3c": {
+    "start": 661,
+    "end": 750,
+    "region": "Middle East",
+    "dateLabel": "661–750 CE",
+    "category": null,
+    "note": "The Umayyad background and Abbasid Revolution."
+  },
+  "368f98fe-5d3c-11ee-a4e1-abe6add6a6eb": {
+    "start": 1920,
+    "end": 1940,
+    "region": "Britain & Ireland",
+    "dateLabel": "1920–1940",
+    "category": null,
+    "note": "The Mitford sisters' political milieu and relationships with Mosley and Hitler."
+  },
+  "c32c424a-5d3b-11ee-a2dd-731be6c1abb7": {
+    "start": 1936,
+    "end": 1940,
+    "region": "Britain & Ireland",
+    "dateLabel": "1936–1940",
+    "category": null,
+    "note": "Cable Street and the later decline of the British Union of Fascists."
+  },
+  "f5ecc76e-5d3a-11ee-85ee-1f725c352abf": {
+    "start": 1918,
+    "end": 1934,
+    "region": "Britain & Ireland",
+    "dateLabel": "1918–1934",
+    "category": null,
+    "note": "Mosley's political career through the founding of the BUF and Olympia rally."
+  },
+  "1b9e2f5a-5b2b-11ee-bc73-03c0947a2f05": {
+    "start": 1900,
+    "end": 1932,
+    "region": "Britain & Ireland",
+    "dateLabel": "c. 1900–1932",
+    "category": null,
+    "note": "Approximate period covered. The ideological roots and early organisations of British fascism."
+  },
+  "0f9b3c20-580b-11ee-8b5a-6350a2e39d81": {
+    "start": 1973,
+    "end": 1990,
+    "region": "Americas",
+    "dateLabel": "1973–1990",
+    "category": null,
+    "note": "The Chilean coup and Pinochet's dictatorship."
+  },
+  "bf7a8234-57d6-11ee-910d-eb2dad8d45b5": {
+    "start": 1970,
+    "end": 1973,
+    "region": "Americas",
+    "dateLabel": "1970–1973",
+    "category": null,
+    "note": "Allende's government and the campaign to undermine it before the coup."
+  },
+  "1fccf254-55a0-11ee-9c90-53311039c015": {
+    "start": 70,
+    "end": 100,
+    "region": "Europe",
+    "dateLabel": "70–100 CE",
+    "category": null,
+    "note": "The construction and early imperial use of the Colosseum; wider gladiatorial history also discussed."
+  },
+  "c1c7a744-5018-11ee-b3d6-87ab40d626e1": {
+    "start": 1700,
+    "end": 1850,
+    "region": "Britain & Ireland",
+    "dateLabel": "c. 1700–1850",
+    "category": null,
+    "note": "Approximate period covered. British public-school culture, student rebellions and the origins of later school-story traditions."
+  },
+  "3879a3c0-5018-11ee-bac7-8f9e4841ee00": {
+    "start": null,
+    "end": null,
+    "region": "Britain & Ireland",
+    "dateLabel": "Across the ages",
+    "category": "Ideas & everyday life",
+    "note": "The literary and educational traditions behind Harry Potter span multiple periods."
+  },
+  "300c5cdc-4cd5-11ee-9c2f-2fd7ba8cbbe1": {
+    "start": 1976,
+    "end": 1992,
+    "region": "Asia",
+    "dateLabel": "1976–1992",
+    "category": null,
+    "note": "Deng Xiaoping's rise after Mao and China's reform era."
+  },
+  "7a18d39e-48e0-11ee-a6b3-3fae2f11f140": {
+    "start": 1740,
+    "end": 1814,
+    "region": "Europe",
+    "dateLabel": "1740–1814",
+    "category": null,
+    "note": "The Marquis de Sade's life and writing."
+  },
+  "21b45546-4752-11ee-a897-2fa9790f950b": {
+    "start": 1964,
+    "end": 1969,
+    "region": "Britain & Ireland",
+    "dateLabel": "1964–1969",
+    "category": null,
+    "note": "Swinging London's boutiques, miniskirts and late-sixties fashion."
+  },
+  "f7b61202-44f9-11ee-8586-dfc5fd9824e6": {
+    "start": 1945,
+    "end": 1964,
+    "region": "Britain & Ireland",
+    "dateLabel": "1945–1964",
+    "category": null,
+    "note": "Postwar British fashion, Teddy Boys and the emergence of sixties youth styles."
+  },
+  "4980a77c-41d6-11ee-8fb0-377b7b3a169c": {
+    "start": 1631,
+    "end": 1653,
+    "region": "Asia",
+    "dateLabel": "1631–1653",
+    "category": null,
+    "note": "Mumtaz Mahal's death and construction of the Taj Mahal complex."
+  },
+  "2442a58a-3fa8-11ee-a70d-6febee05c4ec": {
+    "start": -300,
+    "end": 400,
+    "region": "Africa",
+    "dateLabel": "c. 300 BCE–400 CE",
+    "category": null,
+    "note": "Approximate period covered. The Library of Alexandria's ancient institutional history; its foundation and decline cannot be reduced to one certain date."
+  },
+  "153dbff0-3c58-11ee-89ae-230c87feb0f3": {
+    "start": 1970,
+    "end": 1979,
+    "region": "Americas",
+    "dateLabel": "1970–1979",
+    "category": null,
+    "note": "New York's crises in the 1970s, including the 1977 blackout."
+  },
+  "0570cf92-385f-11ee-bf13-bb3fd9a67b8b": {
+    "start": 1955,
+    "end": 1963,
+    "region": "Americas",
+    "dateLabel": "1955–1963",
+    "category": null,
+    "note": "King's civil-rights leadership culminating in the March on Washington."
+  },
+  "4c02a1b0-36d4-11ee-99be-2f0cdea5e221": {
+    "start": 750,
+    "end": 1100,
+    "region": "Europe",
+    "dateLabel": "c. 750–1100",
+    "category": null,
+    "note": "Approximate period covered. Beliefs and ritual in the Viking Age, rather than dates for supernatural events."
+  },
+  "2af8f0bc-32df-11ee-a6f8-0fdc527f4731": {
+    "start": null,
+    "end": null,
+    "region": "Across the world",
+    "dateLabel": "Across the ages",
+    "category": "Conversations & reflections",
+    "note": "A playful comparison of historical figures from unrelated eras."
+  },
+  "d549e82a-3166-11ee-8e79-f7d07365746a": {
+    "start": 1347,
+    "end": 1380,
+    "region": "Europe",
+    "dateLabel": "1347–1380",
+    "category": null,
+    "note": "Catherine of Siena's life and influence on medieval Christianity."
+  },
+  "f24f7ca8-2ed4-11ee-a426-936fef7cf591": {
+    "start": 79,
+    "end": 79,
+    "region": "Europe",
+    "dateLabel": "79 CE",
+    "category": null,
+    "note": "The eruption of Vesuvius that destroyed Pompeii."
+  },
+  "2f465baa-2be6-11ee-8255-7f60fd330075": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Europe",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "The May 1968 protests and their political outcome in France."
+  },
+  "8d9e7490-2929-11ee-a578-c377727a80e1": {
+    "start": 1968,
+    "end": 1968,
+    "region": "Europe",
+    "dateLabel": "1968",
+    "category": null,
+    "note": "The May 1968 protests and their political outcome in France."
+  },
+  "25d47922-2659-11ee-bc86-23235f3baaff": {
+    "start": 1600,
+    "end": 2000,
+    "region": "Europe",
+    "dateLabel": "c. 1600–2000",
+    "category": null,
+    "note": "Approximate period covered. Amsterdam from its seventeenth-century expansion through monarchy and postwar change; a broad city survey."
+  },
+  "ba533632-24cf-11ee-bc71-7ba075e7572b": {
+    "start": 1300,
+    "end": 1650,
+    "region": "Europe",
+    "dateLabel": "c. 1300–1650",
+    "category": null,
+    "note": "Approximate period covered. Amsterdam's medieval pilgrimage, Reformation and early commercial growth; a broad city survey."
+  }
+}
