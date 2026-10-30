@@ -1,11 +1,11 @@
-import {REGIONS,ERAS,CATEGORIES,makeCollection,filterCollection,makeTimeline,visibleTimeline,chronological,durationLabel,hasTimelineDate,TIMELINE_COLUMN_WIDTH,TIMELINE_MOBILE_COLUMN_WIDTH} from './core.mjs';
+import {REGIONS,ERAS,CATEGORIES,makeCollection,filterCollection,makeTimeline,visibleTimeline,chronological,durationLabel,formatYear,hasTimelineDate,TIMELINE_COLUMN_WIDTH,TIMELINE_MOBILE_COLUMN_WIDTH} from './core.mjs';
 import {EpisodeMap} from './map.js';
 
 const $=selector=>document.querySelector(selector);
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const params=new URLSearchParams(location.search);
 const state={q:params.get('q')||'',region:REGIONS.includes(params.get('region'))?params.get('region'):'all',era:ERAS.some(e=>e.id===params.get('era'))?params.get('era'):'all',view:params.get('view')==='index'?'index':'timeline',category:'all',indexLimit:24,beyondLimit:8};
-let episodes=[],items=[],catalogue=null,byId=new Map(),itemsById=new Map(),itemByEpisode=new Map(),timeline=null,currentEpisode=null,currentSeries=null,lastFocus=null,toastTimer,renderTimer,timelineKey='',timelineCards=[],timelineTicks=[],episodeMap;
+let episodes=[],items=[],catalogue=null,byId=new Map(),itemsById=new Map(),itemByEpisode=new Map(),timeline=null,currentEpisode=null,currentSeries=null,lastFocus=null,toastTimer,renderTimer,timelineKey='',timelineCards=[],timelineTicks=[],episodeMap,hoveredTimelineItem=null,focusedTimelineItem=null;
 const motion=()=>matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth';
 function thumb(url,width=180){try{const u=new URL(url);if(!['https:','http:'].includes(u.protocol))return '/images/show.jpg';if(u.hostname.endsWith('imgix.net')){u.search='';u.searchParams.set('w',width);u.searchParams.set('h',width);u.searchParams.set('fit','crop');u.searchParams.set('auto','format,compress');}return u.href;}catch{return '/images/show.jpg';}}
 function date(value){return value?new Date(value).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}):'Release date unavailable';}
@@ -31,20 +31,21 @@ function renderTimeline(filtered){
   const opening=!timelineKey&&!state.q&&state.region==='all'&&state.era==='all';
   const previousPeriod=timeline?.ticks.findLast(t=>t.x<=viewport.scrollLeft)?.id;
   const sameItems=key.split('|')[0]===timelineKey.split('|')[0];timelineKey=key;
-  timeline=makeTimeline(filtered,step);
+  timeline=makeTimeline(filtered,step);hoveredTimelineItem=null;focusedTimelineItem=null;
   viewport.style.setProperty('--timeline-visible-rows',Math.min(10,timeline.rowCount)||10);
   const canvas=$('#timeline-canvas');canvas.style.setProperty('--step',`${step}px`);timelineCards=[];timelineTicks=[];
   $('.timeline-footnote').hidden=!timeline.positions.length;
   if(!timeline.positions.length){canvas.style.width='100%';canvas.innerHTML=empty('No dated results match these filters.','Try another era, region or search. Broad collections and episodes without dates appear below.');$('#time-position').disabled=true;$('#first-year').textContent='';$('#last-year').textContent='';updateScroll();return;}
   $('#time-position').disabled=false;canvas.style.width=`${Math.max(timeline.width,viewport.clientWidth)}px`;
-  const axis=`<div class="timeline-axis"><span class="axis-current" id="visible-year" hidden></span>${timeline.ticks.map(t=>`<span class="axis-tick" style="left:${t.x}px;width:${t.width}px">${t.gapLabel?`<span class="period-gap" role="img" aria-label="${esc(t.gapLabel)}" title="${esc(t.gapLabel)}">⋯</span>`:''}${t.label}</span>`).join('')}</div>`;
-  const cards=timeline.positions.map(({item,x,width,rangeWidth,labelWidth})=>`<button class="story-card ${item.type==='series'?'is-series':''}" ${itemTarget(item)} data-item-id="${esc(item.id)}" style="left:${x}px;width:${width}px;--range-width:${rangeWidth}px;--label-width:${labelWidth}px;--series-color:${item.color}" title="${esc(item.title)} · approximately ${esc(item.dateLabel)}" aria-label="Open ${esc(item.title)}${item.type==='series'?`, series of ${item.members.length} episodes`:''}, approximately ${esc(item.dateLabel)}"><span class="story-text"><span class="story-title">${esc(item.title)}</span>${item.type==='series'?`<span class="story-count">${item.members.length} ↗</span>`:''}</span><span class="story-duration" aria-hidden="true"></span></button>`).join('');
+  const axis=`<div class="timeline-axis"><div class="range-guide" id="range-guide" hidden></div><span class="axis-current" id="visible-year" hidden></span>${timeline.ticks.map(t=>`<span class="axis-tick" style="left:${t.x}px;width:${t.width}px">${t.gapLabel?`<span class="period-gap" role="img" aria-label="${esc(t.gapLabel)}" title="${esc(t.gapLabel)}">⋯</span>`:''}${t.label}</span>`).join('')}</div>`;
+  const cards=timeline.positions.map(({item,x,width})=>`<button class="story-card ${item.type==='series'?'is-series':''}" ${itemTarget(item)} data-item-id="${esc(item.id)}" style="left:${x}px;width:${width}px;--series-color:${item.color}" aria-label="Open ${esc(item.title)}${item.type==='series'?`, series of ${item.members.length} episodes`:''}, approximately ${esc(item.dateLabel)}"><span class="story-text"><span class="story-title">${esc(item.title)}</span>${item.type==='series'?`<span class="story-count">${item.members.length} ↗</span>`:''}</span></button>`).join('');
   canvas.innerHTML=axis+`<div class="timeline-board" style="height:${timeline.rowCount*timelineRowHeight()}px">${timeline.ticks.map(t=>`<span aria-hidden="true" class="timeline-gridline" style="left:${t.x}px"></span>`).join('')}${cards}</div>`;
   timelineCards=[...canvas.querySelectorAll('.story-card')];timelineTicks=[...canvas.querySelectorAll('.axis-tick')];
   $('#first-year').textContent=timeline.ticks[0].label;$('#last-year').textContent=timeline.ticks.at(-1).label;
   $('#row-count-note').textContent=`${timeline.rowCount} fixed ${timeline.rowCount===1?'row':'rows'}`;
   const openingCentury=opening?timeline.ticks.find(t=>t.id==='century:16'):null;
-  const left=sameItems?timeline.ticks.find(t=>t.id===previousPeriod)?.x||0:openingCentury?openingCentury.x+Math.max(0,openingCentury.width-step):0;
+  const openingLeft=openingCentury?Math.min(openingCentury.x,...timeline.positions.filter(p=>p.periodId===openingCentury.id).map(p=>p.x)):0;
+  const left=sameItems?timeline.ticks.find(t=>t.id===previousPeriod)?.x||0:Math.max(0,openingLeft);
   viewport.scrollTo({left,top:0,behavior:'instant'});updateScroll();
 }
 function updateVisibleRows(){
@@ -57,8 +58,27 @@ function updateVisibleRows(){
 function updateScroll(){
   const el=$('#timeline-scroll'),max=el.scrollWidth-el.clientWidth;
   $('#time-position').value=max>0?Math.round(el.scrollLeft/max*1000):0;$('#earlier').disabled=el.scrollLeft<2;$('#later').disabled=max<2||el.scrollLeft>=max-2;
-  if(timeline?.ticks.length){const tick=timeline.ticks.findLast(t=>t.x<=el.scrollLeft)||timeline.ticks[0];$('#time-position').setAttribute('aria-valuetext',`Approximately ${tick.label}`);const current=$('#visible-year');if(current){current.textContent=tick.label;current.hidden=tick.x>=el.scrollLeft-4;const edge=el.scrollLeft+(current.hidden?0:current.offsetWidth+6);timelineTicks.forEach((label,index)=>label.style.visibility=timeline.ticks[index].x<edge?'hidden':'');}}
-  updateVisibleRows();
+  if(timeline?.ticks.length){const tick=timeline.ticks.findLast(t=>t.x<=el.scrollLeft)||timeline.ticks[0];$('#time-position').setAttribute('aria-valuetext',`Approximately ${tick.label}`);const current=$('#visible-year');if(current){current.textContent=tick.label;current.hidden=tick.x>=el.scrollLeft-4||tick.x+tick.width-el.scrollLeft<timeline.step/2;const edge=el.scrollLeft+(current.hidden?0:current.offsetWidth+6);timelineTicks.forEach((label,index)=>label.style.visibility=timeline.ticks[index].x<edge?'hidden':'');}}
+  updateVisibleRows();updateRangeGuide();
+}
+function updateRangeGuide(){
+  const guide=$('#range-guide');if(!guide)return;
+  const supported=matchMedia('(min-width:761px) and (hover:hover) and (pointer:fine)').matches;
+  guide.hidden=!supported;if(!supported)return;
+  const viewport=$('#timeline-scroll'),left=viewport.scrollLeft+10,right=viewport.scrollLeft+viewport.clientWidth-10;
+  const position=timeline.positions.find(p=>p.item.id===(hoveredTimelineItem||focusedTimelineItem));
+  for(const card of timelineCards)card.classList.toggle('is-range-active',card.dataset.itemId===position?.item.id);
+  if(!position){guide.removeAttribute('role');guide.removeAttribute('aria-label');guide.innerHTML=`<span class="range-hint" style="left:${left}px">Hover or focus a tile to mark its historical range</span>`;return;}
+  const clamp=x=>Math.max(left,Math.min(right,x)),from=clamp(position.startX),to=clamp(position.endX);
+  const before=position.startX<left,after=position.endX>right,start=formatYear(position.item.start),end=formatYear(position.item.end);
+  guide.setAttribute('role','img');guide.setAttribute('aria-label',`Approximate historical coverage: ${position.item.dateLabel}`);
+  let labels;
+  if(start===end||to-from<200){
+    const label=`${before?'← ':''}${start}${start===end?'':` – ${end}`}${after?' →':''}`,half=label.length*3.5+8;
+    const center=Math.max(left+half,Math.min(right-half,(from+to)/2));
+    labels=`<span class="range-dates range-combined" style="left:${center}px">${esc(label)}</span>`;
+  }else labels=`<span class="range-dates range-start" style="left:${from}px">${before?'← ':''}${esc(start)}</span><span class="range-dates range-end" style="left:${to}px">${esc(end)}${after?' →':''}</span>`;
+  guide.innerHTML=`<span class="range-caption" style="left:${left}px;max-width:${right-left}px">Approximate coverage · ${esc(position.item.title)}</span><span class="range-line ${before?'continues-before':''} ${after?'continues-after':''}" style="left:${from}px;width:${Math.max(1,to-from)}px"></span>${labels}`;
 }
 function libraryCard(item){return `<button class="library-card ${item.type==='series'?'is-series':''}" ${itemTarget(item)} style="--series-color:${item.color}" aria-label="Open ${esc(item.title)}${item.type==='series'?`, ${item.members.length} episodes`:''}"><div class="library-card-art"><img src="${esc(thumb(item.image,420))}" alt="" loading="lazy" decoding="async" width="350" height="350">${item.type==='series'?`<span class="series-badge">${item.members.length} EPISODES</span>`:''}</div><div class="library-card-body"><span class="card-eyebrow">${esc(item.category||item.region)}</span><h3>${esc(item.title)}</h3><div class="card-bottom"><span>${esc(item.start===null?itemSummary(item):item.dateLabel)}</span><span class="card-arrow" aria-hidden="true">↗</span></div></div></button>`;}
 function render(){
@@ -120,6 +140,10 @@ $('#timeline-view').addEventListener('click',()=>setFilter('view','timeline'));$
 $('#index-more').addEventListener('click',()=>{state.indexLimit+=24;render();});$('#beyond-more').addEventListener('click',()=>{state.beyondLimit+=12;render();});
 for(const [id,direction] of [['earlier',-1],['later',1]])$('#'+id).addEventListener('click',()=>$('#timeline-scroll').scrollBy({left:direction*Math.max(timeline?.step||176,$('#timeline-scroll').clientWidth-(timeline?.step||176)),behavior:motion()}));
 $('#time-position').addEventListener('input',e=>{const el=$('#timeline-scroll');el.scrollLeft=(el.scrollWidth-el.clientWidth)*Number(e.target.value)/1000;});
+$('#timeline-scroll').addEventListener('pointerover',event=>{if(event.pointerType==='touch')return;const card=event.target.closest('.story-card');if(card){hoveredTimelineItem=card.dataset.itemId;updateRangeGuide();}});
+$('#timeline-scroll').addEventListener('pointerout',event=>{const card=event.target.closest('.story-card');if(card&&!card.contains(event.relatedTarget)){hoveredTimelineItem=null;updateRangeGuide();}});
+$('#timeline-scroll').addEventListener('focusin',event=>{const card=event.target.closest('.story-card');if(card){hoveredTimelineItem=null;focusedTimelineItem=card.dataset.itemId;updateRangeGuide();}});
+$('#timeline-scroll').addEventListener('focusout',event=>{if(event.target.closest('.story-card')){focusedTimelineItem=null;updateRangeGuide();}});
 let scrollPending=false;$('#timeline-scroll').addEventListener('scroll',()=>{if(scrollPending)return;scrollPending=true;requestAnimationFrame(()=>{updateScroll();scrollPending=false;});},{passive:true});window.addEventListener('resize',()=>{if(catalogue&&state.view==='timeline')render();updateScroll();});
 $('#surprise').addEventListener('click',()=>{if(episodes.length)showEpisode(episodes[Math.floor(Math.random()*episodes.length)].id);});
 document.addEventListener('click',async event=>{

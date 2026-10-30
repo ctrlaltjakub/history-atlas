@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, SERIES_COLOR, timelinePeriod, centuryForYear, formatCentury, timelineLabelWidth, hasTimelineDate} from '../public/core.mjs';
+import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, SERIES_COLOR, timelinePeriod, centuryForYear, formatCentury, timelineLabelWidth, hasTimelineDate, midpointYear, timelineDateX} from '../public/core.mjs';
 
 const catalogue = JSON.parse(readFileSync(new URL('../public/data/catalogue.json', import.meta.url)));
 const base = JSON.parse(readFileSync(new URL('../data/base-episodes.json', import.meta.url)));
@@ -60,7 +60,7 @@ test('released series group every member once and leave true singles alone', () 
   assert.equal(found[0].matches.length,1);assert.equal(found[0].members.length,4);
 });
 
-test('date spans keep their true boundaries and labels never overlap in a row', () => {
+test('tile centres snap to midpoint columns and readable labels never overlap in a row', () => {
   const items=filterCollection(makeCollection(episodes),{},'timeline');
   for(const step of [144,176,200]){
     const layout=makeTimeline(items,step);
@@ -70,10 +70,15 @@ test('date spans keep their true boundaries and labels never overlap in a row', 
     for(const p of layout.positions){
       const start=layout.ticks.find(t=>t.id===timelinePeriod(p.item.start).id);
       const end=layout.ticks.find(t=>t.id===timelinePeriod(p.item.end).id);
-      assert.ok(p.x>=start.x&&p.x<start.x+start.width,p.item.title);
+      const middle=layout.ticks.find(t=>t.id===timelinePeriod(midpointYear(p.item.start,p.item.end)).id);
+      assert.equal(p.x+p.width/2,middle.x+middle.width/2,p.item.title+' is centred on the grid');
+      assert.ok(p.startX>=start.x&&p.startX<start.x+start.width,p.item.title);
       assert.ok(p.endX>end.x&&p.endX<=end.x+end.width+0.001,p.item.title);
-      assert.ok(Math.abs(p.rangeWidth-(p.endX-p.x))<0.001);
-      assert.equal(p.width,Math.max(p.rangeWidth,timelineLabelWidth(p.item)));
+      assert.ok(p.width<=timelineLabelWidth(p.item),'Duration never stretches the title');
+      if(step===144)assert.ok(p.width<=step-4,'Phone titles fit within their column');
+      else assert.equal(p.width,timelineLabelWidth(p.item));
+      assert.equal(p.startX,timelineDateX(layout,p.item.start));
+      assert.equal(p.endX,timelineDateX(layout,p.item.end,true));
       assert.ok(p.width>=84);
     }
     for(let row=0;row<layout.rowCount;row++){
@@ -92,13 +97,24 @@ test('date spans keep their true boundaries and labels never overlap in a row', 
   }
 });
 
-test('a long narrative remains visible after its starting column has scrolled away',()=>{
+test('long narratives keep compact midpoint tiles and precise endpoints for the hover guide',()=>{
   const sample=[{id:'war',title:'Long war',start:1700,end:1721},{id:'point',title:'Short event',start:1710,end:1710}];
   const layout=makeTimeline(sample,176),war=layout.positions.find(p=>p.item.id==='war');
-  assert.equal(war.x,0);assert.equal(war.endX,176*2+176*2/10);
-  assert.equal(war.width,war.rangeWidth);assert.equal(layout.rowCount,2);
-  assert.ok(visibleTimeline(layout,176*2,176).positions.some(p=>p.item.id==='war'),'Visibility uses the whole span');
-  assert.equal(layout.positions.find(p=>p.item.id==='point').width,84,'A one-year event has a readable label');
+  assert.equal(war.startX,0);assert.equal(war.endX,176*2+176*2/10);
+  assert.equal(war.center,176+88);assert.equal(war.width,84);assert.equal(layout.rowCount,2);
+  assert.ok(!visibleTimeline(layout,176*2,176).positions.some(p=>p.item.id==='war'),'Only the tile footprint controls visibility');
+  const longTitle={id:'wide',title:'A title long enough to require more than one whole column in this test',start:1605,end:1605};
+  const single=makeTimeline([longTitle]),position=single.positions[0];
+  assert.ok(position.x>=0);assert.equal(position.center,single.ticks[0].x+single.step/2);
+  assert.ok(position.x+position.width<=single.width);
+});
+
+test('range midpoints and hover coordinates cross BCE/CE without a year zero',()=>{
+  for(const [start,end,expected] of [[1700,1725,1712],[1600,1800,1700],[-10,10,-1],[-1,1,-1],[1,1,1],[-400000,-40000,-220000]])assert.equal(midpointYear(start,end),expected);
+  const layout=makeTimeline([{id:'crossing',title:'Crossing',start:-1,end:1}]);
+  assert.equal(timelineDateX(layout,-1,true),timelineDateX(layout,1));
+  assert.equal(layout.positions[0].middle,-1);
+  assert.ok(!layout.ticks.some(t=>t.century===0));
 });
 
 test('broad collections stay off the timeline without losing their dates, members or map locations',()=>{
@@ -120,7 +136,7 @@ test('broad collections stay off the timeline without losing their dates, member
   assert.ok(hasTimelineDate(episodes.find(e=>e.title==='The First Emperor of China')),'A bounded China narrative remains dated');
   const northern=collection.find(x=>x.title==='The Great Northern War');
   const found=filterCollection(collection,{q:northern.members[2].title},'timeline').find(x=>x.id===northern.id);
-  assert.equal(found.start,northern.start);assert.equal(found.end,northern.end,'Matching one part never shortens a series bar');
+  assert.equal(found.start,northern.start);assert.equal(found.end,northern.end,'Matching one part never changes a series midpoint or hover range');
 });
 
 test('century boundaries use BCE and CE correctly with no year or century zero',()=>{

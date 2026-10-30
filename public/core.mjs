@@ -110,11 +110,20 @@ export function timelineLabelWidth(item) {
   return Math.max(84,Math.min(260,Math.ceil(titleWidth+(item.type==='series'?40:14))));
 }
 const ordinalYear=year=>year>0?year-1:year;
+export function midpointYear(start,end=start) {
+  const middle=Math.floor((ordinalYear(start)+ordinalYear(end))/2);
+  return middle>=0?middle+1:middle;
+}
+export function timelineDateX(layout,year,end=false) {
+  const tick=layout.ticks.find(t=>t.id===timelinePeriod(year)?.id);
+  if(!tick)return null;
+  return tick.x+(ordinalYear(year)-ordinalYear(tick.start)+(end?1:0))/(ordinalYear(tick.end)-ordinalYear(tick.start)+1)*tick.width;
+}
 export function makeTimeline(items,step=TIMELINE_COLUMN_WIDTH) {
   const dated=items.filter(hasTimelineDate).sort(chronological);
   const periods=new Map();
   for(const item of dated) {
-    for(const year of [item.start,item.end ?? item.start]) {
+    for(const year of [item.start,item.end ?? item.start,midpointYear(item.start,item.end ?? item.start)]) {
       const period=timelinePeriod(year);periods.set(period.id,period);
     }
   }
@@ -123,22 +132,24 @@ export function makeTimeline(items,step=TIMELINE_COLUMN_WIDTH) {
   for(const period of [...periods.values()].sort((a,b)=>a.start-b.start)) {
     ticks.push({...period,x:ticks.length*step,width:step,gapLabel:periodGapLabel(previous,period)});previous=period;
   }
-  const byPeriod=new Map(ticks.map(t=>[t.id,t]));
-  const dateX=(year,end=false)=>{
-    const t=byPeriod.get(timelinePeriod(year).id);
-    return t.x+(ordinalYear(year)-ordinalYear(t.start)+(end?1:0))/(ordinalYear(t.end)-ordinalYear(t.start)+1)*t.width;
-  };
+  const layout={ticks};
+  const candidates=dated.map(item=>{
+    const middle=midpointYear(item.start,item.end ?? item.start),period=timelinePeriod(middle),tick=ticks.find(t=>t.id===period.id);
+    const width=Math.min(timelineLabelWidth(item),step===TIMELINE_MOBILE_COLUMN_WIDTH?step-4:Infinity),center=tick.x+tick.width/2;
+    return {item,key:item.id,periodId:period.id,periodLabel:period.label,middle,center,x:center-width/2,width};
+  }).sort((a,b)=>a.x-b.x||a.middle-b.middle||chronological(a.item,b.item));
+  // A wide first-column title must still fit without shifting its centre off-grid.
+  const padding=Math.max(0,-Math.min(0,...candidates.map(p=>p.x)));
+  for(const tick of ticks)tick.x+=padding;
   const rowEnds=[];
-  let width=ticks.length*step;
-  for(const item of dated) {
-    const x=dateX(item.start),endX=dateX(item.end ?? item.start,true),rangeWidth=endX-x;
-    const labelWidth=timelineLabelWidth(item),cardWidth=Math.max(rangeWidth,labelWidth);
+  let width=ticks.length*step+padding;
+  for(const candidate of candidates) {
+    const x=candidate.x+padding,center=candidate.center+padding;
     let row=rowEnds.findIndex(end=>end+6<=x);
     if(row<0)row=rowEnds.length;
-    rowEnds[row]=x+cardWidth;
-    const first=timelinePeriod(item.start),last=timelinePeriod(item.end ?? item.start);
-    positions.push({item,key:item.id,periodId:first.id,periodLabel:first.id===last.id?first.label:`${first.label} – ${last.label}`,x,endX,width:cardWidth,rangeWidth,labelWidth,row});
-    width=Math.max(width,x+cardWidth+4);
+    rowEnds[row]=x+candidate.width;
+    positions.push({...candidate,x,center,row,startX:timelineDateX(layout,candidate.item.start),endX:timelineDateX(layout,candidate.item.end ?? candidate.item.start,true)});
+    width=Math.max(width,x+candidate.width+4);
   }
   return {ticks,positions,width,step,rowCount:rowEnds.length};
 }
