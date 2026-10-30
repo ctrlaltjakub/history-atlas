@@ -14,8 +14,8 @@ const node=(tag,className,text)=>{
 };
 
 export class EpisodeMap {
-  constructor({onEpisode,thumb}) {
-    this.onEpisode=onEpisode;this.thumb=thumb;
+  constructor({onItem,onEpisode,thumb}) {
+    this.onItem=onItem;this.onEpisode=onEpisode;this.thumb=thumb;this.focusedEpisode=null;
     this.episodes=[];this.points=[];this.worldwide=[];this.selected=[];this.page=0;this.dataKey=null;
     this.surface=$('#map-surface');this.svg=d3.select('.map-drawing');
     this.world=this.svg.select('.map-world');this.labels=this.svg.select('.map-country-labels');
@@ -27,8 +27,9 @@ export class EpisodeMap {
     this.selection=d3.select(this.surface).call(this.zoom);
     $('#map-zoom-in').addEventListener('click',()=>this.selection.call(this.zoom.scaleBy,2));
     $('#map-zoom-out').addEventListener('click',()=>this.selection.call(this.zoom.scaleBy,.5));
-    $('#map-reset').addEventListener('click',()=>{this.selection.call(this.zoom.transform,d3.zoomIdentity);this.closeList();});
-    $('#map-worldwide').addEventListener('click',()=>this.openList(this.worldwide,'Worldwide','Episodes without a single geographic setting.'));
+    $('#map-reset').addEventListener('click',()=>{this.clearFocus();this.selection.call(this.zoom.transform,d3.zoomIdentity);this.closeList();});
+    $('#map-focus-clear').addEventListener('click',()=>this.clearFocus());
+    $('#map-worldwide').addEventListener('click',()=>this.openList(this.worldwide,'Worldwide','Series and single episodes without a single geographic setting.'));
     $('#map-selection-close').addEventListener('click',()=>this.closeList(true));
     $('#map-list-previous').addEventListener('click',()=>{this.page--;this.renderList();});
     $('#map-list-next').addEventListener('click',()=>{this.page++;this.renderList();});
@@ -38,7 +39,7 @@ export class EpisodeMap {
       if(movement){event.preventDefault();this.selection.call(this.zoom.translateBy,movement[0]/this.transform.k,movement[1]/this.transform.k);}
       else if(['+','=','-','Home'].includes(event.key)){
         event.preventDefault();
-        if(event.key==='Home')this.selection.call(this.zoom.transform,d3.zoomIdentity);
+        if(event.key==='Home'){this.clearFocus();this.selection.call(this.zoom.transform,d3.zoomIdentity);}
         else this.selection.call(this.zoom.scaleBy,event.key==='-'?.5:2);
       }
     });
@@ -60,28 +61,29 @@ export class EpisodeMap {
       this.world.append('path').attr('class','map-graticule').datum(d3.geoGraticule10());
       this.world.append('path').attr('class','map-land').datum(this.land);
       this.world.append('path').attr('class','map-borders').datum(this.borders);
-      this.ready=true;this.resize(true);
+      this.ready=true;this.resize(true);if(this.focusedEpisode)this.focusEpisode(this.focusedEpisode);
     } catch(error) {
       console.error('Map could not be loaded:',error);
       const message=$('#map-message');message.replaceChildren(node('p','','The map couldn’t be loaded.'));
       const retry=node('button','text-link','Try again');
       retry.addEventListener('click',()=>this.load());message.append(retry);
-      const browse=node('button','text-link','Browse these episodes');
-      browse.addEventListener('click',()=>this.openList(this.episodes,'All matching episodes','The map is unavailable. Episode details still work.'));
+      const browse=node('button','text-link','Browse series and episodes');
+      browse.addEventListener('click',()=>this.openList(this.episodes,'All matching series and episodes','The map is unavailable. Series and episode details still work.'));
       message.append(browse);
     }
   }
 
   setEpisodes(episodes) {
-    const key=episodes.map(e=>e.id).join(',');
+    const key=episodes.map(e=>e.id+':'+e.matches.map(m=>m.id).join(',')).join('|');
     if(key===this.dataKey)return;
-    this.dataKey=key;this.episodes=episodes;
+    this.dataKey=key;this.episodes=episodes;this.focusedEpisode=null;$('#map-focus').hidden=true;
     this.worldwide=episodes.filter(e=>!e.location?.coordinates);
-    $('#map-count').textContent=episodes.length+' episodes';
+    const series=episodes.filter(e=>e.type==='series').length;
+    $('#map-count').textContent=series+' series · '+(episodes.length-series)+' singles';
     const button=$('#map-worldwide');
     button.hidden=!this.worldwide.length;
     button.querySelector('span').textContent=this.worldwide.length;
-    button.setAttribute('aria-label','Worldwide: '+this.worldwide.length+' episodes without a single location');
+    button.setAttribute('aria-label','Worldwide: '+this.worldwide.length+' series and singles without a single location');
     this.closeList();
     if(this.ready){this.projectPoints();this.selection.call(this.zoom.transform,d3.zoomIdentity);}
   }
@@ -112,11 +114,21 @@ export class EpisodeMap {
 
   projectPoints() {
     this.clustersByLevel=new Map();
-    this.points=this.episodes.filter(e=>e.location?.coordinates).map(episode=>{
+    this.points=this.episodes.filter(e=>e.location?.coordinates&&!e.members.some(m=>m.id===this.focusedEpisode?.id)).map(episode=>{
       const [x,y]=this.projection(episode.location.coordinates);
       return {id:episode.id,x,y,episode};
     });
+    if(this.focusedEpisode){const e=this.focusedEpisode,[x,y]=this.projection(e.location.coordinates);this.focusPoint={id:'focus:'+e.id,x,y,episode:{...e,type:'episode',color:'#6b2636'},targetEpisode:e.id};}else this.focusPoint=null;
   }
+
+  focusEpisode(episode){
+    this.focusedEpisode=episode;$('#map-focus').hidden=false;$('#map-focus-label').textContent=episode.title+' · '+episode.location.label;
+    if(!this.ready)return;this.projectPoints();this.closeList();
+    const [x,y]=this.projection(episode.location.coordinates);
+    this.selection.call(this.zoom.transform,d3.zoomIdentity.translate(this.width/2,this.height/2).scale(16).translate(-x,-y));
+    this.pins.select('[data-focused]').node()?.focus({preventScroll:true});
+  }
+  clearFocus(){this.focusedEpisode=null;$('#map-focus').hidden=true;if(this.ready){this.projectPoints();this.draw();}}
 
   draw() {
     if(!this.ready)return;
@@ -126,8 +138,8 @@ export class EpisodeMap {
     $('#map-zoom-in').disabled=t.k>=MAX_ZOOM-.01;
     $('#map-zoom-out').disabled=t.k<=1.01;
     const message=$('#map-message');
-    message.hidden=Boolean(this.points.length);
-    if(!message.hidden)message.textContent=this.episodes.length?'These episodes have no single location. Select Worldwide to browse them.':'No episodes match the current filters.';
+    message.hidden=Boolean(this.points.length||this.focusPoint);
+    if(!message.hidden)message.textContent=this.episodes.length?'These series and episodes have no single location. Select Worldwide to browse them.':'No series or episodes match the current filters.';
     const labels=t.k<2?[]:this.countryLabels.filter(c=>{
       const [x,y]=t.apply(c.point);
       return c.area*t.k*t.k>900&&x>20&&x<this.width-20&&y>20&&y<this.height-20;
@@ -140,6 +152,7 @@ export class EpisodeMap {
       const [x,y]=t.apply([c.x,c.y]);
       return x>-24&&x<this.width+24&&y>-24&&y<this.height+24;
     });
+    if(this.focusPoint){const p=this.focusPoint;clusters.push({id:p.id,items:[p],x:p.x,y:p.y,bounds:[[p.x,p.y],[p.x,p.y]]});}
     const self=this;
     this.pins.selectAll('button').data(clusters,c=>c.id).join(
       enter=>enter.append('button').attr('type','button')
@@ -150,8 +163,10 @@ export class EpisodeMap {
       update=>update,
       exit=>exit.remove()
     )
-      .attr('class',c=>'map-pin '+(c.items.length===1?'map-pin-single':'map-cluster'))
-      .attr('aria-label',c=>c.items.length===1?'Open '+c.items[0].episode.title+' — '+locationGroupLabel(c.items):c.items.length+' episodes · '+locationGroupLabel(c.items)+' · zoom or browse')
+      .attr('class',c=>'map-pin '+(c.items.length===1?'map-pin-single'+(c.items[0].episode.type==='series'?' map-pin-series':'')+(c.items[0].targetEpisode?' map-pin-focused':''):'map-cluster'))
+      .attr('data-focused',c=>c.items[0].targetEpisode?'true':null)
+      .style('--series-color',c=>c.items.length===1?c.items[0].episode.color:'var(--wine)')
+      .attr('aria-label',c=>c.items.length===1?'Open '+c.items[0].episode.title+(c.items[0].episode.type==='series'?', series of '+c.items[0].episode.members.length+' episodes':'')+' — '+locationGroupLabel(c.items):c.items.length+' series and singles · '+locationGroupLabel(c.items)+' · zoom or browse')
       .style('left',c=>t.applyX(c.x)+'px').style('top',c=>t.applyY(c.y)+'px')
       .each(function(c){
         const button=this;
@@ -159,7 +174,7 @@ export class EpisodeMap {
         button.dataset.contents=c.id;button.replaceChildren();
         if(c.items.length===1) {
           const img=node('img');img.src=self.thumb(c.items[0].episode.image,90);img.alt='';img.width=32;img.height=32;img.loading='lazy';
-          button.append(img);
+          button.append(img);if(c.items[0].episode.type==='series')button.append(node('span','map-series-count',c.items[0].episode.members.length));
         } else button.textContent=c.items.length;
       });
     this.hideTooltip();
@@ -167,7 +182,7 @@ export class EpisodeMap {
 
   showTooltip(cluster) {
     const tip=$('#map-tooltip'),[x,y]=this.transform.apply([cluster.x,cluster.y]);
-    tip.textContent=cluster.items.length===1?cluster.items[0].episode.title+' · '+locationGroupLabel(cluster.items):cluster.items.length+' episodes · '+locationGroupLabel(cluster.items);
+    tip.textContent=cluster.items.length===1?cluster.items[0].episode.title+' · '+locationGroupLabel(cluster.items):cluster.items.length+' series & singles · '+locationGroupLabel(cluster.items);
     tip.style.left=Math.max(8,Math.min(this.width-268,x-130))+'px';
     tip.style.top=(y>90?y-34:y+30)+'px';
     tip.classList.toggle('above',y>90);tip.hidden=false;
@@ -175,12 +190,12 @@ export class EpisodeMap {
   hideTooltip(){$('#map-tooltip').hidden=true;}
 
   selectCluster(cluster,button) {
-    if(cluster.items.length===1){this.onEpisode(cluster.items[0].episode.id);return;}
+    if(cluster.items.length===1){const point=cluster.items[0];if(point.targetEpisode)this.onEpisode(point.targetEpisode);else this.onItem(point.episode.id);return;}
     const target=groupZoom(cluster,this.width,this.height,this.transform.k,MAX_ZOOM);
     if((target.coincident&&this.transform.k>=8)||this.transform.k>=MAX_ZOOM-.01) {
       this.groupTrigger=button;
       this.openList(cluster.items.map(p=>p.episode),locationGroupLabel(cluster.items),
-        target.coincident?'These episodes share the same approximate location.':'Nearby episodes at the closest map zoom.');
+        target.coincident?'These series and episodes share an approximate location.':'Nearby series and episodes at the closest map zoom.');
       return;
     }
     const transform=d3.zoomIdentity.translate(this.width/2,this.height/2).scale(target.scale).translate(-cluster.x,-cluster.y);
@@ -190,7 +205,7 @@ export class EpisodeMap {
   openList(episodes,title,note) {
     this.selected=[...episodes].sort(chronological);this.page=0;
     $('#map-selection-title').textContent=title;
-    $('#map-selection-note').textContent=episodes.length+' episodes · '+note;
+    $('#map-selection-note').textContent=episodes.length+' series and singles · '+note;
     $('#map-selection').hidden=false;this.renderList();
     $('#map-selection-title').focus({preventScroll:true});
     $('#map-selection').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'nearest'});
@@ -206,9 +221,10 @@ export class EpisodeMap {
       const button=node('button','map-episode');
       button.setAttribute('aria-label','Open '+episode.title);
       const image=node('img');image.src=this.thumb(episode.image,100);image.alt='';image.width=40;image.height=40;image.loading='lazy';
-      const text=node('span','map-episode-text');text.append(node('strong','',episode.title),node('span','',episode.location.label+' · '+episode.dateLabel));
+      const text=node('span','map-episode-text');text.append(node('strong','',episode.title),node('span','',(episode.type==='series'?episode.members.length+' episodes · ':'')+episode.location.label+' · '+episode.dateLabel));
       button.append(image,text,node('span','map-episode-arrow','↗'));
-      button.addEventListener('click',()=>this.onEpisode(episode.id));list.append(button);
+      button.style.setProperty('--series-color',episode.color);button.classList.toggle('is-series',episode.type==='series');
+      button.addEventListener('click',()=>this.onItem(episode.id));list.append(button);
     }
     $('#map-list-pagination').hidden=this.selected.length<=PAGE_SIZE;
     $('#map-list-previous').disabled=this.page===0;

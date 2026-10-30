@@ -31,51 +31,67 @@ export function matchesEpisode(e, {q='',region='all',era='all'}={}) {
 export function chronological(a,b) {
   return (a.start ?? Infinity) - (b.start ?? Infinity) || (a.end ?? Infinity) - (b.end ?? Infinity) || (a.number ?? Infinity) - (b.number ?? Infinity) || a.title.localeCompare(b.title);
 }
-export function makeTimeline(episodes, step=200) {
-  const dated=episodes.filter(e=>Number.isFinite(e.start)).sort(chronological);
-  const dates = new Map();
-  const seriesKey = e => e.series ? `series:${normalise(e.series)}` : `episode:${e.id}`;
-  for (const episode of dated) {
-    if (!dates.has(episode.start)) dates.set(episode.start,[]);
-    dates.get(episode.start).push(episode);
-  }
-  let width=0;
-  const ticks=[],positions=[];
-  const groups=new Map();
-  for (const [year, entries] of dates) {
-    const counts=new Map();
-    ticks.push({year,x:width});
-    for (const e of entries) {
-      const key=seriesKey(e);
-      const index=counts.get(key) || 0;
-      const position={episode:e,x:width+index*step,key,row:0};
-      positions.push(position);
-      counts.set(key,index+1);
-      if(!groups.has(key))groups.set(key,{key,positions:[],start:position.x,end:position.x+step});
-      const group=groups.get(key);
-      group.positions.push(position);
-      group.end=Math.max(group.end,position.x+step);
-    }
-    width+=Math.max(...counts.values())*step;
-  }
-  // A series keeps its row while concurrent series use the next free row.
-  // Earlier rows are reused as soon as the previous series ends.
-  const rowEnds=[];
-  for(const group of [...groups.values()].sort((a,b)=>a.start-b.start||a.end-b.end||a.key.localeCompare(b.key))){
-    let row=rowEnds.findIndex(end=>end<=group.start);
-    if(row===-1)row=rowEnds.length;
-    rowEnds[row]=group.end;
-    for(const position of group.positions)position.row=row;
-    group.row=row;
-  }
-  return {ticks,positions,width,step,rowCount:rowEnds.length,groups:[...groups.values()]};
+export function releaseOrder(a,b) {
+  return (a.seriesOrder ?? Infinity)-(b.seriesOrder ?? Infinity) || Date.parse(a.published)-Date.parse(b.published) || (a.number ?? Infinity)-(b.number ?? Infinity);
 }
-
+export function seriesColor(key) {
+  const hash=[...key].reduce((value,char)=>(Math.imul(value,31)+char.charCodeAt(0))>>>0,0);
+  return `hsl(${(hash%360000)/1000} 30% 38%)`;
+}
+export function summariseItem(item,matches=item.members) {
+  const dated=matches.filter(e=>Number.isFinite(e.start)).sort(chronological);
+  const start=dated[0]?.start ?? null;
+  const end=dated.length?Math.max(...dated.map(e=>e.end)):null;
+  const placed=[...matches].sort(releaseOrder).find(e=>e.location?.coordinates);
+  const regions=[...new Set(matches.map(e=>e.region))];
+  const categories=[...new Set(matches.map(e=>e.category))];
+  return {...item,matches,start,end,
+    dateLabel:start===null?'No single historical period':start===end?formatYear(start):`${formatYear(start)} – ${formatYear(end)}`,
+    region:regions.length===1?regions[0]:'Across the world',
+    category:categories.length===1?categories[0]:null,
+    location:placed?.location || {coordinates:null,label:'Worldwide',note:'No single geographic setting.'},
+    image:item.members[0].image,
+    published:item.members.at(-1).published,
+    color:item.type==='series'?seriesColor(item.id):'#a99b84'
+  };
+}
+export function makeCollection(episodes) {
+  const groups=new Map();
+  for(const episode of episodes) {
+    const id=episode.seriesId?`series:${episode.seriesId}`:episode.id;
+    if(!groups.has(id))groups.set(id,{id,type:episode.seriesId?'series':'episode',seriesId:episode.seriesId||null,title:episode.seriesId?episode.series:episode.title,members:[]});
+    groups.get(id).members.push(episode);
+  }
+  return [...groups.values()].map(item=>{item.members.sort(releaseOrder);return summariseItem(item);});
+}
+export function filterCollection(items,filters={},placement='all') {
+  return items.flatMap(item=>{
+    const matches=item.members.filter(e=>matchesEpisode(e,filters) && (placement==='timeline'?Number.isFinite(e.start):placement==='undated'?e.start===null:true));
+    return matches.length?[summariseItem(item,matches)]:[];
+  });
+}
+export function makeTimeline(items,step=200) {
+  const dated=items.filter(e=>Number.isFinite(e.start)).sort(chronological);
+  const dates=new Map();
+  for(const item of dated) {
+    if(!dates.has(item.start))dates.set(item.start,[]);
+    dates.get(item.start).push(item);
+  }
+  const ticks=[],positions=[];
+  let column=0,rowCount=0;
+  for(const [year,entries] of dates) {
+    const x=column++*step;
+    ticks.push({year,x});
+    entries.forEach((item,row)=>positions.push({item,episode:item,key:item.id,x,row}));
+    rowCount=Math.max(rowCount,entries.length);
+  }
+  // Each tile occupies one date column. Stack from row zero at every date;
+  // only the busiest column determines the fixed height of the whole table.
+  return {ticks,positions,width:column*step,step,rowCount};
+}
 export function visibleTimeline(layout,left,viewportWidth) {
   const positions=layout.positions.filter(p=>p.x+layout.step>left && p.x<left+viewportWidth);
-  // Reserve the complete layout: horizontal movement never changes a row or height.
-  const rowMap=new Map(Array.from({length:layout.rowCount},(_,row)=>[row,row]));
-  return {positions:positions.map(p=>({...p,displayRow:p.row})),rowMap,rowCount:layout.rowCount};
+  return {positions:positions.map(p=>({...p,displayRow:p.row})),rowCount:layout.rowCount};
 }
 export function durationLabel(value) {
   const seconds = Number(value);

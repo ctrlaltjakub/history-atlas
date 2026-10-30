@@ -1,24 +1,29 @@
-# the rest is history:**ORDERED**
+# THE REST IS HISTORY — ORDERED
 
 An independent companion to **The Rest Is History**, arranged by the history being discussed rather than the date an episode was released.
 
 **Live:** https://history.jakub.computer
 
-The initial catalogue contains all **736 episodes in the public RSS feed**, captured on 30 October 2026: **609 on the timeline** and **127 in themed collections below it**. Episodes exclusive to the paid club and absent from the public feed are not included.
+The initial catalogue contains all **736 episodes in the public RSS feed**, captured on 30 October 2026: **609 with dates** and **127 without a meaningful historical date**. Episodes exclusive to the paid club and absent from the public feed are not included.
 
 ## Explore
 
-- A compact chronological timeline with rows for concurrent episode series, a sticky date axis, era filters, arrow controls, and a full-range slider. Region filtering remains available.
-- An Equal Earth world map with zoom, drag, touch pinch, keyboard controls and clusters that split as you zoom. Select a single marker to open an episode; a shared-location group opens a paginated episode list. The map follows the search, region and era filters.
-- Search by subject, place, episode number or description; filter by region; switch to a paginated index.
-- Episode details with historical range and placement rationale, publisher description, release date, duration, artwork, series navigation and original public audio.
-- All 736 initial episodes have verified direct Pocket Casts and Spotify links. Apple Podcasts has 209 exact links and otherwise a labelled search. YouTube links are labelled searches.
-- Share individual episodes with `#episode=<RSS GUID>`; filters are reflected in the URL.
+- **Series first everywhere:** 148 reviewed release series contain 536 episodes; the other 200 are standalone entries. The timeline, map, index and undated lists show each matching series once. Opening it reveals its parts in release order.
+- A compact chronological timeline with **five fixed rows** in All history. Each date column stacks tiles from the top; the busiest column determines the table height. The 609 dated episodes become 272 series/single tiles across 207 date columns.
+- Muted colours distinguish series consistently across the timeline, map markers and index cards.
+- An Equal Earth map with zoom, drag, touch pinch, keyboard controls and clusters that split as you zoom. Series use their first mappable part as a representative anchor. Selecting **Show on the map** in an episode's details instead highlights that part's own coordinates.
+- Episode details include **Show on the timeline** and **Show on the map** independently when applicable. The timeline shortcut reveals the containing series. Location shortcuts clear filters to reveal the item.
+- **Episodes not on a timeline** groups undated parts into series and topics. An undated episode can still have a map location, and a dated episode can be Worldwide.
+- Search by subject, place, episode number or description; filter by region and era; switch to a series-first index. Filters match individual parts, then show their series with the full release list still accessible.
+- Verified direct Pocket Casts and Spotify links for all 736 initial episodes. Apple Podcasts has 209 exact links and otherwise a labelled search. YouTube links are labelled searches. Original public audio can play in the detail view.
+- Share individual episodes with `#episode=<RSS GUID>` and series with `#series=<series slug>`. Filters are reflected in the URL.
 - Responsive layouts, keyboard navigation, reduced-motion support, no analytics, accounts or application cookies.
 
-Dates are editorial approximations. The start of the covered period determines ordering and era membership. Cards expand the available space, so distances are **not a linear time scale**. The timeline starts with the earliest episode. Related episodes share a row, concurrent series occupy separate rows, and available rows are reused. The complete table reserves its maximum row count for the selected episodes, so horizontal scrolling never changes row positions or table height. Regions are metadata for filtering, not fixed rows. Undatable discussions are categorized separately.
+Dates are editorial approximations. A series' earliest dated part determines its default position; a filtered timeline uses the earliest matching dated part. Gaps are compressed and distances are **not a linear time scale**. A series occupies one tile, with no row reserved across the periods covered by its individual parts. The complete table reserves only the busiest column's row count, so horizontal scrolling never changes height. Every column is filled from row zero. Regions remain filters, not fixed rows.
 
-The map includes every episode: 661 have a reviewed approximate subject location, while 75 discussions without a meaningful geographic anchor are accessible through **Worldwide**. Broad surveys and legendary settings are explicitly labelled. Modern coastlines and borders are for orientation, not historical boundaries. Locations and explanations are maintained in `data/map-locations-a.json`, `data/map-locations-b.json` and `data/map-locations-c.json`, then merged into the catalogue during the build. New episodes remain in Worldwide until their map placement is reviewed.
+Series memberships and source URLs are maintained in `data/series.json`, based on the official archive and reconciled with the publisher's public feed. Separate later release arcs remain separate series; exact-title changes, missing numbered parts, and annual release sets have explicit research notes. The build assigns `seriesId`, `series` and `seriesOrder` to each episode. Episodes belong to at most one released series.
+
+The map includes every episode through its series or standalone entry. 661 episodes have reviewed approximate subject locations; 75 broad discussions have no single geographic anchor. A series with any mapped part uses its first mappable episode in release order. Individual episode shortcuts preserve the actual part's location. Broad surveys and legendary settings are explicitly labelled. Modern coastlines and borders are for orientation. Location data lives in `data/map-locations-{a,b,c}.json`; new episodes remain Worldwide until reviewed.
 
 ## Run locally
 
@@ -57,16 +62,16 @@ Historical placement sources and cautions are recorded in `data/dates-early-rese
 - Spotify's connected official-show catalogue: unique title matches and release-date checks.
 - [Apple public lookup](https://itunes.apple.com/lookup?id=1537788786&entity=podcastEpisode&limit=200): exact audio-URL matching, with search fallbacks clearly labelled.
 
-Raw public-source snapshots in `data/` are for audit and maintenance; only `public/` is deployed. Descriptions omit repeated promotional boilerplate where possible, and link to the publisher's full entry. Audio streams from the original publisher and is not rehosted. Episode art loads from the publisher's image service, with a local show-art fallback.
+Raw public-source snapshots in `data/` are for audit and maintenance; only `public/` is deployed. Descriptions omit repeated promotional boilerplate where possible, and link to the publisher's full entry. Audio streams from the original publisher and is not rehosted. The header uses the publisher’s original transparent wordmark from `https://therestishistory.com/hubfs/TRIH%20BANNER-1.png`, paired with a CSS ORDERED stamp. Episode art loads from the publisher's image service, with a local show-art fallback.
 
 The map runs entirely in the browser. D3 7.9.0, TopoJSON Client 3.1.0 and Natural Earth geography via World Atlas 2.0.2 are vendored locally; no mapping API key or geocoding service is required. Sources and licenses are recorded in `public/vendor/`.
 
 ## Verification
 
-Automated checks cover feed completeness, unique IDs, valid placements, listening-link kinds, chronology, non-overlapping cards, shared dates across concurrent series and fixed row positions and height, era boundaries, search behavior, complete map coverage, valid coordinates, Equal Earth rendering and cluster separation at increasing zoom levels. Browser verification covers desktop and 320/390/430-pixel mobile layouts, detail dialogs, filters, pagination, deep links and the deployed site.
+Automated checks cover feed completeness, unique IDs, valid placements, listening-link kinds, chronology, non-overlapping cards, series membership and release order, top-filled date columns, minimum row allocation and fixed height, independent date/map availability, era boundaries, search behavior, complete map coverage, valid coordinates, Equal Earth rendering and cluster separation at increasing zoom levels. Browser verification covers desktop and 320/390/430-pixel mobile layouts, detail dialogs, filters, pagination, deep links and the deployed site.
 
 ## Credits
 
-An unofficial fan-made navigation tool, not affiliated with or endorsed by Goalhanger, Tom Holland or Dominic Sandbrook. Podcast titles, descriptions, recordings and artwork remain the property of their respective owners. This repository does not grant rights to that content.
+An unofficial fan-made navigation tool, not affiliated with or endorsed by Goalhanger, Tom Holland or Dominic Sandbrook. Podcast wordmark, titles, descriptions, recordings and artwork remain the property of their respective owners. This repository does not grant rights to that content.
 
 Self-hosted **Cormorant Garamond** and **DM Sans** are distributed under the SIL Open Font License; see `public/fonts/` for their licenses.

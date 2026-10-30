@@ -1,0 +1,1725 @@
+{
+  "version": 1,
+  "series": [
+    {
+      "id": "the-prime-ministers-world-cup",
+      "title": "The Prime Ministers’ World Cup",
+      "episodeIds": [
+        "d138fe38-704b-4806-9577-d898d5d2efaf",
+        "f95a40c8-8186-4861-8864-9796e5c1652a"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/World%20Cup%20of%20Prime%20Ministers",
+      "note": "Official archive series: World Cup of Prime Ministers."
+    },
+    {
+      "id": "world-cup-of-gods",
+      "title": "World Cup of Gods",
+      "episodeIds": [
+        "c6ac542f-709f-46f2-8e3c-3965e77ac7e7",
+        "539af2e2-1615-4abc-a81f-03cfb8a9b0bc",
+        "9f0ff553-a296-4a7f-bcb8-29ccc3766fb0"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/World%20Cup%20of%20Gods",
+      "note": "Official archive series: World Cup of Gods."
+    },
+    {
+      "id": "hitler-with-ian-kershaw",
+      "title": "Hitler with Ian Kershaw",
+      "episodeIds": [
+        "10211afc-1466-48ec-bd00-76704502dcad",
+        "40fe5c86-dd10-4d7f-bb93-8d8c65e96098"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Hitler%20with%20Ian%20Kershaw",
+      "note": "Official archive series: Hitler with Ian Kershaw."
+    },
+    {
+      "id": "england-at-euro-2020",
+      "title": "England at Euro 2020",
+      "episodeIds": [
+        "3d5ac069-51f6-4ca1-a135-e9338608cc07",
+        "02408d95-4de6-4dca-a393-9c3d3e71ad9f",
+        "fb760d2b-8039-4380-8403-66c241c9a797",
+        "762f9f98-4ce2-44f8-8b8f-d51bd7f360f4"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/England%20Games%20at%20the%20European%20Cup%20%28November%202021%29",
+      "note": "Official archive series: England Games at the European Cup (November 2021). The archive date in the series name is incorrect; these were released June–July 2021. Its England v Germany member has exactly the same audio URL and description as the feed’s Anglo-German Relations (#67)."
+    },
+    {
+      "id": "statues",
+      "title": "Statues",
+      "episodeIds": [
+        "d229e714-8029-4ff6-b2f1-c736314a854f",
+        "e7d2b31d-534c-4e84-8f16-bcbed39e1d1b",
+        "1a4e11ca-1b80-4e40-a83c-8c8207f26059"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Statues",
+      "note": "Official archive series: Statues."
+    },
+    {
+      "id": "the-olympics",
+      "title": "The Olympics",
+      "episodeIds": [
+        "56bf0aee-2580-48b4-ab76-616a22682d0c",
+        "394d9185-83e0-4a16-92ca-186baa146325",
+        "264d4017-decf-4d2a-897c-c8a11b5fc49b"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Olympics",
+      "note": "Official archive series: The Olympics."
+    },
+    {
+      "id": "afghanistan",
+      "title": "Afghanistan",
+      "episodeIds": [
+        "8e63ed26-878e-40a1-be47-dabd37769463",
+        "badbe559-f3c9-4e02-9471-04be3bf2ac47"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Afghanistan",
+      "note": "Official archive series: Afghanistan."
+    },
+    {
+      "id": "silicon-valley",
+      "title": "Silicon Valley",
+      "episodeIds": [
+        "bac07ad2-7448-4ee0-9481-01da499e14e1",
+        "468128a6-9841-46eb-82b5-fc0e069b85af"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Silicon%20Valley",
+      "note": "Official archive series: Silicon Valley."
+    },
+    {
+      "id": "thermopylae-salamis",
+      "title": "Thermopylae & Salamis",
+      "episodeIds": [
+        "0e5cd120-bc6c-4adc-892a-880e8bb12e43",
+        "252bdb4f-1758-41cc-bd96-b19f3bfb26e4"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Persian%20Wars",
+      "note": "Official archive series: Persian Wars. Only the consecutively released Thermopylae & Salamis pair is included. The archive also attaches the standalone Persia interview (#41), released five months earlier, which is excluded from this released arc."
+    },
+    {
+      "id": "watergate",
+      "title": "Watergate",
+      "episodeIds": [
+        "6383b166-5fdf-48d2-a449-a454d593a5c0",
+        "2708c81e-a91b-4dc2-9214-72f1b4c4df33"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Watergate",
+      "note": "Official archive series: Watergate."
+    },
+    {
+      "id": "paganism",
+      "title": "Paganism",
+      "episodeIds": [
+        "6f7080a8-9023-4c91-ba12-e189cf44200e",
+        "7f7a05bd-8980-4dce-8a55-795ce513f3f1"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Paganism",
+      "note": "Official archive series: Paganism."
+    },
+    {
+      "id": "alexander",
+      "title": "Alexander",
+      "episodeIds": [
+        "269b1ed6-0191-4725-9d4f-de6328d2c323",
+        "351a6b8d-8ee4-495f-a780-a0a6d90eac80"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Alexander",
+      "note": "Official archive series: Alexander."
+    },
+    {
+      "id": "world-cup-of-kings-and-queens",
+      "title": "World Cup of Kings and Queens",
+      "episodeIds": [
+        "f810cb14-7d21-4e53-acbb-9e48ff367a5b",
+        "48e2940e-4f5d-4a64-86d7-94304e8d9c22",
+        "f1d7f9c9-a246-4903-b310-d73754d45bc6",
+        "f7edc2b0-2055-4996-b07e-dc30fb1c48e5"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/World%20Cup%20of%20Kings%20and%20Queens",
+      "note": "Official archive series: World Cup of Kings and Queens."
+    },
+    {
+      "id": "12-days-of-christmas",
+      "title": "12 Days of Christmas",
+      "episodeIds": [
+        "61c44db9d30f8c00129ed6b8",
+        "61c44efb83ae940013b3eeea",
+        "61c44ff888e78000124be259",
+        "61c4509b33b4eb0014c65c3a",
+        "61c45382b33a5f0014775dda",
+        "61c454c883ae940013b406e5",
+        "61c455a5f3deb70014e7de70",
+        "61c4568688e78000124bfe5c",
+        "61c45740a5110f0014ac3069",
+        "61c4580855c7a60013fc7410",
+        "61c5a7fe35c4e30012ea4e49",
+        "61c5a94e8fdfaf0014dfa1dc",
+        "61c5ab822989b30012be9684"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/12%20%28or%2013%29%20Days%20of%20Christmas",
+      "note": "Official archive series: 12 (or 13) Days of Christmas."
+    },
+    {
+      "id": "crossing-the-rubicon",
+      "title": "Crossing the Rubicon",
+      "episodeIds": [
+        "61d9bde269b475001240e9f4",
+        "61d9c0de4881dd0012429914"
+      ],
+      "sourceUrl": "https://feeds.megaphone.fm/GLT4787413333",
+      "note": "The description of #134 explicitly announces the first of a two-parter; #135 continues the story the next day."
+    },
+    {
+      "id": "1922",
+      "title": "1922",
+      "episodeIds": [
+        "61df11d5051a2f00127141d6",
+        "61dffa0a051a2f0012752f6a"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/1922",
+      "note": "Official archive series: 1922."
+    },
+    {
+      "id": "princes-in-the-tower",
+      "title": "Princes in the Tower",
+      "episodeIds": [
+        "61e45de190c70c0012660174",
+        "61e55ed08ed56f0012142796"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Princes%20in%20the%20Tower",
+      "note": "Official archive series: Princes in the Tower."
+    },
+    {
+      "id": "general-gordon",
+      "title": "General Gordon",
+      "episodeIds": [
+        "61ed92b0ff2e1400135a0ef8",
+        "61ee84130b5e910012b79e93"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Gordon%20of%20Khartoum",
+      "note": "Official archive series: Gordon of Khartoum."
+    },
+    {
+      "id": "the-trial-of-charles-i",
+      "title": "The Trial of Charles I",
+      "episodeIds": [
+        "61f16dbccb2c6b00128636df",
+        "61f17722f07dcd001272a3ad"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Charles%20I%3A%20Trial%20and%20Execution",
+      "note": "Official archive series: Charles I: Trial and Execution."
+    },
+    {
+      "id": "disease",
+      "title": "Disease",
+      "episodeIds": [
+        "61fa791f45375600137afc07",
+        "61fa7a63a14cbd001340dafc"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Disease",
+      "note": "Official archive series: Disease."
+    },
+    {
+      "id": "vikings-in-the-east",
+      "title": "Vikings in the East",
+      "episodeIds": [
+        "62001a3dacd47d00133afe59",
+        "62015be2f36f9f0012516be4"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Vikings%20in%20the%20East",
+      "note": "Official archive series: Vikings in the East."
+    },
+    {
+      "id": "american-crusades",
+      "title": "American Crusades",
+      "episodeIds": [
+        "620d4c3087baa90013aa7963",
+        "620e89ac7a2f8f00116a7dda"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/American%20Crusades",
+      "note": "Official archive series: American Crusades."
+    },
+    {
+      "id": "the-end-of-the-roman-empire",
+      "title": "The End of the Roman Empire",
+      "episodeIds": [
+        "621ba2c82836410012a04094",
+        "621ced84c1e780001259466e"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20End%20of%20the%20Roman%20Empire",
+      "note": "Official archive series: The End of the Roman Empire."
+    },
+    {
+      "id": "the-end-of-the-soviet-union",
+      "title": "The End of the Soviet Union",
+      "episodeIds": [
+        "62248d35a61d950013afd261",
+        "6226428a1b0ed0001425a3cb",
+        "622776f667ac55001271e6d1",
+        "6228eabbe58e26001381465d"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20End%20of%20the%20Soviet%20Union",
+      "note": "Official archive series: The End of the Soviet Union."
+    },
+    {
+      "id": "genghis-khan",
+      "title": "Genghis Khan",
+      "episodeIds": [
+        "62376eef7442620013b1f466",
+        "62388edbbb650e0012e42065"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Genghis%20Khan",
+      "note": "Official archive series: Genghis Khan."
+    },
+    {
+      "id": "oil",
+      "title": "Oil",
+      "episodeIds": [
+        "623b5f968be1590014c78e0b",
+        "623b5c332cf67f0012e18775"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Oil",
+      "note": "Official archive series: Oil."
+    },
+    {
+      "id": "the-falklands-war",
+      "title": "The Falklands War",
+      "episodeIds": [
+        "623dd6910bbc6600121e2c29",
+        "623dd7ac93448e0012f685eb",
+        "623dd898fa0aa00013b1a849",
+        "623dd927dc5cd9001589a698"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Falklands%20War",
+      "note": "Official archive series: The Falklands War."
+    },
+    {
+      "id": "crucifixion-and-the-jewish-revolt",
+      "title": "Crucifixion and the Jewish Revolt",
+      "episodeIds": [
+        "6255ac88ccddaf001242e939",
+        "625c93bac030a00012e354af",
+        "626045214371e200121f227d"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Jewish%20Revolt%20%2F%20Destruction%20of%20Jerusalem",
+      "note": "Official archive series: Jewish Revolt / Destruction of Jerusalem. Includes Crucifixion (#175), explicitly Part 1 in the public feed. The Jews Against Rome (#176, Part 2) explicitly follows that episode, and #177 is Part 3. The archive lists only the latter two."
+    },
+    {
+      "id": "french-presidents",
+      "title": "French Presidents",
+      "episodeIds": [
+        "6262cb13114c2a00131c4c13",
+        "6262cc548c8aea00129ee5d2"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Presidents%20of%20the%20French%20Fifth%20Republic",
+      "note": "Official archive series: Presidents of the French Fifth Republic."
+    },
+    {
+      "id": "historys-biggest-questions-with-dan-carlin",
+      "title": "History’s Biggest Questions, with Dan Carlin",
+      "episodeIds": [
+        "62753b5a5798790017e27c51",
+        "62753d21ae754500155bc3ff"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Crossover%20with%20Dan%20Carlin",
+      "note": "Official archive series: Crossover with Dan Carlin."
+    },
+    {
+      "id": "australian-prime-ministers",
+      "title": "Australian Prime Ministers",
+      "episodeIds": [
+        "628aa09414ebb70012452102",
+        "628bc0a14b3d6f0012a99f26",
+        "628d36e0fb49a700137b24d0"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Australian%20Prime%20Ministers",
+      "note": "Official archive series: Australian Prime Ministers."
+    },
+    {
+      "id": "cleopatra",
+      "title": "Cleopatra",
+      "episodeIds": [
+        "62a333e6ca364e00134d572f",
+        "62a3366843f27e00128e0b0e",
+        "62a3375c25c70a001567ac7c",
+        "62a339bc43f27e00128e185c"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Cleopatra",
+      "note": "Official archive series: Cleopatra."
+    },
+    {
+      "id": "the-american-civil-war",
+      "title": "The American Civil War",
+      "episodeIds": [
+        "62b1aed0c7aea90012713821",
+        "62b1b082ab73180012ade1fc",
+        "62b1b21ccdd8c80011eefc7f",
+        "62b1b3443369580012832fa0",
+        "62c5acb8257f9c0012f58b71"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/American%20Civil%20War%20%281861%20to%201865%29",
+      "note": "Official archive series: American Civil War (1861 to 1865)."
+    },
+    {
+      "id": "historical-love-island",
+      "title": "Historical Love Island",
+      "episodeIds": [
+        "62c8564ed8149000145635ce",
+        "62cda62d0a6d14001392aa51"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Historical%20Love%20Island",
+      "note": "Official archive series: Historical Love Island."
+    },
+    {
+      "id": "london",
+      "title": "London",
+      "episodeIds": [
+        "62d170ec2159da0013480026",
+        "62d176dcdbfc6f0013bdf659",
+        "62d179983d9a85001430cee0",
+        "62d17f064a18060014379d6a",
+        "62d18180c13efe0012aa7e82"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/London%20Week",
+      "note": "Official archive series: London Week."
+    },
+    {
+      "id": "stalingrad",
+      "title": "Stalingrad",
+      "episodeIds": [
+        "62ddadd6519edb001486d1a7",
+        "62e1b0d942893c0012aa3bac"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Stalingrad",
+      "note": "Official archive series: Stalingrad."
+    },
+    {
+      "id": "justinian-theodora",
+      "title": "Justinian & Theodora",
+      "episodeIds": [
+        "62ed3d6221b3c50012565b9a",
+        "62f14538efc11c00135927f6",
+        "62f28b64c8c50f00132f0da1"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Justinian%20and%20Theodora",
+      "note": "Official archive series: Justinian and Theodora."
+    },
+    {
+      "id": "holidays",
+      "title": "Holidays",
+      "episodeIds": [
+        "62f6592fd54b3b00123bfcec",
+        "62f65c6c1a9b9f0012df1be0",
+        "62fe8283ff1f0c00134fc4e0",
+        "62fe839e4c5e0700122382ac"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Holidays",
+      "note": "Official archive series: Holidays. Archive Part 2 is named The Invention of Mass Tourism; its description identifies the current public-feed episode Victorian Holidays (#222). The publisher describes #221–224 as a four-part holiday series."
+    },
+    {
+      "id": "j-r-r-tolkien",
+      "title": "J.R.R. Tolkien",
+      "episodeIds": [
+        "6308f824fc242d0012461003",
+        "6308f97e11fe6400138af1da"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/J.%20R.%20R.%20Tolkien",
+      "note": "Official archive series: J. R. R. Tolkien."
+    },
+    {
+      "id": "portugal",
+      "title": "Portugal",
+      "episodeIds": [
+        "6315134e8c108e00131a465c",
+        "6316209fb5acb700145287c0",
+        "63177ae206a8a1001379307d",
+        "631904ca37b74f0012b0270e"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Portugal",
+      "note": "Official archive series: Portugal."
+    },
+    {
+      "id": "queen-elizabeth-ii",
+      "title": "Queen Elizabeth II",
+      "episodeIds": [
+        "631b2fd20e34f50011afc538",
+        "631b444797ab410012895db2"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Life%20of%20Queen%20Elizabeth%20II",
+      "note": "Official archive series: Life of Queen Elizabeth II."
+    },
+    {
+      "id": "china-and-world-war-ii",
+      "title": "China and World War II",
+      "episodeIds": [
+        "63295eb5d6d46b0012034f4e",
+        "632b22e2d596860013fe1c37"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Second%20Sino-Japanese%20War",
+      "note": "Official archive series: Second Sino-Japanese War."
+    },
+    {
+      "id": "young-churchill",
+      "title": "Young Churchill",
+      "episodeIds": [
+        "6336acc33823e2001248c854",
+        "633aae34b7ce3c00129b6c5f",
+        "633ab11451a8d6001152721a"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Young%20Churchill%20Trilogy",
+      "note": "Official archive series: The Young Churchill Trilogy."
+    },
+    {
+      "id": "trafalgar",
+      "title": "Trafalgar",
+      "episodeIds": [
+        "63483d0cec7631001133a432",
+        "634986cad51c900011f33e8f",
+        "634e7423ce0a930011df4d56"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Battle%20of%20Trafalgar",
+      "note": "Official archive series: Battle of Trafalgar."
+    },
+    {
+      "id": "treason",
+      "title": "Treason",
+      "episodeIds": [
+        "635bf48be3fc63001259fbd9",
+        "635bf4fee3fc63001259fcc5"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Treason",
+      "note": "Official archive series: Treason."
+    },
+    {
+      "id": "alfred-the-great",
+      "title": "Alfred the Great",
+      "episodeIds": [
+        "63654855e71f4a00118a8984",
+        "63654c293247200011405078"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Alfred%20the%20Great",
+      "note": "Official archive series: Alfred the Great."
+    },
+    {
+      "id": "the-world-cup",
+      "title": "The World Cup",
+      "episodeIds": [
+        "636e915792fc360012799bdc",
+        "63724988e08ffd0011baef4a",
+        "6372557635647200110318d9"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20World%20Cup",
+      "note": "Official archive series: The World Cup."
+    },
+    {
+      "id": "the-world-cup-32-countries",
+      "title": "The World Cup: 32 Countries",
+      "episodeIds": [
+        "637528288b962f00113f7a83",
+        "637648b7d8f20a0011595e93",
+        "63777326a9c70c0011b2cc5b",
+        "63766f9af0bdeb0011c8ad32",
+        "63777218a9c70c0011b2a1bb",
+        "637bb09b247d0e0012f21a97",
+        "637cb5577e88c40010bc9c93",
+        "637e796e74e2da0012bc5ad3",
+        "637f9edcba190f0010713fcf",
+        "6380ce95da65bf00116fb635",
+        "6380e87fd51dc40010c7c767",
+        "6380ba50915c6a0011be684d",
+        "6384f08537b6d400114ecbec",
+        "63860d7be731d10010f82548",
+        "638799cb10b60d0011b45c2f",
+        "63888465cb906200114ac296",
+        "638a2f00ade6090010813471",
+        "6389deea05fc1200100eca52",
+        "638a3163ade6090010819f70",
+        "638e1a85a594500011e09e8e",
+        "638e3172014fbe0011968aec",
+        "6390b8ee014fbe0011069442",
+        "6392149cd296110011c8bf01",
+        "637f68fa71631f0010af81bd",
+        "6391f50385f3180010ac41e4",
+        "63936d6b2cce0a00119441ff",
+        "6391f6eb21b3e90010ba8eb2",
+        "639768f577b60500107a7f41",
+        "639a0e4ded122a0011b01366",
+        "639b08f531b12d00102c24fe",
+        "639c5added65dd0011894cf9",
+        "639c5dfc124e4c0010241eee"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Great%20World%20Cup%20Saga",
+      "note": "Official archive series: Great World Cup Saga. The archive omits Japan (#277), but the publisher explicitly announces a 32-country, 32-episode daily set in #255 and calls #286 the final episode. All 32 public episodes are included."
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "episodeIds": [
+        "639f5f5efff9190011ac5f15",
+        "639f616fb0a82100109516e4"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Life%20of%20Jesus",
+      "note": "Official archive series: Life of Jesus."
+    },
+    {
+      "id": "lady-jane-grey",
+      "title": "Lady Jane Grey",
+      "episodeIds": [
+        "63b81dfea8a1ca0010cd0a26",
+        "63b81ee6cddc410011e2e003"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Lady%20Jane%20Grey",
+      "note": "Official archive series: Lady Jane Grey."
+    },
+    {
+      "id": "the-rise-of-the-nazis",
+      "title": "The Rise of the Nazis",
+      "episodeIds": [
+        "63c19dbd65ae3d0011250e87",
+        "63c1a02d2c423400110aeb08",
+        "63c1a635b7b4a200112aa36d",
+        "63c3f6b12c4234001171c24b"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Nazis%27%20Rise%20to%20Power%20%28S1%29",
+      "note": "Official archive series: The Nazis' Rise to Power (S1)."
+    },
+    {
+      "id": "cathars-and-the-albigensian-crusade",
+      "title": "Cathars and the Albigensian Crusade",
+      "episodeIds": [
+        "63dd5e2b90ca6d0011d895b7",
+        "63dd62b950f7d30010733488",
+        "63dd4b1fd9b3af001084d0b5"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Cathars%20and%20the%20Albigensian%20Crusade",
+      "note": "Official archive series: Cathars and the Albigensian Crusade."
+    },
+    {
+      "id": "the-murder-of-julius-caesar",
+      "title": "The Murder of Julius Caesar",
+      "episodeIds": [
+        "63e9210ba8620900105b8e1c",
+        "63e9232f994354001107010f"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Julius%20Caesar",
+      "note": "Official archive series: Julius Caesar."
+    },
+    {
+      "id": "columbus",
+      "title": "Columbus",
+      "episodeIds": [
+        "63efc712743d6200118863e4",
+        "63f3a9771a630700112ccb59",
+        "63f3aa7e89ef5c0011b493bf",
+        "63f3abab1a630700112d3c77"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Christopher%20Columbus",
+      "note": "Official archive series: Christopher Columbus."
+    },
+    {
+      "id": "ronald-reagan",
+      "title": "Ronald Reagan",
+      "episodeIds": [
+        "6404e51ac5ea8c001181a5ef",
+        "64089bde72ee7900114203af",
+        "640b53e4f0fc0e0011cf3047"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Ronald%20Reagan",
+      "note": "Official archive series: Ronald Reagan."
+    },
+    {
+      "id": "atlantis",
+      "title": "Atlantis",
+      "episodeIds": [
+        "641444e37982d00011be0b8f",
+        "6414a5c4d7071d00114acbdf"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Atlantis",
+      "note": "Official archive series: Atlantis."
+    },
+    {
+      "id": "hundred-years-war-the-black-prince",
+      "title": "Hundred Years’ War: The Black Prince",
+      "episodeIds": [
+        "6426f746a5f38c0011eea27a",
+        "6426f8a31ea7060011bb863f",
+        "64270783de6a3f00119e1812",
+        "642708cbde6a3f00119e65c1"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Hundred%20Years%27%20War%20%28S1%29",
+      "note": "Official archive series: The Hundred Years' War (S1)."
+    },
+    {
+      "id": "the-fall-of-saigon",
+      "title": "The Fall of Saigon",
+      "episodeIds": [
+        "6442c14d425b310011725061",
+        "6442c36b7301040011d79e71"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Fall%20of%20Saigon",
+      "note": "Official archive series: The Fall of Saigon."
+    },
+    {
+      "id": "coronations",
+      "title": "Coronations",
+      "episodeIds": [
+        "6452b6e19dcdc1001174cf6d",
+        "6453e7d37f1afb0011fb311e",
+        "64554befd401890011b7c915"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Coronations",
+      "note": "Official archive series: Coronations."
+    },
+    {
+      "id": "ireland-from-the-celts-to-the-easter-rising",
+      "title": "Ireland: From the Celts to the Easter Rising",
+      "episodeIds": [
+        "6473701e087bf40011b9ef0f",
+        "64782f155fac2500113499f2",
+        "647cf4d23863bd0011257cab",
+        "647cfd4d36fc35001122dd13"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Ireland%20%28S1%29",
+      "note": "Official archive series: Ireland (S1)."
+    },
+    {
+      "id": "the-trials-of-oscar-wilde",
+      "title": "The Trials of Oscar Wilde",
+      "episodeIds": [
+        "6489e62a9bdbb900115879c9",
+        "6489e6e49bdbb9001158919c"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Oscar%20Wilde",
+      "note": "Official archive series: Oscar Wilde."
+    },
+    {
+      "id": "oppenheimer",
+      "title": "Oppenheimer",
+      "episodeIds": [
+        "6492e387895f9d00117a5252",
+        "64944458a82eee00116dc219"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Oppenheimer",
+      "note": "Official archive series: Oppenheimer."
+    },
+    {
+      "id": "indiana-jones-the-ark-and-the-grail",
+      "title": "Indiana Jones: The Ark and the Grail",
+      "episodeIds": [
+        "6498a72afcd83100112090ce",
+        "6498a93de13a7f0012e471e1"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Indiana%20Jones%20double%20bill",
+      "note": "Official archive series: Indiana Jones double bill."
+    },
+    {
+      "id": "american-revolution",
+      "title": "American Revolution",
+      "episodeIds": [
+        "64a1d563f23f0b001160b0f1",
+        "64a53520ca46640010d45fa6",
+        "64a80849a1be3e00114c5dc4",
+        "64a80b29d5d98f0011442874"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/American%20Revolution",
+      "note": "Official archive series: American Revolution."
+    },
+    {
+      "id": "amsterdam",
+      "title": "Amsterdam",
+      "episodeIds": [
+        "ba533632-24cf-11ee-bc71-7ba075e7572b",
+        "25d47922-2659-11ee-bc86-23235f3baaff"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Amsterdam",
+      "note": "Official archive series: Amsterdam."
+    },
+    {
+      "id": "paris-1968",
+      "title": "Paris 1968",
+      "episodeIds": [
+        "8d9e7490-2929-11ee-a578-c377727a80e1",
+        "2f465baa-2be6-11ee-8255-7f60fd330075"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Paris%201968",
+      "note": "Official archive series: Paris 1968."
+    },
+    {
+      "id": "sixties-fashion",
+      "title": "Sixties Fashion",
+      "episodeIds": [
+        "f7b61202-44f9-11ee-8586-dfc5fd9824e6",
+        "21b45546-4752-11ee-a897-2fa9790f950b"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Sixties%20Fashion",
+      "note": "Official archive series: Sixties Fashion."
+    },
+    {
+      "id": "the-history-behind-harry-potter",
+      "title": "The History Behind Harry Potter",
+      "episodeIds": [
+        "3879a3c0-5018-11ee-bac7-8f9e4841ee00",
+        "c1c7a744-5018-11ee-b3d6-87ab40d626e1"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Public%20Schools",
+      "note": "Official archive series: Public Schools."
+    },
+    {
+      "id": "the-1973-chilean-coup",
+      "title": "The 1973 Chilean Coup",
+      "episodeIds": [
+        "bf7a8234-57d6-11ee-910d-eb2dad8d45b5",
+        "0f9b3c20-580b-11ee-8b5a-6350a2e39d81"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Chile%20coup%20%281973%29",
+      "note": "Official archive series: Chile coup (1973)."
+    },
+    {
+      "id": "british-fascism",
+      "title": "British Fascism",
+      "episodeIds": [
+        "1b9e2f5a-5b2b-11ee-bc73-03c0947a2f05",
+        "f5ecc76e-5d3a-11ee-85ee-1f725c352abf",
+        "c32c424a-5d3b-11ee-a2dd-731be6c1abb7",
+        "368f98fe-5d3c-11ee-a4e1-abe6add6a6eb"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/British%20Fascism",
+      "note": "Official archive series: British Fascism."
+    },
+    {
+      "id": "baghdad",
+      "title": "Baghdad",
+      "episodeIds": [
+        "dfd2eb98-6627-11ee-b47b-1b7e876b7b3c",
+        "295b19a6-6854-11ee-9504-4b082f11f400",
+        "bcfb2ce4-6ba8-11ee-b863-d71136a001dd",
+        "c4da9278-6dca-11ee-803e-07765794e974"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Baghdad",
+      "note": "Official archive series: Baghdad."
+    },
+    {
+      "id": "captain-cook",
+      "title": "Captain Cook",
+      "episodeIds": [
+        "f19bfe14-6ea1-11ee-bcb1-bbe33d61ece6",
+        "94852b16-734b-11ee-a78c-2fb3b3d84f38"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Captain%20Cook",
+      "note": "Official archive series: Captain Cook."
+    },
+    {
+      "id": "young-napoleon",
+      "title": "Young Napoleon",
+      "episodeIds": [
+        "87e88892-74c9-11ee-b6c1-af573a86e664",
+        "70aed4fe-78c2-11ee-8fa8-377b73760214"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Young%20Napoleon",
+      "note": "Official archive series: Young Napoleon."
+    },
+    {
+      "id": "the-fall-of-the-aztecs",
+      "title": "The Fall of the Aztecs",
+      "episodeIds": [
+        "cb5341e2-7a3e-11ee-a6eb-2799f1df2dde",
+        "913cbb0e-7a3f-11ee-8dca-bb15b1176a96",
+        "2a7b012c-7a40-11ee-8fe3-5b6e819fdf9c",
+        "6bdbe4ba-7a40-11ee-8a36-ef60f58adccb",
+        "be73aec4-7a40-11ee-ab43-bfdfda7cd27e",
+        "35ed7638-7a41-11ee-95ba-2f8d51cfffb2",
+        "7e553172-7a41-11ee-b598-8fb3cbb1e7af",
+        "bbfaae94-7a41-11ee-897e-476549f76756"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Aztec%20epic",
+      "note": "Official archive series: Aztec epic."
+    },
+    {
+      "id": "jfk",
+      "title": "JFK",
+      "episodeIds": [
+        "761018a8-830e-11ee-a13e-5bb031c065b5",
+        "ae22f75a-830f-11ee-815f-4be001c149a7",
+        "260db52c-8395-11ee-87fb-cf4a48be2ff7",
+        "b7678588-87bf-11ee-bfb2-73426338d90f",
+        "6a8566ac-89e7-11ee-9ff3-db68b1c63b61",
+        "f2a6efe8-87c0-11ee-bc87-834fef123192",
+        "66565d3a-8770-11ee-a697-33414c53b472"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/John%20F.%20Kennedy%20%28JFK%29",
+      "note": "Official archive series: John F. Kennedy (JFK)."
+    },
+    {
+      "id": "the-nazis-in-power",
+      "title": "The Nazis in Power",
+      "episodeIds": [
+        "5175d774-a66a-11ee-bf7f-b315e6eb6a64",
+        "d0214900-a66a-11ee-b4a0-9b10a9c74f50",
+        "eb06bce6-a97b-11ee-8b9e-3377243e2b0c",
+        "a2348142-a97b-11ee-85ee-c787ddf68c8a",
+        "245ab7e2-b320-11ee-abf3-c7ea58eb1802",
+        "8c06a55c-b403-11ee-9317-e72a74ba0bd5",
+        "017adc58-b559-11ee-99f8-5b28ee5ab07c"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Nazis%20in%20Power%20%28S2%29",
+      "note": "Official archive series: The Nazis in Power (S2)."
+    },
+    {
+      "id": "the-peasants-revolt",
+      "title": "The Peasants' Revolt",
+      "episodeIds": [
+        "58ba519c-bc43-11ee-9835-db03853888d6",
+        "b8076d84-bc42-11ee-b756-b337b9686287",
+        "8c04792e-bc43-11ee-a68c-6feda6df087e",
+        "f26ae1f8-bc43-11ee-8e46-17076e75f220"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Peasants%27%20Revolt",
+      "note": "Official archive series: The Peasants' Revolt. Includes the public-feed Part 4, The Canterbury Tales (#416), omitted from the archive series page but explicitly numbered as the fourth consecutive part."
+    },
+    {
+      "id": "britain-in-1974",
+      "title": "Britain in 1974",
+      "episodeIds": [
+        "45ca8846-c1ab-11ee-a826-6b2abd358b04",
+        "7d6c230e-c1ab-11ee-a4a2-d36d6d9ebb45",
+        "bbbcbc7c-c1ab-11ee-be4a-1ffb47b3b17f",
+        "e5f39eca-c1ab-11ee-b07f-b3673c7063d2"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Britain%20in%201974",
+      "note": "Official archive series: Britain in 1974."
+    },
+    {
+      "id": "carthage",
+      "title": "Carthage",
+      "episodeIds": [
+        "44fd67b0-cc1b-11ee-a76b-1f473ed7eb9a",
+        "d52dcf36-cc1c-11ee-9576-2b961b812eb2",
+        "1091daf4-cc1d-11ee-b84f-0f850e9d20ac",
+        "6347d3de-cc1d-11ee-b146-6fc74d0f25b8"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Carthage",
+      "note": "Official archive series: Carthage."
+    },
+    {
+      "id": "titanic",
+      "title": "Titanic",
+      "episodeIds": [
+        "c2f98f62-dc93-11ee-84ce-0be94f6402e7",
+        "1afb6820-dc94-11ee-865f-0381664506e2",
+        "89c3c842-dc94-11ee-9b20-27d574f26c2f",
+        "ca49b1ba-dc94-11ee-8206-53a500ab6d78",
+        "ef57dff4-dc94-11ee-b5af-9b6e25b68ace",
+        "5f9f6570-dc95-11ee-b571-6fafb799026c"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Titanic",
+      "note": "Official archive series: Titanic."
+    },
+    {
+      "id": "luther",
+      "title": "Luther",
+      "episodeIds": [
+        "1515e050-e60f-11ee-8203-572d209680ac",
+        "d627c3d6-e6ae-11ee-acff-17c707ca19ad",
+        "f890fe1a-e78a-11ee-8492-075b13b25481",
+        "4a7f0a64-e78b-11ee-8ea2-63b960d67e06",
+        "8306db78-e78b-11ee-8c69-8b75cad0bc23"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Life%20and%20times%20of%20Martin%20Luther",
+      "note": "Official archive series: Life and times of Martin Luther."
+    },
+    {
+      "id": "lord-byron",
+      "title": "Lord Byron",
+      "episodeIds": [
+        "689b7044-f683-11ee-95b1-c30ae4edcc4d",
+        "db73a21c-f683-11ee-97c2-bf8dd04ac4ba",
+        "338dd4cc-f684-11ee-a7b7-774f9f7c551e",
+        "d917d01e-f684-11ee-a073-eba5d4099191"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Lord%20Byron",
+      "note": "Official archive series: Lord Byron."
+    },
+    {
+      "id": "custer-vs-crazy-horse",
+      "title": "Custer vs. Crazy Horse",
+      "episodeIds": [
+        "cadccf14-07d6-11ef-9885-bfb7cb522bf8",
+        "331ec726-07d7-11ef-b346-5f270c926112",
+        "6dcd8006-07d7-11ef-8ff5-b33ac7aac8cb",
+        "85db75ea-07d7-11ef-9454-bb8cb79cf1bf",
+        "89f1cbf2-0c55-11ef-a8ea-0350eba44397",
+        "3f55980a-0d2a-11ef-b71d-2b611308c700",
+        "3e1bf360-163c-11ef-b0e7-970acae362a9",
+        "d044d542-0e06-11ef-84be-db5182840b12"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Custer%20Versus%20Crazy%20Horse",
+      "note": "Official archive series: Custer Versus Crazy Horse."
+    },
+    {
+      "id": "fall-of-the-sioux",
+      "title": "Fall of the Sioux",
+      "episodeIds": [
+        "24358e2e-1908-11ef-afec-5f3ed0488f1b",
+        "997e8230-1908-11ef-8e54-2fa2b57c8909",
+        "de93f13e-1908-11ef-b331-87a4d07faed4"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Fall%20of%20the%20Sioux",
+      "note": "Official archive series: Fall of the Sioux."
+    },
+    {
+      "id": "helen-of-troy",
+      "title": "Helen of Troy",
+      "episodeIds": [
+        "1dda1fe2-1dcf-11ef-8af5-f3d78fbf51dd",
+        "4fbea500-1dcf-11ef-9077-abf60148f47d"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Helen%20of%20Troy",
+      "note": "Official archive series: Helen of Troy."
+    },
+    {
+      "id": "modern-british-elections",
+      "title": "Modern British Elections",
+      "episodeIds": [
+        "88469588-2e2b-11ef-8e7c-afeeeca1e50e",
+        "f7628c7e-2f11-11ef-915b-47d256ff57ad"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Modern%20British%20Elections",
+      "note": "Official archive series: Modern British Elections."
+    },
+    {
+      "id": "the-murder-of-franz-ferdinand",
+      "title": "The Murder of Franz Ferdinand",
+      "episodeIds": [
+        "abb9a078-3736-11ef-a103-5b0720497ff5",
+        "d34f9a24-394e-11ef-b913-df1c28e9125e",
+        "f482d41c-3c97-11ef-a35c-d77e7843e792",
+        "ffedb928-3d0c-11ef-9633-ff2274a0c121"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Assassination%20of%20Archduke%20Franz%20Ferdinand",
+      "note": "Official archive series: Assassination of Archduke Franz Ferdinand."
+    },
+    {
+      "id": "the-road-to-the-great-war",
+      "title": "The Road to the Great War",
+      "episodeIds": [
+        "db1a39f6-3ddd-11ef-9153-b37127418dd2",
+        "abafede4-3e0c-11ef-a664-ab1e2f10336f",
+        "d56902e2-4523-11ef-93b2-07163fd21443",
+        "08dd41ec-3ea3-11ef-a926-4b502a7939f2",
+        "244b75c0-3e9e-11ef-b109-53ec1714dde8",
+        "7b2808b2-3ea9-11ef-920c-4fdbef8c2e11"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Road%20to%20the%20Great%20War",
+      "note": "Official archive series: The Road to the Great War."
+    },
+    {
+      "id": "the-french-revolution-the-storming-of-the-bastille",
+      "title": "The French Revolution: The Storming of the Bastille",
+      "episodeIds": [
+        "e7b36f9e-45b6-11ef-b95c-bf3d690adb33",
+        "a834b3ae-45bc-11ef-a3d4-bf2db107dedb",
+        "53e559c6-49c6-11ef-964d-a737f1066da2",
+        "f6a14ddc-49ad-11ef-9a47-83287a515126",
+        "159508aa-4846-11ef-ba68-9fd478d8583f",
+        "12642d4a-4914-11ef-8e3e-03d114873326",
+        "1b67892e-49b3-11ef-872f-276f56988a96",
+        "d1d3cfb2-49c5-11ef-a6d2-07ed233b5c12"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20French%20Revolution%20-%20Season%202%20%28July%202024%29",
+      "note": "Official archive series: The French Revolution - Season 2 (July 2024). Archive Part 6 is titled Liberty, Equality, Fraternity; the public-feed title is The Rights of Man (#480). The matching date and surrounding parts identify the same release."
+    },
+    {
+      "id": "henry-iv",
+      "title": "Henry IV",
+      "episodeIds": [
+        "4fa31b62-5da5-11ef-988f-2bd70e01e02d",
+        "497cea66-6010-11ef-846e-3771a1df6fa4"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Henry%20IV",
+      "note": "Official archive series: Henry IV."
+    },
+    {
+      "id": "hundred-years-war-agincourt",
+      "title": "Hundred Years’ War: Agincourt",
+      "episodeIds": [
+        "70bc8c58-62db-11ef-aa1e-8b9b009b5053",
+        "e3514630-5f9a-11ef-810a-efe6f1032b8e",
+        "3ba495b0-6074-11ef-9395-9fe2f5b22d47",
+        "045ff940-6075-11ef-9609-5300ab971fbd"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Hundred%20Years%27%20War%20%28S2%29",
+      "note": "Official archive series: The Hundred Years' War (S2)."
+    },
+    {
+      "id": "beards",
+      "title": "Beards",
+      "episodeIds": [
+        "d69368de-6c69-11ef-b577-f35add320ac8",
+        "d390da76-6e8b-11ef-9436-d7e1a56f1e24"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Beards",
+      "note": "Official archive series: Beards."
+    },
+    {
+      "id": "evita",
+      "title": "Evita",
+      "episodeIds": [
+        "7a7091e6-7126-11ef-8bc3-27e69d5061be",
+        "8e418e62-75d8-11ef-ae1a-7344106d767b",
+        "a1e6ff2e-71d7-11ef-b33a-0b436a1f7c03",
+        "877704c6-71d8-11ef-bf17-87fd496664a3",
+        "44c63062-71c8-11ef-9f18-43da347341dc"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Eva%20Per%C3%B3n%20%2F%20Evita",
+      "note": "Official archive series: Eva Perón / Evita."
+    },
+    {
+      "id": "the-roman-conquest-of-britain",
+      "title": "The Roman Conquest of Britain",
+      "episodeIds": [
+        "3381f002-7c22-11ef-a768-cb1e5cf32162",
+        "334fe640-80da-11ef-a960-bff8274ec2b2",
+        "71289a90-8434-11ef-8829-0b9cbd7b2c26",
+        "f638657a-865b-11ef-85ba-878d9ac61632"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Roman%20Conquest%20of%20Britain",
+      "note": "Official archive series: The Roman Conquest of Britain."
+    },
+    {
+      "id": "the-french-revolution-bloodbath-in-paris",
+      "title": "The French Revolution: Bloodbath in Paris",
+      "episodeIds": [
+        "615cd29a-89b4-11ef-8a38-6f39bf50b1fa",
+        "b841f49e-8c04-11ef-a2a1-eb5a1414618b",
+        "cc32cad8-8f05-11ef-a38b-c7f6c9e51049",
+        "a128c574-9183-11ef-aad0-7f2a1cc63829",
+        "5d9e8f2e-9259-11ef-9679-7fcfc5b2fd32"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20French%20Revolution%20-%20Season%203%20%28October%202024%29",
+      "note": "Official archive series: The French Revolution - Season 3 (October 2024)."
+    },
+    {
+      "id": "america-in-1968",
+      "title": "America in 1968",
+      "episodeIds": [
+        "53376730-92e1-11ef-b14e-6323e6e0f45e",
+        "fa4eb980-92f8-11ef-b410-9b76eb9a0fe1",
+        "b79d4556-99ed-11ef-a256-b3fbb21524d9",
+        "f9b83be0-9c9e-11ef-b06b-c7950e9b6f7d",
+        "941235c6-9f9f-11ef-9e62-3363ba85fcb2",
+        "5efc6fe0-9fa0-11ef-a7d1-f33ff35b5521"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/America%20in%201968",
+      "note": "Official archive series: America in 1968."
+    },
+    {
+      "id": "nelson-hero-of-the-seas",
+      "title": "Nelson: Hero of the Seas",
+      "episodeIds": [
+        "a134c534-a373-11ef-9780-071b22f89fa8",
+        "b4121d66-a46b-11ef-96d9-3bb9345c7759",
+        "e85e10a2-a46b-11ef-a3ca-db0e0cfc0b04",
+        "dde54a12-a373-11ef-a8b4-ff6b99a6d369",
+        "026df634-a434-11ef-a4c9-4fbbf4a9b670"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Nelson%20%28S1%29",
+      "note": "Official archive series: Nelson (S1)."
+    },
+    {
+      "id": "warlords-of-the-west",
+      "title": "Warlords of the West",
+      "episodeIds": [
+        "081dea20-b326-11ef-b6e2-9b31f8cbc3a7",
+        "b717845a-b326-11ef-bf48-4bd39e000bd6",
+        "1fbd9a34-b328-11ef-93db-73259f38162e"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Warlords%20of%20the%20West%20%28The%20Franks%29",
+      "note": "Official archive series: Warlords of the West (The Franks)."
+    },
+    {
+      "id": "charlemagne",
+      "title": "Charlemagne",
+      "episodeIds": [
+        "03b4f1d0-b6ec-11ef-ab17-f71dfc262b33",
+        "24ac00ae-b6ec-11ef-9f30-17ce0dca19ba",
+        "e2c2dc6e-b87e-11ef-9321-4f32bc7a6d8f"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Charlemagne%20trilogy",
+      "note": "Official archive series: Charlemagne trilogy."
+    },
+    {
+      "id": "mozart-beethoven-live-at-the-royal-albert-hall",
+      "title": "Mozart & Beethoven: Live at the Royal Albert Hall",
+      "episodeIds": [
+        "fa48f708-c605-11ef-bb33-f339af60f4c6",
+        "33568026-c6d1-11ef-8bde-33e5b6ea4233"
+      ],
+      "sourceUrl": "https://feeds.megaphone.fm/GLT4787413333",
+      "note": "Two consecutive releases from the same Academy of St Martin in the Fields / Philharmonia Chorus concert, 30 December 2024 and 2 January 2025. The archive lists Beethoven as an orchestral series member but omits Mozart; these are kept together as their actual release pair."
+    },
+    {
+      "id": "the-nazis-road-to-war",
+      "title": "The Nazis’ Road to War",
+      "episodeIds": [
+        "24978760-cbb3-11ef-b6d2-5f23b24d20a4",
+        "de2ec452-bdff-11ef-b724-5ffe1308be90"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Nazis%27%20Road%20to%20War%20%28S3%29",
+      "note": "Official archive series: The Nazis' Road to War (S3)."
+    },
+    {
+      "id": "hitler-s-war-on-poland",
+      "title": "Hitler's War on Poland",
+      "episodeIds": [
+        "837b0212-cf72-11ef-83f8-dbe4aee16746",
+        "2581bfe0-d367-11ef-9ad2-eb0fd2f9e5f7",
+        "0bea65f0-d4e3-11ef-ac46-b79e446d323e"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Hitler%27s%20War%20on%20Poland",
+      "note": "Official archive series: Hitler's War on Poland."
+    },
+    {
+      "id": "emperors-of-rome",
+      "title": "Emperors of Rome",
+      "episodeIds": [
+        "c7e1a9ec-da71-11ef-9b6b-8f9d7119ba4b",
+        "4418968a-de5d-11ef-a6fe-93b5b91a6829",
+        "2a24347c-dfe9-11ef-b01f-0bb604d26f69",
+        "01f3685c-e321-11ef-a2ed-e30cfd4f8c79"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Emperors%20of%20Rome",
+      "note": "Official archive series: Emperors of Rome."
+    },
+    {
+      "id": "horror-in-the-congo",
+      "title": "Horror in the Congo",
+      "episodeIds": [
+        "9c028bcc-e2ee-11ef-8bb5-bf8b8a8cccb0",
+        "b77d35ca-e53a-11ef-91bb-2b7c28eb4a6c",
+        "fa33aa02-e57b-11ef-b433-53e2b38ac882",
+        "c419e616-e95e-11ef-ada2-172a3a2e2e9e"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Horror%20in%20the%20Congo",
+      "note": "Official archive series: Horror in the Congo."
+    },
+    {
+      "id": "the-french-revolution-the-execution-of-the-king",
+      "title": "The French Revolution: The Execution of the King",
+      "episodeIds": [
+        "0f6db080-e940-11ef-b5c3-1fd07afe8286",
+        "8fd79f88-f9df-11ef-9515-73368c9aaed4",
+        "b478e222-fb6d-11ef-bc60-4f1e32aa5f4d",
+        "362e0e88-ff69-11ef-b1e6-ef1bd2a7048d"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20French%20Revolution%20-%20Season%201%20%28March%202024%29",
+      "note": "Official archive series: The French Revolution - Season 1 (March 2024). The archive labels this March 2024; its own release dates and the public feed place all four parts in March 2025. Kept separate from the July and October 2024 releases."
+    },
+    {
+      "id": "the-road-to-1066",
+      "title": "The Road to 1066",
+      "episodeIds": [
+        "bf885d2e-00bc-11f0-9a64-4b2fec426366",
+        "f90a1c22-04a9-11f0-a9be-6f3ab9362ebb",
+        "1c6f384a-0573-11f0-a6ac-6b0e89369a0a",
+        "b5b6d7ee-0968-11f0-852f-df3692cf4129"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Road%20to%201066",
+      "note": "Official archive series: The Road to 1066."
+    },
+    {
+      "id": "the-last-viking",
+      "title": "The Last Viking",
+      "episodeIds": [
+        "e1dd559c-0bc9-11f0-aaba-ab7592c99d4d",
+        "a8f80966-0fa7-11f0-adf2-fb8fb7e9e3d5"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Last%20Viking%20%28Hardrada%29",
+      "note": "Official archive series: The Last Viking (Hardrada)."
+    },
+    {
+      "id": "1066",
+      "title": "1066",
+      "episodeIds": [
+        "555043f2-116c-11f0-b17e-e7f3edb30863",
+        "617ca3c8-1563-11f0-a218-537a95ab3896",
+        "edeed2fe-16b2-11f0-a336-9771f11b04bc",
+        "4065fbbe-1aa7-11f0-8171-33f01d18e1ad"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/1066",
+      "note": "Official archive series: 1066."
+    },
+    {
+      "id": "rolling-stones",
+      "title": "Rolling Stones",
+      "episodeIds": [
+        "b898d65a-1918-11f0-90ba-ebf3e16abf0e",
+        "d5e57918-191b-11f0-b02f-67cbbcdd34ca"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Rolling%20Stones",
+      "note": "Official archive series: Rolling Stones."
+    },
+    {
+      "id": "the-golden-age-of-japan",
+      "title": "The Golden Age of Japan",
+      "episodeIds": [
+        "11de629a-1f89-11f0-929f-bf6f23f9574b",
+        "81dab170-25e2-11f0-a250-4fe872e051f4"
+      ],
+      "sourceUrl": "https://feeds.megaphone.fm/GLT4787413333",
+      "note": "Both public-feed episodes are explicitly titled The Golden Age of Japan, Parts 1 and 2, and were released consecutively on 27 and 30 April 2025."
+    },
+    {
+      "id": "peter-the-great",
+      "title": "Peter the Great",
+      "episodeIds": [
+        "269925c8-276b-11f0-934d-e7714d2f5b2e",
+        "14cd595e-2b49-11f0-b091-ef0c4bc156d2"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Peter%20the%20Great",
+      "note": "Official archive series: Peter the Great."
+    },
+    {
+      "id": "the-great-northern-war",
+      "title": "The Great Northern War",
+      "episodeIds": [
+        "5065999e-2d0c-11f0-9292-a3928406e6be",
+        "d2406992-30f1-11f0-a78e-3bbeead6f8ba",
+        "5c842908-315c-11f0-9353-b733bc6d64c9",
+        "e554bd86-3587-11f0-ab18-97b41f2ba738"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Great%20Northern%20War",
+      "note": "Official archive series: The Great Northern War."
+    },
+    {
+      "id": "hannibal",
+      "title": "Hannibal",
+      "episodeIds": [
+        "6b5221b6-37c3-11f0-bb8b-3f58035d9433",
+        "4f9912aa-3beb-11f0-8be0-cbaedbf7f973",
+        "1494cd46-3c6a-11f0-b486-5318baea25d5",
+        "33dbaad2-4154-11f0-b9ea-dbc2b3cb28b0"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Hannibal",
+      "note": "Official archive series: Hannibal."
+    },
+    {
+      "id": "the-medici",
+      "title": "The Medici",
+      "episodeIds": [
+        "481263d6-405c-11f0-839d-d7beff4fbd4e",
+        "02550136-453f-11f0-9054-5b2dc31ef1b0",
+        "1deb6f9c-4545-11f0-8b3d-7bfdbee6664f",
+        "2fa34374-4caf-11f0-98e7-7fd584575b46"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Medici",
+      "note": "Official archive series: Medici."
+    },
+    {
+      "id": "the-irish-war-of-independence",
+      "title": "The Irish War of Independence",
+      "episodeIds": [
+        "25e4d690-4dd1-11f0-81ad-a7e10ee422a8",
+        "5d7d0b70-51de-11f0-bbcc-3fc88ff280a8",
+        "226b0334-5341-11f0-8b22-5f9941bcdd93",
+        "b7ac4d7e-5592-11f0-ab4b-e742605904ae"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Irish%20independence%20struggle%20%281916%E2%80%931921%20S2%29",
+      "note": "Official archive series: Irish independence struggle (1916–1921 S2)."
+    },
+    {
+      "id": "the-irish-civil-war",
+      "title": "The Irish Civil War",
+      "episodeIds": [
+        "f3a0bcc2-5595-11f0-809c-47f70432e2dd",
+        "8c6fa70e-5cdc-11f0-8fb8-931b31c7dcdf"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Irish%20Civil%20War%20%28S3%29",
+      "note": "Official archive series: Irish Civil War (S3)."
+    },
+    {
+      "id": "mary-queen-of-scots",
+      "title": "Mary, Queen of Scots",
+      "episodeIds": [
+        "c691a8ce-63e4-11f0-a3df-a3091a6d41d9",
+        "d9a5e5c2-67ab-11f0-9c98-e7a5f31a14f1",
+        "180f1576-693d-11f0-9ba4-4fb317cacfca",
+        "aed57c98-6d61-11f0-83b7-c75d76a7e5d1",
+        "69db2a6c-6ee6-11f0-bf23-8b1f4a3f4e92",
+        "06f73ad8-72b2-11f0-af85-336e84e38dad"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Mary%2C%20Queen%20of%20Scots",
+      "note": "Official archive series: Mary, Queen of Scots."
+    },
+    {
+      "id": "assassination-of-abraham-lincoln",
+      "title": "Assassination of Abraham Lincoln",
+      "episodeIds": [
+        "861022f0-7391-11f0-a2e3-bfa463089f74",
+        "adde893a-784f-11f0-9b7a-e762460e32e7"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Assassination%20of%20Abraham%20Lincoln",
+      "note": "Official archive series: Assassination of Abraham Lincoln."
+    },
+    {
+      "id": "the-first-world-war-1914",
+      "title": "The First World War: 1914",
+      "episodeIds": [
+        "30b63a14-7f5e-11f0-86a6-571fadefd84f",
+        "74561d18-835d-11f0-a69c-73ccdd92cb5a",
+        "ca1692ae-865b-11f0-bdbf-2bbd0a2fa2ff",
+        "5391eeb4-88cf-11f0-bcd2-6ff110fe670f",
+        "27230e6c-8a50-11f0-85b1-17e856872aab",
+        "39b664ca-8e60-11f0-9da7-cfc43e2d611a"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20First%20World%20War",
+      "note": "Official archive series: The First World War."
+    },
+    {
+      "id": "greek-myths",
+      "title": "Greek Myths",
+      "episodeIds": [
+        "9bf1c766-9544-11f0-9a9b-2fcec944c46f",
+        "e761611a-995f-11f0-8039-7bf33cc9f49d",
+        "8940fee2-9ae5-11f0-b94d-5f85be665521",
+        "0a127432-9eb1-11f0-84b4-eff338ad799f"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Greek%20Myths",
+      "note": "Official archive series: Greek Myths."
+    },
+    {
+      "id": "nelson-glory-at-trafalgar",
+      "title": "Nelson: Glory at Trafalgar",
+      "episodeIds": [
+        "5dccc242-a39f-11f0-b5ab-d355e8d63394",
+        "4c29f10a-a439-11f0-8146-a7570b733687",
+        "473130d4-a9e1-11f0-b09d-2350aa219b54",
+        "076142fa-ab71-11f0-8378-17d3687bd35e",
+        "eeae3190-af63-11f0-a23b-1b096475a4ea",
+        "80ecb8be-b285-11f0-b6e2-af2a478fec08",
+        "4e4f7c62-b4f0-11f0-b84b-6b7fe498d33b"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Nelson%20%28S2%29",
+      "note": "Official archive series: Nelson (S2). Includes the Lady Hamilton introduction, as listed in the official archive; remains separate from the November–December 2024 Nelson arc."
+    },
+    {
+      "id": "walt-disney",
+      "title": "Walt Disney",
+      "episodeIds": [
+        "34ac245a-b670-11f0-8453-6bb3a611d3c3",
+        "476fad66-ba6f-11f0-b7b0-9baccd85e8c4",
+        "9ccddb66-bb3c-11f0-831c-af2f05bf8226"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Walt%20Disney%20%2F%20Disney%20%28November%202025%29",
+      "note": "Official archive series: Walt Disney / Disney (November 2025)."
+    },
+    {
+      "id": "elizabeth-i",
+      "title": "Elizabeth I",
+      "episodeIds": [
+        "070dd200-bbf2-11f0-8d32-33ad57d72fcf",
+        "7863d550-bfe7-11f0-959d-db66c046ecc3",
+        "a453357c-c0a3-11f0-8c16-9fd62df67771",
+        "86c9c938-c532-11f0-be4b-67b3f5063f4c"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Elizabeth%20I%20%28November%202025%29",
+      "note": "Official archive series: Elizabeth I (November 2025)."
+    },
+    {
+      "id": "the-nazis-at-war",
+      "title": "The Nazis at War",
+      "episodeIds": [
+        "7a700686-c6e8-11f0-8077-cf4dd07cd912",
+        "cec46d0a-caba-11f0-ac43-877553017234",
+        "dd9a1616-cbac-11f0-8a79-9fd3cabef61d",
+        "0acd6562-d05c-11f0-9cf5-036872edf668"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Nazis%20at%20War%20%28S4%29",
+      "note": "Official archive series: The Nazis at War (S4)."
+    },
+    {
+      "id": "the-beatles-with-conan-obrien",
+      "title": "The Beatles, with Conan O’Brien",
+      "episodeIds": [
+        "1ae197a6-cf9a-11f0-89df-e745764b0a8f",
+        "bd071b8a-d4e7-11f0-85f5-5f8cc0f18338"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Beatles%20-%20With%20Conan%20O%27Brien",
+      "note": "Official archive series: The Beatles - With Conan O'Brien."
+    },
+    {
+      "id": "jack-the-ripper-the-whitechapel-murders",
+      "title": "Jack the Ripper - The Whitechapel Murders",
+      "episodeIds": [
+        "137424c0-d111-11f0-bdac-c75a04e39c39",
+        "b2a38640-d4e9-11f0-a94c-1f84691b3f84",
+        "18b45630-d4ea-11f0-85bc-f7afe1e4ca0c",
+        "085ea67e-db60-11f0-bbd8-efe9f9e2c27c",
+        "d9dc3a26-dc10-11f0-a678-d38e8cab2864"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Jack%20the%20Ripper%20-%20The%20Whitechapel%20Murders",
+      "note": "Official archive series: Jack the Ripper - The Whitechapel Murders."
+    },
+    {
+      "id": "tchaikovsky-wagner-live-at-the-royal-albert-hall",
+      "title": "Tchaikovsky & Wagner: Live at the Royal Albert Hall",
+      "episodeIds": [
+        "d3ea5352-df47-11f0-8847-87d621467df7",
+        "8fb29d42-df48-11f0-adc3-d3292755e9ef"
+      ],
+      "sourceUrl": "https://feeds.megaphone.fm/GLT4787413333",
+      "note": "Two consecutive releases from the same Philharmonia Orchestra concert, 29 December 2025 and 1 January 2026. Both belong to the official orchestral series and are kept separate from the previous annual concert release."
+    },
+    {
+      "id": "joan-of-arc",
+      "title": "Joan of Arc",
+      "episodeIds": [
+        "3b7841fe-dff3-11f0-96c2-17a068fc5348",
+        "2af6e02e-ebd3-11f0-a393-7fce378acf29",
+        "7f9a8216-ec69-11f0-9f0b-270fc57adccf",
+        "31ea63b8-f12f-11f0-984a-db3475069096"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Joan%20of%20Arc",
+      "note": "Official archive series: Joan of Arc."
+    },
+    {
+      "id": "revolution-in-iran",
+      "title": "Revolution in Iran",
+      "episodeIds": [
+        "9b9e4f5c-f18b-11f0-a21e-f3eea83640a9",
+        "c8a88240-f610-11f0-8414-7b114b4a7005",
+        "6df9f81e-f774-11f0-8071-fb06f90af3e6",
+        "ae8389a4-fab7-11f0-9ae2-2bfb6623b471"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Iranian%20Revolution",
+      "note": "Official archive series: Iranian Revolution."
+    },
+    {
+      "id": "rome-s-greatest-enemy",
+      "title": "Rome's Greatest Enemy",
+      "episodeIds": [
+        "1373802e-fc36-11f0-ae8f-2f0afa788c8d",
+        "71eb2894-01c4-11f1-8087-03c414bedfb3",
+        "971f2d56-02b2-11f1-9bf7-bfa59557947f",
+        "e7be1b82-02b2-11f1-9f00-777d8cd64b2d"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Rome%27s%20Greatest%20Enemy",
+      "note": "Official archive series: Rome's Greatest Enemy."
+    },
+    {
+      "id": "the-fall-of-the-incas",
+      "title": "The Fall of the Incas",
+      "episodeIds": [
+        "6ae8637e-02b7-11f1-b56c-db6ad6aeaf77",
+        "c0b93050-0ce2-11f1-a509-f36866955408",
+        "57f69100-0db1-11f1-98f3-b31c5eae92f0",
+        "239a48e6-10e7-11f1-9366-572767f19126",
+        "d6b455f2-1321-11f1-918c-a7090db70c45",
+        "8e03007a-16ef-11f1-ba32-9765672ba611"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Fall%20of%20the%20Incas",
+      "note": "Official archive series: The Fall of the Incas."
+    },
+    {
+      "id": "londons-golden-age",
+      "title": "London’s Golden Age",
+      "episodeIds": [
+        "b5296d0e-16f1-11f1-a063-6bd9e938dc75",
+        "56378f84-1bc3-11f1-be9c-1bd0bd90477d",
+        "93446c5e-1c9e-11f1-aa00-3b620d96bfaa",
+        "5c35e60a-2123-11f1-a500-138cb9a91583"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/London%27s%20Golden%20Age",
+      "note": "Official archive series: London's Golden Age."
+    },
+    {
+      "id": "the-ku-klux-klan",
+      "title": "The Ku Klux Klan",
+      "episodeIds": [
+        "94f22888-2389-11f1-8eba-b7ffaf4bbeb4",
+        "fa3fae16-26d3-11f1-8ef3-c79a67e9ccc3",
+        "291bbbb8-29c6-11f1-a1fb-cb0079ec5370",
+        "b4088270-2c1d-11f1-9e4e-87f090b9fb07"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Ku%20Klux%20Klan",
+      "note": "Official archive series: The Ku Klux Klan."
+    },
+    {
+      "id": "dawn-of-the-samurai",
+      "title": "Dawn of the Samurai",
+      "episodeIds": [
+        "7f8d2c62-2c45-11f1-b638-07fae8c3232f",
+        "f9b9e13a-2c4d-11f1-af10-eb0ed9da4272",
+        "2f8abe74-2c4e-11f1-9e44-ab5c65e9fd0b",
+        "6003a828-372e-11f1-b625-076e404bff70"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Dawn%20of%20the%20Samurai",
+      "note": "Official archive series: Dawn of the Samurai."
+    },
+    {
+      "id": "britain-in-the-70s",
+      "title": "Britain in the 70s",
+      "episodeIds": [
+        "8f21583c-3740-11f1-adb4-2f517cc7f1f8",
+        "aff5cbd4-3d66-11f1-96b8-cf9390c276f5",
+        "99a45d18-3e3e-11f1-9a0d-0fb849364802",
+        "9bf253f6-43cd-11f1-8dd5-7794b75c8042"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Britain%20in%20the%2070s",
+      "note": "Official archive series: Britain in the 70s."
+    },
+    {
+      "id": "greece-vs-persia",
+      "title": "Greece vs Persia",
+      "episodeIds": [
+        "54bf7828-4ad6-11f1-bc13-234a21510a7e",
+        "f575756a-4e1e-11f1-8d69-1b8a204015dc"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Greece%20vs%20Persia",
+      "note": "Official archive series: Greece vs Persia."
+    },
+    {
+      "id": "the-first-world-war-1915",
+      "title": "The First World War: 1915",
+      "episodeIds": [
+        "1a33b978-4df4-11f1-8551-03ebb7cd5a09",
+        "94709434-542c-11f1-b8a0-136b7219bfa7",
+        "70824358-55e2-11f1-a9c2-abe6b164b5e5",
+        "9b9c3b24-59b7-11f1-ae58-17e305fb826f",
+        "c72c2240-59b7-11f1-a089-d7e59e32bf6d",
+        "143ab446-5ea1-11f1-b411-c73d11770c57"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/First%20World%20War%20%28May%202026%29",
+      "note": "Official archive series: First World War (May 2026)."
+    },
+    {
+      "id": "national-anthems-2026-world-cup",
+      "title": "National Anthems: 2026 World Cup",
+      "episodeIds": [
+        "15c21496-5e7c-11f1-99e8-2be2f4812e1a",
+        "87fb0042-6415-11f1-8c38-efa4839e5cad",
+        "3a6d462a-663e-11f1-8124-07e30a7c3199",
+        "e8279914-6a6c-11f1-b0d8-7390412b5d90",
+        "091927a2-68c7-11f1-88b4-437c9e7e52a7",
+        "25c4bcb8-68c7-11f1-9fe0-c7cd9e192007"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/2026%20World%20Cup",
+      "note": "Official archive series: 2026 World Cup."
+    },
+    {
+      "id": "founding-fathers",
+      "title": "Founding Fathers",
+      "episodeIds": [
+        "38708456-7154-11f1-8261-ab8f6abc4893",
+        "bf829bc4-755e-11f1-ac03-7f241e6dbc38",
+        "00dcb988-7636-11f1-adce-233882693e2c",
+        "05f6964e-7aac-11f1-960f-277b579ae8c9"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Founding%20Fathers",
+      "note": "Official archive series: Founding Fathers."
+    },
+    {
+      "id": "the-odyssey",
+      "title": "The Odyssey",
+      "episodeIds": [
+        "19263b9a-7ad2-11f1-aaed-3fa07ea54e9e",
+        "500a4998-803c-11f1-a364-1316fa04883a"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Odyssey",
+      "note": "Official archive series: The Odyssey."
+    },
+    {
+      "id": "the-habsburgs",
+      "title": "The Habsburgs",
+      "episodeIds": [
+        "3eb6b97c-81ce-11f1-b5ab-8f235a89845f",
+        "52822e96-8520-11f1-b415-a3e8f4de5e58"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Habsburgs",
+      "note": "Official archive series: The Habsburgs."
+    },
+    {
+      "id": "elizabeth-i-vs-the-catholics",
+      "title": "Elizabeth I vs The Catholics",
+      "episodeIds": [
+        "a50f17be-8741-11f1-9366-7f78e93edf4e",
+        "e2329568-8a7e-11f1-a691-a370716eb272",
+        "1bfa64e0-8b3a-11f1-9acb-57dcc09301d8",
+        "59f69546-8f2e-11f1-b7e8-734c9a083d4b",
+        "7d61db08-8f2e-11f1-ada3-f3d3fca150a4",
+        "66edb3ac-94b9-11f1-ada5-b7fb80176bc4"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Elizabeth%20I%20vs%20The%20Catholics",
+      "note": "Official archive series: Elizabeth I vs The Catholics."
+    },
+    {
+      "id": "the-troubles",
+      "title": "The Troubles",
+      "episodeIds": [
+        "f0d4749a-9728-11f1-a724-e7821230328e",
+        "617835d6-9b13-11f1-87fc-ab9caf58601a",
+        "499c1f54-9d66-11f1-9822-57ff45731c22",
+        "d6642384-a156-11f1-b999-17f7f35e04a2"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Troubles",
+      "note": "Official archive series: The Troubles."
+    },
+    {
+      "id": "roman-civil-war",
+      "title": "Roman Civil War",
+      "episodeIds": [
+        "7a53925c-a1f9-11f1-a932-7b1f586fd0d6",
+        "3fc03eb0-a6d1-11f1-b97a-9bfd05675a3b",
+        "d0138942-a77e-11f1-9f5e-537d1277241d",
+        "e7f48b14-a789-11f1-ae45-0b669e864200"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Roman%20Civil%20War",
+      "note": "Official archive series: Roman Civil War."
+    },
+    {
+      "id": "queen-victorias-revenge",
+      "title": "Queen Victoria’s Revenge",
+      "episodeIds": [
+        "5c0bf304-adf5-11f1-a227-3f46219e3faa",
+        "78de6472-b047-11f1-8db3-b311e9cdbee0"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/Queen%20Victoria%E2%80%99s%20Revenge",
+      "note": "Official archive series: Queen Victoria’s Revenge."
+    },
+    {
+      "id": "the-terror",
+      "title": "The Terror",
+      "episodeIds": [
+        "0322655e-b118-11f1-b8eb-f79d9c6ca5d1",
+        "f3fe2076-b67c-11f1-ba50-83337ba68545",
+        "5b3a78c0-b826-11f1-8f96-8ba30ba9f7aa",
+        "7d4f6bf6-bcb2-11f1-9e30-afa90f070c5b",
+        "2d6799fa-bcef-11f1-91db-03fd4c845d31",
+        "fc5f8712-c24a-11f1-a95a-9bafcc33d507"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20French%20Revolution%20-%20Season%204%20%28September%202026%29",
+      "note": "Official archive series: The French Revolution - Season 4 (September 2026). Archive Part 1 is titled An Assassination in Paris; the current public-feed title is How The French Revolution Collapsed Into Chaos (#707)."
+    },
+    {
+      "id": "king-arthur",
+      "title": "King Arthur",
+      "episodeIds": [
+        "097bbd64-c31b-11f1-8fc4-d7a4e415d941",
+        "db4aff8e-c7d1-11f1-be51-23df9a3eeb1f",
+        "fe62cf6e-c96c-11f1-a55f-87ce580e654e",
+        "85e0e0e0-cd53-11f1-bc45-0788283d19ce"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/King%20Arthur",
+      "note": "Official archive series: King Arthur."
+    },
+    {
+      "id": "the-suez-crisis",
+      "title": "The Suez Crisis",
+      "episodeIds": [
+        "7a85be66-ce2d-11f1-8e99-53a7d18af771",
+        "205d3ba6-d1f4-11f1-b0c5-bba84b32fd07"
+      ],
+      "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Suez%20Crisis",
+      "note": "Official archive series: The Suez Crisis."
+    }
+  ]
+}

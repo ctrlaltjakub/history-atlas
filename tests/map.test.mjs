@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
+import {makeCollection,filterCollection} from '../public/core.mjs';
 import {clusterPoints,groupZoom} from '../public/map-core.mjs';
 
 const catalogue=JSON.parse(readFileSync(new URL('../public/data/catalogue.json',import.meta.url)));
@@ -70,4 +71,20 @@ test('clustering is deterministic regardless of catalogue order and does not dep
   const points=[{id:'a',x:10,y:10},{id:'b',x:16,y:10},{id:'c',x:200,y:80}];
   assert.deepEqual(clusterPoints(points,3),clusterPoints([...points].reverse(),3));
   assert.equal(clusterPoints([],3).length,0);
+});
+
+
+test('series-first map entries preserve all episodes and group by map availability independently of dates',()=>{
+  const items=filterCollection(makeCollection(episodes));
+  const mapped=items.filter(item=>item.location.coordinates),worldwide=items.filter(item=>!item.location.coordinates);
+  assert.equal(mapped.length+worldwide.length,items.length);
+  assert.deepEqual([...mapped,...worldwide].flatMap(item=>item.members.map(e=>e.id)).sort(),episodes.map(e=>e.id).sort());
+  for(const item of mapped){
+    const first=item.members.find(e=>e.location.coordinates);
+    assert.deepEqual(item.location.coordinates,first.location.coordinates);
+  }
+  const arthur=items.find(item=>item.seriesId==='king-arthur');
+  assert.equal(arthur.start,null);assert.ok(arthur.location.coordinates);
+  const worldCup=items.find(item=>item.seriesId==='the-world-cup');
+  assert.ok(worldCup.start!==null);assert.equal(worldCup.location.coordinates,null);
 });

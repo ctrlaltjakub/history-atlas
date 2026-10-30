@@ -46,12 +46,14 @@ def clean_desc(text):
     text=re.sub(r'\n{3,}','\n\n',text)
     return text.strip(' \n*')
 
-def series_name(e,title):
-    if '12 Days:' in title:return '12 Days of Christmas'
-    if re.search(r'\(Part \d+\)|\bpart \d+$',title,re.I):
-        if ':' in title:return title.split(':',1)[0].strip()
-        return re.sub(r'\s*\(?Part \d+\)?','',title,flags=re.I).strip()
-    return ''
+series_data=read('series.json')
+series_members={}
+for group in series_data['series']:
+    assert len(group['episodeIds']) >= 2, group['title']
+    for order, episode_id in enumerate(group['episodeIds'], 1):
+        assert episode_id not in series_members, f'Duplicate series membership: {episode_id}'
+        series_members[episode_id]=dict(seriesId=group['id'],series=group['title'],seriesOrder=order)
+assert set(series_members) <= {e['id'] for e in base}
 
 out=[]
 for e in base:
@@ -69,13 +71,13 @@ for e in base:
     if prefix:number=int(prefix[1])
     if e.get('type')=='trailer':number=None
     location=locations.get(e['id'],dict(coordinates=None,label='Worldwide',note='New in the public feed. Map placement has not yet been reviewed.'))
-    out.append(dict(id=e['id'],number=number,title=title,description=description,published=e['published'],duration=e['duration'],image=e['image'],audio=e['audio'],**p,series=series_name(e,title),location=location,officialUrl=f'https://archive.therestishistory.com/catalog/episode/{official_id}' if official_id else None,links={k:link.get(k) for k in ['pocketCasts','spotify','spotifyKind','applePodcasts','applePodcastsKind','youtube']}))
+    out.append(dict(id=e['id'],number=number,title=title,description=description,published=e['published'],duration=e['duration'],image=e['image'],audio=e['audio'],**p,**series_members.get(e['id'],dict(seriesId=None,series='',seriesOrder=None)),location=location,officialUrl=f'https://archive.therestishistory.com/catalog/episode/{official_id}' if official_id else None,links={k:link.get(k) for k in ['pocketCasts','spotify','spotifyKind','applePodcasts','applePodcastsKind','youtube']}))
 
 assert len(out)==len(base)==len({e['id'] for e in out})
 assert all(e['start'] is None or (isinstance(e['start'],int) and e['start']<=e['end'] and e['start']!=0 and e['end']!=0) for e in out)
 assert all(e['category'] if e['start'] is None else e['category'] is None for e in out)
 target=ROOT/'public'/'data'; target.mkdir(exist_ok=True,parents=True)
 updated=read('catalogue-source.json')['fetchedAt']
-result=dict(updatedAt=updated,source='https://feeds.megaphone.fm/GLT4787413333',episodes=out)
+result=dict(updatedAt=updated,source='https://feeds.megaphone.fm/GLT4787413333',series=series_data['series'],episodes=out)
 (target/'catalogue.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')))
 print(f"Catalogue: {len(out)} total, {sum(e['start'] is not None for e in out)} dated, {sum(e['start'] is None for e in out)} beyond time. {len((target/'catalogue.json').read_bytes()):,} bytes.")
