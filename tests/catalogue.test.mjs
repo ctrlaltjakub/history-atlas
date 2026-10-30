@@ -66,13 +66,19 @@ test('tiles fill equal grid cells in midpoint columns with top-filled fixed rows
     const layout=makeTimeline(items,step);
     assert.equal(layout.positions.length,items.length);
     assert.equal(new Set(layout.positions.map(p=>p.item.id)).size,items.length);
-    assert.ok(layout.ticks.every((t,i)=>t.width===step&&t.x===i*step),'Columns have equal widths and align to the grid');
-    assert.equal(layout.width,layout.ticks.length*step);
+    let edge=0;
+    for(const tick of layout.ticks){
+      const empty=!layout.positions.some(p=>p.periodId===tick.id);
+      assert.equal(tick.empty,empty);
+      assert.equal(tick.width,empty?step/3:step,'Only empty columns shrink to one-third width');
+      assert.equal(tick.x,edge,'Columns join without gaps');edge+=tick.width;
+    }
+    assert.equal(layout.width,edge);
     for(const p of layout.positions){
       const start=layout.ticks.find(t=>t.id===timelinePeriod(p.item.start).id);
       const end=layout.ticks.find(t=>t.id===timelinePeriod(p.item.end).id);
       const middle=layout.ticks.find(t=>t.id===timelinePeriod(midpointYear(p.item.start,p.item.end)).id);
-      assert.equal(p.x+p.width/2,middle.x+middle.width/2,p.item.title+' is centred on the grid');
+      assert.ok(Math.abs(p.x+p.width/2-middle.x-middle.width/2)<0.001,p.item.title+' is centred on the grid');
       assert.ok(p.startX>=start.x&&p.startX<start.x+start.width,p.item.title);
       assert.ok(p.endX>end.x&&p.endX<=end.x+end.width+0.001,p.item.title);
       assert.equal(p.x,middle.x+2,'Every tile starts at the same inset within its column');
@@ -82,7 +88,7 @@ test('tiles fill equal grid cells in midpoint columns with top-filled fixed rows
     }
     for(let row=0;row<layout.rowCount;row++){
       const cards=layout.positions.filter(p=>p.row===row).sort((a,b)=>a.x-b.x);
-      for(let i=1;i<cards.length;i++)assert.ok(cards[i].x>=cards[i-1].x+cards[i-1].width+4,'Grid cells never overlap');
+      for(let i=1;i<cards.length;i++)assert.ok(cards[i].x>=cards[i-1].x+cards[i-1].width+4-0.001,'Grid cells never overlap');
     }
     let maximum=0;
     for(const tick of layout.ticks){
@@ -102,9 +108,10 @@ test('tiles fill equal grid cells in midpoint columns with top-filled fixed rows
 test('long narratives keep compact midpoint tiles and precise endpoints for the hover guide',()=>{
   const sample=[{id:'war',title:'Long war',start:1700,end:1721},{id:'point',title:'Short event',start:1710,end:1710}];
   const layout=makeTimeline(sample,176),war=layout.positions.find(p=>p.item.id==='war');
-  assert.equal(war.startX,0);assert.equal(war.endX,176*2+176*2/10);
-  assert.equal(war.center,176+88);assert.equal(war.width,172);assert.equal(layout.rowCount,2);
-  assert.ok(!visibleTimeline(layout,176*2,176).positions.some(p=>p.item.id==='war'),'Only the tile footprint controls visibility');
+  assert.deepEqual(layout.ticks.map(t=>t.width),[176/3,176,176/3],'Empty endpoint columns shrink even when a range crosses them');
+  assert.equal(war.startX,0);assert.equal(war.endX,176/3+176+(176/3)*2/10);
+  assert.equal(war.center,176/3+88);assert.equal(war.width,172);assert.equal(layout.rowCount,2);
+  assert.ok(!visibleTimeline(layout,layout.ticks[2].x,176).positions.some(p=>p.item.id==='war'),'Only the tile footprint controls visibility');
   const longTitle={id:'wide',title:'A title long enough to require more than one whole column in this test',start:1605,end:1605};
   const single=makeTimeline([longTitle]),position=single.positions[0];
   assert.equal(position.x,2);assert.equal(position.center,single.step/2);

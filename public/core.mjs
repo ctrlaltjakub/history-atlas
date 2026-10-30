@@ -112,23 +112,27 @@ export function timelineDateX(layout,year,end=false) {
 }
 export function makeTimeline(items,step=TIMELINE_COLUMN_WIDTH) {
   const dated=items.filter(hasTimelineDate).sort(chronological);
-  const periods=new Map();
+  const periods=new Map(),occupied=new Set();
   for(const item of dated) {
-    for(const year of [item.start,item.end ?? item.start,midpointYear(item.start,item.end ?? item.start)]) {
+    const middle=midpointYear(item.start,item.end ?? item.start);
+    occupied.add(timelinePeriod(middle).id);
+    for(const year of [item.start,item.end ?? item.start,middle]) {
       const period=timelinePeriod(year);periods.set(period.id,period);
     }
   }
   const ticks=[],positions=[];
-  let previous=null;
+  let previous=null,width=0;
   for(const period of [...periods.values()].sort((a,b)=>a.start-b.start)) {
-    ticks.push({...period,x:ticks.length*step,width:step,gapLabel:periodGapLabel(previous,period)});previous=period;
+    const empty=!occupied.has(period.id),columnWidth=empty?step/3:step;
+    ticks.push({...period,x:width,width:columnWidth,empty,gapLabel:periodGapLabel(previous,period)});
+    width+=columnWidth;previous=period;
   }
   const layout={ticks};
   const candidates=dated.map(item=>{
     const middle=midpointYear(item.start,item.end ?? item.start),period=timelinePeriod(middle),tick=ticks.find(t=>t.id===period.id);
-    const center=tick.x+step/2;
+    const center=tick.x+tick.width/2;
     // Every tile occupies one column, with the same two-pixel inset on both sides.
-    return {item,key:item.id,periodId:period.id,periodLabel:period.label,middle,center,x:tick.x+2,width:step-4};
+    return {item,key:item.id,periodId:period.id,periodLabel:period.label,middle,center,x:tick.x+2,width:tick.width-4};
   }).sort((a,b)=>a.x-b.x||a.middle-b.middle||chronological(a.item,b.item));
   const columnRows=new Map();
   let rowCount=0;
@@ -138,7 +142,7 @@ export function makeTimeline(items,step=TIMELINE_COLUMN_WIDTH) {
     columnRows.set(candidate.periodId,row+1);rowCount=Math.max(rowCount,row+1);
     positions.push({...candidate,row,startX:timelineDateX(layout,candidate.item.start),endX:timelineDateX(layout,candidate.item.end ?? candidate.item.start,true)});
   }
-  return {ticks,positions,width:ticks.length*step,step,rowCount};
+  return {ticks,positions,width,step,rowCount};
 }
 export function visibleTimeline(layout,left,viewportWidth) {
   const positions=layout.positions.filter(p=>p.x+p.width>left && p.x<left+viewportWidth);

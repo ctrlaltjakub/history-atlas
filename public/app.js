@@ -32,12 +32,12 @@ function renderTimeline(filtered){
   const previousPeriod=timeline?.ticks.findLast(t=>t.x<=viewport.scrollLeft)?.id;
   const sameItems=key.split('|')[0]===timelineKey.split('|')[0];timelineKey=key;
   timeline=makeTimeline(filtered,step);hoveredTimelineItem=null;focusedTimelineItem=null;
-  viewport.style.setProperty('--timeline-visible-rows',Math.min(10,timeline.rowCount)||10);
+  viewport.style.setProperty('--timeline-visible-rows',timeline.rowCount||10);
   const canvas=$('#timeline-canvas');canvas.style.setProperty('--step',`${step}px`);timelineCards=[];timelineTicks=[];
   $('.timeline-footnote').hidden=!timeline.positions.length;
   if(!timeline.positions.length){canvas.style.width='100%';canvas.innerHTML=empty('No dated results match these filters.','Try another era, region or search. Broad collections and episodes without dates appear below.');$('#time-position').disabled=true;$('#first-year').textContent='';$('#last-year').textContent='';updateScroll();return;}
   $('#time-position').disabled=false;canvas.style.width=`${Math.max(timeline.width,viewport.clientWidth)}px`;
-  const axis=`<div class="timeline-axis"><div class="range-guide" id="range-guide" hidden></div><span class="axis-current" id="visible-year" hidden></span>${timeline.ticks.map(t=>`<span class="axis-tick" style="left:${t.x}px;width:${t.width}px">${t.gapLabel?`<span class="period-gap" role="img" aria-label="${esc(t.gapLabel)}" title="${esc(t.gapLabel)}">⋯</span>`:''}${t.label}</span>`).join('')}</div>`;
+  const axis=`<div class="timeline-axis"><div class="range-guide" id="range-guide" hidden></div><span class="axis-current" id="visible-year" hidden></span>${timeline.ticks.map(t=>`<span class="axis-tick ${t.empty?'is-empty':''}" style="left:${t.x}px;width:${t.width}px" title="${esc(t.label)}${t.empty?' · No tiles; one-third width':''}">${t.gapLabel?`<span class="period-gap" role="img" aria-label="${esc(t.gapLabel)}" title="${esc(t.gapLabel)}">⋯</span>`:''}<span class="axis-label">${t.empty?t.label.replace(' century',' c.'):t.label}</span></span>`).join('')}</div>`;
   const cards=timeline.positions.map(({item,x,width})=>`<button class="story-card ${item.type==='series'?'is-series':''}" ${itemTarget(item)} data-item-id="${esc(item.id)}" style="left:${x}px;width:${width}px;--series-color:${item.color}" aria-label="Open ${esc(item.title)}${item.type==='series'?`, series of ${item.members.length} episodes`:''}, approximately ${esc(item.dateLabel)}"><span class="story-text"><span class="story-title">${esc(item.title)}</span>${item.type==='series'?`<span class="story-count">${item.members.length} ↗</span>`:''}</span></button>`).join('');
   canvas.innerHTML=axis+`<div class="timeline-board" style="height:${timeline.rowCount*timelineRowHeight()}px">${timeline.ticks.map(t=>`<span aria-hidden="true" class="timeline-gridline" style="left:${t.x}px"></span>`).join('')}${cards}</div>`;
   timelineCards=[...canvas.querySelectorAll('.story-card')];timelineTicks=[...canvas.querySelectorAll('.axis-tick')];
@@ -58,7 +58,7 @@ function updateVisibleRows(){
 function updateScroll(){
   const el=$('#timeline-scroll'),max=el.scrollWidth-el.clientWidth;
   $('#time-position').value=max>0?Math.round(el.scrollLeft/max*1000):0;$('#earlier').disabled=el.scrollLeft<2;$('#later').disabled=max<2||el.scrollLeft>=max-2;
-  if(timeline?.ticks.length){const tick=timeline.ticks.findLast(t=>t.x<=el.scrollLeft)||timeline.ticks[0];$('#time-position').setAttribute('aria-valuetext',`Approximately ${tick.label}`);const current=$('#visible-year');if(current){current.textContent=tick.label;current.hidden=tick.x>=el.scrollLeft-4||tick.x+tick.width-el.scrollLeft<timeline.step/2;const edge=el.scrollLeft+(current.hidden?0:current.offsetWidth+6);timelineTicks.forEach((label,index)=>label.style.visibility=timeline.ticks[index].x<edge?'hidden':'');}}
+  if(timeline?.ticks.length){const tick=timeline.ticks.findLast(t=>t.x<=el.scrollLeft)||timeline.ticks[0];$('#time-position').setAttribute('aria-valuetext',`Approximately ${tick.label}`);const current=$('#visible-year');if(current){current.textContent=tick.label;current.hidden=tick.x>=el.scrollLeft-4||tick.x+tick.width-el.scrollLeft<tick.width/2;const edge=el.scrollLeft+(current.hidden?0:current.offsetWidth+6);timelineTicks.forEach((label,index)=>label.style.visibility=timeline.ticks[index].x<edge-1?'hidden':'');}}
   updateVisibleRows();updateRangeGuide();
 }
 function updateRangeGuide(){
