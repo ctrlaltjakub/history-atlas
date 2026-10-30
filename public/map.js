@@ -1,6 +1,6 @@
 import './vendor/d3.v7.9.0.min.js';
 import './vendor/topojson-client.v3.1.0.min.js';
-import {clusterPoints,locationGroupLabel,groupZoom} from './map-core.mjs';
+import {clusterPoints,locationGroupLabel,groupZoom,mapLayerTransform,placeCityLabels} from './map-core.mjs';
 import {chronological} from './core.mjs';
 
 const d3=globalThis.d3,topojson=globalThis.topojson;
@@ -17,13 +17,15 @@ export class EpisodeMap {
   constructor({onItem,onEpisode,thumb}) {
     this.onItem=onItem;this.onEpisode=onEpisode;this.thumb=thumb;this.focusedEpisode=null;
     this.episodes=[];this.points=[];this.worldwide=[];this.selected=[];this.page=0;this.dataKey=null;
-    this.surface=$('#map-surface');this.svg=d3.select('.map-drawing');
-    this.world=this.svg.select('.map-world');this.labels=this.svg.select('.map-country-labels');
+    this.surface=$('#map-surface');this.svg=d3.select('.map-drawing');this.geography=d3.select('.map-geography');
+    this.world=this.geography.select('.map-world');this.labels=this.svg.select('.map-country-labels');
+    this.cityLabels=this.svg.select('.map-city-labels');this.cityData=[];this.cityPoints=[];
     this.pins=d3.select('.map-pins');this.transform=d3.zoomIdentity;
-    this.width=0;this.height=0;this.ready=false;
+    this.width=0;this.height=0;this.ready=false;this.frame=null;this.geographyTransform=null;this.commitGeography=true;
     this.zoom=d3.zoom().scaleExtent([1,MAX_ZOOM]).touchable(()=>true)
       .filter(event=>!event.target.closest('button')&&!event.button&&(event.type!=='wheel'||event.ctrlKey||event.metaKey))
-      .on('zoom',event=>{this.transform=event.transform;this.draw();});
+      .on('zoom',event=>{this.transform=event.transform;this.requestDraw();})
+      .on('end',()=>this.requestDraw(true));
     this.selection=d3.select(this.surface).call(this.zoom);
     $('#map-zoom-in').addEventListener('click',()=>this.selection.call(this.zoom.scaleBy,2));
     $('#map-zoom-out').addEventListener('click',()=>this.selection.call(this.zoom.scaleBy,.5));
@@ -46,7 +48,19 @@ export class EpisodeMap {
     this.observer=new ResizeObserver(()=>this.resize());
     this.observer.observe(this.surface);
     this.load();
+    this.loadCities();
   }
+
+  async loadCities(){
+    try{
+      const response=await fetch('/data/map-cities.json');
+      if(!response.ok)throw new Error('City labels HTTP '+response.status);
+      this.cityData=await response.json();
+      if(this.ready){this.projectCities();this.requestDraw();}
+    }catch(error){console.warn('Optional city labels could not be loaded:',error);}
+  }
+
+  projectCities(){this.cityPoints=this.cityData.map(city=>{const [x,y]=this.projection(city.coordinates);return {...city,x,y};});this.labelCamera=null;}
 
   async load() {
     $('#map-message').hidden=false;$('#map-message').textContent='Loading map…';
@@ -95,6 +109,13 @@ export class EpisodeMap {
     const center=this.projection?.invert(this.transform.invert([this.width/2,this.height/2]));
     this.width=width;this.height=height;
     this.svg.attr('viewBox','0 0 '+width+' '+height);
+    // A bounded margin lets the compositor move existing geography during a drag.
+    this.geographyMargin=Math.ceil(Math.max(width,height)/4);
+    const margin=this.geographyMargin;
+    this.geography.attr('viewBox',`${-margin} ${-margin} ${width+2*margin} ${height+2*margin}`)
+      .style('left',-margin+'px').style('top',-margin+'px')
+      .style('width',width+2*margin+'px').style('height',height+2*margin+'px');
+    this.geographyTransform=null;
     this.projection=d3.geoEqualEarth().fitExtent([[18,20],[width-18,height-20]],{type:'Sphere'});
     const path=d3.geoPath(this.projection);
     this.world.selectAll('path').attr('d',path);
@@ -104,6 +125,7 @@ export class EpisodeMap {
     })).filter(country=>country.point.every(Number.isFinite));
     this.zoom.extent([[0,0],[width,height]]).translateExtent([[-width*.12,-height*.12],[width*1.12,height*1.12]]);
     this.projectPoints();
+    this.projectCities();
     let transform=d3.zoomIdentity;
     if(center&&this.transform.k>1) {
       const projected=this.projection(center);
@@ -113,6 +135,7 @@ export class EpisodeMap {
   }
 
   projectPoints() {
+    this.labelCamera=null;
     this.clustersByLevel=new Map();
     this.points=this.episodes.filter(e=>e.location?.coordinates&&!e.members.some(m=>m.id===this.focusedEpisode?.id)).map(episode=>{
       const [x,y]=this.projection(episode.location.coordinates);
@@ -126,26 +149,60 @@ export class EpisodeMap {
     if(!this.ready)return;this.projectPoints();this.closeList();
     const [x,y]=this.projection(episode.location.coordinates);
     this.selection.call(this.zoom.transform,d3.zoomIdentity.translate(this.width/2,this.height/2).scale(16).translate(-x,-y));
-    this.pins.select('[data-focused]').node()?.focus({preventScroll:true});
+    this.focusOnDraw=true;
   }
-  clearFocus(){this.focusedEpisode=null;$('#map-focus').hidden=true;if(this.ready){this.projectPoints();this.draw();}}
+  clearFocus(){this.focusedEpisode=null;this.focusOnDraw=false;$('#map-focus').hidden=true;if(this.ready){this.projectPoints();this.requestDraw();}}
+
+  requestDraw(commitGeography=false) {
+    this.commitGeography ||= commitGeography;
+    if(this.frame!==null)return;
+    this.frame=requestAnimationFrame(()=>{this.frame=null;this.draw();});
+  }
+
+  drawGeography(t) {
+    const camera=mapLayerTransform(t,this.geographyTransform,this.geographyMargin,this.commitGeography);
+    if(camera.refresh){
+      // Refresh vector detail at rest or before the cached margin runs out.
+      this.world.attr('transform',t.toString());
+      this.geography.style('transform','translate3d(0,0,0)');
+      this.geographyTransform=t;this.commitGeography=false;
+    }else this.geography.style('transform',`translate3d(${camera.x}px,${camera.y}px,0) scale(${camera.scale})`);
+  }
+
+  drawLabels(t,clusters) {
+    const previous=this.labelCamera,margin=64;
+    const dx=previous?t.x-previous.x:0,dy=previous?t.y-previous.y:0;
+    if(previous&&t.k===previous.k&&Math.abs(dx)<margin/2&&Math.abs(dy)<margin/2){
+      this.svg.style('transform',`translate3d(${dx}px,${dy}px,0)`);return;
+    }
+    this.svg.style('transform','translate3d(0,0,0)');this.labelCamera=t;
+    const labels=t.k<2?[]:this.countryLabels.filter(c=>{
+      const [x,y]=t.apply(c.point);
+      return c.area*t.k*t.k>900&&x>-margin&&x<this.width+margin&&y>-margin&&y<this.height+margin;
+    });
+    this.labels.selectAll('text').data(labels,c=>c.name).join(enter=>enter.append('text').text(c=>c.name))
+      .attr('transform',c=>`translate(${t.applyX(c.point[0])},${t.applyY(c.point[1])})`);
+    const markers=this.focusPoint?[...clusters,this.focusPoint]:clusters;
+    const obstacles=markers.map(c=>{const [x,y]=t.apply([c.x,c.y]);return [x-25+margin,y-25+margin,x+25+margin,y+25+margin];});
+    for(const c of labels){const [x,y]=t.apply(c.point),w=c.name.length*3;obstacles.push([x-w+margin,y-10+margin,x+w+margin,y+5+margin]);}
+    obstacles.push([this.width-65+margin,margin,this.width+margin,165+margin]);
+    const camera={k:t.k,x:t.x+margin,y:t.y+margin};
+    const cities=placeCityLabels(this.cityPoints,camera,this.width+2*margin,this.height+2*margin,obstacles);
+    this.cityLabels.selectAll('g').data(cities,c=>c.id).join(enter=>{
+      const city=enter.append('g');city.append('circle').attr('r',1.7);city.append('text').text(c=>c.name);return city;
+    }).attr('transform',c=>`translate(${c.x-margin},${c.y-margin})`).select('text').attr('x',c=>c.labelX).attr('y',c=>c.labelY);
+  }
 
   draw() {
     if(!this.ready)return;
     const t=this.transform;
-    this.world.attr('transform',t.toString());
+    this.drawGeography(t);
     $('#map-zoom-level').textContent=Number(t.k.toFixed(1))+'×';
     $('#map-zoom-in').disabled=t.k>=MAX_ZOOM-.01;
     $('#map-zoom-out').disabled=t.k<=1.01;
     const message=$('#map-message');
     message.hidden=Boolean(this.points.length||this.focusPoint);
     if(!message.hidden)message.textContent=this.episodes.length?'These series and episodes have no single location. Select Worldwide to browse them.':'No series or episodes match the current filters.';
-    const labels=t.k<2?[]:this.countryLabels.filter(c=>{
-      const [x,y]=t.apply(c.point);
-      return c.area*t.k*t.k>900&&x>20&&x<this.width-20&&y>20&&y<this.height-20;
-    });
-    this.labels.selectAll('text').data(labels,c=>c.name).join('text')
-      .attr('x',c=>t.applyX(c.point[0])).attr('y',c=>t.applyY(c.point[1])).text(c=>c.name);
     const level=Math.floor(Math.log2(t.k));
     if(!this.clustersByLevel.has(level))this.clustersByLevel.set(level,clusterPoints(this.points,2**level,this.width<600?44:40));
     const clusters=this.clustersByLevel.get(level).filter(c=>{
@@ -153,21 +210,18 @@ export class EpisodeMap {
       return x>-24&&x<this.width+24&&y>-24&&y<this.height+24;
     });
     if(this.focusPoint){const p=this.focusPoint;clusters.push({id:p.id,items:[p],x:p.x,y:p.y,bounds:[[p.x,p.y],[p.x,p.y]]});}
+    this.drawLabels(t,this.clustersByLevel.get(level));
     const self=this;
     this.pins.selectAll('button').data(clusters,c=>c.id).join(
       enter=>enter.append('button').attr('type','button')
         .on('click',(event,c)=>{this.hideTooltip();this.selectCluster(c,event.currentTarget);})
         .on('mouseenter',(event,c)=>this.showTooltip(c))
         .on('focus',(event,c)=>this.showTooltip(c))
-        .on('mouseleave',()=>this.hideTooltip()).on('blur',()=>this.hideTooltip()),
-      update=>update,
-      exit=>exit.remove()
-    )
+        .on('mouseleave',()=>this.hideTooltip()).on('blur',()=>this.hideTooltip())
       .attr('class',c=>'map-pin '+(c.items.length===1?'map-pin-single'+(c.items[0].episode.type==='series'?' map-pin-series':'')+(c.items[0].targetEpisode?' map-pin-focused':''):'map-cluster'))
       .attr('data-focused',c=>c.items[0].targetEpisode?'true':null)
       .style('--series-color',c=>c.items.length===1?c.items[0].episode.color:'var(--wine)')
       .attr('aria-label',c=>c.items.length===1?'Open '+c.items[0].episode.title+(c.items[0].episode.type==='series'?', series of '+c.items[0].episode.members.length+' episodes':'')+' — '+locationGroupLabel(c.items):c.items.length+' series and singles · '+locationGroupLabel(c.items)+' · zoom or browse')
-      .style('left',c=>t.applyX(c.x)+'px').style('top',c=>t.applyY(c.y)+'px')
       .each(function(c){
         const button=this;
         if(button.dataset.contents===c.id)return;
@@ -176,7 +230,11 @@ export class EpisodeMap {
           const img=node('img');img.src=self.thumb(c.items[0].episode.image,90);img.alt='';img.width=32;img.height=32;img.loading='lazy';
           button.append(img);if(c.items[0].episode.type==='series')button.append(node('span','map-series-count',c.items[0].episode.members.length));
         } else button.textContent=c.items.length;
-      });
+      }),
+      update=>update,
+      exit=>exit.remove()
+    ).style('transform',c=>`translate3d(${t.applyX(c.x)}px,${t.applyY(c.y)}px,0) translate(-50%,-50%)`);
+    if(this.focusOnDraw){this.focusOnDraw=false;this.pins.select('[data-focused]').node()?.focus({preventScroll:true});}
     this.hideTooltip();
   }
 
@@ -187,7 +245,7 @@ export class EpisodeMap {
     tip.style.top=(y>90?y-34:y+30)+'px';
     tip.classList.toggle('above',y>90);tip.hidden=false;
   }
-  hideTooltip(){$('#map-tooltip').hidden=true;}
+  hideTooltip(){const tip=$('#map-tooltip');if(!tip.hidden)tip.hidden=true;}
 
   selectCluster(cluster,button) {
     if(cluster.items.length===1){const point=cluster.items[0];if(point.targetEpisode)this.onEpisode(point.targetEpisode);else this.onItem(point.episode.id);return;}

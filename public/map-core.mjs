@@ -57,3 +57,31 @@ export function groupZoom(cluster,width,height,current,max=256) {
   const target=Math.min(max,2**Math.ceil(Math.log2(fit)));
   return {scale:target,canSeparate:spread>0.01&&current<max,coincident:spread<=0.01};
 }
+
+// Keep the cached SVG's padded viewport aligned with the current map camera.
+export function mapLayerTransform(current,previous,margin,commit=false) {
+  const scale=previous?current.k/previous.k:1;
+  const dx=previous?current.x-scale*previous.x:0,dy=previous?current.y-scale*previous.y:0;
+  return {refresh:commit||!previous||Math.abs(dx)>margin*.6||Math.abs(dy)>margin*.6||scale<.8||scale>1.3,
+    scale,x:dx+(1-scale)*margin,y:dy+(1-scale)*margin};
+}
+
+export function placeCityLabels(cities,transform,width,height,obstacles=[]) {
+  if(transform.k<4)return [];
+  const limit=width<600?12:24,rank=Math.min(8,Math.floor(Math.log2(transform.k))+1);
+  const boxes=[...obstacles],labels=[];
+  const intersects=(a,b)=>a[0]<b[2]&&a[2]>b[0]&&a[1]<b[3]&&a[3]>b[1];
+  for(const city of cities){
+    if(city.rank>rank)continue;
+    const x=city.x*transform.k+transform.x,y=city.y*transform.k+transform.y;
+    if(x<8||x>width-8||y<8||y>height-8)continue;
+    const textWidth=city.name.length*5.5+4;
+    for(const [left,top] of [[x+7,y-7],[x-textWidth-7,y-7],[x-textWidth/2,y-20],[x-textWidth/2,y+8],[x+29,y-7],[x-textWidth-29,y-7],[x-textWidth/2,y-41],[x-textWidth/2,y+29]]){
+      const box=[left-2,top-2,left+textWidth+2,top+14];
+      if(box[0]<4||box[2]>width-4||box[1]<4||box[3]>height-4||boxes.some(b=>intersects(box,b)))continue;
+      labels.push({...city,x,y,labelX:left-x,labelY:top+10-y});boxes.push(box);break;
+    }
+    if(labels.length>=limit)break;
+  }
+  return labels;
+}

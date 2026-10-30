@@ -1,0 +1,3509 @@
+{
+  "reviewedAt": "2026-10-30",
+  "method": "Explicit editorial choices for every release series and standalone episode in the public-feed snapshot. Read the publisher summaries and existing reviewed coverage, then choose the start of the central conflict or phase, a defining moment of public influence or a focal event/work. Early-life arcs stay in their own period. Broad continuous subjects may use an explicitly explained representative milestone; no arithmetic midpoint is used. Mythic, unrelated cross-era and broad place collections without a defensible single focal year remain off the timeline. The year is a browsing position, not the full duration.",
+  "evidenceFiles": [
+    "data/base-episodes.json",
+    "data/series.json",
+    "data/dates-early-research.json",
+    "data/dates-late-sources.json",
+    "data/timeline-review.json"
+  ],
+  "items": {
+    "series:the-suez-crisis": {
+      "title": "The Suez Crisis",
+      "year": 1956,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The nationalisation of the Suez Canal and ensuing invasion anchor the crisis; Nasser's earlier rise is background.",
+      "sources": [
+        "https://www.nam.ac.uk/explore/suez-crisis",
+        "https://archive.therestishistory.com/catalog/series/The%20Suez%20Crisis"
+      ]
+    },
+    "series:king-arthur": {
+      "title": "King Arthur",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Arthurian legends and their changing literary traditions; no securely established historical Arthur supplies a single event date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/King%20Arthur"
+      ]
+    },
+    "series:the-terror": {
+      "title": "The Terror",
+      "year": 1793,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Terror phase of the French Revolution anchors this arc, rather than the Revolution's earlier outbreak.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20French%20Revolution%20-%20Season%204%20%28September%202026%29"
+      ]
+    },
+    "series:queen-victorias-revenge": {
+      "title": "Queen Victoria’s Revenge",
+      "year": 1867,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The dispatch of the Abyssinian expedition anchors the campaign culminating at Magdala in 1868.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Queen%20Victoria%E2%80%99s%20Revenge"
+      ]
+    },
+    "series:roman-civil-war": {
+      "title": "Roman Civil War",
+      "year": -88,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Sulla's first march on Rome begins the civil-war struggle with Marius; their earlier careers are background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Roman%20Civil%20War"
+      ]
+    },
+    "series:the-troubles": {
+      "title": "The Troubles",
+      "year": 1969,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The escalation of violence and deployment of British troops anchor the opening of the Troubles phase covered.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Troubles"
+      ]
+    },
+    "series:elizabeth-i-vs-the-catholics": {
+      "title": "Elizabeth I vs The Catholics",
+      "year": 1569,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Rising of the North opens this arc about Elizabeth's struggle with Catholic opposition.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Elizabeth%20I%20vs%20The%20Catholics"
+      ]
+    },
+    "series:the-habsburgs": {
+      "title": "The Habsburgs",
+      "year": 1889,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The deaths at Mayerling anchor the scandal, rather than Rudolf's birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Habsburgs"
+      ]
+    },
+    "series:the-odyssey": {
+      "title": "The Odyssey",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A retelling and discussion of the Odyssey; the hero's adventures are not assigned historical dates.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Odyssey"
+      ]
+    },
+    "series:founding-fathers": {
+      "title": "Founding Fathers",
+      "year": 1776,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Declaration of Independence anchors the founders' shared political achievement, rather than their combined lifespans.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Founding%20Fathers"
+      ]
+    },
+    "series:national-anthems-2026-world-cup": {
+      "title": "National Anthems: 2026 World Cup",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Separate national anthem histories, from the Dutch Revolt to post-apartheid South Africa. An earliest-to-latest bar would imply a shared narrative that this collection does not have.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/2026%20World%20Cup"
+      ]
+    },
+    "01e704f8-69bd-11f1-b262-8fa334988761": {
+      "title": "The Fascist World Cup: Mussolini's Football Dictatorship | History of the World Cup",
+      "year": 1934,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The World Cup hosted by Mussolini's Italy is the specific tournament discussed.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/967"
+      ]
+    },
+    "series:the-first-world-war-1915": {
+      "title": "The First World War: 1915",
+      "year": 1915,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "This is the 1915 campaign arc of the First World War; earlier and later context do not move it out of 1915.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/First%20World%20War%20%28May%202026%29"
+      ]
+    },
+    "9c9c810e-5373-11f1-a7c9-8729400f0b02": {
+      "title": "Empress Matilda: Civil War and the Fight for the Throne",
+      "year": 1135,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Stephen's accession begins the succession crisis that becomes the Anarchy and Matilda's struggle for the throne.",
+      "sources": [
+        "https://feeds.megaphone.fm/GLT4787413333"
+      ]
+    },
+    "0b42322c-4fc1-11f1-889f-b77581958797": {
+      "title": "Tom Holland Meets Paul McCartney",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. An interview with Paul McCartney mixing memory, music and contemporary work.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/948"
+      ]
+    },
+    "series:greece-vs-persia": {
+      "title": "Greece vs Persia",
+      "year": -490,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Persian expedition culminating at Marathon anchors this campaign arc; the Achaemenid Empire's rise is background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Greece%20vs%20Persia"
+      ]
+    },
+    "daaeaa76-4874-11f1-88ce-331a65b81038": {
+      "title": "The Mystery of the Mona Lisa",
+      "year": 1503,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The beginning of Leonardo's work on the Mona Lisa anchors the painting, rather than its later reception.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/943"
+      ]
+    },
+    "bd678cc4-456a-11f1-a054-a3c32e27c734": {
+      "title": "Wine and the Birth of Civilisation",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Wine across ancient and modern societies rather than one bounded period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/941"
+      ]
+    },
+    "series:britain-in-the-70s": {
+      "title": "Britain in the 70s",
+      "year": 1974,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The political and economic crises of 1974 open this bounded Britain-in-the-1970s narrative.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Britain%20in%20the%2070s"
+      ]
+    },
+    "series:dawn-of-the-samurai": {
+      "title": "Dawn of the Samurai",
+      "year": 1180,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the Genpei War anchors the samurai narrative; earlier Heian history supplies its background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Dawn%20of%20the%20Samurai"
+      ]
+    },
+    "series:the-ku-klux-klan": {
+      "title": "The Ku Klux Klan",
+      "year": 1865,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The formation of the first Ku Klux Klan anchors the movement's history; the later revived Klan remains in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Ku%20Klux%20Klan"
+      ]
+    },
+    "series:londons-golden-age": {
+      "title": "London’s Golden Age",
+      "year": 1755,
+      "approximate": false,
+      "rule": "work",
+      "reason": "Johnson's Dictionary anchors his literary influence in this London arc; the later Scottish journey and Boswell biography remain in its range.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/London%27s%20Golden%20Age"
+      ]
+    },
+    "series:the-fall-of-the-incas": {
+      "title": "The Fall of the Incas",
+      "year": 1532,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Pizarro's seizure of Atahualpa at Cajamarca marks the decisive opening of the Spanish conquest.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Fall%20of%20the%20Incas"
+      ]
+    },
+    "series:rome-s-greatest-enemy": {
+      "title": "Rome's Greatest Enemy",
+      "year": -216,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "This continuation opens after Cannae in 216 BCE; Hannibal's earlier campaign belongs to the preceding series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Rome%27s%20Greatest%20Enemy"
+      ]
+    },
+    "series:revolution-in-iran": {
+      "title": "Revolution in Iran",
+      "year": 1979,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Iranian Revolution and fall of the Shah anchor the series, rather than the 1953 background coup.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Iranian%20Revolution"
+      ]
+    },
+    "series:joan-of-arc": {
+      "title": "Joan of Arc",
+      "year": 1429,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Joan's relief of Orleans and the coronation campaign mark her decisive public influence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Joan%20of%20Arc"
+      ]
+    },
+    "series:tchaikovsky-wagner-live-at-the-royal-albert-hall": {
+      "title": "Tchaikovsky & Wagner: Live at the Royal Albert Hall",
+      "year": 1876,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The 1870s represent the composers' mature stage works, including Wagner's first Bayreuth Ring cycle in 1876.",
+      "sources": [
+        "https://feeds.megaphone.fm/GLT4787413333"
+      ]
+    },
+    "a3095250-dc14-11f0-bd82-cf076b9901e5": {
+      "title": "WWI: The Christmas Truce",
+      "year": 1914,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Christmas Truce of December 1914 is the central event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/882"
+      ]
+    },
+    "series:jack-the-ripper-the-whitechapel-murders": {
+      "title": "Jack the Ripper - The Whitechapel Murders",
+      "year": 1888,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Whitechapel murders are the central events of the series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Jack%20the%20Ripper%20-%20The%20Whitechapel%20Murders"
+      ]
+    },
+    "series:the-beatles-with-conan-obrien": {
+      "title": "The Beatles, with Conan O’Brien",
+      "year": 1964,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "The Beatles' international breakthrough anchors this career overview, rather than the beginning of the band's formation.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Beatles%20-%20With%20Conan%20O%27Brien"
+      ]
+    },
+    "series:the-nazis-at-war": {
+      "title": "The Nazis at War",
+      "year": 1939,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Germany's invasion of Poland and the outbreak of war in Europe begin this wartime arc.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Nazis%20at%20War%20%28S4%29"
+      ]
+    },
+    "series:elizabeth-i": {
+      "title": "Elizabeth I",
+      "year": 1558,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Elizabeth's accession anchors this early-life and early-reign arc, rather than her birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Elizabeth%20I%20%28November%202025%29"
+      ]
+    },
+    "series:walt-disney": {
+      "title": "Walt Disney",
+      "year": 1928,
+      "approximate": false,
+      "rule": "work",
+      "reason": "Mickey Mouse's screen breakthrough anchors Disney's influence; the later interview about his legacy remains separate from this dated coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Walt%20Disney%20%2F%20Disney%20%28November%202025%29"
+      ]
+    },
+    "series:nelson-glory-at-trafalgar": {
+      "title": "Nelson: Glory at Trafalgar",
+      "year": 1805,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Battle of Trafalgar and Nelson's death anchor this continuation of his story, rather than his childhood.",
+      "sources": [
+        "https://www.rmg.co.uk/stories/maritime-history/battle-trafalgar-background",
+        "https://archive.therestishistory.com/catalog/series/Nelson%20%28S2%29"
+      ]
+    },
+    "c6f5558e-a063-11f0-964a-c78e71a735dc": {
+      "title": "Enoch Powell: Rivers of Blood",
+      "year": 1968,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Powell's Rivers of Blood speech is the central event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/857"
+      ]
+    },
+    "series:greek-myths": {
+      "title": "Greek Myths",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Greek myths and their literary, religious and cultural interpretations; no dates are assigned to the mythical events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Greek%20Myths"
+      ]
+    },
+    "04252de4-93e4-11f0-bd6e-d388f3afe963": {
+      "title": "Scandal in the White House",
+      "year": 1884,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Grover Cleveland's election campaign and the public scandal anchor this White House story.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/2"
+      ]
+    },
+    "3f871d4e-9005-11f0-a467-3b6de25634b5": {
+      "title": "Chatham High Street",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A walk through Chatham's many historical eras rather than a single period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/4"
+      ]
+    },
+    "series:the-first-world-war-1914": {
+      "title": "The First World War: 1914",
+      "year": 1914,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak and opening campaigns of the First World War anchor the 1914 arc.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20First%20World%20War"
+      ]
+    },
+    "9a8c87cc-7dbf-11f0-abf4-a34b63e044f3": {
+      "title": "The Fight of the Century",
+      "year": 1860,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Sayers-Heenan prizefight is the central event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/16"
+      ]
+    },
+    "58faaca2-7915-11f0-b505-0394435ea024": {
+      "title": "Mad Victorian Sport",
+      "year": 1880,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1880 represents the Victorian sporting culture surveyed; this is not one competition with a single date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/18"
+      ]
+    },
+    "series:assassination-of-abraham-lincoln": {
+      "title": "Assassination of Abraham Lincoln",
+      "year": 1865,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Lincoln's assassination is the central event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Assassination%20of%20Abraham%20Lincoln"
+      ]
+    },
+    "series:mary-queen-of-scots": {
+      "title": "Mary, Queen of Scots",
+      "year": 1561,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Mary's return to Scotland begins her personal rule and the central political struggle of this series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Mary%2C%20Queen%20of%20Scots"
+      ]
+    },
+    "1abf3894-6255-11f0-8ec4-034fb3e2137f": {
+      "title": "The Lion, the Priest and the Parlourmaids: A 1930s Sex Scandal",
+      "year": 1932,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The accusation and proceedings that became the Stiffkey scandal begin this narrative.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/31"
+      ]
+    },
+    "2623ac04-5e60-11f0-9008-3f34c90baa27": {
+      "title": "The Body in the Woods: A Medieval Murder Mystery",
+      "year": 1144,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "William of Norwich's death and the subsequent false accusation are the subject of this episode.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/33"
+      ]
+    },
+    "series:the-irish-civil-war": {
+      "title": "The Irish Civil War",
+      "year": 1922,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the Irish Civil War anchors this series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Irish%20Civil%20War%20%28S3%29"
+      ]
+    },
+    "series:the-irish-war-of-independence": {
+      "title": "The Irish War of Independence",
+      "year": 1919,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The opening of the Irish War of Independence anchors the series; the 1916 Rising is background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Irish%20independence%20struggle%20%281916%E2%80%931921%20S2%29"
+      ]
+    },
+    "series:the-medici": {
+      "title": "The Medici",
+      "year": 1434,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Cosimo de' Medici's return from exile marks the family's consolidation of power in Florence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Medici"
+      ]
+    },
+    "series:hannibal": {
+      "title": "Hannibal",
+      "year": -218,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the Second Punic War and Hannibal's invasion of Italy anchor his military rise.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Hannibal"
+      ]
+    },
+    "series:the-great-northern-war": {
+      "title": "The Great Northern War",
+      "year": 1700,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the Great Northern War anchors the series; later biography and aftermath do not change that year.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Great%20Northern%20War"
+      ]
+    },
+    "series:peter-the-great": {
+      "title": "Peter the Great",
+      "year": 1698,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Peter's return from the Grand Embassy and suppression of the streltsy revolt culminate this early-rule arc.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Peter%20the%20Great"
+      ]
+    },
+    "series:the-golden-age-of-japan": {
+      "title": "The Golden Age of Japan",
+      "year": 1000,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1000 CE represents the Heian court culture discussed; it is an approximate period marker.",
+      "sources": [
+        "https://feeds.megaphone.fm/GLT4787413333"
+      ]
+    },
+    "series:rolling-stones": {
+      "title": "Rolling Stones",
+      "year": 1969,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Brian Jones and Altamont crisis of 1969 anchors this Rolling Stones arc.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Rolling%20Stones"
+      ]
+    },
+    "series:1066": {
+      "title": "1066",
+      "year": 1066,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Norman invasion and Battle of Hastings anchor this conquest series; later consolidation remains in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/1066"
+      ]
+    },
+    "series:the-last-viking": {
+      "title": "The Last Viking",
+      "year": 1066,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Harald Hardrada's invasion of England and death at Stamford Bridge are the culmination of this narrative.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Last%20Viking%20%28Hardrada%29"
+      ]
+    },
+    "series:the-road-to-1066": {
+      "title": "The Road to 1066",
+      "year": 1066,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The English succession crisis and invasions of 1066 anchor this road-to-conquest series, rather than its earlier background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Road%20to%201066"
+      ]
+    },
+    "series:the-french-revolution-the-execution-of-the-king": {
+      "title": "The French Revolution: The Execution of the King",
+      "year": 1792,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The September Massacres open this specific revolutionary phase, which culminates in the king's execution in 1793.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20French%20Revolution%20-%20Season%201%20%28March%202024%29"
+      ]
+    },
+    "5ca82906-ef8b-11ef-adab-372aafe7fe3f": {
+      "title": "Death in the Amazon: Aguirre, the Wrath of God",
+      "year": 1560,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The beginning of the Amazon expedition anchors Aguirre's story.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/91"
+      ]
+    },
+    "f7ef957e-ee06-11ef-82f6-536b545ac8de": {
+      "title": "Elizabeth I’s Sorcerer: Angels and Demons in Renaissance Europe",
+      "year": 1582,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "John Dee's collaboration with Edward Kelley and their angelic consultations anchor the episode's central subject.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/93"
+      ]
+    },
+    "series:horror-in-the-congo": {
+      "title": "Horror in the Congo",
+      "year": 1885,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The establishment of Leopold II's Congo Free State anchors the colonial regime discussed.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Horror%20in%20the%20Congo"
+      ]
+    },
+    "series:emperors-of-rome": {
+      "title": "Emperors of Rome",
+      "year": -27,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The establishment of Augustus's principate anchors this survey of the early Roman emperors.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Emperors%20of%20Rome"
+      ]
+    },
+    "606c03f4-d8f8-11ef-82e3-a3fe34df31ae": {
+      "title": "Wojtek: The Bear Who Beat the Nazis",
+      "year": 1944,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Wojtek's service with Polish forces in the Italian campaign anchors the wartime story.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/107"
+      ]
+    },
+    "series:hitler-s-war-on-poland": {
+      "title": "Hitler's War on Poland",
+      "year": 1939,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The invasion of Poland begins this campaign; 1938 diplomacy supplies background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Hitler%27s%20War%20on%20Poland"
+      ]
+    },
+    "series:the-nazis-road-to-war": {
+      "title": "The Nazis’ Road to War",
+      "year": 1938,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Anschluss and Munich crisis anchor this specific road-to-war arc.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Nazis%27%20Road%20to%20War%20%28S3%29"
+      ]
+    },
+    "series:mozart-beethoven-live-at-the-royal-albert-hall": {
+      "title": "Mozart & Beethoven: Live at the Royal Albert Hall",
+      "year": 1800,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1800 represents the transition between Mozart's late work and Beethoven's emergence, not a shared birth or death date.",
+      "sources": [
+        "https://feeds.megaphone.fm/GLT4787413333"
+      ]
+    },
+    "series:charlemagne": {
+      "title": "Charlemagne",
+      "year": 800,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Charlemagne's imperial coronation marks his greatest political influence, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Charlemagne%20trilogy"
+      ]
+    },
+    "series:warlords-of-the-west": {
+      "title": "Warlords of the West",
+      "year": 481,
+      "approximate": true,
+      "rule": "event-start",
+      "reason": "Clovis's accession provides a conventional starting point for the Frankish rulers covered before Charlemagne.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Warlords%20of%20the%20West%20%28The%20Franks%29"
+      ]
+    },
+    "def484dc-b097-11ef-bb19-134ff0ea1942": {
+      "title": "The World's First City",
+      "year": -3500,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 3500 BCE represents Uruk's emergence as a major city; ancient urbanisation cannot be reduced to an exact founding year.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/127"
+      ]
+    },
+    "series:nelson-hero-of-the-seas": {
+      "title": "Nelson: Hero of the Seas",
+      "year": 1798,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Battle of the Nile anchors Nelson's decisive influence within this early-career arc.",
+      "sources": [
+        "https://www.rmg.co.uk/collections/research-guides/research-guide-n1-horatio-nelson",
+        "https://archive.therestishistory.com/catalog/series/Nelson%20%28S1%29"
+      ]
+    },
+    "series:america-in-1968": {
+      "title": "America in 1968",
+      "year": 1968,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The political and social events of 1968 are the subject.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/America%20in%201968"
+      ]
+    },
+    "series:the-french-revolution-bloodbath-in-paris": {
+      "title": "The French Revolution: Bloodbath in Paris",
+      "year": 1791,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Champ de Mars massacre opens this specific arc, before the war and palace assault of 1792.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20French%20Revolution%20-%20Season%203%20%28October%202024%29"
+      ]
+    },
+    "series:the-roman-conquest-of-britain": {
+      "title": "The Roman Conquest of Britain",
+      "year": 43,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Claudius's invasion begins the Roman conquest and occupation, rather than Caesar's earlier expeditions.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Roman%20Conquest%20of%20Britain"
+      ]
+    },
+    "series:evita": {
+      "title": "Evita",
+      "year": 1946,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Eva Peron's emergence as Argentina's first lady anchors her political influence; the later fate of her body is aftermath.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Eva%20Per%C3%B3n%20%2F%20Evita"
+      ]
+    },
+    "a9f828f8-7062-11ef-ab8b-4bbc15fce9ad": {
+      "title": "Lee Miller: Exposing the Horrors of World War Two",
+      "year": 1945,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Lee Miller's documentation of liberated Nazi concentration camps anchors the episode's central subject.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/165"
+      ]
+    },
+    "series:beards": {
+      "title": "Beards",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The changing meaning of beards across many societies and eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Beards"
+      ]
+    },
+    "series:hundred-years-war-agincourt": {
+      "title": "Hundred Years’ War: Agincourt",
+      "year": 1415,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Henry V's invasion of France and the Battle of Agincourt anchor this specific Hundred Years' War campaign.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Hundred%20Years%27%20War%20%28S2%29"
+      ]
+    },
+    "series:henry-iv": {
+      "title": "Henry IV",
+      "year": 1399,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Henry IV's seizure of the English throne begins the reign covered by this series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Henry%20IV"
+      ]
+    },
+    "dd5a39e6-4db4-11ef-b5f2-c75db49302d9": {
+      "title": "The Food that Changed the World",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Italian food across many historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/178"
+      ]
+    },
+    "d265a080-4db3-11ef-bd7e-9720ba5b6aaa": {
+      "title": "The Mysterious Case of the Ape Man",
+      "year": 1912,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The announcement of Piltdown Man anchors the hoax, rather than the midpoint before its exposure in 1953.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/180"
+      ]
+    },
+    "series:the-french-revolution-the-storming-of-the-bastille": {
+      "title": "The French Revolution: The Storming of the Bastille",
+      "year": 1789,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the French Revolution and storming of the Bastille anchor the series; Marie Antoinette's childhood is background.",
+      "sources": [
+        "https://www.assemblee-nationale.fr/dyn/histoire-et-patrimoine/revolution-francaise",
+        "https://archive.therestishistory.com/catalog/series/The%20French%20Revolution%20-%20Season%202%20%28July%202024%29"
+      ]
+    },
+    "series:the-road-to-the-great-war": {
+      "title": "The Road to the Great War",
+      "year": 1914,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The July Crisis and outbreak of the First World War anchor this road-to-war series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Road%20to%20the%20Great%20War"
+      ]
+    },
+    "series:the-murder-of-franz-ferdinand": {
+      "title": "The Murder of Franz Ferdinand",
+      "year": 1914,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Franz Ferdinand's assassination anchors the series, rather than his birth in 1863.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Assassination%20of%20Archduke%20Franz%20Ferdinand"
+      ]
+    },
+    "series:modern-british-elections": {
+      "title": "Modern British Elections",
+      "year": 1832,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The Great Reform Act is a reference point for this broad history of elections, not a date for every election discussed.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Modern%20British%20Elections"
+      ]
+    },
+    "c7a0360c-2963-11ef-8a52-8bbcf81e4dcd": {
+      "title": "St George: Dragon-Slayer",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Saint George's uncertain biography and later dragon legend span distinct traditions; his martyrdom is traditionally placed around 303 CE.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/209"
+      ]
+    },
+    "20e10ec8-2c32-11ef-a9d8-7fcf499edddd": {
+      "title": "Dragons",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Dragon traditions across cultures and imagined worlds.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/211"
+      ]
+    },
+    "be329cfa-240d-11ef-bc7e-7f4551732c03": {
+      "title": "The Empress of the Apocalypse",
+      "year": 983,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Theophanu's regency after Otto II's death anchors her independent exercise of imperial power.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/213"
+      ]
+    },
+    "6fa109e6-240d-11ef-8be8-0b269b20bff8": {
+      "title": "The Suit, Savile Row, and Smartly Dressed Men",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The suit and men's clothing across centuries, from medieval origins to modern fashion.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/215"
+      ]
+    },
+    "series:helen-of-troy": {
+      "title": "Helen of Troy",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Helen, Clytemnestra and the Trojan myths; the stories are not securely datable historical biographies.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Helen%20of%20Troy"
+      ]
+    },
+    "series:fall-of-the-sioux": {
+      "title": "Fall of the Sioux",
+      "year": 1877,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Crazy Horse's surrender and death begin this aftermath arc following Little Bighorn; it continues to Wounded Knee in 1890.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Fall%20of%20the%20Sioux"
+      ]
+    },
+    "series:custer-vs-crazy-horse": {
+      "title": "Custer vs. Crazy Horse",
+      "year": 1876,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Great Sioux War and Battle of the Little Bighorn anchor the Custer-Crazy Horse confrontation; their earlier lives are background.",
+      "sources": [
+        "https://www.nps.gov/people/george-armstrong-custer.htm",
+        "https://www.nps.gov/libi/learn/a-chronology-of-the-battle-of-the-little-bighorn.htm",
+        "https://archive.therestishistory.com/catalog/series/Custer%20Versus%20Crazy%20Horse"
+      ]
+    },
+    "aee20522-0254-11ef-bb7a-2bc4cbf3ca74": {
+      "title": "The Habsburgs: Secrets of a Dynasty",
+      "year": 1519,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Charles V's election as emperor represents the Habsburgs' European ascendancy; the dynasty's full range remains separate.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/234"
+      ]
+    },
+    "dbf5a7d0-fe35-11ee-b83c-cb50f4260b13": {
+      "title": "The First Emperor of China",
+      "year": -221,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Qin Shi Huang's unification of China and assumption of the imperial title mark his defining influence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/236"
+      ]
+    },
+    "series:lord-byron": {
+      "title": "Lord Byron",
+      "year": 1812,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Childe Harold's publication and Byron's sudden fame anchor his cultural influence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Lord%20Byron"
+      ]
+    },
+    "d62b9942-f681-11ee-a334-5f73bf52a242": {
+      "title": "Disco: Sex and Race in Seventies America",
+      "year": 1977,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1977 represents disco's mainstream breakthrough and the racial and sexual politics of the decade.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/243"
+      ]
+    },
+    "092a65c6-f4de-11ee-a293-d79f158d3142": {
+      "title": "The Moonwalkers, with Tom Hanks",
+      "year": 1969,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Apollo 11's first crewed Moon landing anchors the lunar programme, rather than its background and later missions.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/245"
+      ]
+    },
+    "series:luther": {
+      "title": "Luther",
+      "year": 1517,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Luther's challenge to indulgences anchors the beginning of the Reformation, rather than his birth or death.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Life%20and%20times%20of%20Martin%20Luther"
+      ]
+    },
+    "series:titanic": {
+      "title": "Titanic",
+      "year": 1912,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Titanic's maiden voyage and sinking anchor the series, rather than its design and construction period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Titanic"
+      ]
+    },
+    "7340bd92-d7e3-11ee-8ac9-1b4a20576ab2": {
+      "title": "History's Greatest Monkeys",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Monkeys in human history across many periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/261"
+      ]
+    },
+    "ebdba3ba-d7bc-11ee-a76f-33acb36bb32a": {
+      "title": "The History Of Chocolate",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Chocolate's history across ancient America, early modern Europe and industrial production.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/263"
+      ]
+    },
+    "series:carthage": {
+      "title": "Carthage",
+      "year": -264,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The First Punic War begins Carthage's central confrontation with Rome in this rise-of-Carthage arc.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Carthage"
+      ]
+    },
+    "series:britain-in-1974": {
+      "title": "Britain in 1974",
+      "year": 1974,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The two general elections and political crisis of 1974 anchor this series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Britain%20in%201974"
+      ]
+    },
+    "series:the-peasants-revolt": {
+      "title": "The Peasants' Revolt",
+      "year": 1381,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The English Peasants' Revolt anchors the series; Richard II's later fate and Chaucer supply related context.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Peasants%27%20Revolt"
+      ]
+    },
+    "37e8e1d0-bab9-11ee-8e9b-8368a68c24ca": {
+      "title": "Romans in Space: Star Wars, Dune and Beyond...",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The reception of ancient history in modern science fiction across several fictional worlds.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/281"
+      ]
+    },
+    "c50615ee-b5f8-11ee-9a54-47e05876843a": {
+      "title": "The Man in the Iron Mask",
+      "year": 1669,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The beginning of the mysterious prisoner's recorded imprisonment anchors the Man in the Iron Mask story.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/283"
+      ]
+    },
+    "series:the-nazis-in-power": {
+      "title": "The Nazis in Power",
+      "year": 1933,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Hitler's appointment as chancellor and Nazi consolidation of power begin this regime arc.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Nazis%20in%20Power%20%28S2%29"
+      ]
+    },
+    "0b2e9e88-9b6e-11ee-8faa-0bdd0306ae30": {
+      "title": "The Mystery of the Pregnant Pope",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The medieval legend of Pope Joan is not treated as an established historical papacy.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/294"
+      ]
+    },
+    "f204ec30-a29f-11ee-85c1-07c6dda834cb": {
+      "title": "Christmas: Pagan or Christian?",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Christmas traditions and claims about their pagan and Christian origins across periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/296"
+      ]
+    },
+    "b675a898-8397-11ee-a063-a75f738b108e": {
+      "title": "Windrush: The Story of Black Britain",
+      "year": 1948,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The arrival of Empire Windrush anchors this migration narrative; subsequent lives and legislation remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/297"
+      ]
+    },
+    "47c9109c-98ff-11ee-ac36-a3f3cfd8d47b": {
+      "title": "Victorian Britain's Maddest Mystery",
+      "year": 1866,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Tichborne claimant's return and claim anchor the mystery, rather than the midpoint of disappearance and trials.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/299"
+      ]
+    },
+    "2fa27fce-9384-11ee-bacc-afa2fdf9b1cc": {
+      "title": "The Savage Storm: World War II and The Battle for Italy",
+      "year": 1943,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Allied invasion of mainland Italy begins the campaign discussed.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/300"
+      ]
+    },
+    "series:jfk": {
+      "title": "JFK",
+      "year": 1961,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Kennedy's inauguration anchors his presidency and political influence, rather than his birth.",
+      "sources": [
+        "https://www.jfklibrary.org/sites/default/files/2020-12/Interpreting%20JFK%27s%20Inaugural%20Address%20LP_0.pdf",
+        "https://archive.therestishistory.com/catalog/series/John%20F.%20Kennedy%20%28JFK%29"
+      ]
+    },
+    "series:the-fall-of-the-aztecs": {
+      "title": "The Fall of the Aztecs",
+      "year": 1519,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Cortes's expedition into Mexico begins the Spanish conquest of the Aztec Empire.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Aztec%20epic"
+      ]
+    },
+    "series:young-napoleon": {
+      "title": "Young Napoleon",
+      "year": 1793,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Napoleon's rise at Toulon anchors this youth and revolutionary-career arc, rather than his later imperial peak.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Young%20Napoleon"
+      ]
+    },
+    "series:captain-cook": {
+      "title": "Captain Cook",
+      "year": 1768,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Cook's first Pacific voyage begins the explorations that define the series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Captain%20Cook"
+      ]
+    },
+    "series:baghdad": {
+      "title": "Baghdad",
+      "year": 762,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The foundation of Baghdad anchors this focused account of the Abbasid capital and its golden age.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Baghdad"
+      ]
+    },
+    "series:british-fascism": {
+      "title": "British Fascism",
+      "year": 1932,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The foundation of Mosley's British Union of Fascists anchors the organised movement, rather than earlier ideological background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/British%20Fascism"
+      ]
+    },
+    "series:the-1973-chilean-coup": {
+      "title": "The 1973 Chilean Coup",
+      "year": 1973,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Chilean coup anchors the episode; Allende's earlier government and Pinochet's later rule remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Chile%20coup%20%281973%29"
+      ]
+    },
+    "1fccf254-55a0-11ee-9c90-53311039c015": {
+      "title": "The Colosseum: Rome's Arena of Death",
+      "year": 80,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The Colosseum's inauguration anchors the arena's history, rather than the average of its construction and later use.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/344"
+      ]
+    },
+    "series:the-history-behind-harry-potter": {
+      "title": "The History Behind Harry Potter",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A collection of literary, magical and educational influences across periods. Eighteenth-century school rebellions only date one part, not the series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Public%20Schools"
+      ]
+    },
+    "300c5cdc-4cd5-11ee-9c2f-2fd7ba8cbbe1": {
+      "title": "The Architect of Modern China",
+      "year": 1978,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Deng Xiaoping's reform-and-opening programme anchors his decisive influence on modern China.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/348"
+      ]
+    },
+    "7a18d39e-48e0-11ee-a6b3-3fae2f11f140": {
+      "title": "Le Marquis de Sade: Sex and Violence",
+      "year": 1791,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The publication of Justine anchors de Sade's influence as a writer, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/350"
+      ]
+    },
+    "series:sixties-fashion": {
+      "title": "Sixties Fashion",
+      "year": 1965,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1965 represents the sixties fashion scene discussed, rather than its postwar background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Sixties%20Fashion"
+      ]
+    },
+    "4980a77c-41d6-11ee-8fb0-377b7b3a169c": {
+      "title": "The Taj Mahal: Love and Death",
+      "year": 1632,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The beginning of the Taj Mahal's construction anchors the monument; the preceding death and later completion remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/354"
+      ]
+    },
+    "2442a58a-3fa8-11ee-a70d-6febee05c4ec": {
+      "title": "The Lost Library of Alexandria",
+      "year": -280,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 280 BCE represents the early Ptolemaic Library of Alexandria; its foundation date is approximate.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/356"
+      ]
+    },
+    "153dbff0-3c58-11ee-89ae-230c87feb0f3": {
+      "title": "Fear City: New York in the 1970s",
+      "year": 1975,
+      "approximate": false,
+      "rule": "period",
+      "reason": "New York's mid-1970s fiscal and urban crisis anchors this decade survey.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/357"
+      ]
+    },
+    "0570cf92-385f-11ee-bf13-bb3fd9a67b8b": {
+      "title": "Martin Luther King's Dream",
+      "year": 1963,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "The March on Washington and King's I Have a Dream speech anchor this episode's culmination.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/359"
+      ]
+    },
+    "4c02a1b0-36d4-11ee-99be-2f0cdea5e221": {
+      "title": "Viking Sorcery",
+      "year": 900,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 900 CE represents Viking-age ritual and sorcery, rather than an exact event date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/360"
+      ]
+    },
+    "2af8f0bc-32df-11ee-a6f8-0fdc527f4731": {
+      "title": "Historical Love Island: The Sequel",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A playful comparison of historical figures from unrelated eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/362"
+      ]
+    },
+    "d549e82a-3166-11ee-8e79-f7d07365746a": {
+      "title": "The Blood-Drinking Bride of Christ",
+      "year": 1378,
+      "approximate": true,
+      "rule": "biography",
+      "reason": "Catherine of Siena's intervention around the Great Schism anchors her public religious influence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/363"
+      ]
+    },
+    "f24f7ca8-2ed4-11ee-a426-936fef7cf591": {
+      "title": "Roman Apocalypse: Pompeii 79 AD",
+      "year": 79,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Vesuvius's eruption and the destruction of Pompeii are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/365"
+      ]
+    },
+    "series:paris-1968": {
+      "title": "Paris 1968",
+      "year": 1968,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The May 1968 protests in Paris are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Paris%201968"
+      ]
+    },
+    "series:amsterdam": {
+      "title": "Amsterdam",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A walking tour of landmarks and city history across medieval pilgrimage, capitalism, monarchy and postwar society, rather than one bounded event or period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Amsterdam"
+      ]
+    },
+    "series:american-revolution": {
+      "title": "American Revolution",
+      "year": 1775,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the American War of Independence anchors the revolutionary conflict; earlier imperial tensions remain in the range.",
+      "sources": [
+        "https://www.nps.gov/cowp/learn/historyculture/revolutionary-war-timeline.htm",
+        "https://archive.therestishistory.com/catalog/series/American%20Revolution"
+      ]
+    },
+    "series:indiana-jones-the-ark-and-the-grail": {
+      "title": "Indiana Jones: The Ark and the Grail",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The biblical Ark and its later legends cannot be assigned a secure historical date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Indiana%20Jones%20double%20bill"
+      ]
+    },
+    "series:oppenheimer": {
+      "title": "Oppenheimer",
+      "year": 1945,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "The Trinity test and first atomic bombs anchor Oppenheimer's defining public role, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Oppenheimer"
+      ]
+    },
+    "series:the-trials-of-oscar-wilde": {
+      "title": "The Trials of Oscar Wilde",
+      "year": 1895,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Oscar Wilde's trials and conviction anchor this series, rather than his lifespan.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Oscar%20Wilde"
+      ]
+    },
+    "6481ed02a9ca950011c4c2c8": {
+      "title": "Hadrian and Antinous",
+      "year": 130,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Antinous's death during Hadrian's Egyptian journey anchors their relationship and its subsequent cult.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/387"
+      ]
+    },
+    "series:ireland-from-the-celts-to-the-easter-rising": {
+      "title": "Ireland: From the Celts to the Easter Rising",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "This collection surveys Ireland from medieval conquest to the twentieth century. It has no single historical focal year, so the full series belongs off the timeline; its episodes retain useful reference dates and map locations.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Ireland%20%28S1%29"
+      ]
+    },
+    "646e3e691740730011dbf21b": {
+      "title": "The Freemasons: History's Greatest Conspiracy Theory",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Freemasonry's history and changing reputation span medieval origins and the modern world.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/394"
+      ]
+    },
+    "646a7152edf4b50011266773": {
+      "title": "Athens and the Birth of Democracy",
+      "year": -508,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Cleisthenes's reforms anchor the establishment of Athenian democracy; later developments remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/396"
+      ]
+    },
+    "6465052bf4455c0011136674": {
+      "title": "The Republic of Britain: Life under Cromwell",
+      "year": 1649,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The establishment of the Commonwealth begins the republican period covered.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/397"
+      ]
+    },
+    "64614ccd4f68050011a1664e": {
+      "title": "King Solomon's Mines",
+      "year": 1885,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The publication of King Solomon's Mines anchors its literary history, not a date for the novel's imagined setting.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/399"
+      ]
+    },
+    "645c0575a28eb00011217e47": {
+      "title": "American Witches",
+      "year": 1647,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The first recorded Connecticut witch execution anchors this early New England witchcraft episode.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/400"
+      ]
+    },
+    "64582e8f1096880011786281": {
+      "title": "Herodotus: The Birth of History",
+      "year": -440,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 440 BCE represents Herodotus's work on the Histories, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/402"
+      ]
+    },
+    "series:coronations": {
+      "title": "Coronations",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "The collection combines ancient ritual origins with examples from medieval to modern coronations. The dated parts do not bound the deep-history opening episode.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Coronations"
+      ]
+    },
+    "644ed786f7ec390011ae5b44": {
+      "title": "The Year of Revolutions: 1848",
+      "year": 1848,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The European revolutions of 1848 are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/407"
+      ]
+    },
+    "series:the-fall-of-saigon": {
+      "title": "The Fall of Saigon",
+      "year": 1975,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The fall of Saigon is the central event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Fall%20of%20Saigon"
+      ]
+    },
+    "644022bba189ca0011eb3f53": {
+      "title": "History's Greatest Dogs",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A comparison of famous dogs from unrelated periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/411"
+      ]
+    },
+    "643c5ceb334ade00118900c6": {
+      "title": "East Germany: Life Behind the Iron Curtain",
+      "year": 1949,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The foundation of the German Democratic Republic anchors this history of East Germany.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/413"
+      ]
+    },
+    "series:hundred-years-war-the-black-prince": {
+      "title": "Hundred Years’ War: The Black Prince",
+      "year": 1337,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the Hundred Years' War anchors this first campaign arc; the Black Prince's later victories remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Hundred%20Years%27%20War%20%28S1%29"
+      ]
+    },
+    "64242c9a4fcc90001171a6e9": {
+      "title": "African Amazons",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A comparison of Nzinga, Dahomey warriors and Ashanti queen mothers. These are separate histories, not a single continuous event from 1600 to 1900.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/420"
+      ]
+    },
+    "641dc82bcd1d610011fcd297": {
+      "title": "The First Abolitionist",
+      "year": 1738,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The publication of Lay's anti-slavery tract, catalogued by the Library of Congress as 1738, anchors his campaigning influence.",
+      "sources": [
+        "https://www.loc.gov/item/66038906/",
+        "https://archive.therestishistory.com/catalog/episode/422"
+      ]
+    },
+    "series:atlantis": {
+      "title": "Atlantis",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Plato's Atlantis is discussed as a legend; no real vanished empire is assigned a date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Atlantis"
+      ]
+    },
+    "641079e279a7fc0011fdd955": {
+      "title": "Climate Apocalypse",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Climate and apocalyptic fears compared across ancient and modern societies.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/426"
+      ]
+    },
+    "series:ronald-reagan": {
+      "title": "Ronald Reagan",
+      "year": 1981,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Reagan's inauguration anchors his presidency, rather than his birth in 1911.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Ronald%20Reagan"
+      ]
+    },
+    "series:columbus": {
+      "title": "Columbus",
+      "year": 1492,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Columbus's first Atlantic voyage marks his defining historical intervention.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Christopher%20Columbus"
+      ]
+    },
+    "series:the-murder-of-julius-caesar": {
+      "title": "The Murder of Julius Caesar",
+      "year": -44,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Caesar's assassination anchors the murder and its political consequences.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Julius%20Caesar"
+      ]
+    },
+    "series:cathars-and-the-albigensian-crusade": {
+      "title": "Cathars and the Albigensian Crusade",
+      "year": 1209,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The opening of the Albigensian Crusade anchors this conflict; earlier Cathar beliefs provide context.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Cathars%20and%20the%20Albigensian%20Crusade"
+      ]
+    },
+    "63dac1fd31e79a0011d6b3b8": {
+      "title": "The Real Downton Abbey",
+      "year": 1910,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1910 represents the Edwardian domestic-service world discussed, before the later changes in household labour.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/445"
+      ]
+    },
+    "63d54ac3c552d90011809292": {
+      "title": "The Greatest Female Pharaoh",
+      "year": -1479,
+      "approximate": true,
+      "rule": "biography",
+      "reason": "Hatshepsut's assumption of royal power anchors her reign; ancient regnal dates are approximate.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/447"
+      ]
+    },
+    "series:the-rise-of-the-nazis": {
+      "title": "The Rise of the Nazis",
+      "year": 1920,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The early Nazi Party and its programme anchor the movement's rise, rather than Hitler's birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Nazis%27%20Rise%20to%20Power%20%28S1%29"
+      ]
+    },
+    "series:lady-jane-grey": {
+      "title": "Lady Jane Grey",
+      "year": 1553,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Lady Jane Grey's accession and removal from the throne are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Lady%20Jane%20Grey"
+      ]
+    },
+    "63a5e19579bb360011cf0c04": {
+      "title": "The Shadow of the Holocaust",
+      "year": 1945,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The discovery and liberation of Nazi camps anchor this Holocaust-endgame narrative.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/458"
+      ]
+    },
+    "63a5dfee26cfdb0011e62c3d": {
+      "title": "The Man Who Escaped Auschwitz",
+      "year": 1944,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Rudolf Vrba's escape and report anchor the episode, rather than his earlier imprisonment.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/459"
+      ]
+    },
+    "63a59058addd5a0010876a33": {
+      "title": "2022: A History",
+      "year": 2022,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The events of 2022 are the subject.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/460"
+      ]
+    },
+    "63a47351ea5809001185dfb7": {
+      "title": "Drink",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Alcohol, trade and drinking customs discussed across multiple eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/461"
+      ]
+    },
+    "series:jesus-christ": {
+      "title": "Jesus Christ",
+      "year": 30,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 30 CE represents Jesus's public ministry and crucifixion; the precise chronology is debated.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Life%20of%20Jesus"
+      ]
+    },
+    "series:the-world-cup-32-countries": {
+      "title": "The World Cup: 32 Countries",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A country-by-country collection of unrelated stories, legends and surveys. Its parts do not share a historical period; the World Cup is the release theme, not their historical setting.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Great%20World%20Cup%20Saga"
+      ]
+    },
+    "series:the-world-cup": {
+      "title": "The World Cup",
+      "year": 1930,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The inaugural World Cup anchors the competition's history, rather than the invention of football or later tournaments.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20World%20Cup"
+      ]
+    },
+    "series:alfred-the-great": {
+      "title": "Alfred the Great",
+      "year": 878,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Alfred's victory at Edington marks the decisive recovery and consolidation of his rule.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Alfred%20the%20Great"
+      ]
+    },
+    "series:treason": {
+      "title": "Treason",
+      "year": 1351,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The Treason Act provides the legal starting point for this survey, not a date for all later treason cases.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Treason"
+      ]
+    },
+    "6359121f1fc1700013ada71a": {
+      "title": "Monty & Patton vs. the Nazis",
+      "year": 1944,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Normandy campaign anchors Montgomery and Patton's confrontation with the German army in this account.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/512"
+      ]
+    },
+    "6351b6a9c768740011a06c8c": {
+      "title": "The Fall of Liz Truss",
+      "year": 2022,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Liz Truss's premiership and resignation are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/514"
+      ]
+    },
+    "series:trafalgar": {
+      "title": "Trafalgar",
+      "year": 1805,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Battle of Trafalgar anchors this series, rather than the earlier naval-war background.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Battle%20of%20Trafalgar"
+      ]
+    },
+    "6346d74af597f1001130af00": {
+      "title": "French History on Film",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. French history viewed through films set in many different periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/518"
+      ]
+    },
+    "series:young-churchill": {
+      "title": "Young Churchill",
+      "year": 1888,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Churchill's Harrow school years represent this early-life series; it also follows his military adventures to 1900, not his 1940 premiership.",
+      "sources": [
+        "https://winstonchurchill.org/the-life-of-churchill/child/1886-1890/letter-from-young-winston-to-lady-randolph/",
+        "https://archive.therestishistory.com/catalog/series/The%20Young%20Churchill%20Trilogy"
+      ]
+    },
+    "633480404b37860012f3ac19": {
+      "title": "The Regency Revolution",
+      "year": 1811,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The establishment of the Regency anchors this political and cultural period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/524"
+      ]
+    },
+    "632dc04c6f53290013a5cad4": {
+      "title": "Marilyn Monroe",
+      "year": 1953,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Monroe's major screen breakthrough anchors her celebrity and influence, rather than her birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/526"
+      ]
+    },
+    "series:china-and-world-war-ii": {
+      "title": "China and World War II",
+      "year": 1937,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of full-scale war between China and Japan anchors this Second World War narrative.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Second%20Sino-Japanese%20War"
+      ]
+    },
+    "632242d085cb8e0011ee760c": {
+      "title": "Germans Behaving Badly",
+      "year": 1798,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1798 represents the Jena Romantic circle and its intellectual influence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/530"
+      ]
+    },
+    "631b82336bf4ff001483fb48": {
+      "title": "The Loch Ness Monster",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The Loch Ness Monster as a changing legend and disputed phenomenon.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/532"
+      ]
+    },
+    "series:queen-elizabeth-ii": {
+      "title": "Queen Elizabeth II",
+      "year": 1952,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Elizabeth II's accession anchors her reign, rather than the midpoint of her lifespan.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Life%20of%20Queen%20Elizabeth%20II"
+      ]
+    },
+    "series:portugal": {
+      "title": "Portugal",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A survey of the country from Roman Iberia through medieval, imperial and twentieth-century history. Retained as a place history rather than assigning the whole country a period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Portugal"
+      ]
+    },
+    "series:j-r-r-tolkien": {
+      "title": "J.R.R. Tolkien",
+      "year": 1954,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The first publication of The Lord of the Rings anchors Tolkien's cultural influence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/J.%20R.%20R.%20Tolkien"
+      ]
+    },
+    "series:holidays": {
+      "title": "Holidays",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A thematic collection that jumps between Roman travel, the Grand Tour, Victorian tourism and modern holidays; it is not one continuous historical period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Holidays"
+      ]
+    },
+    "series:justinian-theodora": {
+      "title": "Justinian & Theodora",
+      "year": 527,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Justinian's accession, with Theodora as empress, begins their joint period of imperial power.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Justinian%20and%20Theodora"
+      ]
+    },
+    "62eaa707207e170012609ad3": {
+      "title": "Plague and the decline of the Roman Empire",
+      "year": 165,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Antonine Plague anchors the first major pandemic discussed; later outbreaks remain in the wider coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/555"
+      ]
+    },
+    "62e6701ec72057001368d856": {
+      "title": "Pigeons",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Pigeons' historical roles span several eras, with particular attention to wartime communications.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/556"
+      ]
+    },
+    "series:stalingrad": {
+      "title": "Stalingrad",
+      "year": 1942,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The beginning of the Battle of Stalingrad anchors the campaign, which ends in 1943.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Stalingrad"
+      ]
+    },
+    "series:london": {
+      "title": "London",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "This collection surveys London through Roman, medieval and modern places, people and stories. It has no single historical focal year, so the full series belongs off the timeline; its episodes retain useful reference dates and map locations.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/London%20Week"
+      ]
+    },
+    "62ceecbd4c28a4001489813c": {
+      "title": "George Orwell",
+      "year": 1949,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The publication of Nineteen Eighty-Four anchors Orwell's enduring influence, rather than his birth.",
+      "sources": [
+        "https://www.orwellfoundation.com/the-orwell-foundation/orwell/books-by-orwell/nineteen-eighty-four/",
+        "https://archive.therestishistory.com/catalog/episode/566"
+      ]
+    },
+    "series:historical-love-island": {
+      "title": "Historical Love Island",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A playful hypothetical pairing of historical figures from unrelated eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Historical%20Love%20Island"
+      ]
+    },
+    "62c71669051b120014effdd5": {
+      "title": "The Last Days of Boris Johnson",
+      "year": 2022,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Boris Johnson's final months in office are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/570"
+      ]
+    },
+    "series:the-american-civil-war": {
+      "title": "The American Civil War",
+      "year": 1861,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The attack on Fort Sumter begins the American Civil War; earlier causes and later cultural memory do not move the war's position.",
+      "sources": [
+        "https://www.nps.gov/gett/learn/historyculture/civil-war-timeline.htm",
+        "https://archive.therestishistory.com/catalog/series/American%20Civil%20War%20%281861%20to%201865%29"
+      ]
+    },
+    "62b1c40df3ac6800127c845d": {
+      "title": "Stonehenge",
+      "year": -2500,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 2500 BCE marks Stonehenge's principal stone-setting phase, not the beginning of every earthwork at the site.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/578"
+      ]
+    },
+    "series:cleopatra": {
+      "title": "Cleopatra",
+      "year": -51,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Cleopatra's accession anchors her political rule, rather than her birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Cleopatra"
+      ]
+    },
+    "62a0d033eadb83001324a5a9": {
+      "title": "The First Fascist",
+      "year": 1919,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "D'Annunzio's seizure of Fiume anchors his proto-fascist political experiment, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/587"
+      ]
+    },
+    "629e90432b929d0012c4143e": {
+      "title": "How Prime Ministers Fall",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Comparison of prime-ministerial downfalls across different political periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/589"
+      ]
+    },
+    "6297880738f0a60012928e23": {
+      "title": "Robin Hood",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The origins and changing legend of Robin Hood lack a secure historical biography.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/590"
+      ]
+    },
+    "629785bc6fbd440012661c81": {
+      "title": "Childbirth",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Childbirth, midwifery and maternal health discussed across several eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/591"
+      ]
+    },
+    "629341f80252da00138414f1": {
+      "title": "Jubilees",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A comparison of selected royal celebrations and their meanings, rather than a continuous narrative from 1809 to 2022.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/594"
+      ]
+    },
+    "series:australian-prime-ministers": {
+      "title": "Australian Prime Ministers",
+      "year": 1901,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "Federation and Edmund Barton's first government begin the sequence of Australian prime ministers.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Australian%20Prime%20Ministers"
+      ]
+    },
+    "6285255582c6d8001334f3b7": {
+      "title": "The New Elizabethan Age",
+      "year": 1952,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Elizabeth II's accession begins the New Elizabethan period surveyed.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/598"
+      ]
+    },
+    "627bec72078979001586d0fd": {
+      "title": "Agatha Christie",
+      "year": 1934,
+      "approximate": false,
+      "rule": "work",
+      "reason": "Murder on the Orient Express represents Agatha Christie's mature literary influence, rather than her lifespan.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/600"
+      ]
+    },
+    "series:historys-biggest-questions-with-dan-carlin": {
+      "title": "History’s Biggest Questions, with Dan Carlin",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Historical comparisons and imagined alternatives across unrelated eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Crossover%20with%20Dan%20Carlin"
+      ]
+    },
+    "6272b79f3275630013d37438": {
+      "title": "Operation Barbarossa",
+      "year": 1941,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Germany's invasion of the Soviet Union begins Operation Barbarossa.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/604"
+      ]
+    },
+    "626e48719a4d1700124f30ad": {
+      "title": "The Birth of Babylon",
+      "year": -1894,
+      "approximate": true,
+      "rule": "foundation",
+      "reason": "The beginning of the Old Babylonian dynasty anchors this political history, not the original settlement of the city.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/606"
+      ]
+    },
+    "6269c60a504dee00135bea9f": {
+      "title": "England & Englishness",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A discussion of identity through literary, cultural and contemporary examples; the earlier date range should not imply a bounded historical narrative.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/607"
+      ]
+    },
+    "series:french-presidents": {
+      "title": "French Presidents",
+      "year": 1958,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The establishment of the Fifth Republic anchors this modern French presidential sequence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Presidents%20of%20the%20French%20Fifth%20Republic"
+      ]
+    },
+    "series:crucifixion-and-the-jewish-revolt": {
+      "title": "Crucifixion and the Jewish Revolt",
+      "year": 66,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the Jewish Revolt anchors the Roman Judaea arc; the crucifixion episode supplies earlier first-century context.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Jewish%20Revolt%20%2F%20Destruction%20of%20Jerusalem"
+      ]
+    },
+    "62505cddadae5f001496c134": {
+      "title": "Merlin, Magic and the British",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Magic and occult politics compared across medieval and modern Britain.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/616"
+      ]
+    },
+    "624dc825cc8fb60013263ac0": {
+      "title": "Chairman Mao & the Cultural Revolution",
+      "year": 1966,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The launch of the Cultural Revolution anchors the episode, rather than Mao's earlier life.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/617"
+      ]
+    },
+    "series:the-falklands-war": {
+      "title": "The Falklands War",
+      "year": 1982,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Argentina's invasion of the Falkland Islands begins the war; the later discussion of its legacy does not move it into the 1990s.",
+      "sources": [
+        "https://www.royalnavymuseums.org.uk/visit-us/fleet-air-arm-museum/falklands-conflict-exhibition",
+        "https://archive.therestishistory.com/catalog/series/The%20Falklands%20War"
+      ]
+    },
+    "series:oil": {
+      "title": "Oil",
+      "year": 1859,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The commercial oil strike at Titusville is a reference point for the modern petroleum industry, not a date for all oil use.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Oil"
+      ]
+    },
+    "series:genghis-khan": {
+      "title": "Genghis Khan",
+      "year": 1206,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Temujin's proclamation as Genghis Khan marks the consolidation of his rule and imperial expansion.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Genghis%20Khan"
+      ]
+    },
+    "62321466a9fb150013a69b1b": {
+      "title": "Saint Patrick",
+      "year": 432,
+      "approximate": true,
+      "rule": "period",
+      "reason": "The traditional date around 432 CE represents Patrick's Irish mission; his chronology is uncertain.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/629"
+      ]
+    },
+    "622b8c6ac28a800013089c66": {
+      "title": "The Last Emperor of Mexico",
+      "year": 1864,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Maximilian's accession as emperor anchors his short Mexican reign.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/631"
+      ]
+    },
+    "series:the-end-of-the-soviet-union": {
+      "title": "The End of the Soviet Union",
+      "year": 1991,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The dissolution of the Soviet Union anchors this transition series; Putin's early life and later presidency remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20End%20of%20the%20Soviet%20Union"
+      ]
+    },
+    "621fbb83c576710013c9757d": {
+      "title": "Killer Fashion",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Dangerous fashions and garment production discussed across centuries.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/637"
+      ]
+    },
+    "series:the-end-of-the-roman-empire": {
+      "title": "The End of the Roman Empire",
+      "year": 476,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The conventional end of the western imperial office anchors the debate; eastern Roman survival to 1453 is covered separately in the range.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20End%20of%20the%20Roman%20Empire"
+      ]
+    },
+    "6215344a79e03f0013fe31b8": {
+      "title": "Ukraine and Russia",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A broad survey of the relationship between two countries from the Rus’ era to the present; no single historical setting.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/642"
+      ]
+    },
+    "62126b99959a2d0013081621": {
+      "title": "The Most Disastrous Party in History",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A ranking of disastrous parties from unrelated historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/645"
+      ]
+    },
+    "series:american-crusades": {
+      "title": "American Crusades",
+      "year": 1776,
+      "approximate": false,
+      "rule": "period",
+      "reason": "American independence is a reference point for the religious ideas shaping US identity and foreign policy; this is a broad thematic survey.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/American%20Crusades"
+      ]
+    },
+    "6206a18b0f41fb0012e4e814": {
+      "title": "Valentine's Day",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Valentine traditions, commerce and unrelated events across the ages.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/649"
+      ]
+    },
+    "6203fd2245f2980014101817": {
+      "title": "Smuggling",
+      "year": 1740,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1740 represents the Hawkhurst Gang and the eighteenth-century smuggling world discussed.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/650"
+      ]
+    },
+    "series:vikings-in-the-east": {
+      "title": "Vikings in the East",
+      "year": 882,
+      "approximate": true,
+      "rule": "period",
+      "reason": "The traditional date of Oleg's capture of Kyiv represents the consolidation of Rus'; early chronology is approximate.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Vikings%20in%20the%20East"
+      ]
+    },
+    "series:disease": {
+      "title": "Disease",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "The opening discussion spans human civilisation, followed by episodes on colonisation and modern pandemics. 1492 only dates part of this collection.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Disease"
+      ]
+    },
+    "61f70595a8fffe00137c8b5e": {
+      "title": "Babylon",
+      "year": -605,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Nebuchadnezzar II's accession anchors the Neo-Babylonian period discussed, not the city's much earlier foundation.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/657"
+      ]
+    },
+    "series:the-trial-of-charles-i": {
+      "title": "The Trial of Charles I",
+      "year": 1649,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Charles I's trial and execution anchor this series.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Charles%20I%3A%20Trial%20and%20Execution"
+      ]
+    },
+    "series:general-gordon": {
+      "title": "General Gordon",
+      "year": 1885,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The siege of Khartoum and Gordon's death anchor the episode, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Gordon%20of%20Khartoum"
+      ]
+    },
+    "61e83ba601f8e3001244e355": {
+      "title": "The Birth of the Railways",
+      "year": 1825,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The opening of the Stockton and Darlington Railway anchors the birth of public railways; earlier locomotives remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/663"
+      ]
+    },
+    "series:princes-in-the-tower": {
+      "title": "Princes in the Tower",
+      "year": 1483,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The disappearance of Edward V and Richard of Shrewsbury anchors the Princes in the Tower mystery.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Princes%20in%20the%20Tower"
+      ]
+    },
+    "series:1922": {
+      "title": "1922",
+      "year": 1922,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The events of 1922 are the subject.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/1922"
+      ]
+    },
+    "series:crossing-the-rubicon": {
+      "title": "Crossing the Rubicon",
+      "year": -49,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Caesar's crossing of the Rubicon begins the civil-war phase at the centre of the episode.",
+      "sources": [
+        "https://feeds.megaphone.fm/GLT4787413333"
+      ]
+    },
+    "series:12-days-of-christmas": {
+      "title": "12 Days of Christmas",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. An “on this day” conversation pairing events from different centuries. A calendar anniversary is not a single historical period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/12%20%28or%2013%29%20Days%20of%20Christmas"
+      ]
+    },
+    "61c42ccd9bcf610012819d44": {
+      "title": "Christmas churches",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A tour of churches with Christmas associations, spanning different building periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/686"
+      ]
+    },
+    "61bf08db45cc6900146d3515": {
+      "title": "A Christmas Carol",
+      "year": 1843,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The publication of A Christmas Carol anchors its literary and social history.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/688"
+      ]
+    },
+    "61ba65c0f75b720012467225": {
+      "title": "Burgundy: Europe's forgotten superpower",
+      "year": 1363,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "Philip the Bold's acquisition of Burgundy anchors the Valois duchy's rise.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/690"
+      ]
+    },
+    "93320b56-9478-46c7-a8e7-1461ec573045": {
+      "title": "Superheroes",
+      "year": 1938,
+      "approximate": false,
+      "rule": "work",
+      "reason": "Superman's debut in Action Comics anchors the emergence of the modern comic-book superhero.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/692"
+      ]
+    },
+    "e8f69f75-b1d5-48b8-8b06-eff7c4ac0f6e": {
+      "title": "Cricket",
+      "year": 1787,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The foundation of the MCC is a reference point between cricket's early origins and its later imperial expansion.",
+      "sources": [
+        "https://www.lords.org/mcc/the-club/our-history",
+        "https://archive.therestishistory.com/catalog/episode/693"
+      ]
+    },
+    "c640242c-5fd0-4fad-96d6-8f82cc599f99": {
+      "title": "Rasputin",
+      "year": 1916,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Rasputin's assassination anchors the episode's political drama, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/695"
+      ]
+    },
+    "2d1ddad9-d146-4107-a9f1-7461d4778698": {
+      "title": "Neanderthals",
+      "year": -400000,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 400000 BCE represents Neanderthal emergence in the deliberately rounded prehistoric coverage, not a precise event year.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/696"
+      ]
+    },
+    "9d0e17df-7438-48c6-9bb2-12738e072485": {
+      "title": "Napoleon in Egypt",
+      "year": 1798,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The French invasion of Egypt begins Napoleon's Egyptian campaign.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/697"
+      ]
+    },
+    "0a68dc9c-05c1-4df5-90b2-f0e1b75bb007": {
+      "title": "The CIA",
+      "year": 1947,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The creation of the CIA anchors the institution's history; later operations remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/698"
+      ]
+    },
+    "series:world-cup-of-kings-and-queens": {
+      "title": "World Cup of Kings and Queens",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A competition comparing monarchs across centuries, with an Athelstan profile among the parts. That profile cannot date the whole collection.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/World%20Cup%20of%20Kings%20and%20Queens"
+      ]
+    },
+    "fd5491b8-b8d0-43e1-8f2f-cefca3de1568": {
+      "title": "Australia Before Cook",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A survey of settlement, Indigenous history and European encounters before Cook, spanning tens of thousands of years. It does not belong at one prehistoric date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/702"
+      ]
+    },
+    "53767100-b130-42a8-92c2-a1f58e41cecb": {
+      "title": "The Oil Weapon",
+      "year": 1973,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The oil embargo and price shock begin the crisis discussed.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/703"
+      ]
+    },
+    "04198c43-c8de-45ed-b0a2-b61bb918e2f2": {
+      "title": "End of the First World War & Remembrance",
+      "year": 1918,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The armistice anchors the end-of-war and remembrance narrative, rather than the midpoint of later commemorations.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/705"
+      ]
+    },
+    "series:alexander": {
+      "title": "Alexander",
+      "year": -334,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Alexander's invasion of the Persian Empire begins the conquests that define his influence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Alexander"
+      ]
+    },
+    "c308fe47-01dc-4f71-ad03-583b2b1c4b6a": {
+      "title": "The Gunpowder Plot",
+      "year": 1605,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Gunpowder Plot is the episode's central event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/708"
+      ]
+    },
+    "series:paganism": {
+      "title": "Paganism",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "The modern-paganism episode is paired with a reverse journey from the Renaissance into deep prehistory. The modern part cannot date the whole collection.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Paganism"
+      ]
+    },
+    "5662c1c8-a2b8-4d51-8333-6b08cfd2f55a": {
+      "title": "Medieval Science",
+      "year": 1200,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1200 CE represents the high-medieval intellectual setting; this survey has no single discovery year.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/711"
+      ]
+    },
+    "39b6b258-46cc-4d1a-a4e5-c69a2bf1ef02": {
+      "title": "Golden Ages",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A comparison of supposed golden ages from unrelated periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/712"
+      ]
+    },
+    "5d4ca792-8d87-4301-8bee-a4b473fbe64e": {
+      "title": "History of India in 10 Buildings",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A selection of buildings spanning roughly 4,500 years of the subcontinent’s history. A country-wide architectural tour has no single historical setting.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/713"
+      ]
+    },
+    "14e81769-ff93-42c7-a76c-92d60301532f": {
+      "title": "Dinosaurs",
+      "year": 1842,
+      "approximate": false,
+      "rule": "work",
+      "reason": "Owen's naming of Dinosauria anchors the modern discovery of dinosaurs, not the prehistoric animals' lifetime.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/714"
+      ]
+    },
+    "4bf020ee-f9ec-4da8-9887-60769afbbc8e": {
+      "title": "The Industrial Revolution",
+      "year": 1760,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1760 marks the conventional opening of Britain's Industrial Revolution; change was gradual rather than a single event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/715"
+      ]
+    },
+    "series:watergate": {
+      "title": "Watergate",
+      "year": 1972,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Watergate break-in begins the scandal; Nixon's birth is background, not the episode's placement year.",
+      "sources": [
+        "https://www.archives.gov/research/investigations/watergate/us-v-liddy-trial-records-government-exhibits",
+        "https://archive.therestishistory.com/catalog/series/Watergate"
+      ]
+    },
+    "d6627ec2-e15a-467f-bdde-4050d824ba09": {
+      "title": "Classics",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The reception of ancient Greece and Rome from the medieval period to today.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/718"
+      ]
+    },
+    "f2a79c98-8fc7-43ef-ae0b-094bd6bf9715": {
+      "title": "Macbeth",
+      "year": 1040,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Macbeth's accession anchors his historical kingship, rather than Shakespeare's later play.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/720"
+      ]
+    },
+    "5a0fa846-d826-43fb-b212-7a3cb44c00cd": {
+      "title": "The Norse Sagas",
+      "year": 1200,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1200 CE represents the writing of the Icelandic sagas, whose narratives often concern earlier centuries.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/721"
+      ]
+    },
+    "96c4441e-e730-485d-8e34-b164eaa499a1": {
+      "title": "Germany from Adenauer to Angela",
+      "year": 1949,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The foundation of West Germany and Adenauer's first government begin this political sequence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/722"
+      ]
+    },
+    "062078e4-8a13-4b1f-a5ed-19302ee84450": {
+      "title": "James Bond",
+      "year": 1953,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The publication of Casino Royale anchors James Bond's literary history, rather than later film releases.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/723"
+      ]
+    },
+    "f857e62f-37bc-4199-b744-68cd33f80397": {
+      "title": "Decolonising Africa",
+      "year": 1960,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The Year of Africa is a reference point for the wider decolonisation struggles covered, not a single independence date for the continent.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/724"
+      ]
+    },
+    "series:thermopylae-salamis": {
+      "title": "Thermopylae & Salamis",
+      "year": -480,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The battles of Thermopylae and Salamis are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Persian%20Wars"
+      ]
+    },
+    "51b9fccd-77fe-4e93-8443-63246035e085": {
+      "title": "Top Ten Mistresses",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A cross-era ranking of influential mistresses.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/727"
+      ]
+    },
+    "656e224b-65e2-458a-9985-6fe0dc099678": {
+      "title": "The UK’s Best Churches",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A comparison of churches from different architectural and historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/728"
+      ]
+    },
+    "3746793b-dbb9-4a9d-a2fa-c10d2c3217c2": {
+      "title": "9/11",
+      "year": 2001,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The September 11 attacks are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/729"
+      ]
+    },
+    "series:silicon-valley": {
+      "title": "Silicon Valley",
+      "year": 1971,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The emergence of the Silicon Valley name and early microprocessor era provide a reference point for the region's rise.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Silicon%20Valley"
+      ]
+    },
+    "47f41526-a1d2-425c-8fb1-fa9605e6166f": {
+      "title": "Nuclear Weapons",
+      "year": 1983,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The nuclear crisis and war scares of 1983 are the focus.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/732"
+      ]
+    },
+    "7df16ca8-7510-4340-b39b-3e3fd17693df": {
+      "title": "The Beatles",
+      "year": 1964,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "The Beatles' international breakthrough anchors their cultural influence, rather than the midpoint of the band's lifespan.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/733"
+      ]
+    },
+    "e669ceff-1446-4868-80c5-add20c7e0227": {
+      "title": "The Western Front",
+      "year": 1914,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the First World War and establishment of the Western Front begin this account.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/735"
+      ]
+    },
+    "b0f75939-b2d9-4da9-a9e8-85ebaf11f8ba": {
+      "title": "Climate & Weather",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Weather and climate events compared from the Ice Age to modern politics.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/734"
+      ]
+    },
+    "series:afghanistan": {
+      "title": "Afghanistan",
+      "year": 1839,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The First Anglo-Afghan War anchors this Great Game series; broader Afghan history supplies context.",
+      "sources": [
+        "https://www.nam.ac.uk/explore/first-afghan-war",
+        "https://archive.therestishistory.com/catalog/series/Afghanistan"
+      ]
+    },
+    "39cf5698-cca7-4295-b821-a57ba1ea3e5b": {
+      "title": "The Enlightenment",
+      "year": 1751,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The first volume of the Encyclopedie is a reference point for the Enlightenment, not its single starting date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/739"
+      ]
+    },
+    "98c3ab8e-6fe2-41d2-84fa-bc05154b5682": {
+      "title": "Sherlock Holmes",
+      "year": 1887,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The publication of A Study in Scarlet introduces Sherlock Holmes and anchors his literary history.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/736"
+      ]
+    },
+    "f33a4351-223d-40cf-86c6-529ff21a881e": {
+      "title": "Exams",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Examinations and education across different historical societies.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/738"
+      ]
+    },
+    "bfeba0d0-0283-47ad-8623-80d97b8f5957": {
+      "title": "The Berlin Wall",
+      "year": 1961,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The construction of the Berlin Wall begins the divided-city period discussed.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/742"
+      ]
+    },
+    "86a37dda-5087-43fa-ac35-f9f411334cc3": {
+      "title": "Sparta",
+      "year": -480,
+      "approximate": false,
+      "rule": "period",
+      "reason": "Sparta's role in the Persian Wars represents its classical military society; the episode also discusses earlier origins and later myths.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/741"
+      ]
+    },
+    "series:the-olympics": {
+      "title": "The Olympics",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Ancient and modern Olympic traditions are separated by a long historical break. One continuous bar would imply coverage through that break.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/The%20Olympics"
+      ]
+    },
+    "series:statues": {
+      "title": "Statues",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Trafalgar Square's monuments and figures from multiple historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Statues"
+      ]
+    },
+    "ce60fa8d-a531-46b9-9f2b-499f4315db48": {
+      "title": "The East India Company",
+      "year": 1757,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Battle of Plassey anchors the Company's decisive territorial expansion in the eighteenth century, rather than its earlier charter.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/751"
+      ]
+    },
+    "481adbbd-0def-49a1-9945-040d94ddc86d": {
+      "title": "The Six Wives of Henry VIII",
+      "year": 1509,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Henry VIII's accession and marriage to Catherine of Aragon begin the royal marriage sequence covered.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/748"
+      ]
+    },
+    "series:england-at-euro-2020": {
+      "title": "England at Euro 2020",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Separate surveys of England’s relationships with Germany, Ukraine, Denmark and Italy. The Crimean War episode cannot date the whole release set.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/England%20Games%20at%20the%20European%20Cup%20%28November%202021%29"
+      ]
+    },
+    "7167be21-0733-48fd-98c8-09d2a5d16066": {
+      "title": "The Vietnam War",
+      "year": 1955,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The beginning of the Vietnam War in the catalogue's stated period anchors this overview; its chronology has competing definitions.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/752"
+      ]
+    },
+    "f806aa0a-e2bf-4b1c-a5ca-d85d87d05636": {
+      "title": "Children’s History",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A discussion of writing and teaching history for children.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/753"
+      ]
+    },
+    "ed17f321-feb6-439f-a085-32407cd68709": {
+      "title": "The British Empire",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A discussion of the empire’s interpretation and continuing legacy, rather than a chronological narrative with a defined beginning and ending.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/757"
+      ]
+    },
+    "9f36e36e-f9a0-403e-99a4-929bd7315359": {
+      "title": "Ghosts",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Ghost stories and their changing meanings across the ages.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/758"
+      ]
+    },
+    "2f727673-0de5-43d1-8244-cbf3f6ad0976": {
+      "title": "A Very British Scandal",
+      "year": 1976,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The public exposure of the Norman Scott affair and Thorpe's resignation anchor the scandal; the 1979 trial remains in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/759"
+      ]
+    },
+    "series:hitler-with-ian-kershaw": {
+      "title": "Hitler with Ian Kershaw",
+      "year": 1933,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Hitler's appointment as chancellor anchors his political power, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/Hitler%20with%20Ian%20Kershaw"
+      ]
+    },
+    "395171bc-67dd-49e4-bd18-cb840942c169": {
+      "title": "Magna Carta",
+      "year": 1215,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The sealing of Magna Carta is the episode's central event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/764"
+      ]
+    },
+    "f4e1d59c-1b28-4100-9d28-3a9c329936ec": {
+      "title": "California",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A survey of the state’s origins, mythology and modern politics. The earlier catalogue range is a reference sweep, not one bounded event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/763"
+      ]
+    },
+    "d464710d-c131-4cc2-9238-4e2d454c135f": {
+      "title": "Muhammad",
+      "year": 622,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "The Hijra and the establishment of the community at Medina anchor Muhammad's public leadership.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/762"
+      ]
+    },
+    "series:world-cup-of-gods": {
+      "title": "World Cup of Gods",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Preview of the podcast's competition between deities.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/World%20Cup%20of%20Gods"
+      ]
+    },
+    "12dda801-86ca-44f4-9499-8ce17ee3edde": {
+      "title": "Paris",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Paris's cultural and architectural identity discussed across many eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/767"
+      ]
+    },
+    "24444bde-5780-4589-b94f-03d5cfc69c17": {
+      "title": "Nero",
+      "year": 54,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Nero's accession anchors his period of imperial power, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/766"
+      ]
+    },
+    "77677bed-56e1-49e0-a9e7-cc0c7c56855f": {
+      "title": "Cromwell and the Protectorate",
+      "year": 1653,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The establishment of the Protectorate begins Cromwell's tenure as Lord Protector.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/770"
+      ]
+    },
+    "75d73372-5a16-4691-9ef5-64d056d9f1ec": {
+      "title": "Game of Thrones",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Fictional fantasy compared with medieval history; no fictional chronology is treated as historical fact.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/771"
+      ]
+    },
+    "fae4c18e-dd54-4143-8831-c43197795688": {
+      "title": "Aztecs",
+      "year": 1325,
+      "approximate": true,
+      "rule": "period",
+      "reason": "The traditional foundation date of Tenochtitlan anchors the rise of the Mexica polity; the date is approximate.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/776"
+      ]
+    },
+    "4c786335-8efb-4f91-b2a4-71ab65433fc6": {
+      "title": "Teenagers",
+      "year": 1955,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1955 represents the emergence of teenage mass culture, not the existence of young people as a biological age group.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/775"
+      ]
+    },
+    "76760589-bffb-4853-a829-e8df6e51eecb": {
+      "title": "Food Glorious Food",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. British food, class and culinary traditions over several historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/772"
+      ]
+    },
+    "8302fd3f-ac6c-49b7-84d2-9c9b301fe0f3": {
+      "title": "The French Revolution",
+      "year": 1789,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the French Revolution anchors this standalone overview.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/773"
+      ]
+    },
+    "9b06c6f4-ffc3-4e3e-8bc5-fa5b373fa116": {
+      "title": "The Seven Years' War",
+      "year": 1756,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The outbreak of the Seven Years' War in Europe anchors the conflict; North American fighting began earlier.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/774"
+      ]
+    },
+    "3495390b-a720-45f3-9968-e18e3f15c9a9": {
+      "title": "Culture Wars",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Culture wars compared across ancient Rome and modern societies.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/777"
+      ]
+    },
+    "445fa225-ad0a-48b8-b081-7ee12288c8e9": {
+      "title": "Top Ten Eunuchs",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A comparison of eunuchs drawn from many historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/778"
+      ]
+    },
+    "51230fba-9dd0-4ad3-a00c-53ae81f40fbb": {
+      "title": "1066",
+      "year": 1066,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The Norman Conquest and Battle of Hastings anchor this standalone episode.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/779"
+      ]
+    },
+    "31e45225-8cab-4479-bf12-1609dbdc3e64": {
+      "title": "1940",
+      "year": 1940,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The events of 1940 are the subject.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/780"
+      ]
+    },
+    "166679b4-ec45-499c-b5f5-fa39c5a45a60": {
+      "title": "The Wild West",
+      "year": 1870,
+      "approximate": true,
+      "rule": "period",
+      "reason": "Around 1870 represents the post-Civil-War frontier world and its mythology; the episode ranges across the nineteenth century.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/781"
+      ]
+    },
+    "940b4a38-d7e2-4412-b8f3-cb3f5724df7c": {
+      "title": "Persia",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Persia's civilisation and influence discussed across several historical eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/782"
+      ]
+    },
+    "d5b55802-f8be-456e-bb4f-49a65a166fc3": {
+      "title": "History as Entertainment",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. History in games, entertainment and re-enactment across multiple periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/783"
+      ]
+    },
+    "8d2e64a4-b34e-43f0-8dbc-9e8ea34dd249": {
+      "title": "Elizabeth I",
+      "year": 1558,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Elizabeth I's accession anchors the standalone overview of her reign.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/784"
+      ]
+    },
+    "ddc645b9-4217-4ec0-9ebb-d231ab04ef62": {
+      "title": "Communism",
+      "year": 1848,
+      "approximate": false,
+      "rule": "work",
+      "reason": "The publication of the Communist Manifesto anchors modern communist theory, rather than the average of later regimes' histories.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/785"
+      ]
+    },
+    "a88c290d-13ec-4aee-82b8-2ea79e69ac72": {
+      "title": "Spies, with Ben MacIntyre",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Espionage and its historical importance compared across several eras.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/786"
+      ]
+    },
+    "series:the-prime-ministers-world-cup": {
+      "title": "The Prime Ministers’ World Cup",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The podcast's cross-era prime minister competition.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/series/World%20Cup%20of%20Prime%20Ministers"
+      ]
+    },
+    "10fe3003-4f6a-425e-94a2-bb957b28ab47": {
+      "title": "St Cuthbert’s Day",
+      "year": 685,
+      "approximate": false,
+      "rule": "biography",
+      "reason": "Cuthbert's consecration as bishop of Lindisfarne anchors his religious influence, rather than his birth.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/789"
+      ]
+    },
+    "5b039623-75a4-4a58-8dd3-8e6a248b242b": {
+      "title": "The Beautiful Game",
+      "year": 1863,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The Football Association and codification of association football anchor its modern institutional history.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/790"
+      ]
+    },
+    "f2338a37-e91c-4b16-b937-217d8ba8fb50": {
+      "title": "What if?",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Counterfactual discussion of events that did not happen.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/791"
+      ]
+    },
+    "089fa561-6b20-476f-975a-344e3618f47d": {
+      "title": "The Second Reich",
+      "year": 1871,
+      "approximate": false,
+      "rule": "foundation",
+      "reason": "The proclamation of the German Empire begins the Second Reich.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/792"
+      ]
+    },
+    "64a4684e-1492-4e02-87a8-2bbc4712bc4e": {
+      "title": "A Royal Row",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A contemporary interview prompts comparisons across royal history. Its release-year context does not date the whole historical discussion.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/793"
+      ]
+    },
+    "f88db45e-dcdb-4e19-ad2d-9586fdff4ca3": {
+      "title": "Americanisation",
+      "year": 1945,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The United States' postwar global ascendancy is a reference point for this broader survey of American influence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/794"
+      ]
+    },
+    "2342a41f-33fa-493a-8d21-7da9a9dc0cef": {
+      "title": "The Kings of Comedy",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Comedy, historical humour and changing social limits across the ages.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/795"
+      ]
+    },
+    "d4913283-8d30-436e-aeae-a0ce01cce49d": {
+      "title": "Tutankhamun",
+      "year": -1332,
+      "approximate": true,
+      "rule": "biography",
+      "reason": "Tutankhamun's accession anchors his reign rather than his birth; the regnal chronology is approximate.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/796"
+      ]
+    },
+    "2c270509-347d-458e-8f98-f1c70232876b": {
+      "title": "Witches",
+      "year": 1563,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The English Witchcraft Act of 1563 is a reference point within the broader early-modern witch-hunt period.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/797"
+      ]
+    },
+    "28df9627-236f-4391-baf8-96fa282d3013": {
+      "title": "Empires",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Empires and nation-states compared across many historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/798"
+      ]
+    },
+    "d433c765-33ca-42aa-9e93-131377438491": {
+      "title": "Sex in the City",
+      "year": 1757,
+      "approximate": false,
+      "rule": "period",
+      "reason": "The first Harris's List of Covent-Garden Ladies is a reference point for the urban sexual economy discussed, not a date for every example.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/799"
+      ]
+    },
+    "daf1885b-b936-46e1-9909-9fa745f46f67": {
+      "title": "The 90s",
+      "year": 1990,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The opening year of the decade anchors this retrospective, rather than its midpoint.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/800"
+      ]
+    },
+    "63673d87-8fb9-43f9-8371-a0d57cbc48cb": {
+      "title": "Weird Wars",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A comparison of unusual wars from unrelated historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/801"
+      ]
+    },
+    "e9923700-1c29-48eb-a2d8-77a0d953ea1d": {
+      "title": "The History of the Future",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Predictions, prophecy and ideas of the future across the ages.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/802"
+      ]
+    },
+    "4922323b-c339-41dd-a666-ebad0b5179ed": {
+      "title": "China",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A broad survey of Chinese civilisation and modern memory, not a narrative bounded by the Shang dynasty and 2020.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/803"
+      ]
+    },
+    "33d3108e-c3ba-4256-9f1b-1760422edcb6": {
+      "title": "King Arthur",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. King Arthur's legend lacks a secure historical biography or date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/804"
+      ]
+    },
+    "a1957320-8c6d-459f-a135-662c21c29b2b": {
+      "title": "The North South Divide",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. England's regional identities and north-south distinctions over many periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/805"
+      ]
+    },
+    "3032a55e-8d16-40a9-b5da-d15add95ab9f": {
+      "title": "Fascism",
+      "year": 1919,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "Mussolini's founding of the Fasci di Combattimento anchors the political movement's emergence.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/809"
+      ]
+    },
+    "d3a2f394-441d-4924-9717-c8c0f94c4eee": {
+      "title": "Pompeii",
+      "year": 79,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "Vesuvius's eruption and the destruction of Pompeii are the central events.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/806"
+      ]
+    },
+    "9c8ffd81-a713-4ca2-a6a6-8a183bd74f94": {
+      "title": "Walls and Borders",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Walls and borders compared from ancient China to the Cold War.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/807"
+      ]
+    },
+    "d34eec88-c4b0-4fa9-b717-8557d548e8ab": {
+      "title": "Historical Fiction",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A discussion of historical fiction as a genre across different periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/808"
+      ]
+    },
+    "e184b185-bbad-4a9a-be77-e5402184fb9e": {
+      "title": "Stephen Fry and Troy",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Greek myths and the Trojan story discussed with Stephen Fry.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/810"
+      ]
+    },
+    "b7f5d597-24b2-44a4-a673-e27ceeb1e626": {
+      "title": "Conspiracy Theories",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Conspiracy theories compared across several historical periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/811"
+      ]
+    },
+    "b42d85a5-8b97-4c13-8529-4c43c6619b51": {
+      "title": "Brexit",
+      "year": 2016,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The referendum anchors the Brexit process, rather than the midpoint before formal withdrawal.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/812"
+      ]
+    },
+    "b3da5f03-3b6c-4e27-804c-48abf5dd70af": {
+      "title": "Christmas",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Christmas customs and their transformation across the centuries.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/813"
+      ]
+    },
+    "9d6008a5-5750-40a9-a132-d72e920d83f2": {
+      "title": "Causes of the First World War",
+      "year": 1914,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The outbreak of the First World War anchors this account of its causes; earlier tensions remain in its coverage.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/814"
+      ]
+    },
+    "1686e28a-939e-4913-a179-ed0747bbfbd9": {
+      "title": "The Echo of a Coffee House",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Communication and social media compared from printing and coffee houses to the internet.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/815"
+      ]
+    },
+    "9c12bcb9-a366-4c17-8511-64833851e0da": {
+      "title": "The Lessons of History",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A general discussion of whether people learn from history.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/816"
+      ]
+    },
+    "19f9fd6c-418e-4d54-935d-ae0fe7e797b6": {
+      "title": "Troy",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The Trojan War is explored as legend and disputed history without a secure event date.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/817"
+      ]
+    },
+    "8583b546-9a5d-4d2c-82bb-5251b5cd1808": {
+      "title": "1981",
+      "year": 1981,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The events of 1981 are the subject.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/818"
+      ]
+    },
+    "d7b04e6f-4dc6-4b27-aa9e-aa69b44d2cf9": {
+      "title": "We’re all so 17th Century",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "A comparison between seventeenth-century Britain and contemporary crises, not a history confined to 1600–1699.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/819"
+      ]
+    },
+    "f8d76a6b-51f5-4e4c-9e02-9fd29222bb64": {
+      "title": "Is Trump Caesar or Nixon?",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. A cross-era comparison of Trump, Nixon and Caesar rather than one historical event.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/821"
+      ]
+    },
+    "24104338-377e-42eb-afb7-e3184d74af40": {
+      "title": "Civil War",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. Civil wars and their causes compared across ancient and modern societies.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/820"
+      ]
+    },
+    "d64331b9-0d45-4f03-b2da-f6d5ac189422": {
+      "title": "Greatness",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. The concept of historical greatness examined through figures from unrelated periods.",
+      "sources": [
+        "https://archive.therestishistory.com/catalog/episode/822"
+      ]
+    },
+    "a428c3fa-10c8-4b77-a85a-04c812bf7477": {
+      "title": "Trailer",
+      "year": null,
+      "approximate": false,
+      "rule": "off-timeline",
+      "reason": "Kept off the timeline. An introduction to the podcast rather than a historical episode.",
+      "sources": [
+        "https://feeds.megaphone.fm/GLT4787413333"
+      ]
+    }
+  }
+}

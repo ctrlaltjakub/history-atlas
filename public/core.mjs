@@ -32,6 +32,9 @@ export function matchesEpisode(e, {q='',region='all',era='all'}={}) {
 export function chronological(a,b) {
   return (a.start ?? Infinity) - (b.start ?? Infinity) || (a.end ?? Infinity) - (b.end ?? Infinity) || (a.number ?? Infinity) - (b.number ?? Infinity) || a.title.localeCompare(b.title);
 }
+export function placementOrder(a,b) {
+  return (a.keyYear ?? Infinity)-(b.keyYear ?? Infinity)||chronological(a,b);
+}
 export function releaseOrder(a,b) {
   return (a.seriesOrder ?? Infinity)-(b.seriesOrder ?? Infinity) || Date.parse(a.published)-Date.parse(b.published) || (a.number ?? Infinity)-(b.number ?? Infinity);
 }
@@ -54,11 +57,15 @@ export function summariseItem(item,matches=item.members,placement='all') {
     color:item.type==='series'?SERIES_COLOR:'#a99b84'
   };
 }
-export function makeCollection(episodes) {
+export function makeCollection(episodes,placements={}) {
   const groups=new Map();
   for(const episode of episodes) {
     const id=episode.seriesId?`series:${episode.seriesId}`:episode.id;
-    if(!groups.has(id))groups.set(id,{id,type:episode.seriesId?'series':'episode',seriesId:episode.seriesId||null,title:episode.seriesId?episode.series:episode.title,members:[]});
+    if(!groups.has(id)){
+      const choice=placements[id];
+      groups.set(id,{id,type:episode.seriesId?'series':'episode',seriesId:episode.seriesId||null,title:episode.seriesId?episode.series:episode.title,
+        keyYear:choice?.year ?? null,keyYearApproximate:choice?.approximate ?? false,placementReason:choice?.reason||'',placementRule:choice?.rule||'',placementSources:choice?.sources||[],members:[]});
+    }
     groups.get(id).members.push(episode);
   }
   return [...groups.values()].map(item=>{item.members.sort(releaseOrder);return summariseItem(item);});
@@ -101,22 +108,17 @@ function periodGapLabel(previous,current) {
   return `${count.toLocaleString('en-GB')} intermediate ${count===1?unit:unit==='century'?'centuries':'decades'} compressed`;
 }
 const ordinalYear=year=>year>0?year-1:year;
-export function midpointYear(start,end=start) {
-  const middle=Math.floor((ordinalYear(start)+ordinalYear(end))/2);
-  return middle>=0?middle+1:middle;
-}
 export function timelineDateX(layout,year,end=false) {
   const tick=layout.ticks.find(t=>t.id===timelinePeriod(year)?.id);
   if(!tick)return null;
   return tick.x+(ordinalYear(year)-ordinalYear(tick.start)+(end?1:0))/(ordinalYear(tick.end)-ordinalYear(tick.start)+1)*tick.width;
 }
 export function makeTimeline(items,step=TIMELINE_COLUMN_WIDTH) {
-  const dated=items.filter(hasTimelineDate).sort(chronological);
+  const dated=items.filter(item=>hasTimelineDate(item)&&Number.isInteger(item.keyYear)&&item.keyYear!==0).sort(placementOrder);
   const periods=new Map(),occupied=new Set();
   for(const item of dated) {
-    const middle=midpointYear(item.start,item.end ?? item.start);
-    occupied.add(timelinePeriod(middle).id);
-    for(const year of [item.start,item.end ?? item.start,middle]) {
+    occupied.add(timelinePeriod(item.keyYear).id);
+    for(const year of [item.start,item.end ?? item.start,item.keyYear]) {
       const period=timelinePeriod(year);periods.set(period.id,period);
     }
   }
@@ -129,11 +131,11 @@ export function makeTimeline(items,step=TIMELINE_COLUMN_WIDTH) {
   }
   const layout={ticks};
   const candidates=dated.map(item=>{
-    const middle=midpointYear(item.start,item.end ?? item.start),period=timelinePeriod(middle),tick=ticks.find(t=>t.id===period.id);
+    const keyYear=item.keyYear,period=timelinePeriod(keyYear),tick=ticks.find(t=>t.id===period.id);
     const center=tick.x+tick.width/2;
     // Every tile occupies one column, with the same two-pixel inset on both sides.
-    return {item,key:item.id,periodId:period.id,periodLabel:period.label,middle,center,x:tick.x+2,width:tick.width-4};
-  }).sort((a,b)=>a.x-b.x||a.middle-b.middle||chronological(a.item,b.item));
+    return {item,key:item.id,periodId:period.id,periodLabel:period.label,keyYear,center,x:tick.x+2,width:tick.width-4};
+  }).sort((a,b)=>a.x-b.x||placementOrder(a.item,b.item));
   const columnRows=new Map();
   let rowCount=0;
   for(const candidate of candidates) {

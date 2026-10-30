@@ -12,6 +12,7 @@ def read(name):
 base = read('base-episodes.json')
 placements = read('dates-early.json') | read('dates-late.json')
 timeline_review = read('timeline-review.json')
+key_year_choices = read('timeline-key-years.json')['items']
 for episode_id, correction in timeline_review['dateCorrections'].items():
     placements[episode_id].update({k: v for k, v in correction.items() if k in ['start', 'end', 'dateLabel', 'note']})
 locations = read('map-locations-a.json') | read('map-locations-b.json') | read('map-locations-c.json')
@@ -86,7 +87,26 @@ assert all(e['start'] is None or (isinstance(e['start'],int) and e['start']<=e['
 assert all(e['category'] if e['start'] is None or e['timelineExcluded'] else e['category'] is None for e in out)
 target=ROOT/'public'/'data'; target.mkdir(exist_ok=True,parents=True)
 updated=read('catalogue-source.json')['fetchedAt']
-result=dict(updatedAt=updated,source='https://feeds.megaphone.fm/GLT4787413333',series=series_data['series'],episodes=out)
+groups={}
+for episode in out:
+    key='series:'+episode['seriesId'] if episode['seriesId'] else episode['id']
+    groups.setdefault(key,[]).append(episode)
+published_choices={}
+for key,members in groups.items():
+    eligible=[e for e in members if e['start'] is not None and not e['timelineExcluded']]
+    choice=key_year_choices.get(key)
+    if not choice:
+        assert not eligible, f'Missing reviewed timeline key year: {key}'
+        choice=dict(year=None,approximate=False,rule='off-timeline',reason='Historical placement has not yet been reviewed.',sources=[])
+    year=choice['year']
+    assert choice['reason'] and choice['rule'],key
+    if eligible:
+        assert isinstance(year,int) and year!=0, f'Missing or invalid key year: {key}'
+        assert min(e['start'] for e in eligible)<=year<=max(e['end'] for e in eligible), f'Key year outside reviewed coverage: {key}'
+    else:
+        assert year is None, f'Off-timeline item must not have a key year: {key}'
+    published_choices[key]=choice
+result=dict(updatedAt=updated,source='https://feeds.megaphone.fm/GLT4787413333',series=series_data['series'],timelinePlacements=published_choices,episodes=out)
 (target/'catalogue.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')))
 dated=sum(e['start'] is not None and not e['timelineExcluded'] for e in out)
 print(f"Catalogue: {len(out)} total, {dated} on timeline, {len(out)-dated} off timeline. {len((target/'catalogue.json').read_bytes()):,} bytes.")

@@ -1,5 +1,37 @@
 {
-  "d3": {"version":"7.9.0","source":"https://github.com/d3/d3","download":"https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js","license":"ISC; see LICENSE-d3.txt"},
-  "topojson-client": {"version":"3.1.0","source":"https://github.com/topojson/topojson-client","download":"https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js","license":"ISC; see LICENSE-topojson-client.txt"},
-  "world-atlas": {"version":"2.0.2","source":"https://github.com/topojson/world-atlas","download":"https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json","license":"Natural Earth geography is public domain; https://www.naturalearthdata.com/about/terms-of-use/"}
+  "d3": {
+    "version": "7.9.0",
+    "source": "https://github.com/d3/d3",
+    "download": "https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js",
+    "license": "ISC; see LICENSE-d3.txt"
+  },
+  "topojson-client": {
+    "version": "3.1.0",
+    "source": "https://github.com/topojson/topojson-client",
+    "download": "https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js",
+    "license": "ISC; see LICENSE-topojson-client.txt"
+  },
+  "world-atlas": {
+    "version": "2.0.2",
+    "source": "https://github.com/topojson/world-atlas",
+    "download": "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json",
+    "license": "Natural Earth geography is public domain; https://www.naturalearthdata.com/about/terms-of-use/"
+  },
+  "city-labels": {
+    "source": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-populated-places/",
+    "download": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_populated_places_simple.geojson",
+    "retrieved": "2026-10-30",
+    "sourceSha256": "0dbd25c9ad8bd797ddf164b067f563be5c16be2c002254eb594862377963f9dc",
+    "file": "../data/map-cities.json",
+    "places": 243,
+    "fields": "ne_id, name, coordinates (rounded to 5 decimals), scalerank, pop_max; sorted by scalerank then population",
+    "license": "Natural Earth public domain; https://www.naturalearthdata.com/about/terms-of-use/"
+  },
+  "lucide-info": {
+    "source": "https://github.com/lucide-icons/lucide",
+    "download": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/info.svg",
+    "retrieved": "2026-10-30",
+    "file": "../images/info.svg",
+    "license": "ISC with MIT notice for Feather-derived info icon; see LICENSE-lucide.txt"
+  }
 }

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
 import {makeCollection,filterCollection} from '../public/core.mjs';
-import {clusterPoints,groupZoom} from '../public/map-core.mjs';
+import {clusterPoints,groupZoom,mapLayerTransform,placeCityLabels} from '../public/map-core.mjs';
 
 const catalogue=JSON.parse(readFileSync(new URL('../public/data/catalogue.json',import.meta.url)));
 const reviewed=Object.assign({},...['a','b','c'].map(part=>JSON.parse(readFileSync(new URL('../data/map-locations-'+part+'.json',import.meta.url)))));
@@ -75,7 +75,7 @@ test('clustering is deterministic regardless of catalogue order and does not dep
 
 
 test('series-first map entries preserve all episodes and group by map availability independently of dates',()=>{
-  const items=filterCollection(makeCollection(episodes));
+  const items=filterCollection(makeCollection(episodes,catalogue.timelinePlacements));
   const mapped=items.filter(item=>item.location.coordinates),worldwide=items.filter(item=>!item.location.coordinates);
   assert.equal(mapped.length+worldwide.length,items.length);
   assert.deepEqual([...mapped,...worldwide].flatMap(item=>item.members.map(e=>e.id)).sort(),episodes.map(e=>e.id).sort());
@@ -87,4 +87,54 @@ test('series-first map entries preserve all episodes and group by map availabili
   assert.equal(arthur.start,null);assert.ok(arthur.location.coordinates);
   const worldCup=items.find(item=>item.seriesId==='the-world-cup');
   assert.ok(worldCup.start!==null);assert.equal(worldCup.location.coordinates,null);
+});
+
+test('cached geography remains aligned during pan and zoom and refreshes before its margin runs out',()=>{
+  const previous={k:4,x:-200,y:70},margin=300;
+  for(const scale of [.85,1,1.25]){
+    const current={k:previous.k*scale,x:previous.x*scale+35,y:previous.y*scale-20};
+    const camera=mapLayerTransform(current,previous,margin);
+    assert.equal(camera.refresh,false);
+    for(const [x,y] of [[0,0],[200,100],[-30,70]]){
+      const cached=[x*previous.k+previous.x+margin,y*previous.k+previous.y+margin];
+      assert.ok(Math.abs(-margin+camera.x+camera.scale*cached[0]-(x*current.k+current.x))<.001);
+      assert.ok(Math.abs(-margin+camera.y+camera.scale*cached[1]-(y*current.k+current.y))<.001);
+    }
+  }
+  assert.equal(mapLayerTransform(previous,null,margin).refresh,true);
+  assert.equal(mapLayerTransform(previous,previous,margin,true).refresh,true);
+  assert.equal(mapLayerTransform({...previous,x:previous.x+200},previous,margin).refresh,true);
+  assert.equal(mapLayerTransform({...previous,k:8},previous,margin).refresh,true);
+});
+
+test('city labels use a small bundled dataset and stay bounded, visible and separate from markers',()=>{
+  const raw=readFileSync(new URL('../public/data/map-cities.json',import.meta.url));
+  const cities=JSON.parse(raw);
+  assert.ok(raw.length<30000);assert.ok(cities.length>200&&cities.length<300);
+  assert.equal(new Set(cities.map(c=>c.id)).size,cities.length);
+  assert.ok(cities.some(c=>c.name==='London')&&cities.some(c=>c.name==='Tokyo'));
+  for(const city of cities){
+    assert.ok(city.coordinates.every(Number.isFinite));
+    assert.ok(Math.abs(city.coordinates[0])<=180&&Math.abs(city.coordinates[1])<=90);
+  }
+  for(const width of [366,1200]){
+    const projection=libraries.d3.geoEqualEarth().fitExtent([[18,20],[width-18,300]],{type:'Sphere'});
+    const points=cities.map(c=>{const [x,y]=projection(c.coordinates);return {...c,x,y};});
+    const [cx,cy]=projection([10,45]);
+    const obstacle=[width/2-25,135,width/2+25,185];
+    for(const k of [1,4,8,16]){
+      const transform={k,x:width/2-cx*k,y:160-cy*k};
+      const labels=placeCityLabels(points,transform,width,320,[obstacle]);
+      assert.ok(labels.length<=(width<600?12:24));
+      if(k<4)assert.equal(labels.length,0);else assert.ok(labels.length>0);
+      const boxes=[obstacle];
+      for(const label of labels){
+        const left=label.x+label.labelX,top=label.y+label.labelY-10;
+        const box=[left-2,top-2,left+label.name.length*5.5+6,top+14];
+        assert.ok(box[0]>=4&&box[2]<=width-4&&box[1]>=4&&box[3]<=316);
+        assert.ok(!boxes.some(b=>box[0]<b[2]&&box[2]>b[0]&&box[1]<b[3]&&box[3]>b[1]));
+        boxes.push(box);
+      }
+    }
+  }
 });

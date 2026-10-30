@@ -87,6 +87,14 @@
       "category": "Cross-era collections",
       "note": "A collection of literary, magical and educational influences across periods. Eighteenth-century school rebellions only date one part, not the series.",
       "sourceUrl": "https://archive.therestishistory.com/catalog/series/Public%20Schools"
+    },
+    "ireland-from-the-celts-to-the-easter-rising": {
+      "category": "Countries & places",
+      "note": "This collection surveys Ireland from medieval conquest to the twentieth century. It has no single historical focal year, so the full series belongs off the timeline; its episodes retain useful reference dates and map locations."
+    },
+    "london": {
+      "category": "Countries & places",
+      "note": "This collection surveys London through Roman, medieval and modern places, people and stories. It has no single historical focal year, so the full series belongs off the timeline; its episodes retain useful reference dates and map locations."
     }
   },
   "episodes": {

@@ -31,6 +31,25 @@ dialog{padding:0;border:1px solid #c9baa1;background:var(--paper);color:var(--in
 .collection .section-heading { align-items:center; gap:12px; }
 .collection .eyebrow { font-size:8px; letter-spacing:1.2px; }
 .collection h1 { font:400 32px/1.1 var(--serif); letter-spacing:-.6px; margin-top:2px; }
+.timeline-title{position:relative;display:flex;align-items:center;gap:8px}
+.timeline-help{display:flex;align-items:center}
+.timeline-help-button{display:flex;align-items:center;justify-content:center;width:28px;height:28px;padding:5px;opacity:.65;border-radius:50%}
+.timeline-help-button:hover,.timeline-help-button:focus-visible{opacity:1;background:#eae2d3}
+.placement-tooltip{display:none;position:absolute;left:0;top:calc(100% + 7px);z-index:20;width:min(360px,calc(100vw - 32px));padding:13px 15px;background:#fffcf3;border:1px solid #c4b28f;border-radius:4px;box-shadow:0 4px 14px #30271f25;color:var(--ink);font:11px/1.65 var(--sans);text-align:left}
+.placement-tooltip strong{display:block;margin-bottom:5px;font-size:12px;color:var(--wine)}
+.timeline-help:hover .placement-tooltip,.timeline-help:focus-within .placement-tooltip{display:block}
+.placement-info{margin:14px 0;padding:12px 14px;border-left:3px solid var(--wine);background:#f5eee3;font:11px/1.65 var(--sans)}
+.placement-info p+p{margin-top:5px}
+.placement-heading{font-weight:600;color:var(--wine)}
+.placement-context{color:var(--muted)}
+.placement-sources{margin-top:7px;font-size:10px}
+.placement-sources summary{cursor:pointer;color:var(--wine)}
+.placement-sources a{text-decoration:underline;text-underline-offset:2px}
+.series-released,.part-release{font:10px/1.6 var(--sans);color:var(--muted)}
+.series-released{margin-top:5px}
+.release-date{display:inline-flex;align-items:baseline;gap:5px;flex-wrap:wrap}
+.release-date strong{font-weight:600;color:var(--ink)}
+.detail-label{font:600 8px/1.5 var(--sans);letter-spacing:1px;color:var(--muted);margin:12px 0 3px}
 .collection-summary { display:flex; align-items:center; gap:18px; }
 .collection-note { padding:0; font-size:11px; white-space:nowrap; }
 .collection-summary .text-link { font-size:11px; }
@@ -130,15 +149,19 @@ input[type=range] { height:20px; }
 .map-surface:active { cursor:grabbing; }
 .map-surface:focus-visible { outline-offset:-3px; }
 .map-drawing,.map-pins { position:absolute; inset:0; width:100%; height:100%; }
+.map-geography { position:absolute; transform-origin:0 0; will-change:transform; pointer-events:none; }
 .map-pins { pointer-events:none; }
-.map-drawing { display:block; }
+.map-drawing { display:block; overflow:visible; will-change:transform; pointer-events:none; }
 .map-ocean { fill:#e9ede5; stroke:#c2c8bc; stroke-width:1; vector-effect:non-scaling-stroke; }
 .map-land { fill:#d3c3a7; stroke:#b2a68f; stroke-width:.55; vector-effect:non-scaling-stroke; }
 .map-borders { fill:none; stroke:#f8f4e9; stroke-width:.75; vector-effect:non-scaling-stroke; }
 .map-graticule { fill:none; stroke:#c4ccbf; stroke-width:.55; opacity:.65; vector-effect:non-scaling-stroke; }
 .map-country-labels { pointer-events:none; }
 .map-country-labels text { font:10px var(--sans); fill:#625e50; text-anchor:middle; paint-order:stroke; stroke:#e8deca; stroke-width:3px; stroke-linejoin:round; }
-.map-pin { position:absolute; display:flex; align-items:center; justify-content:center; border-radius:50%; transform:translate(-50%,-50%); cursor:pointer; pointer-events:auto; box-shadow:0 2px 5px #32281e30; }
+.map-city-labels{pointer-events:none}
+.map-city-labels circle{fill:#776954;stroke:#f8f4e9;stroke-width:.7px}
+.map-city-labels text{font:9px var(--sans);fill:#625747;paint-order:stroke;stroke:#f8f4e9;stroke-width:2.5px;stroke-linejoin:round}
+.map-pin { position:absolute; left:0; top:0; display:flex; align-items:center; justify-content:center; border-radius:50%; transform:translate(-50%,-50%); cursor:pointer; pointer-events:auto; box-shadow:0 2px 5px #32281e30; }
 .map-cluster { width:44px; height:44px; border:2px solid #f9f3e8; background:var(--wine); color:#fffaf4; font:600 14px var(--sans); }
 .map-pin-single { width:36px; height:36px; border:2px solid #fff9f0; background:var(--wine); }
 .map-pin-single img { width:32px; height:32px; object-fit:cover; border-radius:50%; pointer-events:none; }

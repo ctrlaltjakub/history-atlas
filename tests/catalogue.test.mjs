@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, SERIES_COLOR, timelinePeriod, centuryForYear, formatCentury, hasTimelineDate, midpointYear, timelineDateX} from '../public/core.mjs';
+import {REGIONS, CATEGORIES, ERAS, matchesEpisode, makeTimeline, visibleTimeline, chronological, formatYear, makeCollection, filterCollection, SERIES_COLOR, timelinePeriod, centuryForYear, formatCentury, hasTimelineDate, placementOrder, timelineDateX} from '../public/core.mjs';
 
 const catalogue = JSON.parse(readFileSync(new URL('../public/data/catalogue.json', import.meta.url)));
 const base = JSON.parse(readFileSync(new URL('../data/base-episodes.json', import.meta.url)));
@@ -40,7 +40,7 @@ test('listening links distinguish verified episodes from searches', () => {
 });
 
 test('released series group every member once and leave true singles alone', () => {
-  const items=makeCollection(episodes);
+  const items=makeCollection(episodes,catalogue.timelinePlacements);
   assert.equal(items.filter(x=>x.type==='series').length,catalogue.series.length);
   assert.deepEqual([...new Set(items.filter(x=>x.type==='series').map(x=>x.color))],[SERIES_COLOR],'All series use the shared burgundy accent');
   assert.deepEqual(items.flatMap(x=>x.members.map(e=>e.id)).sort(),episodes.map(e=>e.id).sort());
@@ -60,8 +60,8 @@ test('released series group every member once and leave true singles alone', () 
   assert.equal(found[0].matches.length,1);assert.equal(found[0].members.length,4);
 });
 
-test('tiles fill equal grid cells in midpoint columns with top-filled fixed rows', () => {
-  const items=filterCollection(makeCollection(episodes),{},'timeline');
+test('tiles fill equal grid cells in reviewed key-year columns with top-filled fixed rows', () => {
+  const items=filterCollection(makeCollection(episodes,catalogue.timelinePlacements),{},'timeline');
   for(const step of [144,176,200]){
     const layout=makeTimeline(items,step);
     assert.equal(layout.positions.length,items.length);
@@ -77,7 +77,7 @@ test('tiles fill equal grid cells in midpoint columns with top-filled fixed rows
     for(const p of layout.positions){
       const start=layout.ticks.find(t=>t.id===timelinePeriod(p.item.start).id);
       const end=layout.ticks.find(t=>t.id===timelinePeriod(p.item.end).id);
-      const middle=layout.ticks.find(t=>t.id===timelinePeriod(midpointYear(p.item.start,p.item.end)).id);
+      const middle=layout.ticks.find(t=>t.id===timelinePeriod(p.item.keyYear).id);
       assert.ok(Math.abs(p.x+p.width/2-middle.x-middle.width/2)<0.001,p.item.title+' is centred on the grid');
       assert.ok(p.startX>=start.x&&p.startX<start.x+start.width,p.item.title);
       assert.ok(p.endX>end.x&&p.endX<=end.x+end.width+0.001,p.item.title);
@@ -105,31 +105,31 @@ test('tiles fill equal grid cells in midpoint columns with top-filled fixed rows
   }
 });
 
-test('long narratives keep compact midpoint tiles and precise endpoints for the hover guide',()=>{
-  const sample=[{id:'war',title:'Long war',start:1700,end:1721},{id:'point',title:'Short event',start:1710,end:1710}];
+test('long narratives use their reviewed key year and retain precise coverage endpoints',()=>{
+  const sample=[{id:'war',title:'Long war',start:1700,end:1721,keyYear:1700},{id:'point',title:'Short event',start:1710,end:1710,keyYear:1710}];
   const layout=makeTimeline(sample,176),war=layout.positions.find(p=>p.item.id==='war');
-  assert.deepEqual(layout.ticks.map(t=>t.width),[176/3,176,176/3],'Empty endpoint columns shrink even when a range crosses them');
-  assert.equal(war.startX,0);assert.equal(war.endX,176/3+176+(176/3)*2/10);
-  assert.equal(war.center,176/3+88);assert.equal(war.width,172);assert.equal(layout.rowCount,2);
-  assert.ok(!visibleTimeline(layout,layout.ticks[2].x,176).positions.some(p=>p.item.id==='war'),'Only the tile footprint controls visibility');
-  const longTitle={id:'wide',title:'A title long enough to require more than one whole column in this test',start:1605,end:1605};
+  assert.deepEqual(layout.ticks.map(t=>t.width),[176,176,176/3],'Empty endpoint columns shrink even when a range crosses them');
+  assert.equal(war.startX,0);assert.equal(war.endX,176*2+(176/3)*2/10);
+  assert.equal(war.center,88);assert.equal(war.width,172);assert.equal(layout.rowCount,1);
+  assert.ok(!visibleTimeline(layout,layout.ticks[1].x,176).positions.some(p=>p.item.id==='war'),'Only the tile footprint controls visibility');
+  const longTitle={id:'wide',title:'A title long enough to require more than one whole column in this test',start:1605,end:1605,keyYear:1605};
   const single=makeTimeline([longTitle]),position=single.positions[0];
   assert.equal(position.x,2);assert.equal(position.center,single.step/2);
   assert.equal(position.width,war.width,'Long and short titles occupy the same cell size');
   assert.equal(position.x+position.width,single.width-2);
 });
 
-test('range midpoints and hover coordinates cross BCE/CE without a year zero',()=>{
-  for(const [start,end,expected] of [[1700,1725,1712],[1600,1800,1700],[-10,10,-1],[-1,1,-1],[1,1,1],[-400000,-40000,-220000]])assert.equal(midpointYear(start,end),expected);
-  const layout=makeTimeline([{id:'crossing',title:'Crossing',start:-1,end:1}]);
+test('key years and hover coordinates cross BCE/CE without a year zero',()=>{
+  const layout=makeTimeline([{id:'crossing',title:'Crossing',start:-1,end:1,keyYear:-1}]);
   assert.equal(timelineDateX(layout,-1,true),timelineDateX(layout,1));
-  assert.equal(layout.positions[0].middle,-1);
+  assert.equal(layout.positions[0].keyYear,-1);
   assert.ok(!layout.ticks.some(t=>t.century===0));
+  assert.equal(makeTimeline([{id:'unreviewed',start:1700,end:1800}]).positions.length,0,'Never infer a midpoint for an unreviewed item');
 });
 
 test('broad collections stay off the timeline without losing their dates, members or map locations',()=>{
   const review=JSON.parse(readFileSync(new URL('../data/timeline-review.json',import.meta.url)));
-  const collection=makeCollection(episodes),dated=filterCollection(collection,{},'timeline'),off=filterCollection(collection,{},'undated');
+  const collection=makeCollection(episodes,catalogue.timelinePlacements),dated=filterCollection(collection,{},'timeline'),off=filterCollection(collection,{},'undated');
   for(const id of Object.keys(review.series)){
     const item=collection.find(x=>x.seriesId===id);
     assert.ok(item.members.every(e=>e.timelineExcluded),item.title);
@@ -146,7 +146,7 @@ test('broad collections stay off the timeline without losing their dates, member
   assert.ok(hasTimelineDate(episodes.find(e=>e.title==='The First Emperor of China')),'A bounded China narrative remains dated');
   const northern=collection.find(x=>x.title==='The Great Northern War');
   const found=filterCollection(collection,{q:northern.members[2].title},'timeline').find(x=>x.id===northern.id);
-  assert.equal(found.start,northern.start);assert.equal(found.end,northern.end,'Matching one part never changes a series midpoint or hover range');
+  assert.equal(found.start,northern.start);assert.equal(found.end,northern.end,'Matching one part never changes a series key year or hover range');
 });
 
 test('century boundaries use BCE and CE correctly with no year or century zero',()=>{
@@ -154,7 +154,7 @@ test('century boundaries use BCE and CE correctly with no year or century zero',
   assert.equal(centuryForYear(0),null);assert.equal(centuryForYear(null),null);
   assert.equal(formatCentury(-1),'1st century BCE');assert.equal(formatCentury(1),'1st century CE');
   assert.equal(formatCentury(11),'11th century');assert.equal(formatCentury(12),'12th century');assert.equal(formatCentury(13),'13th century');assert.equal(formatCentury(21),'21st century');
-  const item=(id,start)=>({id,title:id,start,end:start});
+  const item=(id,start)=>({id,title:id,start,end:start,keyYear:start});
   const crossing=makeTimeline([item('bce',-1),item('ce',1),item('later',301)]);
   assert.deepEqual(crossing.ticks.map(t=>t.gapLabel),[null,null,'2 intermediate centuries compressed']);
   assert.deepEqual(makeTimeline([]),{ticks:[],positions:[],width:0,step:176,rowCount:0});
@@ -163,13 +163,13 @@ test('century boundaries use BCE and CE correctly with no year or century zero',
 test('a series can be dated, undated and mappable independently without losing its parts', () => {
   const base={seriesId:'mixed',series:'Mixed series',image:'/image.jpg',title:'part',region:'Europe',published:'2026-01-01',description:'',category:null};
   const sample=[{...base,id:'dated',start:1900,end:1901,location:{coordinates:null,label:'Worldwide'},seriesOrder:1},{...base,id:'mapped',start:null,end:null,category:'Ideas & everyday life',location:{coordinates:[10,20],label:'A place'},seriesOrder:2}];
-  const collection=makeCollection(sample),item=collection[0];
+  const collection=makeCollection(sample,{'series:mixed':{year:1900,reason:'The dated part anchors this mixed series.'}}),item=collection[0];
   assert.equal(collection.length,1);assert.equal(item.start,1900);assert.deepEqual(item.location.coordinates,[10,20]);
   const dated=filterCollection(collection,{},'timeline'),undated=filterCollection(collection,{},'undated');
   assert.equal(dated[0].id,undated[0].id);
   assert.deepEqual(dated[0].matches.map(e=>e.id),['dated']);assert.deepEqual(undated[0].matches.map(e=>e.id),['mapped']);
   assert.equal(undated[0].members.length,2);assert.deepEqual(undated[0].location.coordinates,[10,20]);
-  const layout=makeTimeline([...dated,{id:'single',title:'Single',start:1900,end:1900},{id:'later',title:'Later',start:1910,end:1910}]);
+  const layout=makeTimeline([...dated,{id:'single',title:'Single',start:1900,end:1900,keyYear:1900},{id:'later',title:'Later',start:1910,end:1910,keyYear:1910}]);
   assert.equal(layout.rowCount,2);assert.equal(layout.positions.find(p=>p.item.id==='later').row,0);
 });
 
@@ -209,11 +209,46 @@ test('the eighteenth century switches to calendar decades from 1700 onward',()=>
     const period=timelinePeriod(year);assert.equal(period.id,id);assert.equal(period.label,label);assert.ok(year>=period.start&&year<=period.end);
   }
   assert.equal(timelinePeriod(1699).end,1699);assert.equal(timelinePeriod(0),null);
-  const item=(id,start)=>({id,title:id,start,end:start});
+  const item=(id,start)=>({id,title:id,start,end:start,keyYear:start});
   const layout=makeTimeline([item('earlier',1699),item('a',1700),item('b',1709),item('c',1720)]);
   assert.deepEqual(layout.ticks.map(t=>t.label),['17th century','1700s','1720s']);
   assert.deepEqual(layout.ticks.map(t=>t.gapLabel),[null,null,'1 intermediate decade compressed']);
-  const all=makeTimeline(filterCollection(makeCollection(episodes),{},'timeline'));
+  const all=makeTimeline(filterCollection(makeCollection(episodes,catalogue.timelinePlacements),{},'timeline'));
   assert.ok(all.ticks.some(t=>t.id==='century:16'));assert.ok(all.ticks.some(t=>t.id==='century:17'));
   assert.ok(all.ticks.filter(t=>t.start>=1700).every(t=>t.kind==='decade'&&t.end-t.start===9));
+});
+
+test('every series and standalone item has an explicit reviewed placement decision',()=>{
+  const source=JSON.parse(readFileSync(new URL('../data/timeline-key-years.json',import.meta.url)));
+  const items=makeCollection(episodes,catalogue.timelinePlacements);
+  assert.equal(items.length,348);
+  assert.deepEqual(Object.keys(source.items).sort(),items.map(i=>i.id).sort());
+  assert.deepEqual(catalogue.timelinePlacements,source.items);
+  for(const item of items){
+    const choice=source.items[item.id];
+    assert.equal(choice.title,item.title);assert.ok(choice.reason.length>25);
+    assert.ok(choice.sources.length&&choice.sources.every(url=>new URL(url).protocol==='https:'));
+    assert.equal(item.placementReason,choice.reason);
+    if(hasTimelineDate(item)){
+      assert.ok(Number.isInteger(item.keyYear)&&item.keyYear!==0,item.title);
+      assert.ok(item.keyYear>=item.start&&item.keyYear<=item.end,item.title);
+    }else assert.equal(item.keyYear,null,item.title);
+  }
+});
+
+test('background, biography and aftermath do not displace the central historical subject',()=>{
+  const items=makeCollection(episodes,catalogue.timelinePlacements),byId=new Map(items.map(i=>[i.id,i]));
+  for(const [id,year] of [['the-american-civil-war',1861],['custer-vs-crazy-horse',1876],['the-falklands-war',1982],['young-churchill',1888],['the-french-revolution-the-storming-of-the-bastille',1789]]){
+    const item=byId.get('series:'+id);assert.equal(item.keyYear,year);
+    const filtered=filterCollection(items,{q:item.members[0].title},'timeline').find(i=>i.id===item.id);
+    assert.equal(filtered.keyYear,year,'Matching one part preserves the reviewed series year');
+    assert.equal(makeTimeline([item]).positions[0].periodId,timelinePeriod(year).id);
+  }
+  assert.equal(items.find(i=>i.title==='Watergate').keyYear,1972);
+  assert.equal(byId.get('series:jfk').keyYear,1961);
+  assert.equal(items.find(i=>i.title==='The Suez Crisis').keyYear,1956);
+  const ordered=[byId.get('series:custer-vs-crazy-horse'),byId.get('series:the-american-civil-war')].sort(placementOrder);
+  assert.equal(ordered[0].seriesId,'the-american-civil-war');
+  assert.equal(byId.get('series:london').keyYear,null);
+  assert.equal(byId.get('series:ireland-from-the-celts-to-the-easter-rising').keyYear,null);
 });
