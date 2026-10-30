@@ -5,7 +5,7 @@ const $=selector=>document.querySelector(selector);
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const params=new URLSearchParams(location.search);
 const state={q:params.get('q')||'',region:REGIONS.includes(params.get('region'))?params.get('region'):'all',era:ERAS.some(e=>e.id===params.get('era'))?params.get('era'):'all',view:params.get('view')==='index'?'index':'timeline',category:'all',indexLimit:24,beyondLimit:8};
-let episodes=[],items=[],catalogue=null,byId=new Map(),itemsById=new Map(),itemByEpisode=new Map(),timeline=null,currentEpisode=null,currentSeries=null,lastFocus=null,toastTimer,renderTimer,timelineKey='',timelineCards=[],timelineTicks=[],episodeMap,hoveredTimelineItem=null,focusedTimelineItem=null;
+let episodes=[],items=[],catalogue=null,byId=new Map(),itemsById=new Map(),itemByEpisode=new Map(),timeline=null,currentEpisode=null,currentSeries=null,lastFocus=null,toastTimer,renderTimer,timelineKey='',timelineCards=[],timelineTicks=[],episodeMap;
 const motion=()=>matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth';
 function thumb(url,width=180){try{const u=new URL(url);if(!['https:','http:'].includes(u.protocol))return '/images/show.jpg';if(u.hostname.endsWith('imgix.net')){u.search='';u.searchParams.set('w',width);u.searchParams.set('h',width);u.searchParams.set('fit','crop');u.searchParams.set('auto','format,compress');}return u.href;}catch{return '/images/show.jpg';}}
 function date(value){return value?new Date(value).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}):'Release date unavailable';}
@@ -31,7 +31,7 @@ function renderTimeline(filtered){
   const opening=!timelineKey&&!state.q&&state.region==='all'&&state.era==='all';
   const previousPeriod=timeline?.ticks.findLast(t=>t.x<=viewport.scrollLeft)?.id;
   const sameItems=key.split('|')[0]===timelineKey.split('|')[0];timelineKey=key;
-  timeline=makeTimeline(filtered,step);hoveredTimelineItem=null;focusedTimelineItem=null;
+  timeline=makeTimeline(filtered,step);
   viewport.style.setProperty('--timeline-visible-rows',timeline.rowCount||10);
   const canvas=$('#timeline-canvas');canvas.style.setProperty('--step',`${step}px`);timelineCards=[];timelineTicks=[];
   $('.timeline-footnote').hidden=!timeline.positions.length;
@@ -64,11 +64,13 @@ function updateScroll(){
 function updateRangeGuide(){
   const guide=$('#range-guide');if(!guide)return;
   const supported=matchMedia('(min-width:761px) and (hover:hover) and (pointer:fine)').matches;
-  guide.hidden=!supported;if(!supported)return;
+  if(!supported){guide.hidden=true;return;}
   const viewport=$('#timeline-scroll'),left=viewport.scrollLeft+10,right=viewport.scrollLeft+viewport.clientWidth-10;
-  const position=timeline.positions.find(p=>p.item.id===(hoveredTimelineItem||focusedTimelineItem));
+  const hovered=$('.story-card:hover:not([hidden])');
+  const position=timeline.positions.find(p=>p.item.id===hovered?.dataset.itemId);
+  guide.hidden=!position;
   for(const card of timelineCards)card.classList.toggle('is-range-active',card.dataset.itemId===position?.item.id);
-  if(!position){guide.removeAttribute('role');guide.removeAttribute('aria-label');guide.innerHTML=`<span class="range-hint" style="left:${left}px">Hover or focus a tile to mark its historical range</span>`;return;}
+  if(!position){guide.removeAttribute('role');guide.removeAttribute('aria-label');guide.innerHTML='';return;}
   const clamp=x=>Math.max(left,Math.min(right,x)),from=clamp(position.startX),to=clamp(position.endX);
   const before=position.startX<left,after=position.endX>right,start=formatYear(position.item.start),end=formatYear(position.item.end);
   guide.setAttribute('role','img');guide.setAttribute('aria-label',`Approximate historical coverage: ${position.item.dateLabel}`);
@@ -140,10 +142,8 @@ $('#timeline-view').addEventListener('click',()=>setFilter('view','timeline'));$
 $('#index-more').addEventListener('click',()=>{state.indexLimit+=24;render();});$('#beyond-more').addEventListener('click',()=>{state.beyondLimit+=12;render();});
 for(const [id,direction] of [['earlier',-1],['later',1]])$('#'+id).addEventListener('click',()=>$('#timeline-scroll').scrollBy({left:direction*Math.max(timeline?.step||176,$('#timeline-scroll').clientWidth-(timeline?.step||176)),behavior:motion()}));
 $('#time-position').addEventListener('input',e=>{const el=$('#timeline-scroll');el.scrollLeft=(el.scrollWidth-el.clientWidth)*Number(e.target.value)/1000;});
-$('#timeline-scroll').addEventListener('pointerover',event=>{if(event.pointerType==='touch')return;const card=event.target.closest('.story-card');if(card){hoveredTimelineItem=card.dataset.itemId;updateRangeGuide();}});
-$('#timeline-scroll').addEventListener('pointerout',event=>{const card=event.target.closest('.story-card');if(card&&!card.contains(event.relatedTarget)){hoveredTimelineItem=null;updateRangeGuide();}});
-$('#timeline-scroll').addEventListener('focusin',event=>{const card=event.target.closest('.story-card');if(card){hoveredTimelineItem=null;focusedTimelineItem=card.dataset.itemId;updateRangeGuide();}});
-$('#timeline-scroll').addEventListener('focusout',event=>{if(event.target.closest('.story-card')){focusedTimelineItem=null;updateRangeGuide();}});
+$('#timeline-scroll').addEventListener('pointerover',event=>{if(event.pointerType!=='touch'&&event.target.closest('.story-card'))updateRangeGuide();});
+$('#timeline-scroll').addEventListener('pointerout',event=>{const card=event.target.closest('.story-card');if(card&&!card.contains(event.relatedTarget))updateRangeGuide();});
 let scrollPending=false;$('#timeline-scroll').addEventListener('scroll',()=>{if(scrollPending)return;scrollPending=true;requestAnimationFrame(()=>{updateScroll();scrollPending=false;});},{passive:true});window.addEventListener('resize',()=>{if(catalogue&&state.view==='timeline')render();updateScroll();});
 $('#surprise').addEventListener('click',()=>{if(episodes.length)showEpisode(episodes[Math.floor(Math.random()*episodes.length)].id);});
 document.addEventListener('click',async event=>{

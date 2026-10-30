@@ -326,7 +326,6 @@ input[type=range] { height:20px; }
 
 /* Compact tiles share a grid centre; the reserved band shows their range on hover. */
 .range-guide{display:none;position:absolute;inset:0 0 auto;height:44px;pointer-events:none;color:var(--wine)}
-.range-hint{position:absolute;top:16px;font:10px var(--sans);color:#897a68;white-space:nowrap}
 .range-caption{position:absolute;top:4px;font:8px/11px var(--sans);letter-spacing:.25px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#89705f}
 .range-dates{position:absolute;top:18px;font:500 11px/14px var(--sans);white-space:nowrap}
 .range-end{transform:translateX(-100%)}
