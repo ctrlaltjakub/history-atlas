@@ -11,6 +11,8 @@ test('the published catalogue contains each public feed episode exactly once', (
   assert.equal(new Set(episodes.map(e => e.id)).size, episodes.length);
   assert.deepEqual(episodes.map(e => e.id).sort(), base.map(e => e.id).sort());
   assert.ok(Number.isFinite(Date.parse(catalogue.updatedAt)));
+  const source=JSON.parse(readFileSync(new URL('../data/catalogue-source.json',import.meta.url)));
+  assert.equal(catalogue.updatedAt,source.fetchedAt,'The catalogue update label reflects the successful feed refresh');
   for (const e of episodes) {
     assert.ok(e.title && e.description && e.image && e.audio, e.title);
     assert.match(e.published, /(?:Z|\+00:00)$/);
@@ -218,14 +220,25 @@ test('the eighteenth century switches to calendar decades from 1700 onward',()=>
   assert.ok(all.ticks.filter(t=>t.start>=1700).every(t=>t.kind==='decade'&&t.end-t.start===9));
 });
 
-test('every series and standalone item has an explicit reviewed placement decision',()=>{
+test('reviewed placement decisions are preserved and new arrivals stay off the timeline',()=>{
   const source=JSON.parse(readFileSync(new URL('../data/timeline-key-years.json',import.meta.url)));
   const items=makeCollection(episodes,catalogue.timelinePlacements);
-  assert.equal(items.length,348);
-  assert.deepEqual(Object.keys(source.items).sort(),items.map(i=>i.id).sort());
-  assert.deepEqual(catalogue.timelinePlacements,source.items);
+  const ids=new Set(items.map(item=>item.id));
+  assert.ok(Object.keys(source.items).every(id=>ids.has(id)),'All reviewed entries remain in the catalogue');
+  assert.deepEqual(Object.keys(catalogue.timelinePlacements).sort(),[...ids].sort());
   for(const item of items){
-    const choice=source.items[item.id];
+    const choice=catalogue.timelinePlacements[item.id];
+    if(!source.items[item.id]){
+      assert.equal(choice.year,null,item.title);
+      assert.equal(choice.rule,'off-timeline');
+      assert.equal(choice.reason,'Historical placement has not yet been reviewed.');
+      assert.deepEqual(choice.sources,[]);
+      assert.ok(item.members.every(e=>e.category==='New arrivals'&&!hasTimelineDate(e)),item.title);
+      assert.equal(item.keyYear,null);
+      assert.equal(item.start,null);
+      continue;
+    }
+    assert.deepEqual(choice,source.items[item.id],item.title);
     assert.equal(choice.title,item.title);assert.ok(choice.reason.length>25);
     assert.ok(choice.sources.length&&choice.sources.every(url=>new URL(url).protocol==='https:'));
     assert.equal(item.placementReason,choice.reason);

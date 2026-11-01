@@ -68,6 +68,7 @@ def main():
                       else datetime.fromtimestamp(feed_path.stat().st_mtime, timezone.utc).isoformat())
     else:
         xml = subprocess.run(['curl', '--fail', '--location', '--silent', '--show-error',
+                              '--retry', '3', '--retry-delay', '5', '--connect-timeout', '15',
                               '--max-time', '60', SOURCE], check=True, capture_output=True).stdout
     episodes = normalize(xml)
     # Validate everything before replacing the existing snapshot.

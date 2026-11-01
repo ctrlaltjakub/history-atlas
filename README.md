@@ -4,7 +4,7 @@ An independent companion to **The Rest Is History**, arranged by the history bei
 
 **Live:** https://history.jakub.computer
 
-The initial catalogue contains all **736 episodes in the public RSS feed**, captured on 30 October 2026: **540 eligible for the timeline** and **196 off the timeline** (including broad surveys and collections across eras). Episodes exclusive to the paid club and absent from the public feed are not included.
+The initial reviewed snapshot contained **736 episodes in the public RSS feed**, captured on 30 October 2026: **540 eligible for the timeline** and **196 off the timeline** (including broad surveys and collections across eras). The catalogue refreshes weekly; the app shows its current episode count and **Catalogue updated** date. Episodes exclusive to the paid club and absent from the public feed are not included.
 
 ## Explore
 
@@ -24,7 +24,7 @@ The initial catalogue contains all **736 episodes in the public RSS feed**, capt
 - Share individual episodes with `#episode=<RSS GUID>` and series with `#series=<series slug>`. Filters are reflected in the URL.
 - Responsive layouts, keyboard navigation, reduced-motion support, no analytics, accounts or application cookies.
 
-Timeline placement is an editorial choice, separate from historical coverage. Wars and revolutions use their beginning or the opening of the particular phase covered. People use a defining moment of influence; an early-life series stays in that early period. Works use publication or creation. Broad but coherent historical periods use an explained representative milestone; collections without a useful focal year stay off the timeline. All 348 series/standalone entries have explicit decisions in `data/timeline-key-years.json`: 247 placed and 101 off the timeline. There is no automatic midpoint fallback. Key years remain fixed when a filter matches only one part of a series. Coverage ranges can include causes and aftermath: for example, the American Civil War series is placed at 1861, Custer vs. Crazy Horse at 1876, and the Falklands War at 1982, despite their broader coverage ranges. Reviewed primary references and publisher links are recorded with each decision.
+Timeline placement is an editorial choice, separate from historical coverage. Wars and revolutions use their beginning or the opening of the particular phase covered. People use a defining moment of influence; an early-life series stays in that early period. Works use publication or creation. Broad but coherent historical periods use an explained representative milestone; collections without a useful focal year stay off the timeline. The 348 initially reviewed series/standalone entries have explicit decisions in `data/timeline-key-years.json`: 247 placed and 101 off the timeline. New arrivals remain off the timeline until reviewed. There is no automatic midpoint fallback. Key years remain fixed when a filter matches only one part of a series. Coverage ranges can include causes and aftermath: for example, the American Civil War series is placed at 1861, Custer vs. Crazy Horse at 1876, and the Falklands War at 1982, despite their broader coverage ranges. Reviewed primary references and publisher links are recorded with each decision.
 
 Each tile occupies exactly one column and one row, inset two pixels horizontally and one pixel vertically. Desktop columns are 176 pixels wide with 30-pixel rows; phone columns are 144 pixels wide with 28-pixel rows. Columns containing no key year use exactly one-third of the occupied width, including columns retained for coverage endpoints. Widths depend on the full filtered selection and stay fixed as you scroll; the hover guide uses each column’s actual width. Narrow century headings abbreviate century to “c.” Long titles use a two-line ellipsis and remain available in full in the detail view. Era filters match overlapping coverage ranges. The hover guide retains the reviewed endpoint coordinates within each rounded column and explicitly identifies coverage including background and aftermath.
 
@@ -51,7 +51,9 @@ npm run build
 
 ## Update the catalogue
 
-This is a dated snapshot, not a live feed. Refresh it deliberately:
+The [Refresh episode catalogue](https://github.com/ctrlaltjakub/history-atlas/actions/workflows/refresh-catalogue.yml) GitHub Actions workflow runs every Monday at **06:17 UTC** (07:17 CET / 08:17 CEST). It downloads the public feed and listening-link catalogues, builds and tests the site, then commits the refreshed snapshots and `public/data/catalogue.json` to `main`. This triggers the connected Vercel deployment and updates both **Catalogue updated** labels from the feed's successful fetch time. The workflow uses GitHub's built-in token with `contents: write`; no extra credentials or server cron daemon are needed. It can also be started immediately with **Run workflow** in GitHub Actions. Failed refreshes or tests do not commit or deploy partial data.
+
+To run the same refresh locally:
 
 ```sh
 npm run refresh
@@ -72,7 +74,7 @@ npm test
 git diff --check
 ```
 
-Review and commit both the edited source data and `public/data/catalogue.json`, then push to `main` to deploy through the connected Vercel project. Vercel copies the committed public catalogue; it does not merge changes from `data/` during deployment. Update the snapshot counts in this README when the catalogue changes.
+Review and commit both the edited source data and `public/data/catalogue.json`, then push to `main` to deploy through the connected Vercel project. Vercel copies the committed public catalogue; it does not merge changes from `data/` during deployment. Counts describing the initial reviewed snapshot above are historical; the app's counts and update date follow the latest catalogue.
 
 ## Sources
 

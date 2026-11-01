@@ -11,11 +11,13 @@ const {episodes}=catalogue;
 const libraries={};
 for(const file of ['d3.v7.9.0.min.js','topojson-client.v3.1.0.min.js'])runInNewContext(readFileSync(new URL('../public/vendor/'+file,import.meta.url),'utf8'),libraries);
 
-test('every public episode has a reviewed map location or an explicit worldwide group',()=>{
-  assert.deepEqual(Object.keys(reviewed).sort(),episodes.map(e=>e.id).sort());
+test('every public episode keeps its reviewed map location or an explicit worldwide group',()=>{
+  const ids=new Set(episodes.map(e=>e.id));
+  assert.ok(Object.keys(reviewed).every(id=>ids.has(id)),'All reviewed episodes remain in the catalogue');
   for(const episode of episodes){
     const location=episode.location;
-    assert.deepEqual(location,reviewed[episode.id],episode.title);
+    if(reviewed[episode.id])assert.deepEqual(location,reviewed[episode.id],episode.title);
+    else assert.deepEqual(location,{coordinates:null,label:'Worldwide',note:'New in the public feed. Map placement has not yet been reviewed.'},episode.title);
     assert.ok(location.label&&location.note,episode.title);
     if(location.coordinates===null){
       assert.equal(location.label,'Worldwide');
