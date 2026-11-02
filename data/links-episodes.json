@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-01T20:41:23.730754+00:00",
+  "generatedAt": "2026-11-02T15:46:53.476653+00:00",
   "coverage": {
-    "feedEpisodes": 736,
-    "pocketCastsDirect": 736,
+    "feedEpisodes": 737,
+    "pocketCastsDirect": 737,
     "spotifyDirect": 736,
-    "appleDirect": 209,
+    "appleDirect": 210,
     "appleSearch": 527,
-    "youtubeSearch": 736
+    "youtubeSearch": 737
   },
   "sources": {
     "pocketCasts": "https://podcast-api.pocketcasts.com/mobile/show_notes/full/c507d410-fd89-0138-4167-0acc26574db2",
@@ -24,9 +24,29 @@
   ],
   "unmatched": {
     "pocketCasts": [],
-    "spotify": []
+    "spotify": [
+      "719. Revolution in the Soviet Empire: The Hungarian Uprising (Part 1)"
+    ]
   },
   "episodes": [
+    {
+      "guid": "0d6570ec-d387-11f1-bf42-3f9aab9a93fa",
+      "title": "719. Revolution in the Soviet Empire: The Hungarian Uprising (Part 1)",
+      "pocketCasts": "https://pca.st/episode/54755c32-f321-441d-a28b-6cc01be01489",
+      "pocketCastsKind": "episode",
+      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20Revolution%20in%20the%20Soviet%20Empire%3A%20The%20Hungarian%20Uprising%20%28Part%201%29",
+      "spotifyKind": "search",
+      "applePodcasts": "https://podcasts.apple.com/us/podcast/revolution-in-the-soviet-empire-the-hungarian/id1537788786?i=1000797637935&uo=4",
+      "applePodcastsKind": "episode",
+      "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Revolution%20in%20the%20Soviet%20Empire%3A%20The%20Hungarian%20Uprising%20%28Part%201%29",
+      "youtubeKind": "search",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT4398850202.mp3",
+      "matchEvidence": {
+        "pocketCasts": "exact audio enclosure URL",
+        "spotify": null,
+        "applePodcasts": "exact audio enclosure URL"
+      }
+    },
     {
       "guid": "205d3ba6-d1f4-11f1-b0c5-bba84b32fd07",
       "title": "718. The Suez Crisis: Britain's Shattered Empire (Part 2)",
