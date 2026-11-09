@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-02T15:46:53.476653+00:00",
+  "generatedAt": "2026-11-09T16:13:42.604525+00:00",
   "coverage": {
-    "feedEpisodes": 737,
-    "pocketCastsDirect": 737,
+    "feedEpisodes": 739,
+    "pocketCastsDirect": 739,
     "spotifyDirect": 736,
     "appleDirect": 210,
-    "appleSearch": 527,
-    "youtubeSearch": 737
+    "appleSearch": 529,
+    "youtubeSearch": 739
   },
   "sources": {
     "pocketCasts": "https://podcast-api.pocketcasts.com/mobile/show_notes/full/c507d410-fd89-0138-4167-0acc26574db2",
@@ -25,10 +25,48 @@
   "unmatched": {
     "pocketCasts": [],
     "spotify": [
+      "721. The Charge of the Light Brigade: Outbreak of The Crimean War (Part 1)",
+      "720. Revolution in the Soviet Empire: Revenge of the Red Army (Part 2) ",
       "719. Revolution in the Soviet Empire: The Hungarian Uprising (Part 1)"
     ]
   },
   "episodes": [
+    {
+      "guid": "48d23996-d9cf-11f1-98a6-332f75c5bea8",
+      "title": "721. The Charge of the Light Brigade: Outbreak of The Crimean War (Part 1)",
+      "pocketCasts": "https://pca.st/episode/2c6a6146-e669-4a05-9280-b93169751b1e",
+      "pocketCastsKind": "episode",
+      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Outbreak%20of%20The%20Crimean%20War%20%28Part%201%29",
+      "spotifyKind": "search",
+      "applePodcasts": "https://podcasts.apple.com/us/podcast/the-charge-of-the-light-brigade-outbreak-of/id1537788786?i=1000800035971&uo=4",
+      "applePodcastsKind": "episode",
+      "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Outbreak%20of%20The%20Crimean%20War%20%28Part%201%29",
+      "youtubeKind": "search",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT2909363211.mp3",
+      "matchEvidence": {
+        "pocketCasts": "exact audio enclosure URL",
+        "spotify": null,
+        "applePodcasts": "exact audio enclosure URL"
+      }
+    },
+    {
+      "guid": "031da908-d849-11f1-9ed6-d78ec9b34db1",
+      "title": "720. Revolution in the Soviet Empire: Revenge of the Red Army (Part 2) ",
+      "pocketCasts": "https://pca.st/episode/f267626e-fcf2-4086-947c-98c5d7db2726",
+      "pocketCastsKind": "episode",
+      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20Revolution%20in%20the%20Soviet%20Empire%3A%20Revenge%20of%20the%20Red%20Army%20%28Part%202%29%20",
+      "spotifyKind": "search",
+      "applePodcasts": "https://podcasts.apple.com/us/podcast/revolution-in-the-soviet-empire-revenge-of-the-red/id1537788786?i=1000797637998&uo=4",
+      "applePodcastsKind": "episode",
+      "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Revolution%20in%20the%20Soviet%20Empire%3A%20Revenge%20of%20the%20Red%20Army%20%28Part%202%29%20",
+      "youtubeKind": "search",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT6037632826.mp3",
+      "matchEvidence": {
+        "pocketCasts": "exact audio enclosure URL",
+        "spotify": null,
+        "applePodcasts": "exact audio enclosure URL"
+      }
+    },
     {
       "guid": "0d6570ec-d387-11f1-bf42-3f9aab9a93fa",
       "title": "719. Revolution in the Soviet Empire: The Hungarian Uprising (Part 1)",
@@ -3474,15 +3512,15 @@
       "pocketCastsKind": "episode",
       "spotify": "https://open.spotify.com/episode/6GDOIq7XaUfHIS8s2iKEwB?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=4660919b-724e-4328-8e74-7407931d33ee",
       "spotifyKind": "episode",
-      "applePodcasts": "https://podcasts.apple.com/us/podcast/wojtek-the-bear-who-beat-the-nazis/id1537788786?i=1000683181532&uo=4",
-      "applePodcastsKind": "episode",
+      "applePodcasts": "https://podcasts.apple.com/us/search?term=The%20Rest%20Is%20History%20Wojtek%3A%20The%20Bear%20Who%20Beat%20the%20Nazis",
+      "applePodcastsKind": "search",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Wojtek%3A%20The%20Bear%20Who%20Beat%20the%20Nazis",
       "youtubeKind": "search",
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT8956421015.mp3?updated=1738860496",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
         "spotify": "unique normalized title in official Goalhanger show catalogue",
-        "applePodcasts": "exact audio enclosure URL"
+        "applePodcasts": null
       }
     },
     {
@@ -3492,15 +3530,15 @@
       "pocketCastsKind": "episode",
       "spotify": "https://open.spotify.com/episode/0bQhJTcub1lS5rMixx14A2?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=4660919b-724e-4328-8e74-7407931d33ee",
       "spotifyKind": "episode",
-      "applePodcasts": "https://podcasts.apple.com/us/podcast/hitlers-war-on-poland-the-fall-of-warsaw-part-3/id1537788786?i=1000681133636&uo=4",
-      "applePodcastsKind": "episode",
+      "applePodcasts": "https://podcasts.apple.com/us/search?term=The%20Rest%20Is%20History%20Hitler%27s%20War%20on%20Poland%3A%20The%20Fall%20of%20Warsaw%20%28Part%203%29",
+      "applePodcastsKind": "search",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Hitler%27s%20War%20on%20Poland%3A%20The%20Fall%20of%20Warsaw%20%28Part%203%29",
       "youtubeKind": "search",
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT6308788391.mp3?updated=1738860519",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
         "spotify": "unique normalized title in official Goalhanger show catalogue",
-        "applePodcasts": "exact audio enclosure URL"
+        "applePodcasts": null
       }
     },
     {
