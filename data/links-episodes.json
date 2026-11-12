@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-09T16:13:42.604525+00:00",
+  "generatedAt": "2026-11-12T13:25:24.715030+00:00",
   "coverage": {
-    "feedEpisodes": 739,
-    "pocketCastsDirect": 739,
+    "feedEpisodes": 740,
+    "pocketCastsDirect": 740,
     "spotifyDirect": 736,
-    "appleDirect": 210,
-    "appleSearch": 529,
-    "youtubeSearch": 739
+    "appleDirect": 209,
+    "appleSearch": 531,
+    "youtubeSearch": 740
   },
   "sources": {
     "pocketCasts": "https://podcast-api.pocketcasts.com/mobile/show_notes/full/c507d410-fd89-0138-4167-0acc26574db2",
@@ -25,12 +25,31 @@
   "unmatched": {
     "pocketCasts": [],
     "spotify": [
+      "722. The Charge of the Light Brigade: The Tsar’s Terrible Siege (Part 2)",
       "721. The Charge of the Light Brigade: Outbreak of The Crimean War (Part 1)",
       "720. Revolution in the Soviet Empire: Revenge of the Red Army (Part 2) ",
       "719. Revolution in the Soviet Empire: The Hungarian Uprising (Part 1)"
     ]
   },
   "episodes": [
+    {
+      "guid": "995147a6-dd2e-11f1-97c4-1bce59a2589c",
+      "title": "722. The Charge of the Light Brigade: The Tsar’s Terrible Siege (Part 2)",
+      "pocketCasts": "https://pca.st/episode/a6facb15-a87d-489c-8412-70377fbb0598",
+      "pocketCastsKind": "episode",
+      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20The%20Tsar%E2%80%99s%20Terrible%20Siege%20%28Part%202%29",
+      "spotifyKind": "search",
+      "applePodcasts": "https://podcasts.apple.com/us/search?term=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20The%20Tsar%E2%80%99s%20Terrible%20Siege%20%28Part%202%29",
+      "applePodcastsKind": "search",
+      "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20The%20Tsar%E2%80%99s%20Terrible%20Siege%20%28Part%202%29",
+      "youtubeKind": "search",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT7837711407.mp3",
+      "matchEvidence": {
+        "pocketCasts": "exact audio enclosure URL",
+        "spotify": null,
+        "applePodcasts": null
+      }
+    },
     {
       "guid": "48d23996-d9cf-11f1-98a6-332f75c5bea8",
       "title": "721. The Charge of the Light Brigade: Outbreak of The Crimean War (Part 1)",
@@ -3494,15 +3513,15 @@
       "pocketCastsKind": "episode",
       "spotify": "https://open.spotify.com/episode/4tuVg1aGgowAaibKiPXIdI?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=4660919b-724e-4328-8e74-7407931d33ee",
       "spotifyKind": "episode",
-      "applePodcasts": "https://podcasts.apple.com/us/podcast/emperors-of-rome-sex-secrets-of-the-caesars-part-1/id1537788786?i=1000685187106&uo=4",
-      "applePodcastsKind": "episode",
+      "applePodcasts": "https://podcasts.apple.com/us/search?term=The%20Rest%20Is%20History%20Emperors%20of%20Rome%3A%20Sex%20Secrets%20of%20the%20Caesars%20%28Part%201%29",
+      "applePodcastsKind": "search",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Emperors%20of%20Rome%3A%20Sex%20Secrets%20of%20the%20Caesars%20%28Part%201%29",
       "youtubeKind": "search",
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT3696933602.mp3?updated=1738008610",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
         "spotify": "unique normalized title in official Goalhanger show catalogue",
-        "applePodcasts": "exact audio enclosure URL"
+        "applePodcasts": null
       }
     },
     {
