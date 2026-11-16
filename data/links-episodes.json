@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-12T13:25:24.715030+00:00",
+  "generatedAt": "2026-11-16T15:41:54.214544+00:00",
   "coverage": {
-    "feedEpisodes": 740,
-    "pocketCastsDirect": 740,
+    "feedEpisodes": 741,
+    "pocketCastsDirect": 741,
     "spotifyDirect": 736,
-    "appleDirect": 209,
-    "appleSearch": 531,
-    "youtubeSearch": 740
+    "appleDirect": 211,
+    "appleSearch": 530,
+    "youtubeSearch": 741
   },
   "sources": {
     "pocketCasts": "https://podcast-api.pocketcasts.com/mobile/show_notes/full/c507d410-fd89-0138-4167-0acc26574db2",
@@ -25,6 +25,7 @@
   "unmatched": {
     "pocketCasts": [],
     "spotify": [
+      "723. The Charge of the Light Brigade: Crushing the Russians (Part 3)",
       "722. The Charge of the Light Brigade: The Tsar’s Terrible Siege (Part 2)",
       "721. The Charge of the Light Brigade: Outbreak of The Crimean War (Part 1)",
       "720. Revolution in the Soviet Empire: Revenge of the Red Army (Part 2) ",
@@ -33,21 +34,39 @@
   },
   "episodes": [
     {
+      "guid": "647941ba-df53-11f1-be67-4bf0f2f39a82",
+      "title": "723. The Charge of the Light Brigade: Crushing the Russians (Part 3)",
+      "pocketCasts": "https://pca.st/episode/5a67dd15-9b98-4264-a750-a9ea37b8e099",
+      "pocketCastsKind": "episode",
+      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Crushing%20the%20Russians%20%28Part%203%29",
+      "spotifyKind": "search",
+      "applePodcasts": "https://podcasts.apple.com/us/podcast/the-charge-of-the-light-brigade-crushing-the-russians-part-3/id1537788786?i=1000800036942&uo=4",
+      "applePodcastsKind": "episode",
+      "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Crushing%20the%20Russians%20%28Part%203%29",
+      "youtubeKind": "search",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT9985161615.mp3",
+      "matchEvidence": {
+        "pocketCasts": "exact audio enclosure URL",
+        "spotify": null,
+        "applePodcasts": "exact audio enclosure URL"
+      }
+    },
+    {
       "guid": "995147a6-dd2e-11f1-97c4-1bce59a2589c",
       "title": "722. The Charge of the Light Brigade: The Tsar’s Terrible Siege (Part 2)",
       "pocketCasts": "https://pca.st/episode/a6facb15-a87d-489c-8412-70377fbb0598",
       "pocketCastsKind": "episode",
       "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20The%20Tsar%E2%80%99s%20Terrible%20Siege%20%28Part%202%29",
       "spotifyKind": "search",
-      "applePodcasts": "https://podcasts.apple.com/us/search?term=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20The%20Tsar%E2%80%99s%20Terrible%20Siege%20%28Part%202%29",
-      "applePodcastsKind": "search",
+      "applePodcasts": "https://podcasts.apple.com/us/podcast/the-charge-of-the-light-brigade-the-tsars/id1537788786?i=1000800036188&uo=4",
+      "applePodcastsKind": "episode",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20The%20Tsar%E2%80%99s%20Terrible%20Siege%20%28Part%202%29",
       "youtubeKind": "search",
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT7837711407.mp3",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
         "spotify": null,
-        "applePodcasts": null
+        "applePodcasts": "exact audio enclosure URL"
       }
     },
     {
