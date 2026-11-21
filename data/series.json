@@ -1720,6 +1720,28 @@
       ],
       "sourceUrl": "https://archive.therestishistory.com/catalog/series/The%20Suez%20Crisis",
       "note": "Official archive series: The Suez Crisis."
+    },
+    {
+      "id": "revolution-in-the-soviet-empire",
+      "title": "Revolution in the Soviet Empire",
+      "episodeIds": [
+        "0d6570ec-d387-11f1-bf42-3f9aab9a93fa",
+        "031da908-d849-11f1-9ed6-d78ec9b34db1"
+      ],
+      "sourceUrl": "https://feeds.megaphone.fm/GLT4787413333",
+      "note": "Publisher RSS explicitly labels these consecutive releases as Parts 1–2 of Revolution in the Soviet Empire. Reviewed 21 November 2026."
+    },
+    {
+      "id": "the-charge-of-the-light-brigade",
+      "title": "The Charge of the Light Brigade",
+      "episodeIds": [
+        "48d23996-d9cf-11f1-98a6-332f75c5bea8",
+        "995147a6-dd2e-11f1-97c4-1bce59a2589c",
+        "647941ba-df53-11f1-be67-4bf0f2f39a82",
+        "393487d2-e375-11f1-bcbd-cbede38bcaf5"
+      ],
+      "sourceUrl": "https://feeds.megaphone.fm/GLT4787413333",
+      "note": "Publisher RSS explicitly labels these consecutive releases as Parts 1–4 of The Charge of the Light Brigade. Reviewed 21 November 2026."
     }
   ]
 }

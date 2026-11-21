@@ -1,5 +1,5 @@
 {
-  "scope": "Numbered episodes 351–718, 368 records",
+  "scope": "Numbered episodes 351–724, with new releases reviewed through 21 November 2026.",
   "method": "Read each episode title and its available RSS description. Use the historical subject's event date, life dates or a bounded narrative period, never the release date. Official archive summaries supplement missing descriptions for the newer episodes. The c. prefix marks deliberately approximate coverage. A single region denotes the central historical setting, while transregional journeys use Across the world. Mythic events and all-era conversations remain off the timeline.",
   "sourceFiles": ["research-late.json", "official-episodes.json"],
   "externalChecks": [
@@ -13,7 +13,10 @@
     {"episodes": [587,588], "url": "https://www.nationalarchives.gov.uk/education/resources/kirk-o-field/", "purpose": "Darnley's 1565 marriage, Rizzio's 1566 murder and Darnley's 1567 death."},
     {"episodes": [483], "url": "https://www.nhm.ac.uk/our-science/services/library/collections/piltdown-man.html", "purpose": "Piltdown announced in 1912 and exposed in 1953; use the hoax's modern chronology."},
     {"episodes": [374], "url": "https://www.londonmuseum.org.uk/collections/london-stories/battle-of-cable-street/", "purpose": "Cable Street on 4 October 1936; the RSS description has an apparent day-of-month typo."},
-    {"episodes": [582], "url": "https://www.cambridge.org/core/books/abs/art-faith-and-place-in-east-anglia/medieval-jews-of-norwich-and-their-legacy/0555514C94B49482420716E18F25B5B1", "purpose": "William of Norwich's death in 1144; the blood-libel accusation is identified as false in the metadata."}
+    {"episodes": [582], "url": "https://www.cambridge.org/core/books/abs/art-faith-and-place-in-east-anglia/medieval-jews-of-norwich-and-their-legacy/0555514C94B49482420716E18F25B5B1", "purpose": "William of Norwich's death in 1144; the blood-libel accusation is identified as false in the metadata."},
+    {"episodes": [719, 720], "url": "https://guides.loc.gov/hungarian-newspapers/1956", "purpose": "Hungarian uprising begins 23 October 1956; Soviet intervention and continued fighting in November."},
+    {"episodes": [721, 722, 723, 724], "url": "https://www.nam.ac.uk/explore/crimean-war", "purpose": "British campaign of 1854, Silistria, Alma and the approach to Sevastopol; distinguish the wider 1853 outbreak from the phase covered."},
+    {"episodes": [724], "url": "https://www.nam.ac.uk/explore/battle-balaklava", "purpose": "Balaklava and the Charge of the Light Brigade on 25 October 1854."}
   ],
   "cautions": [
     "These are editorial subject ranges based on catalogue material, not a transcript-level audit of every date mentioned.",

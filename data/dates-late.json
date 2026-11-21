@@ -2942,5 +2942,53 @@
     "dateLabel": "c. 1300–1650",
     "category": null,
     "note": "Approximate period covered. Amsterdam's medieval pilgrimage, Reformation and early commercial growth; a broad city survey."
+  },
+  "0d6570ec-d387-11f1-bf42-3f9aab9a93fa": {
+    "start": 1945,
+    "end": 1956,
+    "region": "Europe",
+    "dateLabel": "c. 1945–1956",
+    "category": null,
+    "note": "Hungary under Soviet influence after the Second World War, Stalinism and the outbreak of the uprising on 23 October 1956. The background bounds are approximate."
+  },
+  "031da908-d849-11f1-9ed6-d78ec9b34db1": {
+    "start": 1956,
+    "end": 1956,
+    "region": "Europe",
+    "dateLabel": "1956",
+    "category": null,
+    "note": "The Hungarian revolution in late October and the Soviet assault on Budapest in November 1956."
+  },
+  "48d23996-d9cf-11f1-98a6-332f75c5bea8": {
+    "start": 1853,
+    "end": 1854,
+    "region": "Europe",
+    "dateLabel": "1853–1854",
+    "category": null,
+    "note": "The Russo-Ottoman origins of the Crimean War and the British intervention of 1854, with introductions to the cavalry commanders."
+  },
+  "995147a6-dd2e-11f1-97c4-1bce59a2589c": {
+    "start": 1854,
+    "end": 1854,
+    "region": "Europe",
+    "dateLabel": "1854",
+    "category": null,
+    "note": "The siege of Silistria in May–June 1854, British preparations and command rivalries before the Crimean campaign."
+  },
+  "647941ba-df53-11f1-be67-4bf0f2f39a82": {
+    "start": 1854,
+    "end": 1854,
+    "region": "Europe",
+    "dateLabel": "1854",
+    "category": null,
+    "note": "The allied landing and march in the Crimea, the Battle of the Alma on 20 September 1854 and the approach to Sevastopol."
+  },
+  "393487d2-e375-11f1-bcbd-cbede38bcaf5": {
+    "start": 1854,
+    "end": 1854,
+    "region": "Europe",
+    "dateLabel": "1854",
+    "category": null,
+    "note": "The Battle of Balaklava and the Charge of the Light Brigade on 25 October 1854."
   }
 }

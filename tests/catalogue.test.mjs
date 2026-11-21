@@ -265,3 +265,20 @@ test('background, biography and aftermath do not displace the central historical
   assert.equal(byId.get('series:london').keyYear,null);
   assert.equal(byId.get('series:ireland-from-the-celts-to-the-easter-rising').keyYear,null);
 });
+
+test('November arrivals form their released series with reviewed focal years and individual map anchors',()=>{
+  const items=makeCollection(episodes,catalogue.timelinePlacements);
+  for(const [id,numbers,year] of [['revolution-in-the-soviet-empire',[719,720],1956],['the-charge-of-the-light-brigade',[721,722,723,724],1854]]){
+    const item=items.find(i=>i.seriesId===id);assert.ok(item);
+    assert.deepEqual(item.members.map(e=>e.number),numbers);
+    assert.equal(item.keyYear,year);
+    assert.equal(makeTimeline([item]).positions[0].periodId,timelinePeriod(year).id);
+    for(const e of item.members){
+      assert.ok(hasTimelineDate(e));assert.ok(e.location.coordinates);
+      assert.equal(e.links.spotifyKind,'episode');assert.ok(e.links.pocketCasts);
+    }
+  }
+  const silistria=episodes.find(e=>e.number===722);
+  assert.equal(silistria.location.label,'Silistra, Bulgaria');
+  assert.equal(episodes.find(e=>e.number===724).location.label,'Balaklava, Crimea');
+});

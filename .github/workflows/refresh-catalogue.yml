@@ -2,8 +2,8 @@ name: Refresh episode catalogue
 
 on:
   schedule:
-    # Every Monday at 06:17 UTC (07:17 CET / 08:17 CEST).
-    - cron: '17 6 * * 1'
+    # Saturday feed download; historical review runs locally when the app is open.
+    - cron: '17 6 * * 6'
   workflow_dispatch:
 
 permissions:

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-16T15:41:54.214544+00:00",
+  "generatedAt": "2026-11-21T12:47:58.532038+00:00",
   "coverage": {
-    "feedEpisodes": 741,
-    "pocketCastsDirect": 741,
-    "spotifyDirect": 736,
-    "appleDirect": 211,
-    "appleSearch": 530,
-    "youtubeSearch": 741
+    "feedEpisodes": 742,
+    "pocketCastsDirect": 742,
+    "spotifyDirect": 742,
+    "appleDirect": 209,
+    "appleSearch": 533,
+    "youtubeSearch": 742
   },
   "sources": {
     "pocketCasts": "https://podcast-api.pocketcasts.com/mobile/show_notes/full/c507d410-fd89-0138-4167-0acc26574db2",
@@ -24,22 +24,34 @@
   ],
   "unmatched": {
     "pocketCasts": [],
-    "spotify": [
-      "723. The Charge of the Light Brigade: Crushing the Russians (Part 3)",
-      "722. The Charge of the Light Brigade: The Tsar’s Terrible Siege (Part 2)",
-      "721. The Charge of the Light Brigade: Outbreak of The Crimean War (Part 1)",
-      "720. Revolution in the Soviet Empire: Revenge of the Red Army (Part 2) ",
-      "719. Revolution in the Soviet Empire: The Hungarian Uprising (Part 1)"
-    ]
+    "spotify": []
   },
   "episodes": [
+    {
+      "guid": "393487d2-e375-11f1-bcbd-cbede38bcaf5",
+      "title": "724. The Charge of the Light Brigade: Into The Valley of Death (Part 4)",
+      "pocketCasts": "https://pca.st/episode/688aac30-261d-4ec1-9aa3-acc269ef83b9",
+      "pocketCastsKind": "episode",
+      "spotify": "https://open.spotify.com/episode/4tL04VyOMhImxfDFvlq4Yx?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=f3190101-e8d1-40cc-9e46-e90531bd4a3b",
+      "spotifyKind": "episode",
+      "applePodcasts": "https://podcasts.apple.com/us/podcast/the-charge-of-the-light-brigade-into-the/id1537788786?i=1000800037377&uo=4",
+      "applePodcastsKind": "episode",
+      "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Into%20The%20Valley%20of%20Death%20%28Part%204%29",
+      "youtubeKind": "search",
+      "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT1598624240.mp3",
+      "matchEvidence": {
+        "pocketCasts": "exact audio enclosure URL",
+        "spotify": "unique normalized title in official Goalhanger show catalogue",
+        "applePodcasts": "exact audio enclosure URL"
+      }
+    },
     {
       "guid": "647941ba-df53-11f1-be67-4bf0f2f39a82",
       "title": "723. The Charge of the Light Brigade: Crushing the Russians (Part 3)",
       "pocketCasts": "https://pca.st/episode/5a67dd15-9b98-4264-a750-a9ea37b8e099",
       "pocketCastsKind": "episode",
-      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Crushing%20the%20Russians%20%28Part%203%29",
-      "spotifyKind": "search",
+      "spotify": "https://open.spotify.com/episode/2383ijd5mDGhhZ9fFIzwkC?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=f3190101-e8d1-40cc-9e46-e90531bd4a3b",
+      "spotifyKind": "episode",
       "applePodcasts": "https://podcasts.apple.com/us/podcast/the-charge-of-the-light-brigade-crushing-the-russians-part-3/id1537788786?i=1000800036942&uo=4",
       "applePodcastsKind": "episode",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Crushing%20the%20Russians%20%28Part%203%29",
@@ -47,7 +59,7 @@
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT9985161615.mp3",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
-        "spotify": null,
+        "spotify": "unique normalized title in official Goalhanger show catalogue",
         "applePodcasts": "exact audio enclosure URL"
       }
     },
@@ -56,8 +68,8 @@
       "title": "722. The Charge of the Light Brigade: The Tsar’s Terrible Siege (Part 2)",
       "pocketCasts": "https://pca.st/episode/a6facb15-a87d-489c-8412-70377fbb0598",
       "pocketCastsKind": "episode",
-      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20The%20Tsar%E2%80%99s%20Terrible%20Siege%20%28Part%202%29",
-      "spotifyKind": "search",
+      "spotify": "https://open.spotify.com/episode/3zzOAEDAW3wFW85xhTTKfv?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=f3190101-e8d1-40cc-9e46-e90531bd4a3b",
+      "spotifyKind": "episode",
       "applePodcasts": "https://podcasts.apple.com/us/podcast/the-charge-of-the-light-brigade-the-tsars/id1537788786?i=1000800036188&uo=4",
       "applePodcastsKind": "episode",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20The%20Tsar%E2%80%99s%20Terrible%20Siege%20%28Part%202%29",
@@ -65,7 +77,7 @@
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT7837711407.mp3",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
-        "spotify": null,
+        "spotify": "unique normalized title in official Goalhanger show catalogue",
         "applePodcasts": "exact audio enclosure URL"
       }
     },
@@ -74,8 +86,8 @@
       "title": "721. The Charge of the Light Brigade: Outbreak of The Crimean War (Part 1)",
       "pocketCasts": "https://pca.st/episode/2c6a6146-e669-4a05-9280-b93169751b1e",
       "pocketCastsKind": "episode",
-      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Outbreak%20of%20The%20Crimean%20War%20%28Part%201%29",
-      "spotifyKind": "search",
+      "spotify": "https://open.spotify.com/episode/1JG6n1RbtEz6pjkR3HaTnh?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=f3190101-e8d1-40cc-9e46-e90531bd4a3b",
+      "spotifyKind": "episode",
       "applePodcasts": "https://podcasts.apple.com/us/podcast/the-charge-of-the-light-brigade-outbreak-of/id1537788786?i=1000800035971&uo=4",
       "applePodcastsKind": "episode",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20The%20Charge%20of%20the%20Light%20Brigade%3A%20Outbreak%20of%20The%20Crimean%20War%20%28Part%201%29",
@@ -83,7 +95,7 @@
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT2909363211.mp3",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
-        "spotify": null,
+        "spotify": "unique normalized title in official Goalhanger show catalogue",
         "applePodcasts": "exact audio enclosure URL"
       }
     },
@@ -92,8 +104,8 @@
       "title": "720. Revolution in the Soviet Empire: Revenge of the Red Army (Part 2) ",
       "pocketCasts": "https://pca.st/episode/f267626e-fcf2-4086-947c-98c5d7db2726",
       "pocketCastsKind": "episode",
-      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20Revolution%20in%20the%20Soviet%20Empire%3A%20Revenge%20of%20the%20Red%20Army%20%28Part%202%29%20",
-      "spotifyKind": "search",
+      "spotify": "https://open.spotify.com/episode/4ebYd3tfLHVSU0L5jVUbZk?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=f3190101-e8d1-40cc-9e46-e90531bd4a3b",
+      "spotifyKind": "episode",
       "applePodcasts": "https://podcasts.apple.com/us/podcast/revolution-in-the-soviet-empire-revenge-of-the-red/id1537788786?i=1000797637998&uo=4",
       "applePodcastsKind": "episode",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Revolution%20in%20the%20Soviet%20Empire%3A%20Revenge%20of%20the%20Red%20Army%20%28Part%202%29%20",
@@ -101,7 +113,7 @@
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT6037632826.mp3",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
-        "spotify": null,
+        "spotify": "unique normalized title in official Goalhanger show catalogue",
         "applePodcasts": "exact audio enclosure URL"
       }
     },
@@ -110,8 +122,8 @@
       "title": "719. Revolution in the Soviet Empire: The Hungarian Uprising (Part 1)",
       "pocketCasts": "https://pca.st/episode/54755c32-f321-441d-a28b-6cc01be01489",
       "pocketCastsKind": "episode",
-      "spotify": "https://open.spotify.com/search/The%20Rest%20Is%20History%20Revolution%20in%20the%20Soviet%20Empire%3A%20The%20Hungarian%20Uprising%20%28Part%201%29",
-      "spotifyKind": "search",
+      "spotify": "https://open.spotify.com/episode/0Mp4BUWVH38GEexmm40siv?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=f3190101-e8d1-40cc-9e46-e90531bd4a3b",
+      "spotifyKind": "episode",
       "applePodcasts": "https://podcasts.apple.com/us/podcast/revolution-in-the-soviet-empire-the-hungarian/id1537788786?i=1000797637935&uo=4",
       "applePodcastsKind": "episode",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Revolution%20in%20the%20Soviet%20Empire%3A%20The%20Hungarian%20Uprising%20%28Part%201%29",
@@ -119,7 +131,7 @@
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT4398850202.mp3",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
-        "spotify": null,
+        "spotify": "unique normalized title in official Goalhanger show catalogue",
         "applePodcasts": "exact audio enclosure URL"
       }
     },
@@ -3478,15 +3490,15 @@
       "pocketCastsKind": "episode",
       "spotify": "https://open.spotify.com/episode/2Lzh2fDX7E1cRTtQRK289U?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=4660919b-724e-4328-8e74-7407931d33ee",
       "spotifyKind": "episode",
-      "applePodcasts": "https://podcasts.apple.com/us/podcast/emperors-of-rome-claudius-paranoia-and-poison-part-4/id1537788786?i=1000684699905&uo=4",
-      "applePodcastsKind": "episode",
+      "applePodcasts": "https://podcasts.apple.com/us/search?term=The%20Rest%20Is%20History%20Emperors%20of%20Rome%3A%20Claudius%2C%20Paranoia%20and%20Poison%20%28Part%204%29",
+      "applePodcastsKind": "search",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Emperors%20of%20Rome%3A%20Claudius%2C%20Paranoia%20and%20Poison%20%28Part%204%29",
       "youtubeKind": "search",
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT8484602825.mp3?updated=1738860427",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
         "spotify": "unique normalized title in official Goalhanger show catalogue",
-        "applePodcasts": "exact audio enclosure URL"
+        "applePodcasts": null
       }
     },
     {
@@ -3496,15 +3508,15 @@
       "pocketCastsKind": "episode",
       "spotify": "https://open.spotify.com/episode/7czgQWXxYblG2ewKGcqSTM?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=4660919b-724e-4328-8e74-7407931d33ee",
       "spotifyKind": "episode",
-      "applePodcasts": "https://podcasts.apple.com/us/podcast/emperors-of-rome-caligula-incest-and-insanity-part-3/id1537788786?i=1000684699533&uo=4",
-      "applePodcastsKind": "episode",
+      "applePodcasts": "https://podcasts.apple.com/us/search?term=The%20Rest%20Is%20History%20Emperors%20of%20Rome%3A%20Caligula%2C%20Incest%20and%20Insanity%20%28Part%203%29",
+      "applePodcastsKind": "search",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Emperors%20of%20Rome%3A%20Caligula%2C%20Incest%20and%20Insanity%20%28Part%203%29",
       "youtubeKind": "search",
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT6260105026.mp3?updated=1738534057",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
         "spotify": "unique normalized title in official Goalhanger show catalogue",
-        "applePodcasts": "exact audio enclosure URL"
+        "applePodcasts": null
       }
     },
     {
@@ -3514,15 +3526,15 @@
       "pocketCastsKind": "episode",
       "spotify": "https://open.spotify.com/episode/6urtSfCZzEooWOpqLRgewb?utm_source=openai&utm_medium=chatgpt&go=1&nap_web=1&request_id=4660919b-724e-4328-8e74-7407931d33ee",
       "spotifyKind": "episode",
-      "applePodcasts": "https://podcasts.apple.com/us/podcast/emperors-of-rome-tiberius-slaughter-and-scandal-part-2/id1537788786?i=1000684699208&uo=4",
-      "applePodcastsKind": "episode",
+      "applePodcasts": "https://podcasts.apple.com/us/search?term=The%20Rest%20Is%20History%20Emperors%20of%20Rome%3A%20Tiberius%2C%20Slaughter%20and%20Scandal%20%28Part%202%29",
+      "applePodcastsKind": "search",
       "youtube": "https://www.youtube.com/results?search_query=The%20Rest%20Is%20History%20Emperors%20of%20Rome%3A%20Tiberius%2C%20Slaughter%20and%20Scandal%20%28Part%202%29",
       "youtubeKind": "search",
       "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT6029756405.mp3?updated=1738542150",
       "matchEvidence": {
         "pocketCasts": "exact audio enclosure URL",
         "spotify": "unique normalized title in official Goalhanger show catalogue",
-        "applePodcasts": "exact audio enclosure URL"
+        "applePodcasts": null
       }
     },
     {

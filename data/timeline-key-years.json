@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-30",
+  "reviewedAt": "2026-11-21",
   "method": "Explicit editorial choices for every release series and standalone episode in the public-feed snapshot. Read the publisher summaries and existing reviewed coverage, then choose the start of the central conflict or phase, a defining moment of public influence or a focal event/work. Early-life arcs stay in their own period. Broad continuous subjects may use an explicitly explained representative milestone; no arithmetic midpoint is used. Mythic, unrelated cross-era and broad place collections without a defensible single focal year remain off the timeline. The year is a browsing position, not the full duration.",
   "evidenceFiles": [
     "data/base-episodes.json",
@@ -3503,6 +3503,29 @@
       "reason": "Kept off the timeline. An introduction to the podcast rather than a historical episode.",
       "sources": [
         "https://feeds.megaphone.fm/GLT4787413333"
+      ]
+    },
+    "series:revolution-in-the-soviet-empire": {
+      "title": "Revolution in the Soviet Empire",
+      "year": 1956,
+      "approximate": false,
+      "rule": "event-start",
+      "reason": "The Hungarian uprising began on 23 October 1956. Its Soviet-era background and the November suppression remain coverage, not a different placement year.",
+      "sources": [
+        "https://feeds.megaphone.fm/GLT4787413333",
+        "https://guides.loc.gov/hungarian-newspapers/1956"
+      ]
+    },
+    "series:the-charge-of-the-light-brigade": {
+      "title": "The Charge of the Light Brigade",
+      "year": 1854,
+      "approximate": false,
+      "rule": "episode-focus",
+      "reason": "The 1854 British campaign leading to the Charge at Balaklava on 25 October anchors this arc. The wider Russo-Ottoman war began in 1853; that background does not change the year of the campaign and battle covered.",
+      "sources": [
+        "https://feeds.megaphone.fm/GLT4787413333",
+        "https://www.nam.ac.uk/explore/crimean-war",
+        "https://www.nam.ac.uk/explore/battle-balaklava"
       ]
     }
   }

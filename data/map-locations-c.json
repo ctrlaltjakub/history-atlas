@@ -1712,5 +1712,53 @@
     "coordinates": null,
     "label": "Worldwide",
     "note": "A general introduction to the podcast has no episode-specific geographic setting."
+  },
+  "0d6570ec-d387-11f1-bf42-3f9aab9a93fa": {
+    "coordinates": [
+      19.05,
+      47.5
+    ],
+    "label": "Budapest, Hungary",
+    "note": "Approximate city anchor for the demonstrations and street fighting that began the 1956 Hungarian uprising; the episode also covers Hungary’s Soviet-era background."
+  },
+  "031da908-d849-11f1-9ed6-d78ec9b34db1": {
+    "coordinates": [
+      19.05,
+      47.5
+    ],
+    "label": "Budapest, Hungary",
+    "note": "The Soviet assault and suppression of the Hungarian revolution centre on Budapest, with events elsewhere in Hungary also discussed."
+  },
+  "48d23996-d9cf-11f1-98a6-332f75c5bea8": {
+    "coordinates": [
+      33.52,
+      44.62
+    ],
+    "label": "Sevastopol, Crimea",
+    "note": "Representative anchor for the Crimean campaign that this series introduces. The war’s origins and the British commanders span several places; this is not a claim that all opening events happened here."
+  },
+  "995147a6-dd2e-11f1-97c4-1bce59a2589c": {
+    "coordinates": [
+      27.27,
+      44.12
+    ],
+    "label": "Silistra, Bulgaria",
+    "note": "The Ottoman fortress of Silistria, besieged by Russian forces in 1854. British preparations and command disputes involve other locations."
+  },
+  "647941ba-df53-11f1-be67-4bf0f2f39a82": {
+    "coordinates": [
+      33.67,
+      44.84
+    ],
+    "label": "Alma battlefield, Crimea",
+    "note": "Approximate battlefield near the Alma River, where the allies fought Russian forces on 20 September 1854 before advancing towards Sevastopol."
+  },
+  "393487d2-e375-11f1-bcbd-cbede38bcaf5": {
+    "coordinates": [
+      33.61,
+      44.54
+    ],
+    "label": "Balaklava, Crimea",
+    "note": "Approximate area of the Battle of Balaklava and the Light Brigade’s charge on 25 October 1854, north of the harbour."
   }
 }
