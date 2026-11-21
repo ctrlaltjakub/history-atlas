@@ -54,25 +54,7 @@ npm run build
 
 The [Refresh episode catalogue](https://github.com/ctrlaltjakub/history-atlas/actions/workflows/refresh-catalogue.yml) GitHub Actions workflow runs every Saturday at **06:17 UTC** (07:17 CET / 08:17 CEST). It downloads the public feed and listening-link catalogues, builds and tests the site, then commits the refreshed snapshots and `public/data/catalogue.json` to `main`. This triggers the connected Vercel deployment and updates both **Catalogue updated** labels from the feed's successful fetch time. The workflow uses GitHub's built-in token with `contents: write`; no extra credentials or server cron daemon are needed. It can also be started immediately with **Run workflow** in GitHub Actions. Failed refreshes or tests do not commit or deploy partial data.
 
-The cloud workflow fetches metadata and listening links; it does not invent historical placements. It runs on GitHub even when the laptop is off. The separate local weekly review groups release series and researches coverage, key years and map anchors before publishing.
-
-### Weekly historical review on this laptop
-
-`python3 scripts/install-weekly-review.py` installs a **user systemd timer** (Linux’s local scheduler). It runs `scripts/weekly-review-gate.py` every hour. This is a short deterministic Python check, **not an agent run**. It starts an unattended `codex exec` review only when the ChatGPT desktop app is running and no review has completed for the week beginning on the most recent Saturday in **Europe/Busingen**. There is no fixed Saturday review time: the first eligible check starts it, generally within an hour of opening the app. If the laptop/app is off all Saturday, the first eligible check on Sunday or any later day catches up. Multiple missed weeks are handled in one review of all outstanding episodes.
-
-The committed `data/catalogue-review.json` records the successful review week separately from the feed’s fetch date. Ordinary downloads never advance it. A file lock prevents overlapping reviews; unsuccessful attempts have a six-hour retry delay, and an unfinished/unpublished attempt is not accepted as complete. A dirty checkout or a branch other than `main` is left alone until a later check. The timer uses `Persistent=true` to catch up its lightweight checks after downtime; it does not wake a powered-off laptop.
-
-The worker reads `scripts/weekly-review-prompt.md`, uses the existing Codex CLI ChatGPT sign-in, model and permission settings, validates the updated catalogue, commits/pushes to `main` and checks production. It saves its summary and log under `~/.local/state/history-atlas-review/` and sends a desktop notification on completion or failure. This is a local scheduled CLI run, not a recurring ChatGPT conversation or an app-opening event subscription. The hourly check does not start an agent unless a weekly review is due.
-
-```sh
-python3 scripts/weekly-review-gate.py --check
-systemctl --user status history-atlas-review.timer
-journalctl --user -u history-atlas-review.service
-# Disable the local review (the independent GitHub feed download remains active):
-systemctl --user disable --now history-atlas-review.timer
-```
-
-This laptop must have Linux systemd and a working, signed-in `codex` command. After moving the checkout, rerun the installer to update its absolute path. The current review marker is 21 November 2026; the next week becomes due on Saturday 28 November.
+GitHub fetches metadata and listening links even when the laptop is off. Historical review is manual. It includes checking series membership, choosing timeline years, and researching approximate map locations before publishing.
 
 To run the same refresh locally:
 
