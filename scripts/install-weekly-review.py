@@ -33,8 +33,7 @@ timer.write_text('''[Unit]
 Description=Check whether a weekly history catalogue review is due
 
 [Timer]
-OnStartupSec=2min
-OnCalendar=*-*-* *:0/5:00
+OnCalendar=hourly
 Persistent=true
 AccuracySec=30s
 Unit=history-atlas-review.service
@@ -45,4 +44,4 @@ WantedBy=timers.target
 subprocess.run(['systemd-analyze', '--user', 'verify', str(service), str(timer)], check=True)
 subprocess.run(['systemctl', '--user', 'daemon-reload'], check=True)
 subprocess.run(['systemctl', '--user', 'enable', '--now', timer.name], check=True)
-print(f'Installed {timer}. Every five minutes, plain Python checks the app and review marker; Codex runs only when due.')
+print(f'Installed {timer}. Every hour, plain Python checks the app and review marker; Codex runs only when due.')
